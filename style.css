@@ -139,9 +139,10 @@ section {
 
 .light-button {
   font-size: 1em;
-  color: #333;
-  font-weight: 500;
-  border: 2px solid #fc9745;
+  color: #fc9745;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #fc9745;
   background-color: rgb(252, 252, 252);
   border-radius: 0.25rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -1081,24 +1082,6 @@ footer .social li a {
   position: absolute;
 }
 
-.pricing-plan__button {
-  display: inline-block;
-  margin: 1rem auto;
-  padding: 8px 20px;
-  text-decoration: none;
-  color: #fc9745;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid #fc9745;
-  text-transform: uppercase;
-  letter-spacing: 0.02rem;
-  font-weight: bold;
-}
-
-.pricing-plan__button:hover {
-  background: #fc9745;
-  color: white;
-}
 
 .pricing-plan__cost {
   margin: 0;
