@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap');
 
 :root {
   --tangerine: #f5c325;
@@ -31,9 +32,18 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
 }
 
 h1, h2, h3, h4, p {
@@ -41,13 +51,13 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-  font-family: "Martel", sans-serif;
+  font-family: "Rufina", sans-serif;
   font-size: 4em;
   line-height: 1.3em;
 }
 
 h2 {
-  font-family: "Martel", sans-serif;
+  font-family: "Rufina", sans-serif;
 }
 
 h3 {
@@ -78,112 +88,8 @@ section {
   position: relative;
 }
 
-/*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
+/*  ----------------------------------------------------------Utility elements ----------------------------------------------------------------------------------------*/
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 40px 10%;
-  z-index: 10000;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-header img {
-  max-width: 100px;
-  height: auto;
-  transition: 0.5s;
-}
-
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-}
-
-header .navigation {
-  position: relative;
-  display: flex;
-}
-
-header .navigation li {
-  list-style: none;
-  margin-left: 1.3em;
-}
-
-header .navigation li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  padding: 1rem 1rem;
-  transition: all 0.3s ease 0s;
-}
-
-header .navigation li a:hover {
-  color: #fc9745;
-  background-color: #f1f1f1;
-  opacity: 0.9;
-}
-
-.cta {
-  border: 1px solid #fff;
-  padding: 1rem 1rem;
-  transition: all 0.5s ease 0s;
-  margin-left: 20px;
-}
-
-.cta::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f073";
-  display: inline-block;
-  margin-right: 0.5rem;
-
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.cta:hover {
-  background: #fff;
-  color: #111;
-}
-
-header.sticky {
-  background: white;
-  opacity: 80%;
-  padding: 10px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  max-width: 100vw;
-  overflow: hidden;
-}
-
-header.sticky img {
-  max-width: 75px;
-  height: auto;
-}
-
-header.sticky .navigation li a {
-  color: #111;
-}
-
-header.sticky .navigation li a:hover {
-  color: #fff;
-  background-color: #333;
-  opacity: 1;
-}
-
-header.sticky .cta {
-  color: #111;
-  border: 1px solid #111;
-}
-
-/*  -------------------------------------------------  Global Section --------------------------------------------------------------------------*/
 
 .main-button {
   font-size: 1.3em;
@@ -270,6 +176,121 @@ header.sticky .cta {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
 }
+
+/*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2rem 10%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+  transition: 0.5s;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  
+  list-style: none;
+  margin-left: 1.3em;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+header .navigation li a:hover {
+  color: #fc9745;
+  background-color: #f1f1f1;
+  opacity: 0.9;
+}
+
+.cta {
+  border: 1px solid #fff;
+  padding: 1rem 1rem;
+  transition: all 0.5s ease 0s;
+  margin-left: 1rem;
+}
+
+.cta::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f073";
+  display: inline-block;
+  margin-right: 0.5rem;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cta:hover {
+  background: #fff;
+  color: #111;
+}
+
+header.sticky {
+  background: white;
+  opacity: 80%;
+  padding: 1rem 5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+header.sticky img {
+  max-width: 75px;
+  height: auto;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
+header.sticky .navigation li a:hover {
+  color: #fff;
+  background-color: #333;
+  opacity: 1;
+}
+
+header.sticky .cta {
+  color: #111;
+  border: 1px solid #111;
+}
+
+header.sticky .cta:hover {
+  background: #111;
+  color: #fff;
+}
+
+/*  -------------------------------------------------  Global Section --------------------------------------------------------------------------*/
+
+
 /*  -------------------------------------------------   Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
