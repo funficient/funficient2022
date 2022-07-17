@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap');
 
 :root {
@@ -30,12 +29,12 @@ padding: 0;
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 body {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img, picture, video, canvas, svg {
@@ -173,6 +172,9 @@ section {
   font-weight: 500;
 }
 
+
+/* Menu toggle behavior */
+
 /*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
 
 header {
@@ -251,12 +253,12 @@ header .navigation li a:hover {
 }
 
 header.sticky {
-  background: white;
+  background: white; 
   opacity: 80%;
   padding: 1rem 5rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   max-width: 100vw;
-  overflow: hidden;
+  
 }
 
 header.sticky img {
@@ -283,8 +285,6 @@ header.sticky .cta:hover {
   background: #111;
   color: #fff;
 }
-
-/*  -------------------------------------------------  Global Section --------------------------------------------------------------------------*/
 
 
 /*  -------------------------------------------------   Wave Hero Section --------------------------------------------------------------------------*/
@@ -1606,11 +1606,13 @@ footer .social li a {
     align-items: center;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.9);
+    color: #333;
   }
 
   header.sticky .navigation.active {
     height: calc(100% - 75px);
     top: 75px;
+    color: #333;
   }
 
   header .navigation.active li {
