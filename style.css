@@ -127,19 +127,27 @@ section {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
 }
 
-/* --- Button in body - secondary call-to-action ---*/
+/* --- Inverted colors---*/
+
+.inverted-color {
+  background-color: #fc9745;
+  color: #f1f1f1;
+
+}
+
+/* --- Button in body - call-to-action ---*/
 
 .light-button {
   font-size: 1em;
   color: #333;
   font-weight: 500;
-  border: 2.5px solid #fc9745;
+  border: 2px solid #fc9745;
   background-color: rgb(252, 252, 252);
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   display: inline-block;
-  padding: 10px 30px;
-  margin-top: 20px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -150,11 +158,13 @@ section {
   font-weight: 500;
   transition: 0.5s;
 }
+
 .main-button:active,
-.secondary-button:active,
 .light-button:active {
   transform: scale(0.95);
 }
+
+
 
 .simple-button {
   font-size: 1.3em;
@@ -502,44 +512,13 @@ header.sticky .cta:hover {
   padding: 1rem 0;
 }
 
-.cards .light-button {
+/*.cards .light-button {
   position: relative;
   bottom: 20px;
-}
+}*/
 
 /*-- To refactor --*/
 
-.secondary-button {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: #fc9745;
-  color: #f1f1f1;
-
-  border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
-  display: inline-block;
-  max-width: fit-content;
-  padding: 0.7rem 3rem;
-
-  margin-top: 2rem;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.secondary-button::after {
-  display: inline-block;
-  padding-left: 2rem;
-  content: "\2192";
-}
-
-.secondary-button:hover {
-  background-color: #333;
-  color: #fff;
-  font-weight: 600;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
 
 .center {
   text-align: center;
@@ -646,9 +625,7 @@ header.sticky .cta:hover {
   font-size: 1.1rem;
 }
 
-.value .secondary-button {
-  margin: auto;
-}
+
 
 .value .content {
   display: flex;
@@ -1218,10 +1195,10 @@ footer .social li a {
   padding: 15px 5px;
 }
 
-.workshops .light-button {
+/*.workshops .light-button {
   position: relative;
   bottom: 20px;
-}
+}*/
 
 .course-summary h4 {
   padding-left: 1rem;
@@ -1634,66 +1611,6 @@ footer .social li a {
   gap: 30px;
 }
 
-.orange-button {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: #fc9745;
-  color: #f1f1f1;
-
-  border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
-  display: inline-block;
-  max-width: fit-content;
-  padding: 1rem 3rem;
-
-  margin-top: 2rem;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.orange-button::after {
-  display: inline-block;
-  padding-left: 2rem;
-  content: "\2192";
-}
-
-.orange-button:hover {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
-}
-
-.white-button {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: #f1f1f1;
-  color: #ff7348;
-
-  border-radius: 3px;
-  border: 1px solid #fc9745;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  display: inline-block;
-  max-width: fit-content;
-  padding: 1rem 3rem;
-
-  margin-top: 2rem;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.white-button:hover {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
-  border: none;
-}
-
 /*--------------------------- Blog Page -----------------------*/
 
 .banner .content p.blog {
@@ -1747,11 +1664,11 @@ footer .social li a {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
-
+/*
 .workshops .light-button {
   margin-top: 3rem;
   margin-bottom: 0;
-}
+}*/
 
 .workshops .content .box {
   padding-bottom: 0.5rem;
@@ -2112,10 +2029,6 @@ footer .social li a {
     resize: none;
   }
 */
-  .secondary-button {
-    padding: 15px 25px;
-    min-width: 80%;
-  }
 
   .footer {
     padding: 1rem;
