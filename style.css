@@ -58,6 +58,9 @@ h1 {
 
 h2 {
   font-family: "Rufina", sans-serif;
+  font-size: 3rem;
+  color: #333;
+  line-height: 4rem;
 }
 
 h3 {
@@ -67,6 +70,7 @@ h3 {
 }
 
 h4 {
+  color: #333;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -84,7 +88,7 @@ button {
   text-decoration: none;
 }
 
-section {
+/*section {
   position: relative;
 }
 
@@ -173,7 +177,19 @@ section {
 }
 
 
-/* Menu toggle behavior */
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 /*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
 
@@ -290,25 +306,30 @@ header.sticky .cta:hover {
 /*  -------------------------------------------------   Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
-  position: relative;
-  width: 100vw;
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  min-height: 50vh;
   background-image: linear-gradient(90deg, #fc9745, #ff7348);
 }
 
-.banner .content {
-  max-width: 1000px;
-  margin: 10% 0 2% 0;
+.content {
+  max-width: 70vw;
+  margin: 10rem 0 1rem 0;
 }
 
-.banner .content h1 {
+.banner h1, p {
   color: #fff;
   text-align: left;
 }
+
+.banner p {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
 
 .banner .content h1 span {
   color: var(--orange);
@@ -340,23 +361,6 @@ header.sticky .cta:hover {
   100% {
     content: " play. ";
   }
-}
-
-.banner .content p {
-  font-size: 1.3em;
-  color: #fff;
-  margin-top: 2.5em;
-  text-align: left;
-}
-
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .wave-container {
@@ -412,84 +416,68 @@ header.sticky .cta:hover {
   }
 }
 
-/*-- Intro Text Section --*/
 
 .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   margin: 0;
-  padding: 0;
-  align-content: center;
+  width: 100vw;
+  padding: 2rem;
+  align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 .introText {
-  width: 100vw;
-  margin: 3% 0 5% 0;
+  width: 70%;
+  margin: auto;
 }
 
-.titleText {
-  color: #333;
-  font-size: 3rem;
-}
-
-.introText .titleText span {
+.titleText span {
   color: var(--orange);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
+.titleText p, 
 .introText p {
-  font-family: "Rufina", serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--darkGray);
-  margin: 0 2.5rem;
+  margin: auto;
+  text-align: center;
 }
+
 
 /*------------------------------------- Home page cards with audience -------------------------*/
 
-.cards .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.box-container {
+  padding: 2rem 5rem;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem ;
+  align-items: center;
 }
 
-.cards .content .box {
-  max-width: 450px;
-  margin: 1rem;
-  border: 15px solid #fff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-}
-
-.cards .content .box .imgBox {
-  position: relative;
+article img {
   width: 100%;
-  height: 300px;
-}
-
-.cards .content .box .imgBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  height: 18rem;
   object-fit: cover;
 }
 
-.cards .content .box .text {
+.box {
+  border: 1.2rem solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.box-container .text {
   padding: 2rem 0 0.5rem 0;
   text-align: center;
 }
 
-.cards .content .box .text h4 {
-  color: #333;
-}
 
-.cards .content .box .text p {
+
+.text p {
   padding: 1rem 0;
+  color: #333;
+  text-align: center;
 }
 
 /*-- To refactor --*/
@@ -500,20 +488,7 @@ header.sticky .cta:hover {
   align-content: center;
 }
 
-.row .col50 .imgBox {
-  position: relative;
-  width: 90%;
-  height: 100%;
-}
 
-.row .col50 .imgBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .title {
   width: 100%;
@@ -523,122 +498,56 @@ header.sticky .cta:hover {
   flex-direction: column;
 }
 
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-/* ------------------------------------------ Benefits and value proposition --------------------------------------------------------------------------------------------------------------*/
 
-.value {
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-}
-
-.value .section-text {
-  font-family: "Rufina", serif;
-  margin-top: 8rem;
-  text-align: center;
-}
-
-.value .container .titleText p {
-  display: inline-block;
-  margin: auto;
-  font-family: "Rufina", sans-serif;
-  color: #333;
-  font-size: 1.5rem;
-  padding: 0 15rem;
-  text-align: center;
-}
-
-.value .container .introText {
-  display: inline-block;
-  width: 100vw;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  padding: 3rem;
-}
+/* ------------------------------------------ Process section --------------------------------------------------------------------------------------------------------------*/
 
 .value .content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  grid-gap: 1rem;
+  padding: 4rem 0;
 }
 
-.value .content .box {
-  width: 450px;
-  margin: 20px;
-  border: 15px solid #fff;
-}
-
-.value .content .box .text {
-  padding: 1rem 0 0.5rem;
-}
-
-.value .content .box .text h2 {
+.value .text h2 {
   color: #333;
   font-size: 3rem;
   font-weight: 500;
 }
 
-.value .content .box .text h1 span {
+.value .text h1 span {
   color: #fc9745;
   font-weight: 600;
 }
 
-.value .content .box .text h3 {
+.value .text h3 {
   font-weight: 400;
   font-size: 1.8rem;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.value .content .box .text p {
-  font-size: 1.1rem;
-}
-
-
-
-.value .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
 
-.contact {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .contact .container {
-  padding-top: 15rem;
+  padding-top: 5rem;
   flex-direction: column;
   align-content: center;
+  max-width: 70vw;
+ 
 }
 
 .conversation {
   display: flex;
-  max-width: 80vw;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact .conversation h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #333;
-  margin-top: 2rem;
-}
-
 .contact .conversation h2 span {
   color: #fc9745;
+  font-size: 4rem;
 }
 .conversation a {
   display: flex;
@@ -662,7 +571,7 @@ header.sticky .cta:hover {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .fill {
@@ -675,20 +584,18 @@ header.sticky .cta:hover {
 
 .form {
   align-self: center;
-  width: 80vw;
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-  margin-bottom: 3rem;
+  width: 100%;
+  padding: 2rem 0;
 }
 
 .input {
-  margin: 0 auto 1.25rem auto;
+  margin: 0 auto 1rem auto;
   display: flex;
   flex-direction: row;
 }
 
 .textInput {
-  min-height: 120px;
+  min-height: 6rem;
   width: 100%;
   resize: none;
   margin: 0;
@@ -710,7 +617,7 @@ header.sticky .cta:hover {
 }
 
 .form-input:nth-last-child(odd) {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .form-input:focus {
@@ -723,7 +630,7 @@ header.sticky .cta:hover {
 }
 
 .input-textarea {
-  min-height: 150px;
+  min-height: 10rem;
   width: 100%;
   margin: 0 auto 1.25rem auto;
   resize: none;
@@ -821,7 +728,7 @@ footer .social li a {
   color: #333;
 }
 
-.textContainer .user-journey .titleText .section-text {
+.roadmap .user-journey .titleText .section-text {
   margin: 8rem 0 0rem 0;
 }
 
@@ -910,6 +817,7 @@ footer .social li a {
 .timeline ul li p {
   margin: 10px 0;
   padding: 0;
+  color: #333;
 }
 
 .timeline ul li h4 {
@@ -958,12 +866,6 @@ footer .social li a {
   font-family: "Rufina", serif;
 }
 
-.pricing .titleText p {
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
 .pricing-plan {
   width: 20%;
   border-radius: 1rem;
@@ -972,6 +874,7 @@ footer .social li a {
   line-height: 1.5;
   color: #333;
   margin: 1rem;
+  
 }
 
 .add-on li {
@@ -991,12 +894,14 @@ footer .social li a {
   color: #5d5c5c;
   background: #fff;
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.4);
+ 
 }
 
 .pricing-plan__header {
   padding: 1.7rem;
   background: #fc9745;
   color: white;
+  b
 }
 
 .pricing-plan__title,
@@ -1006,8 +911,8 @@ footer .social li a {
 }
 
 .pricing-plan__title {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .pricing-plan__summary {
@@ -1017,6 +922,7 @@ footer .social li a {
 
 .pricing-plan__actions {
   padding: 1rem 2rem 1rem 2rem;
+  color: #333;
   border-bottom: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
@@ -1063,6 +969,7 @@ footer .social li a {
 .pricing-plan__text {
   font-size: 0.8rem;
   text-align: center;
+  color: #5d5c5c;
   margin: 10px 0 10px 0;
 }
 
@@ -1094,14 +1001,6 @@ footer .social li a {
 .workshops {
   margin: 0;
   padding: 0;
-}
-
-.workshops .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: -80px;
 }
 
 .workshops .content .box {
@@ -1176,7 +1075,7 @@ footer .social li a {
   align-items: center;
   height: 100vh;
 
-  background-image: url("/assets/thanks7.jpg");
+  background-image: url("assets/thanks7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1205,9 +1104,7 @@ footer .social li a {
 }
 
 .subscribed .content h2, 
-.thanks .content h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 4em;
+.thanks .content h1 {
   color: white;
   text-align: left;
 }
@@ -1288,7 +1185,7 @@ footer .social li a {
 }
 
 .not-found .content h2 {
-  font-family: "Rufina", sans-serif;
+  
   font-size: 4em;
   color: white;
   text-align: left;
@@ -1314,9 +1211,6 @@ footer .social li a {
   justify-content: center;
 }
 
-.white {
-  color: #fff;
-}
 
 .copyrightText {
   padding: 8px 0px;
@@ -1525,59 +1419,7 @@ footer .social li a {
   gap: 2rem;
 }
 
-/*--------------------------- Blog Page -----------------------*/
 
-.banner .content p.blog {
-  font-size: 1em;
-}
-
-.tealTransformations .blog p {
-  font-size: 1em;
-}
-
-.course-summary {
-  display: inline-flex;
-  flex-direction: row;
-  margin: auto;
-  align-items: center;
-  line-height: 1.7rem;
-
-  width: 100%;
-}
-
-.course-summary h4 {
-  margin: auto;
-}
-
-.workshops .container .box .text h4 {
-  padding-top: 0;
-}
-
-.icon-label-users::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f0c0";
-  display: inline-block;
-  margin-right: 0.5rem;
-
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.icon-label-time::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f017";
-  display: inline-block;
-  margin-right: 0.5rem;
-
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
 
 
 /*------------------------------------------------------- Mobile responsive ---------------------------------------------*/
@@ -1585,10 +1427,7 @@ footer .social li a {
 @media (max-width: 1400px) {
   header,
   header.sticky {
-    position: fixed;
-    padding: 10px 20px;
-    width: 100vw;
-    overflow: none;
+    padding: 1rem 2rem;
   }
 
   header .navigation {
@@ -1658,41 +1497,7 @@ footer .social li a {
     filter: invert(1);
   }
 
-  section {
-    padding: 20px;
-  }
 
-  .banner {
-    margin: 0;
-    padding: 0;
-  }
-  .banner .content {
-    padding: 3rem;
-  }
-
-  .banner .content h1 {
-    font-size: 3rem;
-  }
-
-  .banner .content p {
-    font-size: 1.2rem;
-  }
-
-  .cards .content .box {
-    width: 450px;
-    flex-direction: row;
-  }
-
-  .value .content {
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
-  /*
-  .cards .content .box .imgBox {
-    height: 250px;
-  }
-*/
   .title {
     text-align: center;
   }
@@ -1709,6 +1514,19 @@ footer .social li a {
     line-height: 1.7rem;
     padding: 1rem 2rem;
   }
+
+  
+.box-container {
+  padding: 2rem 2rem;
+  margin: 1rem;
+  grid-gap: 1rem ;
+  align-items: center;
+}
+
+article img {
+  width: 100%;
+  height: 15rem;
+}
 
   .testimonial .content .box {
     margin: 10px;
@@ -1764,6 +1582,17 @@ footer .social li a {
 
 /*Shrinking for mobile*/
 @media (max-width: 1000px) {
+
+  .box-container {
+    padding: 2rem 1rem;
+    margin: 1rem;
+    grid-gap: 1rem ;
+  }
+  
+  article img {
+    width: 100%;
+    height: 10rem;
+  }
   section .pricing-plan {
     width: 50%;
     display: inline-block;
@@ -1797,9 +1626,10 @@ footer .social li a {
     height: 70vh;
   }
 
-  .banner .content {
-    margin-top: 13%;
+  h1 {
+    font-size: 2.5rem;
   }
+
 
   .main-button {
     text-align: center;
@@ -1838,6 +1668,17 @@ footer .social li a {
     padding: 1rem 2rem;
   }
 
+
+  .box-container {
+    padding: 2rem 2rem;
+    margin: 1rem;
+    grid-template-columns: 1fr;
+  }
+  
+  article img {
+    width: 100%;
+    height: 12rem;
+  }
   .testimonial .content .box {
     margin: 10px;
     padding: 20px;
@@ -1910,28 +1751,6 @@ footer .social li a {
     text-align: center;
   }
 
-  /*  .input {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  #name,
-  #email {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin: 25px 0px;
-  }
-
-  .input-textarea {
-    font-size: 1rem;
-    min-height: 250px;
-    resize: none;
-  }
-*/
 
   .footer {
     padding: 1rem;
@@ -1941,10 +1760,6 @@ footer .social li a {
     flex-direction: column-reverse;
   }
 
-  .textContainer .container .introText h3 {
-    margin-top: none;
-    font-size: 1.1rem;
-  }
 
   .pricing {
     padding: 0.5rem;
