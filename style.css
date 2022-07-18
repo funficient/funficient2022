@@ -734,7 +734,7 @@ footer .social li a {
 .timeline {
   position: relative;
   margin: auto;
-  width: 60%;
+  width: 70vw;
   padding: 3rem 1rem;
   box-sizing: border-box;
 }
@@ -744,7 +744,7 @@ footer .social li a {
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 100%;
+  height: 90%;
   background: #333;
 }
 
@@ -766,6 +766,7 @@ footer .social li a {
   float: left;
   text-align: right;
   clear: both;
+  
 }
 
 .timeline ul li:nth-child(even) {
@@ -776,6 +777,10 @@ footer .social li a {
 
 .timeline-content {
   padding-bottom: 2rem;
+}
+
+.right-align p {
+  text-align: right;
 }
 
 .timeline ul li:nth-child(odd)::before {
@@ -1616,6 +1621,10 @@ article img {
   .input {
     flex-direction: column;
   }
+
+  
+  .timeline {
+    width: 90vw;
 }
 
 @media (max-width: 768px) {
