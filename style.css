@@ -720,17 +720,14 @@ footer .social li a {
   text-align: center;
 }
 
-#services .container .introText p,
-.user-journey p {
+#services .container .introText p {
   font-family: "Poppins", serif;
   font-size: 1.4rem;
   font-weight: 300;
   color: #333;
 }
 
-.roadmap .user-journey .titleText .section-text {
-  margin: 8rem 0 0rem 0;
-}
+
 
 /*------------------------------------  Roadmap -----------------------------*/
 
