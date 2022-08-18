@@ -8,6 +8,9 @@
   --dragonfruit: #f2456f;
   --gradient: linear-gradient(90deg, #fc9745, #ff7348);
 
+  --darkseagreen: #007982;
+  --lightseagreen: #6DB9C2;
+
   --darkGray: #5d5c5c;
   --lightGray: #fcfcfc;
 }
@@ -315,6 +318,16 @@ header.sticky .cta:hover {
   background-image: linear-gradient(90deg, #fc9745, #ff7348);
 }
 
+.coaching-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+  background-image: linear-gradient(90deg, #007982, #6DB9C2 );
+}
+
 .content {
   max-width: 70vw;
   margin: 10rem 0 1rem 0;
@@ -371,6 +384,19 @@ header.sticky .cta:hover {
     135deg,
     rgba(252, 151, 69, 1) 0%,
     rgba(255, 115, 72, 1) 100%
+  );
+  color: white;
+  width: 100%;
+}
+
+.coaching-wave-container {
+  position: relative;
+  bottom: 0;
+
+  background: linear-gradient(
+    135deg,
+    #007982 0%,
+    #6DB9C2 100%
   );
   color: white;
   width: 100%;
@@ -868,78 +894,64 @@ footer .social li a {
   font-family: "Rufina", serif;
 }
 
-.pricing-plan {
-  width: 20%;
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  line-height: 1.5;
-  color: #333;
-  margin: 1rem;
-  
-}
-
-.add-on li {
-  list-style: none;
-  padding-bottom: 0.5rem;
-}
-
-.pricing-plan__highlighted {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-}
-
-.pricing-plan__special-text {
+.packages-container {
+  display: grid;
+  grid-gap: 1rem; 
+  margin: 3rem;
   padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  justify-content: space-around ;
+}
+
+.package {
+  padding: 1rem;
+ box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.orange {
+  border-top: 5px solid #fc9745;
+}
+
+.grapefruit {
+  border-top: 5px solid #ff7348;
+}
+
+.dragonfruit {
+  border-top: 5px solid #f2456f;
+}
+
+.package-header {
   text-align: center;
-  font-weight: bold;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 1.7rem;
+}
+
+.grid-text-title {
+  padding: 2.5rem;
+  font-family: "Rufina", serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
   color: #5d5c5c;
-  background: #fff;
-  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.4);
- 
 }
 
-.pricing-plan__header {
-  padding: 1.7rem;
-  background: #fc9745;
-  color: white;
-  b
-}
-
-.pricing-plan__title,
-.pricing-plan__summary {
-  margin: 0;
-  text-align: center;
-}
-
-.pricing-plan__title {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.pricing-plan__summary {
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-.pricing-plan__actions {
-  padding: 1rem 2rem 1rem 2rem;
+.grid-text {
+  font-size: 1rem;
   color: #333;
-  border-bottom: 1px solid #eeeeee;
-  display: flex;
-  flex-direction: column;
+  font-weight: 400;  
+  padding-bottom: 1.5rem;
 }
 
-.pricing-plan__description {
-  padding: 2rem 2rem 1rem 2rem;
+.grid-button {
+  text-align: center;
+  padding: 1rem;
 }
-
-.pricing-plan__list {
+.package-list {
   padding: 0;
   margin: 0;
 }
 
-.pricing-plan__feature {
+.package-feature {
   list-style: none;
   margin: 0;
   padding-left: 2rem;
@@ -949,43 +961,17 @@ footer .social li a {
   font-weight: 400;
 }
 
-.pricing-plan__feature:not(:last-child) {
+.package-feature:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 
-.pricing-plan__feature::before {
+.package-feature::before {
   content: "\2714";
   color: #fc9745;
   left: 0;
   position: absolute;
 }
 
-
-.pricing-plan__cost {
-  margin: 0;
-  text-align: center;
-  font-size: 2rem;
-  color: black;
-}
-
-.pricing-plan__text {
-  font-size: 0.8rem;
-  text-align: center;
-  color: #5d5c5c;
-  margin: 10px 0 10px 0;
-}
-
-.pricing-plan-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 1rem;
-}
-
-.section-text {
-  color: #333;
-  margin-top: 2rem;
-}
 
 .spacer {
   top: -1rem;
@@ -1624,7 +1610,8 @@ article img {
 
   
   .timeline {
-    width: 90vw;
+    
+  width: 70vw;
 }
 
 @media (max-width: 768px) {
@@ -1704,7 +1691,7 @@ article img {
   }
 
   section .pricing-plan {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 
@@ -1775,7 +1762,7 @@ article img {
     width: 100%;
   }
 
-  section .pricing-plan .pricing-plan__highlighted {
+  section .pricing-plan .pricing-plan-recommend {
     margin-top: 2rem;
     transform: scale(1);
   }
