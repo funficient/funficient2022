@@ -901,15 +901,17 @@ footer .social li a {
 .packages-container {
   display: grid;
   grid-gap: 1rem; 
-  margin: 3rem;
+  margin: 3rem 5rem;
   padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   justify-content: space-around ;
 }
 
 .package {
-  padding: 3rem;
- box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+ padding: 1rem 3rem;
+ box-shadow: 0 5px 35px rgba(0, 0, 0, 0.05);
+ position: relative;
+ padding-bottom: 8rem;
 }
 
 .orange {
@@ -931,7 +933,7 @@ footer .social li a {
 }
 
 .grid-text-title {
-  padding: 2.5rem;
+  padding: 2rem;
   font-family: "Rufina", serif;
   text-align: center;
   font-size: 1.5rem;
@@ -947,9 +949,13 @@ footer .social li a {
 }
 
 .grid-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   padding: 1rem;
-  align-self: bottom;
+  margin-bottom: 2rem;
 }
 .package-list {
   padding: 0;
