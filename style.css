@@ -1429,16 +1429,31 @@ footer .social li a {
 .card-container {
   position: relative;
   top: -3rem;
+  z-index: 100;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 2rem;
 }
+
+.cards .card-container img {
+ object-fit: cover;
+}
+
 .yellow-button {
   padding: 1rem 3rem;
   justify-content: center;
   cursor: pointer;
   margin: auto;
-    
+  border: none;
+  background: #f5c325;
+  text-transform: uppercase;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+}
+
+.cards .button {
+  display: block;
+  margin: auto;
 }
 /*------------------------------------------------------- Mobile responsive ---------------------------------------------*/
 
