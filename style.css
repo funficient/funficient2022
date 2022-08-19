@@ -318,6 +318,10 @@ header.sticky .cta:hover {
   background-image: linear-gradient(90deg, #fc9745, #ff7348);
 }
 
+.tangerine {
+  background-image: linear-gradient(90deg, #f5c325, #ffd208);
+}
+
 .coaching-banner {
   display: flex;
   flex-direction: column;
@@ -886,9 +890,9 @@ footer .social li a {
   transition: all ease 0.5s;
 }
 
-/*------------------------------------- Pricing table ------------------------ */
+/*------------------------------------- Packages  ------------------------ */
 
-.pricing .titleText .section-text {
+.packages .titleText .section-text {
   text-align: center;
   margin: 8rem 0rem 2rem 0rem;
   font-family: "Rufina", serif;
@@ -904,7 +908,7 @@ footer .social li a {
 }
 
 .package {
-  padding: 1rem;
+  padding: 3rem;
  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 
@@ -945,6 +949,7 @@ footer .social li a {
 .grid-button {
   text-align: center;
   padding: 1rem;
+  align-self: bottom;
 }
 .package-list {
   padding: 0;
@@ -1408,8 +1413,26 @@ footer .social li a {
 }
 
 
+.cards {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+}
 
-
+.card-container {
+  position: relative;
+  top: -3rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 2rem;
+}
+.yellow-button {
+  padding: 1rem 3rem;
+  justify-content: center;
+  cursor: pointer;
+  margin: auto;
+    
+}
 /*------------------------------------------------------- Mobile responsive ---------------------------------------------*/
 
 @media (max-width: 1400px) {
@@ -1554,18 +1577,6 @@ article img {
     font-size: 0.8rem;
   }
 
-   .pricing-plan-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0;
-  }
-  section .pricing-plan {
-    width: 35%;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0;
-  }
 }
 
 /*Shrinking for mobile*/
@@ -1581,10 +1592,7 @@ article img {
     width: 100%;
     height: 10rem;
   }
-  section .pricing-plan {
-    width: 50%;
-    display: inline-block;
-  }
+
 
   .conversation {
     display: flex;
@@ -1683,16 +1691,7 @@ article img {
     margin-bottom: 30px;
   }
 
-  .pricing-plan-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0;
-  }
 
-  section .pricing-plan {
-    max-width: 80%;
-  }
 }
 
 /*-- Responsive for small Android phone ---*/
@@ -1753,17 +1752,4 @@ article img {
     flex-direction: column-reverse;
   }
 
-
-  .pricing {
-    padding: 0.5rem;
-  }
-
-  section .pricing-plan {
-    width: 100%;
-  }
-
-  section .pricing-plan .pricing-plan-recommend {
-    margin-top: 2rem;
-    transform: scale(1);
-  }
 }
