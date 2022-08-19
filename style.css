@@ -1437,6 +1437,7 @@ footer .social li a {
 
 .cards .card-container img {
  object-fit: cover;
+ background: transparent url(/assets/spinner.gif) no-repeat scroll center center;
 }
 
 .yellow-button {
