@@ -1419,7 +1419,6 @@ footer .social li a {
   gap: 2rem;
 }
 
-
 .cards {
   margin: auto;
   display: grid;
@@ -1427,12 +1426,10 @@ footer .social li a {
 }
 
 .card-container {
-  position: relative;
-  top: -3rem;
-  z-index: 100;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 2rem;
+  margin: 2rem;
 }
 
 .cards .card-container img {
@@ -1445,6 +1442,7 @@ footer .social li a {
   justify-content: center;
   cursor: pointer;
   margin: auto;
+  margin-bottom: 2rem;
   border: none;
   background: #f5c325;
   text-transform: uppercase;

@@ -664,5 +664,5 @@ document.getElementById("draw").onclick = function(){
     var index = getRandom(152);
     var currentCard = deck[index];
 
-    document.getElementById("display").innerHTML = '<h3>' + currentCard.name + '</h3><img src="assets/cards/' + currentCard.image + '.jpg" width="400em" height="647em">';
+    document.getElementById("display").innerHTML = '<h3>' + currentCard.name + '</h3><img src="assets/cards/' + currentCard.image + '.jpg" width="380" height="612">';
 };
