@@ -4,7 +4,7 @@
 
 - [ ] About page
 - [ ] More responsive
-- [ ] Link blog
+- [X] Link blog
 - [ ] Card layout for blog
 - [ ] Import blogs
 - [ ] Workshop - values 
@@ -18,4 +18,4 @@
 - [ ] Add coaching questions on resources
 - [ ] Design | Change line height
 - [ ] Design | Change p text to be consistent with header
-
+- [ ] Coaching page
