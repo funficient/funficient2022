@@ -91,9 +91,6 @@ button {
   text-decoration: none;
 }
 
-/*section {
-  position: relative;
-}
 
 /*  ----------------------------------------------------------Utility elements ----------------------------------------------------------------------------------------*/
 
@@ -191,7 +188,13 @@ button {
   padding: 0;
 }
 
+.white {
+  color: #fff;
+}
 
+.dark {
+  color: #333;
+}
 
 
 /*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
@@ -354,6 +357,7 @@ header.sticky .cta:hover {
   background-color: #fff;
 }
 
+
 .banner .content h1 span::before {
   font-family: "Rufina", sans-serif;
   content: " clarity. ";
@@ -380,6 +384,8 @@ header.sticky .cta:hover {
     content: " play. ";
   }
 }
+
+
 
 .wave-container {
   position: relative;
@@ -539,6 +545,7 @@ article img {
   margin: auto;
   grid-gap: 1rem;
   padding: 4rem 0;
+  
 }
 
 .value .text h2 {
@@ -702,10 +709,6 @@ article img {
   text-align: left;
 }
 
-.white {
-  color: #fff;
-}
-
 .copyrightText {
   padding: 0;
   display: flex;
@@ -741,23 +744,6 @@ footer .social li a {
   align-items: center;
   max-width: 95vw;
 }
-
-/* --------------------------------------------------- Services | Big Container ---------------------------------------------------------------------------------*/
-
-#services .container .introText {
-  display: block;
-  width: 80vw;
-  align-items: center;
-  text-align: center;
-}
-
-#services .container .introText p {
-  font-family: "Poppins", serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #333;
-}
-
 
 
 /*------------------------------------  Roadmap -----------------------------*/
@@ -1003,50 +989,6 @@ footer .social li a {
   padding: 0;
 }
 
-.workshops .content .box {
-  width: 450px;
-  margin: 20px;
-  border: 15px solid #fff;
-
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-  padding-bottom: 3rem;
-}
-
-.workshops .content .box .imgBox {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.workshops .content .box .imgBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.workshops .content .box .text {
-  padding: 15px 0 5px;
-  text-align: center;
-}
-
-.workshops .content .box .text h3 {
-  font-weight: 600;
-  font-size: 1.5em;
-}
-
-.workshops .content .box .text .line {
-  padding-top: 1.5rem;
-  border-top: 1px solid rgb(231, 231, 231);
-}
-
-.workshops .content .box .text p {
-  font-weight: 300;
-  padding: 15px 5px;
-}
-
 .course-summary h4 {
   padding-left: 1rem;
 }
@@ -1066,15 +1008,11 @@ footer .social li a {
 /*-- Thank you Page  --*/
 
 .thanks {
-  position: relative;
-  width: 100%;
-
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-
   background-image: url("assets/thanks7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1098,153 +1036,73 @@ footer .social li a {
 
 .subscribed .content, 
 .thanks .content {
-  max-width: 1000px;
   text-align: center;
   margin-top: 10%;
+  padding-left: 5rem;
 }
 
-.subscribed .content h2, 
+.subscribed .content h1, 
 .thanks .content h1 {
-  color: white;
   text-align: left;
-}
-
-.subscribed .content p, 
-.thanks .content p {
-  font-size: 1.5em;
-  color: white;
-  margin-top: 50px;
-  text-align: left;
+  padding: 2rem 0;
 }
 
 .subscribed .container, 
-.thanks .container {
+.thanks .container, 
+.not-found .container  {
   flex-direction: column;
   margin-top: 30px;
-  max-width: 99vw;
-
+  max-width: 100vw;
   padding: 50px;
 }
 
-.white {
-  color: #fff;
-}
 
 .copyrightText {
-  padding: 8px 0px;
+  padding: 1rem 0;
   display: flex;
-
   text-align: left;
-  overflow: none;
-  max-width: 95vw;
 }
 
-.copyrightText p {
-  color: #fff;
-}
 
 .subscribed .social,
-.thanks .social {
+.thanks .social,
+.not-found .social {
   position: relative;
   display: flex;
 }
 
 .subscribed .social li,
-.thanks .social li {
-  list-style: none;
-  margin-left: 30px;
-}
-
-.subscribed .social li a,
-.thanks .social li a {
-  text-decoration: none;
-  color: white;
-}
-
-/*--- 404 Page --*/
-
-.not-found {
-  position: relative;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  background-image: url("/assets/oops.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.not-found .content {
-  max-width: 1000px;
-  text-align: center;
-  margin-top: 10%;
-}
-
-.not-found .content h2 {
-  
-  font-size: 4em;
-  color: white;
-  text-align: left;
-}
-
-.not-found .content p {
-  font-size: 1.2em;
-  color: white;
-  margin-top: 50px;
-  text-align: left;
-}
-
-.not-found .container {
-  flex-direction: column;
-  margin-top: 30px;
-  max-width: 99vw;
-
-  padding: 50px;
-}
-
-.not-found .footerRow {
-  align-items: center;
-  justify-content: center;
-}
-
-
-.copyrightText {
-  padding: 8px 0px;
-  display: flex;
-
-  text-align: left;
-
-  overflow: none;
-  max-width: 95vw;
-}
-
-.copyrightText p {
-  color: #fff;
-}
-
-.not-found .social {
-  position: relative;
-  display: flex;
-  margin-top: 0;
-}
-
+.thanks .social li,
 .not-found .social li {
   list-style: none;
   margin-left: 30px;
 }
 
-.not-found .social li a {
+.subscribed .social li a,
+.thanks .social li a,
+.not-found .social li a  {
   text-decoration: none;
   color: white;
 }
 
+/*-------- 404 Page -------*/
+
+.not-found {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/oops.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .button-container {
   display: flex;
-  align-content: space-between;
+  width: 80vw;
   gap: 1em;
 }
 
@@ -1540,13 +1398,6 @@ footer .social li a {
     margin-bottom: 15px;
     font-weight: 400;
   }
-
-  .value .container .titleText p {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    padding: 1rem 2rem;
-  }
-
   
 .box-container {
   padding: 2rem 2rem;
@@ -1560,11 +1411,12 @@ article img {
   height: 15rem;
 }
 
+/*
   .testimonial .content .box {
     margin: 10px;
     padding: 20px;
   }
-
+*/
   .contactForm {
     padding: 35px 40px;
     margin-top: 20px;
@@ -1645,7 +1497,7 @@ article img {
 
 @media (max-width: 768px) {
   .content {
-    height: 70vh;
+    height: 70%;
   }
 
   h1 {
@@ -1670,9 +1522,7 @@ article img {
     font-size: 1.3rem;
   }
 
-  .content {
-    height: 70%;
-  }
+
   .title {
     text-align: center;
   }
@@ -1684,13 +1534,6 @@ article img {
     font-weight: 400;
   }
 
-  .value .container .titleText p {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    padding: 1rem 2rem;
-  }
-
-
   .box-container {
     padding: 2rem 2rem;
     margin: 1rem;
@@ -1701,10 +1544,11 @@ article img {
     width: 100%;
     height: 12rem;
   }
+  /*
   .testimonial .content .box {
     margin: 10px;
     padding: 20px;
-  }
+  }*/
 
   .contactForm {
     padding: 35px 40px;
@@ -1722,6 +1566,9 @@ article img {
     max-width: 75px;
   }
 
+  .content {
+    width: 100vw;
+  }
   .content h2 {
     padding-top: 20px;
   }
@@ -1742,28 +1589,10 @@ article img {
   .cards .introText p {
     font-size: 1.3rem;
   }
-
-  .content {
-    width: 100vw;
-  }
-
-  .cards .content .box {
-    margin: 0;
-  }
-
-  .cards .content .box .imgBox {
-    height: 250px;
-  }
-
   .value .section-text {
     margin-top: 5rem;
     line-height: 2.8rem;
   }
-
-  .value .content .box {
-    text-align: center;
-  }
-
 
   .footer {
     padding: 1rem;
@@ -1773,4 +1602,17 @@ article img {
     flex-direction: column-reverse;
   }
 
+}
+
+/*----- About page */
+
+.about .container {
+
+  background: #6DB9C2;
+  border: 2px solid #f2456f;
+}
+
+.aboutContainer {
+  background: #6DB9C2;
+  border: 2px solid #f2456f;
 }
