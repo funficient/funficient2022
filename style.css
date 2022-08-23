@@ -902,15 +902,15 @@ footer .social li a {
 }
 
 .orange {
-  border-top: 5px solid #fc9745;
+  color:  #fc9745;
 }
 
 .grapefruit {
-  border-top: 5px solid #ff7348;
+  color:  #ff7348;
 }
 
 .dragonfruit {
-  border-top: 5px solid #f2456f;
+  color:  #f2456f;
 }
 
 .package-header {
