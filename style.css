@@ -1154,8 +1154,6 @@ footer .social li a {
 }
 
 
-
-
 .resource-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1254,18 +1252,18 @@ footer .social li a {
 }
 
 
-
-.tealTransformation .goodies .titleText .section-text {
+.goodies .titleText .section-text {
   margin: 8rem 0 3rem 0;
   text-align: center;
   font-family: "Rufina", serif;
 }
 
-.tealTransformation .goodies .titleText h3 {
+ .goodies .titleText h3 {
   font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
 }
+*/
 
 .center-buttons {
   display: flex;
@@ -1411,12 +1409,6 @@ article img {
   height: 15rem;
 }
 
-/*
-  .testimonial .content .box {
-    margin: 10px;
-    padding: 20px;
-  }
-*/
   .contactForm {
     padding: 35px 40px;
     margin-top: 20px;
@@ -1544,11 +1536,6 @@ article img {
     width: 100%;
     height: 12rem;
   }
-  /*
-  .testimonial .content .box {
-    margin: 10px;
-    padding: 20px;
-  }*/
 
   .contactForm {
     padding: 35px 40px;
