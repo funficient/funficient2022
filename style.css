@@ -1007,8 +1007,6 @@ footer .social li a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .thanks {
@@ -1038,7 +1036,7 @@ footer .social li a {
 .not-found .content,
 .subscribed .content, 
 .thanks .content {
-  text-align: center;
+  text-align: left;
   margin-top: 10%;
   padding-left: 5rem;
 }
