@@ -187,15 +187,8 @@ button {
 }
 
 
-.tangerine {
-  background-image: linear-gradient(90deg, #f5c325, #ffd208);
-}
 
-.teal {
-
-  background-image: linear-gradient(90deg, #007982, #6DB9C2 );
-}
-
+/*--- Other basic utilities  --*/
 
 .flex {
   
@@ -208,6 +201,21 @@ button {
   padding: 0;
 }
 
+
+.container {
+  margin: 0;
+  width: 100vw;
+  padding: 2rem;
+  margin: auto;
+}
+
+
+.center {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
 
 
 /*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
@@ -334,10 +342,28 @@ header.sticky .nav-button:hover {
   background-image: linear-gradient(90deg, #fc9745, #ff7348);
 }
 
-.content {
+/* Variations of the banner color */
+.tangerine {
+  /* Tangerine is for creative tools and resources */
+  background-image: linear-gradient(90deg, #f5c325, #ffd208);
+}
+
+.teal {
+  /* Teal is for coaching */
+  background-image: linear-gradient(90deg, #007982, #6DB9C2 );
+}
+
+.banner-content {
+  max-width: 70vw;
+  /*  Add top margin to create space for the top navigation section */
+  margin: 10rem 0 1rem 0;
+  color: white;
+}
+
+/* .content {
   max-width: 70vw;
   margin: 10rem 0 1rem 0;
-}
+} */
 
 .banner p {
   font-size: 1.2em;
@@ -446,21 +472,6 @@ header.sticky .nav-button:hover {
   }
 }
 
-
-.container {
-  margin: 0;
-  width: 100vw;
-  padding: 2rem;
-  margin: auto;
-}
-
-
-.center {
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  margin: auto;
-}
 
 .introText {
   width: 70%;
