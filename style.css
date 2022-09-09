@@ -357,13 +357,13 @@ header.sticky .nav-button:hover {
   max-width: 70vw;
   /*  Add top margin to create space for the top navigation section */
   margin: 10rem 0 1rem 0;
-  color: white;
 }
 
-/* .content {
+.content {
   max-width: 70vw;
-  margin: 10rem 0 1rem 0;
-} */
+  padding: 2rem;
+  /* margin: 10rem 0 1rem 0; */
+}
 
 .banner p {
   font-size: 1.2em;
