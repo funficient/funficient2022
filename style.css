@@ -371,13 +371,13 @@ header.sticky .nav-button:hover {
 }
 
 
-.banner .content h1 span {
+.banner .banner-content h1 span {
   color: var(--orange);
   background-color: #fff;
 }
 
 
-.banner .content h1 span::before {
+.banner .banner-content h1 span::before {
   font-family: "Rufina", sans-serif;
   content: " clarity. ";
   animation: animate infinite 8s;
