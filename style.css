@@ -894,7 +894,7 @@ footer .social li a {
 .packages-container {
   display: grid;
   grid-gap: 1rem; 
-  margin: 3rem 5rem;
+  margin: 3rem 7rem;
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   justify-content: space-around ;
@@ -1319,7 +1319,7 @@ footer .social li a {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-gap: 1rem;
-  margin: 0;
+  margin: 0 5rem;
   padding: 0;
 }
 
