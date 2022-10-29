@@ -632,10 +632,21 @@ article img {
   padding: 2rem 0;
 }
 
+label {
+  visibility: hidden;
+}
+
+/*input {
+  left: 0;
+  visibility: visible;
+  position: absolute;
+}*/
+
 .input {
   margin: 0 auto 1rem auto;
   display: flex;
   flex-direction: row;
+  visibility: visible;
 }
 
 .textInput {
