@@ -1120,18 +1120,6 @@ p span {
   font-style: italic;
 }
 
-.coaching {
-  margin-top: 3rem;
-}
-
-.coaching h1 {
-  margin-bottom: 2rem;
-}
-
-.coaching .row {
-  margin-top: 2rem;
-}
-
 
 
 /*--------- Thank you, Subscription confirmed, Not found Pages  ---------*/
@@ -1465,7 +1453,7 @@ p span {
   padding: 0;
 }
 
-.about .container .box {
+.overlay {
   width: 65%;
   margin-left: -300px;
   border: none;
@@ -1473,6 +1461,18 @@ p span {
   backdrop-filter: blur(5px);
   padding: 3rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#coaching-about .container {
+  margin: 0 10%;
+  max-width: 80vw;
+  justify-content: center;
+
+}
+
+#coaching-about .box {
+  max-width: 40vw;
+  margin: 2rem;
 }
 
 .values {
@@ -1580,6 +1580,10 @@ width: 70vw;
 
   
 }
+
+
+
+
 /*------------------------------------------------------- Mobile responsive ---------------------------------------------*/
 
 @media (max-width: 1400px) {
@@ -1841,6 +1845,16 @@ article img {
     grid-template-columns: 1fr;
     
   }
+  
+#coaching-about .box {
+  max-width: 80vw;
+  margin: 1rem;
+}
+
+.productivity .container {
+  max-width: 90vw;
+}
+
 
 }
 
@@ -1888,6 +1902,4 @@ article img {
   }
 
 }
-
-
 
