@@ -333,6 +333,10 @@ header .navigation li a {
   transition: all 0.3s ease 0s;
 }
 
+header .dark li a {
+  color: #333;
+}
+
 header .navigation li a:hover {
   color: #fc9745;
   background-color: #f1f1f1;
@@ -487,6 +491,7 @@ header.sticky .nav-button:hover {
   color: white;
   width: 100%;
 }
+
 
 .coaching-wave-container {
   position: relative;
@@ -1091,6 +1096,26 @@ footer .social li a {
   text-align: center;
 }
 
+
+.workshop-outline .container {
+  max-width: 70vw;
+}
+
+.heading {
+  font-weight: 600;
+  text-transform: uppercase;
+   }
+
+.workshop-outline .container i {
+  padding: 0 1em;
+}
+
+.line {
+  border-bottom: solid 1px #d6d6d6;
+  margin: 0 4em;
+}
+
+
 /*--------- Coaching page ------------*/
 .big-quote {
  
@@ -1488,7 +1513,7 @@ p span {
   background: #ffffff;
 }
 
-.productivity {
+.productivity, .workshop-outline {
   margin-top: 3rem;
   padding: 3rem;
   width: 100vw;
