@@ -1452,25 +1452,15 @@ p span {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  margin: 0 5rem;
-  padding: 0;
+  margin: 0 15rem;
 }
 
-.grid-container .content {
-  margin: 0;
-  padding: 3rem 0;
-  grid-column: 2/span 3;
+.grid-container .box {
+  height: 100%;
+  width: 100%;
 }
-
-
-.grid-container .content p {
-  color: var(--darkGray);
-  font-size: 1.2em;
-}
-
 
 .about .container {
   display: flex;
@@ -1585,8 +1575,12 @@ p + p {
 }
 
 .subtle {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 600;
+}
+
+ion-icon {
+  font-size: 72px;
 }
 
 .newsletter {
@@ -1756,10 +1750,10 @@ article img {
     margin-top: -250px;
   }
 
-  .values .grid-container{
+  /* .values .grid-container{
     grid-template-columns: 1fr 1fr;
     
-  }
+  } */
 }
 
 /*Shrinking for mobile*/
@@ -1866,10 +1860,10 @@ article img {
     margin-bottom: 30px;
   }
 
-  .values .grid-container{
+  /* .values .grid-container{
     grid-template-columns: 1fr;
     
-  }
+  } */
   
 #coaching-about .box {
   max-width: 80vw;
@@ -1880,6 +1874,9 @@ article img {
   max-width: 90vw;
 }
 
+.grid-container {
+  margin: 0 3rem;
+}
 
 }
 
