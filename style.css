@@ -977,13 +977,8 @@ footer .social li a {
   font-family: "Rufina", serif;
 }
 
-.packages-container {
-  display: grid;
-  grid-gap: 1rem; 
-  margin: 3rem 7rem;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  justify-content: space-around ;
+.packages .grid-container {
+  margin: 3rem;
 }
 
 .package {
