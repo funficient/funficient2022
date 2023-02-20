@@ -640,6 +640,14 @@ article img {
   font-weight: 600;
 }
 
+.stepper .text h1 {
+  color: #333;
+}
+.stepper .text h1 span {
+  color: #000;
+  font-weight: 600;
+}
+
 .value .text h3 {
   font-weight: 400;
   font-size: 1.8rem;
@@ -648,6 +656,16 @@ article img {
 }
 
 
+
+.stepper .package-list {
+  
+  padding: 1rem;
+  
+}
+
+.stepper li {
+  margin-left: 2rem;
+}
 /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
 
 .contact .container {
@@ -1036,7 +1054,7 @@ footer .social li a {
   margin: 0;
 }
 
-.package-feature {
+.package-feature, .coaching-list {
   list-style: none;
   margin: 0;
   padding-left: 2rem;
@@ -1044,9 +1062,11 @@ footer .social li a {
   font-size: 0.9rem;
   color: #333;
   font-weight: 400;
+  text-align: left;
 }
 
-.package-feature:not(:last-child) {
+.package-feature:not(:last-child), 
+.coaching-list:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 
@@ -1057,7 +1077,17 @@ footer .social li a {
   position: absolute;
 }
 
+.coaching-list::before {
+  content: "\2714";
+  color: #007982;
+  left: 0;
+  position: absolute;
+}
 
+
+.left-align {
+  text-align: left;
+}
 .spacer {
   top: -1rem;
   padding-bottom: 5rem;
@@ -1573,11 +1603,37 @@ p + p {
 .subtle {
   font-size: 2.2rem;
   font-weight: 600;
+  
+}
+
+
+.accent {
+ font-size: 3.5rem;
+ font-weight: 600;
+ font-family: 'Poppins', sans-serif;
+ color: #007982;
+ 
+}
+
+
+.subtitle {
+  text-transform: uppercase;
+  
+  font-weight: 400;
+  margin-bottom: 1rem;
+  
 }
 
 ion-icon {
   font-size: 72px;
   padding: 0 1rem;
+}
+
+.large {
+  font-size: 120px;
+  padding: 1rem;
+  --ionicon-stroke-width: 16px;
+  
 }
 
 .newsletter {
@@ -1922,4 +1978,8 @@ article img {
   }
 
 }
+
+
+
+
 
