@@ -1171,6 +1171,114 @@ p span {
   font-style: italic;
 }
 
+.testimonials {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in;
+  margin-bottom: 100px;
+}
+
+.testimonial-container {
+  display: flex;
+
+}
+
+.testimonial-container > div {
+  padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  transition: all 0.5s ease-in;
+}
+
+.testimonial-container > div:hover {
+  background-image: none;
+  transition: all 0.5s ease-in;
+}
+
+
+.testimonial-quote {
+  font-family: 'Rufina', serif;
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #d6d6d6;
+  text-shadow: 1px 1px 2px #333;
+
+}
+
+.testimonial-quote::before {
+  
+  content: open-quote;
+  color:#6DB9C2;
+  opacity: 0.3;
+  font-size: 20rem;
+  position: absolute;
+  
+}
+
+
+
+.testimonial-container > div h2 {
+
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin: 1.2rem 0rem 0.5rem 0rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.testimonial-container > div h4 {
+  
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.testimonial-container > div p {
+  
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.testimonial-container > div:nth-last-of-type(2) {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: #006269;
+  opacity: 0.6;
+  transition: all 0.5s ease-in;
+}
+
+.testimonial-container > div:nth-last-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  background-color: #007982;
+  opacity: 0.5;
+  transition: all 0.5s ease-in;
+}
+
+
+
+.testimonial-container .card-1,
+.testimonial-container .card-2 {
+  
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in;
+}
+
 
 
 /*--------- Thank you, Subscription confirmed, Not found Pages  ---------*/
@@ -1409,6 +1517,11 @@ p span {
 
 .bg2 {
   background: url(assets/oops.jpg);
+  background-position: 50% 25%;
+}
+
+.bg3 {
+  background: url(assets/testimonials.jpg);
   background-position: 50% 25%;
 }
 
@@ -1930,6 +2043,13 @@ article img {
 
 .grid-container {
   margin: 0 3rem;
+}
+
+
+.testimonial-container  {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 }
