@@ -1255,7 +1255,7 @@ p span {
 .testimonial-container > div:nth-last-of-type(2) {
   grid-column-start: 2;
   grid-column-end: 5;
-  background-color: #006269;
+  background-color: #005f66;
   opacity: 0.6;
   transition: all 0.5s ease-in;
 }
