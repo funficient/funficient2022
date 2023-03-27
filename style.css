@@ -1092,6 +1092,8 @@ footer .social li a {
 
 .left-align {
   text-align: left;
+  display: flex;
+  align-self: flex-start;
 }
 .spacer {
   top: -1rem;
@@ -1145,6 +1147,34 @@ footer .social li a {
   border-bottom: solid 1px #d6d6d6;
   margin: 0 4em;
 }
+
+
+.ideation-workshop {
+    margin: 0 5rem;
+    padding: 0 5rem ; 
+}
+
+.ideation-workshop h4 {
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+.ideation-workshop .row {
+  margin-top: 2rem;
+
+}
+
+.ideation-workshop .column {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+.ideation-workshop .line {
+  border-bottom: solid 1px #d6d6d6;
+  margin: 2rem 15rem 0 0;
+}
+
+
 
 
 /*--------- Coaching page ------------*/
@@ -1696,6 +1726,12 @@ p span {
   text-align: left;
 }
 
+.column-small {
+  float: left;
+  width: 30%;
+  text-align: left;
+}
+
 .body {
   line-height: 1.7rem;
 
@@ -1770,6 +1806,45 @@ width: 70vw;
 
   
 }
+
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 0 9rem;
+  list-style: none;
+  
+}
+
+.breadcrumb-list a {
+  font-size: 0.85rem;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #949494;
+}
+
+.breadcrumb-list li {
+    font-size: 0.85rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+ 
+.breadcrumb-item::before {
+      content: '/';
+      display: inline-block;
+      padding: 0 0.5rem;
+      color: #949494;
+    }
+  
+.breadcrumb-item:nth-child(1):before {
+  content: '';
+    
+    }
+
+
 
 
 
@@ -2056,6 +2131,31 @@ article img {
   flex-direction: column;
   margin: 0;
 }
+
+
+
+.ideation-workshop {
+  margin: 0 1rem;
+  padding: 0 1rem ; 
+  display: flex;
+  flex-direction: column;
+}
+
+.ideation-workshop .row {
+margin-top: 1rem;
+
+}
+
+
+.ideation-workshop .line {
+
+margin: 2rem 5rem 0 0;
+}
+
+.breadcrumb-list {
+  margin-left: 1rem;
+}
+
 
 }
 
