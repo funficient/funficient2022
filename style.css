@@ -1444,8 +1444,6 @@ p span {
   background: rgba(252, 252, 252, 0.2);
   border-radius: 0.2rem;
   align-items: left;
-
-  /* border-bottom: #fff solid 1px; */
   padding: 1rem;
   margin: 0 1rem;
 }
@@ -1463,11 +1461,6 @@ p span {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
   margin: 8rem;
-
-  /*background: url(assets/ducks.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-*/
 }
 
 .section-text .user-journey .titleText .section-text {
@@ -1844,7 +1837,9 @@ width: 70vw;
     
     }
 
-
+#question {
+  max-width: 40rem;
+}
 
 
 
