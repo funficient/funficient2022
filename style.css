@@ -553,10 +553,10 @@ header.sticky .nav-button:hover {
   margin: auto;
 }
 
-.introText {
+/* .introText {
   width: 70%;
   margin: auto;
-}
+} */
 
 .titleText span {
   color: var(--orange);
