@@ -107,7 +107,7 @@ button {
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--orange);
+  color: var(--darkseagreen);
   background-color: rgba(243, 243, 243, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   
@@ -173,7 +173,7 @@ button {
 
 .highlight-button {
   text-decoration: none;
-  color: var(--orange);
+  color: var(--darkseagreen);
   font-weight: 500;
 }
 
@@ -243,7 +243,7 @@ button {
 .teal-accent-button:hover {
   background-color: #d8d8d8;
   color: var(--darkseagreen);
-  
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -447,8 +447,9 @@ header.sticky .nav-button:hover {
 
 
 .banner .banner-content h1 span {
-  color: var(--orange);
+  color: var(--darkseagreen);
   background-color: #fff;
+  padding: 0 1rem;
 }
 
 
@@ -648,7 +649,7 @@ article img {
 }
 
 .value .text h1 span {
-  color: var(--orange);
+  color: var(--darkseagreen);
   font-weight: 600;
 }
 
@@ -704,11 +705,11 @@ article img {
   padding: 1rem;
   margin-left: 2rem;
   border-radius: 5px;
-  border: 2px solid #fc9745;
+  border: 2px solid #005f66;
 }
 
 .conversation a:hover {
-  background-color: var(--orange);
+  background-color: var(--lightseagreen);
   color: #f1f1f1;
 }
 
@@ -928,7 +929,7 @@ footer .social li a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--darkseagreen);
   box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
   top: 24px;
   right: -6px;
@@ -940,7 +941,7 @@ footer .social li a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--darkseagreen);
   box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
   top: 24px;
   left: -4px;
@@ -952,7 +953,7 @@ footer .social li a {
   font-weight: 700;
   font-size: 3rem;
   font-family: "Rufina", sans-serif;
-  color: var(--orange);
+  color: var(--darkseagreen);
 }
 
 .timeline ul li p {
@@ -1084,7 +1085,7 @@ footer .social li a {
 
 .package-feature::before {
   content: "\2714";
-  color:var(--orange);
+  color:var(--darkseagreen);
   left: 0;
   position: absolute;
 }
@@ -1791,7 +1792,6 @@ ion-icon {
 }
 
 .newsletter {
-  background: linear-gradient( #fc9745, #ff7348);
   
   padding: 5rem 3rem;
 }
@@ -1828,7 +1828,7 @@ width: 70vw;
     font-size: 0.85rem;
     letter-spacing: 0.025rem;
     text-transform: uppercase;
-    color: var(--orange);
+    color: var(--darkseagreen);
   }
 
  
