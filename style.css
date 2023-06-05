@@ -1419,6 +1419,36 @@ p span {
   color: white;
 }
 
+.booked {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/testimonials.jpg");
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.booked .content {
+  
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.booked h1 {
+  font-size: 4rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.booked p {
+  font-size: 1.1rem;
+}
 
 /*-------------------- Resources page --------------------------- */
 
