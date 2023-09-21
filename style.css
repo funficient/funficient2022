@@ -1114,6 +1114,11 @@ footer .social li a {
   color: #333;
 }
 
+.medium-text {
+  font-size: large;
+  font-weight: 400;
+}
+
 /* -----------------   Workshops page --------------------*/
 
 .workshops {
@@ -1362,7 +1367,7 @@ p span {
 .thanks .content {
   text-align: left;
   margin-top: 10%;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .not-found .content h1,
