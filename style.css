@@ -99,7 +99,20 @@ button {
   text-decoration: none;
 }
 
-
+/*------------------------------------------ RIP ----------------------*/
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #000;
+  color: #f1f1f1;
+}
+.background p {
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
 /*  ----------------------------------------------------------Utility elements ----------------------------------------------------------------------------------------*/
 
 /* --- Button in header section - main call-to-action ---*/
