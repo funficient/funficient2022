@@ -18,4 +18,6 @@
 - [ ] Add coaching questions on resources
 - [ ] Design | Change line height
 - [ ] Design | Change p text to be consistent with header
-- [ ] Coaching page
+- [X] Coaching page
+- [ ] Micro coaching
+- [ ] Subscriptions
