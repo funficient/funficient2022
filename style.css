@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@500;800&family=Prata&display=swap');
 
 :root {
   --bright-tangerine: #ffd208;
@@ -20,12 +21,40 @@
   --darkGray: #5d5c5c;
   --darkGray800: #333;
   --darkGray900: #111;
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+/* 
+  font-family: 'Montserrat', sans-serif;
+
+  font-family: 'Playfair Display', serif;
+
+  font-family: 'Prata', serif; */
 }
 
 *,
 *::before,
 *::after {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font: inherit;
@@ -355,7 +384,7 @@ header .dark li a {
 }
 
 header .navigation li a:hover {
-  color: var(--orange);
+  color: var(--darkGray900);
   background-color: #f1f1f1;
   opacity: 0.9;
 }
@@ -589,6 +618,19 @@ header.sticky .nav-button:hover {
 
 /*------------------------------------- Home page cards with audience -------------------------*/
 
+
+.coaching-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin: 0 10%;
+}
+
+.coaching-container .box {
+  align-items: stretch;
+  height: 100%;
+}
+
 .box-container {
   padding: 2rem 5rem;
   margin: 2rem;
@@ -605,6 +647,29 @@ header.sticky .nav-button:hover {
   border: 1.2rem solid #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
   position: relative;
+}
+
+.headline-text {
+  width: 100%;
+  
+ 
+  padding: 1em 2em;
+}
+
+.one {
+  background: #6DB9C2;
+}
+
+.two {
+  background: #007982;
+}
+.three {
+  background: #005f66;
+}
+
+.headline-text h4 {
+  color: white;
+  font-weight: 600;
 }
 
 article img {
