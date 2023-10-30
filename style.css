@@ -735,6 +735,10 @@ article img {
 .product .teal-light-button:hover {
   background: #acacac;
 }
+
+.model {
+  max-height: 30em;
+}
 /* ------------------------------------------ Process section --------------------------------------------------------------------------------------------------------------*/
 
 .value .content {
@@ -807,9 +811,9 @@ article img {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  margin-left: 2rem;
-  border-radius: 5px;
-  border: 2px solid #005f66;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #343a40;
 }
 
 .conversation a:hover {
