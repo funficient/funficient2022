@@ -7,339 +7,253 @@
     <title>fun-fi-cient | Play your way to productivity</title>
     <meta name="description" content="Discover the who and why behind funficient and how to be more productive.">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    </style>             
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
-
+    <link rel="stylesheet" href="style.css">
+    <script defer src="components.js"></script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRHV1ZL3BM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BRHV1ZL3BM');
-</script>
 
 <body>
 
-<!------------------------------------------------------------------- Top Navigation Section -------------------------------------------------------------->
+<!---------------          Header navigation section          ---------------->
 
-<header>
 
-    <a class="logo" href="index.html"><img src="assets/funficient-color-logo.png" alt="logo"></a>
+    <header>
 
-    <ul class="navigation">
-        <li><a href="product-teardowns.html">Product Teardowns</a></li>
-        <li><a href="okr-coaching.html">OKR's</a></li>
-        <li><a href="coaching.html">Coaching</a></li>
-        <li><a href="https://www.blog.funficient.com" target="_blank">Blog</a></li>
-        <li><a href="about.html">About</a></li>
+        <a class="logo" href="index.html"><img src="assets/funficient-color-logo.png" alt="logo"></a>
+    
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="get-direction.html">Get direction</a></li>
+            <li><a href="set-goals.html">Set goals</a></li>
+            <li><a href="calibrate.html">Calibrate</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
         
-    </ul>
-    
-    <a href="https://funficient2021.setmore.com/" target="_blank" class="nav-button">Book Now</a>
-    
-    <div class="menuToggle" onclick="toggleMenu();"></div>
-</header>
+        <a href="https://funficient2021.setmore.com/" target="_blank" class="nav-button">Book Now</a>
+        
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+    </header>
 
-<!------------------------------------------------------------------- Wave Banner Section -------------------------------------------------------------->
+    <!---------------               Body starts here               ---------------->
 
+    <main>
 
-<section class="banner teal">
+    <!---------------                 Wave Hero banner section     ----------------->
 
-    <div class="banner-content">
+        <section class="banner teal">
 
-        <h1 class="white">Want to become a time wielder?</h1>
-        <p class="white">Take your productivity to the next level and get more done in less time. </p>
-        <a href="https://funficient2021.setmore.com/" target="_blank" class="main-button">Start the conversation</a>
-    </div>
-
-    <div class="wave-container">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-        </svg>
-    </div>
-
-</section>
-
-
-<!------------------------------------------------------------------- About section -------------------------------------------------------------->
-
-<section class="about" id="about">
-
-
-    <div class="container">
-        <div class="content center dark">
-            
-            <h1>I'm Kate!</h1>
-            <p>After spending years what felt like running around in circles getting nowhere slowly, 
-                surrounded by unhappy people, 
-                I embarked on a journey to discover what the essence of productivity.
-            </p>
-            <br><br>
-
-        </div>
-    </div>
-    <div class="container center">
-        <div class="profile">
-            <img src="/assets/kate.jpg" alt="Picture of Kate" height="600" width="900">
-        </div>
-
-        <div class="box overlay">
-                
-            <h2>Where it all started</h2>
-            <p class="dark">While working in different organizations,  
-                            I noticed the same patterns that keep teams from being productive.  
-                            While people were busy, releases were slow and error-prone and customers
-                            unhappy.  The features that were rolled didn't solve the
-                            customer needs, resulting in bloated processes that inhibited rather than
-                            improved the customer journey. </p>
-
-                        <p>
-                            Everyone was frustrated by the amount of rework to
-                            get while organizational debt kept increasing.
-                             
-                            Team members were demotivated, never given adequate time to 
-                            deal with organizational debt and improve, restricted by a lack 
-                            of ownerships and silo's competing with each other internally.  
-                            There was clearly no winner.                   
-                            The outcome was a lot of wasted effort.
-                           
-                            I realized that productivity is not so much about speed or efficiency, 
-                            but about accuracy and relationships.
-                        </p>
-                        
-                        <p>
-                            The funficient way was born to help you 
-                            optimize your most precious resource - time.
-                        </p>
-            </p>
-            <a href="https://funficient2021.setmore.com/" class="teal-light-button">Start the conversation</a>
-                
-        </div>
-    </div> 
-      
-</section>
-
-
-<!------------------------------------------------------------------- Services call to action -------------------------------------------------------------->
-
-
-
-
-<section class="productivity">
-    <div class="container center">
-        <div class="titleText">
-            <h1 class="introText center">Productivity explained.</h1>
-            <p>Most productivity improvements in knowledge work environments only focus on efficiency.</p>         
-        </div>
-    
-        <div class="container">
-            
-            <div class="row">
-                <div class="column">
-                    <p class="body">Many teams measure productivity by looking at tangible things like
-                        effort, competence, and environmental factors.  Typically, to increase capacity
-                        they add more people.  Or maybe they hire senior people 
-                        in the hope to increase competence. Or maybe they invest in expensive equipment 
-                        and productivity tools. Or, the introduce more granular metrics to improve estimations.</p>
-
-                    <p class="body">
-                        And although there is a place for these things, the most productive thing
-                        you can do is align your team,  strengthen the relationships, and develop
-                        enough autonomy and ownership so that decision making can be more reliable, and faster.
-
-                    </p>
-
-                    
-
-                </div>
-                <div class="column">
-                    <p class="body">
-                        Efficiency becomes useful when you produce the same artifact repeatedly.
-                        In software development we mostly produce something that has never been produced before.
-                        The key to productivity is thus getting clear on the desired outcome, and whether it is solving 
-                        the right problem to begin with.
-                        
-                    </p>
-                    
-                    <p class="body">
-                        There are of course useful metrics such as measuring lead time (the time it takes to release a single feature), 
-                        the deployment frequency (how often you release new features to production),
-                        and other DORA metrics. But they all assume you are 
-                        building the right thing.  
-                            
-                    </p>
-
-                </div>
+            <div class="banner-content">
+                <h1 class="white">You don't need more time.</h1>
+                <h1 class="white">You need <span></span></h1>
+                <!-- <h1 class="white">Want to become a time wielder?</h1> -->
+                <p class="white">Take your productivity to the next level and become a time wielder. </p>
+                <a href="https://funficient2021.setmore.com/" target="_blank" class="button banner-button">Start the conversation</a>
             </div>
 
-            <div class="spacer"></div>
-            <h2 class="light">What if we're measuring the wrong thing?</h2>
-            <div class="spacer"></div>
+            <div class="wave-container teal">
 
-            <div class="row">
-                <div class="column">
-                    <p class="body">Resources are rarely the cause of productivity issues.
-                        Adding more, as in a typical manufacturing environment,
-                        introduces complexity that slows down rather than speed up production.
-                        In the age of knowledge work adding more increases cognitive overload
-                        which leads to slower decision making and higher probability of mistakes.
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+    
+            </div>
+        
+        </section>
+
+
+    <!-------------------------------------- Quote ---------------------------------------->
+        <section class="section-container narrow">
+                
+                    <h2 class="big-quote">There is nothing quite so useless as doing with 
+                        great efficiency something that should not be done at all.
+                    </h2>
+        
+                    <p class="subtitle right"> - Peter Drucker</p>
                                        
+                        
+        </section>    
+
+    <!---------------------                About section     ----------------->
+        <section class="section-container">
+
+            <div class="profile">
+                <img src="/assets/kate-profile.jpg" alt="Picture of Kate" height="600" width="auto">
+                
+                <div class="glass-box">
+                        
+                    <h2>Where it all started</h2>
+                    <p>While working in different organizations,  
+                        I noticed the same patterns that keep teams from being more productive.  
+                        While people were busy, releases were slow and error-prone.  
+                        The features rolled out didn't meet the customer needs. 
+                        Although there were many features added, they didn't come together in a 
+                        coherent system, resulting in bloated workflows that inhibited 
+                        rather than improved the customer journey. 
+                    </p>
+        
+                    <p>
+                        Everyone was frustrated by the amount of rework required
+                        and organizational debt kept increasing.
+                                     
+                        Team members were demotivated, restricted by a lack 
+                        of ownerships and silo's competing with each other internally.  
+                        There was clearly no winner.                   
+                        The outcome was a lot of wasted time and effort.
+                                   
+                        I realized that productivity is not so much about speed or efficiency, 
+                        but rather accuracy and relationships.
+                    </p>
+                                
+                    <p>
+                        The funficient way was born to help you 
+                        optimize your most precious resources. People and Time.
                     </p>
                     
-                    <p class="body">
-                        Productivity for humans requires adequate feedback loops to validate hypothesese 
-                        and the autonomy to change direction to keep heading north.
-                    </p>
+                    <a href="https://funficient2021.setmore.com/" class="button primary-button">Start the conversation</a>
+                        
                 </div>
-                <div class="column">
+            </div> 
+        </section>
 
-                    <p class="body">The impact of emotions on productivity is also a vital, often overlooked, key to productivity.
-                        You can have the best  tools and skills, but without strong relationships and human-to-human connection
-                       you are as weak as the weakest link in your team. 
-                    </p>
-                    <p class="body">To create hyper productive teams, you need clarity and alignment towards a shared goal, 
-                        regular and meaningful feedback loops, and the ability express yourself fully. </p>
+    <!---------------                Value proposition section     ----------------->
 
-                </div>
-            </div>
-
-            <div class="box">
-                <h3 class="dark quote">Productivity² = goal x feedback × motivation²</h3>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <p class="body">To maximize your productivity, spend more time gaining clarity and 
-                        alignment on your goal.  Design feedback loops that is both scientific and 
-                        meaningful to the customers.  Measuring analytics, for example, is useful to
-                        test what is already created, but it is more useful to speak to a select few
-                        customers to uncover what's missing.  It's not the one or the other, it's 
-                        about understanding what you want to learn and finding the best way to do it.
-                    </p>
-                </div>
-                <div class="column">
-                    <p class="body">If you don't already, invest time in discovering what motivates your
-                        team and what their strenghts are.  There is little more motivating than allowing a person 
-                        to use their strenghts.  And make space for emotions. 
-                        Embrace the ups and downs of the life and work journey.
-                    </p>
-                    <p class="body">The two most important tools I use to increase productivity is ORK's
-                         (Objectives and Key Results) and Coaching, together with a cocktail of practices
-                         like XP, Design Thinking, Game Thinking, Lean and more.</p>
-
-                </div>
-            </div>
+        
+        <section class="section-container">
+            <div class="spacer"></div>
             
+            <h2 class="center">What's your biggest time waster?</h2>
+            <p class="title-text center">Productivity isn't just about being faster or doing more.  
+                                         Optimal productivity is getting the maximum usable outputs
+                                         with minimum inputs. It's not done until someone
+                                         uses and loves it. </p>
+            
+
+            <div class="card-container">
+                <div class="card center">
+                    
+                    <img src="assets/waste.png" alt="Icon of trashcan">
+                    <h3>delivering unused features</h3>
+                    <p> Spending time going through an entire delivery cycle with no-one 
+                        using it is 100% wasted effort.
+                    </p>
+                    <div class="spacer"></div>
+                    
+                </div>
+
+                <div class="card center">
+                    
+                    <img src="assets/rework.png" alt="Icon representing rework">
+                    <h3>post-production rework</h3>
+                    <p> The leaky bucket. It's always more expensive to redo something later.
+                    </p>
+                    <div class="spacer"></div>
+                    
+                </div>
+
+                <div class="card center">
+                    
+                    <img src="assets/complicated.png" alt="Icon representing complicated">
+                    <h3>overly complicated solutions</h3>
+                    <p> It's more costly in maintenance, and might cost you your users looking
+                        for a simpler solution.
+                    </p>
+                    <div class="spacer"></div>
+                    
+                </div>
+                <div class="card center">
+                    
+                    <img src="assets/unused-skills.png" alt="Icon representing unused skills">
+                    <h3>unused skills</h3>
+                    <p>By far the biggest waste is not fully utilizing people's talents and skills.
+                    </p>
+                    <div class="spacer"></div>
+                    
+                </div>
+
         </div>
-    </div>
-</section>
+        </section>
 
+        <!---------------                Call to action section     ----------------->
 
-<!------------------------------------------------------------------- Services call to action -------------------------------------------------------------->
+        <section class="colored-container center">
 
-<section class="center">
-    <div class="title-container">
+            <div class="spacer"></div>        
+            <h2 class="center">Ready to reduce your organizational debt?</h2>
+            <p>Book a free, no obligation discovery call to start the conversation.</p>
+            <a href="https://funficient2021.setmore.com/" class="button primary-button">Start the conversation</a>
+            <div class="spacer"></div>
+        </section>
         
-                <h2>The solution? </h2>
-                <p>The fun-fi-cient way - a model that brings all the pieces together.</p>
-                
-                <img  class="model center" src="assets/Infinity-Model-text.png" alt="Image of the fun-fi-cient way model">
-                
-                <div class="row">
-                    <div class="body">
-                        <p class="body">With a Design Thinking process at the heart of the model, 
-                            we understand and frame the problem before diving into solutions.
-                            But most important, we first find your north star to make
-                            sure you're focusing on the biggest impact item to drive your
-                            business forward.
-                        </p>
-                    </div> 
+        <!---------------                How it works section     ----------------->
+
+        <section class="section-container ">
+          
+            <h2 class="center">The journey</h2>
+            <p class="title-text center">Start anywhere, anytime.  End anywhere, anytime.
+            </p>
+            
+
+            <div class="grid-3-container">
+                <div class="card center flex-container">
+                    
+                    <img src="assets/Map.svg" alt="Icon of a map">
+                    <h3>get direction</h3>
+                    <p> Where are you now and where do you want to go?
+                    </p>
+                    <a href="get-direction.html" class="button secondary-button">Find out more</a>
+                    
                 </div>
-        
-                
-    </div> 
-    <div class="spacer"></div>
 
-</section>
+                <div class="card center flex-container">
+                    
+                    <img src="assets/MapPin.svg" alt="Icon of location pin">
+                    <h3>set goals</h3>
+                    <p> What does success look like?  How will you know you arrived?
+                    </p>
+                    <a href="set-goals.html" class="button secondary-button">Find out more</a>
+                    
+                </div>
 
+                <div class="card center flex-container">
+                    
+                    <img src="assets/Compass.svg" alt="Icon of compass">
+                    <h3>calibrate</h3>
+                    <p>You can't expect a different result if you don't change how you think and 
+                        what you do.
+                    </p>
+                    <a href="calibrate.html" class="button secondary-button">Find out more</a>
+                    
+                </div>
+            </div>
 
+        </section>
 
-<section class="center">
-    <div class="title-container">
-       
-                <h2>Ready to take the first step? </h2>
-                <p>Find out more on how to improve productivity and put the fun back into efficiency.</p>
-                <div class="spacer"></div>
-                <a href="product-teardowns.html" class="teal-light-button">Clarify your north star</a> 
-                <a href="okr-coaching.html" class="teal-accent-button">Set goals that matter</a> 
-                <div class="spacer"></div>
-    </div> 
+    <!---------------                Call to action section     ----------------->
 
-</section>
-
-
-
-<!--------------------------------------------  Newsletter subscription section ------------------------------>
-
-
-<section class="newsletter teal">
-    <div class="titleText white">
-        <h1 class="introText center">Subscribe.</h1>
-        <p >Get a letter in your inbox every few weeks with insights, tools
-            and things I love.</p>   
+       <section class="colored-container center">
+            <div class="spacer"></div>        
+            <h2 class="center">Ready to take the first step?</h2>
+            <p>Book a free, no obligation discovery call to start the conversation.</p>
+            <a href="get-direction.html" class="button primary-button">Find your north star</a>
+            <a href="set-goals.html" class="button secondary-button">Set meaningful goals</a>
+            <div class="spacer"></div>
+        </section>
             
-    </div>
 
+            <!------------------------------------------------------------------- Contact form section -------------------------------------------------------------->
+<section class="section-container wide ">
 
-        <div class="subscribe-container center">
-            
-            <form  class="subscribe" action="https://formsubmit.co/fb6a7b8aa5477c50770549512f505741" method="POST" >
-                               
-                <input
-                    type="email"
-                    name="email"
-                    id="subscribe"
-                    class="subscribe"
-                    placeholder="e-mail"
-                    required
-                />
-                <label for="subscribe">subscribe</label>  
-
-                <input type="hidden" name="_next" value="https://www.funficient.com/subscribed.html">
-                <input type="hidden" name="_subject" value="New email subscription!">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-            
-        
-                <button  id="subscribe-button" type="submit">Subscribe</button>
-            </form>
-        </div>
-
-</section>
-
-
-<!------------------------------------------------------------------- Contact form section -------------------------------------------------------------->
-<section class="contact" id="contact">
-
-    <div class="container">
-    
-        <div class="conversation">
+        <div class="conversation ">
             <div><h2>Start the conversation</h2></div> 
             <div class="social">
                 <a href="https://www.instagram.com/funficient/" target="_blank" title="Instagram profile"><svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
@@ -348,7 +262,6 @@
 
         </div>        
                
-
         <div class="form-container">
             
             <form  class="form" id="form" action="https://formsubmit.co/fb6a7b8aa5477c50770549512f505741" method="POST" >
@@ -391,20 +304,17 @@
                     <label for="message">message</label>  
                 </div>
 
-                <div>
-                    
-                    <button type="submit" id="submit" class="teal-accent-button"  action="https://formsubmit.co/fb6a7b8aa5477c50770549512f505741" method="POST">
+                <div class="center">
+                    <button type="submit" id="submit" class="button primary-button"  action="https://formsubmit.co/fb6a7b8aa5477c50770549512f505741" method="POST">
                         Send message
                     </button>
+                    <a href="https://funficient2021.setmore.com/" class="button secondary-button">Book a discovery call</a>
                 </div>
                 
             </form>
+        
         </div>
-    </div>
-</section>
-
-
-
+    </section>
 
 
 <!------------------------------------------------------------------- Footer section -------------------------------------------------------------->
@@ -420,7 +330,7 @@
 
             <div class="copyrightText">
                 <p>
-                    Copyright 2023 <strong>funficient</strong>  |  All rights reserved.
+                    Copyright 2023 Kate Dames | <strong>www.funficient.com</strong>  |  All rights reserved.
                 </p>
             </div>
 
@@ -437,6 +347,9 @@
     </div>
 
 </footer>
+
+
+</main>
 
 
 
@@ -462,6 +375,6 @@
 
 </script>
 
-
 </body>
+
 </html>
