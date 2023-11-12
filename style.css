@@ -993,8 +993,19 @@ border: 2px solid #003034;
     background-repeat: no-repeat;
     
   }
+
+  #message-success {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/letters.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
     
 #subscription-success .container,
+#message-success .container,
 #broken .container {
     position: relative;
     margin: 0 30%;
@@ -1005,11 +1016,13 @@ border: 2px solid #003034;
 }
 
 #subscription-success p,
+#message-success p,
 #broken p {
     font-weight: 300;
 }
 
 #subscription-success .button,
+#message-success .button,
 #broken .button {
     margin: 2em;
     color: #003034;
@@ -1018,6 +1031,7 @@ border: 2px solid #003034;
 
 
 #subscription-success .button:hover,
+#message-success .button:hover,
 #broken .button:hover {
    background-color: #003034;
     color: #fff;
@@ -1025,6 +1039,7 @@ border: 2px solid #003034;
 }
 
 #subscription-success a,
+#message-success a,
 #broken a {
     place-self: center;
 }
