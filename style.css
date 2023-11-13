@@ -862,7 +862,7 @@ border: 2px solid #003034;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
-    
+    transition: all 0.5s ease-in-out;
 }
 
 .resources-container > div {
@@ -880,11 +880,12 @@ border: 2px solid #003034;
     justify-content: center;
     text-align: center;
   
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
   }
   
   .resources-container > div:hover {
     background-image: none;
+    transition: all 0.5s ease-in-out;
   }
   
   .resources-container > div h2 {
