@@ -259,7 +259,19 @@ button {
     font-size: 1.2em;
 }
 
+.large-text {
+  /* font-family: 'Rufina', serif; */
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
 
+.grid-column {
+
+
+display: grid;
+align-content: center;
+}
 /* -----------                Buttons                   */
 
 .button {
