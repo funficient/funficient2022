@@ -210,6 +210,14 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
 }
+
+
+.grid-column {
+  display: grid;
+  align-content: center;
+}
+ 
+
 .container {
     display: grid;
     
@@ -265,14 +273,7 @@ button {
   line-height: 1.5em;
   font-weight: 400;
 }
-
-.grid-column {
-
-
-display: grid;
-align-content: center;
-}
-/* -----------                Buttons                   */
+/* -----------                Buttons                  -----*/ 
 
 .button {
   font-size: 1em;
@@ -1249,6 +1250,16 @@ border: 2px solid #003034;
         line-height: 1.3em;
       }
 
+      .section-container {
+        margin: 1em;
+      }
+
+      .grid-container, .grid-3-container {
+        grid-template-columns: 1fr;
+
+      }
+
+
       .banner p {
         font-size: 1.1em;
       }
@@ -1295,7 +1306,7 @@ border: 2px solid #003034;
       #subscription-success .container {
         
         margin: 0 10%;
-        
+      }
     
 
   }
