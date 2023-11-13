@@ -966,7 +966,7 @@ border: 2px solid #003034;
       border: none;
       background-color: var(--seagreen400);
       color: #fff;
-      height: 3em;
+      height: 100%;
       width: max-content;
       align-items: center;
       padding: 1em 2em;
