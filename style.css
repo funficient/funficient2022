@@ -106,7 +106,8 @@ h2 {
   font-family: "Rufina", sans-serif;
   font-size: 3em;
   color: var(--darkGray800);
-  line-height: 2em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
 
 }
 
@@ -366,15 +367,24 @@ header {
   header .navigation li {
     list-style: none;
     margin-left: 1.3em;
+  
   }
+
+
   
   header .navigation li a {
+    /* display: flex;
+    align-items: center;
+    gap: 0.2em; */
     text-decoration: none;
     color: white;
     font-weight: 500;
     padding: 1em;
     transition: all 0.3s ease 0s;
   }
+
+
+
   
   header .dark li a {
     color: var(--seagreen800);
@@ -454,9 +464,6 @@ header {
     height: 70vh; 
     
   }
-
-
-  
   
   .banner-content {
     width: 70vw;
@@ -615,7 +622,7 @@ header {
 
     .narrow {
         grid-template-columns: 1fr;
-        margin: 3em 25%;;
+        margin: 3em 28%;;
         text-align: center;
     }
   
@@ -732,6 +739,8 @@ header {
 #submit {
     margin-right: 1em;
 }
+
+
 
 /* ------------------------------------------------------  Get direction setion ------------------------------------------------*/
   
