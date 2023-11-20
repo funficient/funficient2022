@@ -757,9 +757,14 @@ header {
         margin-top: 2em;
     }
 
+    #methods .grid-container {
+      margin: 0 20%;
+    }
+
     #direction span,
     #goals span, 
-    #calibrate span {
+    #calibrate span,
+    #methods span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
