@@ -212,6 +212,13 @@ button {
     gap: 2em;
 }
 
+.grid-4-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  margin: 0 5em;
+}
+
 
 .grid-column {
   display: grid;
@@ -373,9 +380,9 @@ header {
 
   
   header .navigation li a {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    gap: 0.2em; */
+    gap: 0.2em;
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -1076,6 +1083,72 @@ border: 2px solid #003034;
 
   
   }
+
+  /* ------------------------------------------------------  Method library ------------------------------------------------*/
+  
+#methods .image-center {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30em;
+  
+}
+
+#methods .colored-container {
+  background-color: white;
+}
+
+.grid-box {
+  padding: 2em;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--seagreen);
+}
+
+.grid-box h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  
+}
+
+.grid-box h3 {
+  text-transform: uppercase;
+}
+
+#methods .line {
+  padding-top: 2em;
+  margin: auto;
+}
+
+.caption {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#methods .subtitle {
+  color: #000;
+  text-transform: capitalize;
+  text-align: left;
+  padding-bottom: 1em;
+  padding-top: 0.2em;
+}
+
+#methods .subtitle span {
+  color: #646464;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: 800;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.divider {
+  border-bottom: 1px dotted #5d5c5c;
+  margin-bottom: 0.5em
+}
+
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
   .footer {
