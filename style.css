@@ -1313,6 +1313,9 @@ border: 2px solid #003034;
             background-position: center;
         }
 
+        .grid-4-container {
+          grid-template-columns: 1fr 1fr;
+        }
  
   }
 
@@ -1345,6 +1348,10 @@ border: 2px solid #003034;
       .grid-container, .grid-3-container {
         grid-template-columns: 1fr;
 
+      }
+
+      .grid-4-container {
+        grid-template-columns: auto;
       }
 
 
