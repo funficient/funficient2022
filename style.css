@@ -281,6 +281,8 @@ button {
   line-height: 1.5em;
   font-weight: 400;
 }
+
+
 /* -----------                Buttons                  -----*/ 
 
 .button {
@@ -764,7 +766,8 @@ header {
     #direction span,
     #goals span, 
     #calibrate span,
-    #methods span {
+    #methods span,
+    #weakness span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
@@ -1153,6 +1156,20 @@ border: 2px solid #003034;
   border-bottom: 1px dotted #5d5c5c;
   margin-bottom: 0.5em
 }
+
+/* ------------------------------ Workshops --------------------------------------- */
+ion-icon {
+padding: 0 0.5em;
+}
+
+#workshops {
+  margin: 3em 5em;
+}
+
+#workshops .container {
+  margin-bottom: 1.5em;
+}
+
 
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
