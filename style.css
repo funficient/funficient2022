@@ -219,6 +219,10 @@ button {
   margin: 0 5em;
 }
 
+#map {
+  margin: 0 3em;
+}
+
 
 .grid-column {
   display: grid;
