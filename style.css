@@ -286,6 +286,15 @@ button {
   font-weight: 400;
 }
 
+.stats {
+  font-size: 3em;
+  margin: auto;
+
+}
+
+
+
+
 
 /* -----------                Buttons                  -----*/ 
 
@@ -886,7 +895,8 @@ header.navigation ul li ul li a:hover {
   
     #direction .grid-container, 
     #goals .grid-container,
-    #calibrate .grid-container {
+    #calibrate .grid-container,
+    #case-study .grid-container  {
         margin-top: 2em;
     }
 
@@ -898,7 +908,8 @@ header.navigation ul li ul li a:hover {
     #goals span, 
     #calibrate span,
     #methods span,
-    #weakness span {
+    #weakness span, 
+    #case-study span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
