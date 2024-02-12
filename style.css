@@ -896,7 +896,8 @@ header.navigation ul li ul li a:hover {
     #direction .grid-container, 
     #goals .grid-container,
     #calibrate .grid-container,
-    #case-study .grid-container  {
+    #case-study .grid-container,
+    #strategy .grid-container  {
         margin-top: 2em;
     }
 
@@ -909,7 +910,8 @@ header.navigation ul li ul li a:hover {
     #calibrate span,
     #methods span,
     #weakness span, 
-    #case-study span {
+    #case-study span,
+    #strategy span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
@@ -943,7 +945,8 @@ header.navigation ul li ul li a:hover {
  
     #teardowns .button,
     #coaching .button,
-    #resources .button {
+    #resources .button,
+    #strategy-proposals .button {
         background-color: transparent;
         border: solid 2px var(--lightseagreen100);
         margin: 2em auto 1em auto;
@@ -951,7 +954,8 @@ header.navigation ul li ul li a:hover {
 
     #teardowns .button:hover,
     #coaching .button:hover,
-    #resources .button:hover {
+    #resources .button:hover,
+    #strategy-proposals .button:hover {
         background-color: var(--lightseagreen100);
         color: var(--seagreen800);
 
@@ -961,7 +965,8 @@ header.navigation ul li ul li a:hover {
         content: "";
     }
     
-    #teardowns .line {
+    #teardowns .line, 
+    #strategy-proposals .line {
         border-top: solid 1px var(--lightseagreen100);
         opacity: 0.4;
     }
