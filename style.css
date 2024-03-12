@@ -171,6 +171,13 @@ button {
     font-weight: 600;
 }
 
+.dark-list {
+    color: #111; 
+    margin-top: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+
 
 /* --------            Utilities | Containers             */
 
@@ -189,6 +196,8 @@ button {
     width: 100vw;
     margin: 0;
     padding: 1em 0;
+    position: relative;
+    left: 0;
 }
 
 .flex-container {
@@ -219,8 +228,42 @@ button {
   margin: 0 5em;
 }
 
+.grid-container-journey-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  margin: 0;
+  align-items: start;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-card {
+    display: grid;
+    place-content: center;
+    padding: 2em;
+    position: relative;
+    align-items: flex-start;
+
+}
+
+.flex-card img {
+  height: 3em;
+  width: auto;
+  padding-right: 1em;
+  margin-bottom: 2em;
+}
+
+
+
 #map {
   margin: 0 3em;
+}
+
+#journey {
+  padding: 2em;
 }
 
 
