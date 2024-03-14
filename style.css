@@ -1520,7 +1520,7 @@ padding: 0 0.5em;
             background-position: center;
         }
 
-        .grid-4-container {
+        .grid-4-container, .grid-container-journey-map {
           grid-template-columns: 1fr 1fr;
         }
  
@@ -1560,6 +1560,7 @@ padding: 0 0.5em;
       .grid-4-container {
         grid-template-columns: auto;
       }
+
 
 
       .banner p {
@@ -1608,6 +1609,11 @@ padding: 0 0.5em;
       #subscription-success .container {
         
         margin: 0 10%;
+      }
+
+      
+      .grid-4-container, .grid-container-journey-map {
+        grid-template-columns: 1fr;
       }
     
 
