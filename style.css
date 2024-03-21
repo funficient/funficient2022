@@ -266,6 +266,9 @@ button {
   padding: 2em;
 }
 
+#play {
+  margin-top: -3em;
+}
 
 .grid-column {
   display: grid;
