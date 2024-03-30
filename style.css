@@ -142,7 +142,6 @@ button {
 /*------------------    End of reset      ------------*/
 
 
-
 .debug {
     border: 2px solid red;
 }
@@ -1581,6 +1580,10 @@ padding: 0 0.5em;
       }    
       .wave-container {
         display: none;
+      }
+
+      header img {
+        max-width: 75px;
       }
 
       .button {
