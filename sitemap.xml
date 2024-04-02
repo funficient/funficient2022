@@ -33,6 +33,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.funficient.com/case-study</loc>
+  <lastmod>2023-11-23T07:17:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.funficient.com/get-started</loc>
   <lastmod>2023-11-23T07:17:14+00:00</lastmod>
   <priority>0.64</priority>
@@ -50,12 +55,12 @@
 <url>
   <loc>https://www.funficient.com/unlimited</loc>
   <lastmod>2023-11-23T07:17:14+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.4</priority>
 </url>
 <url>
   <loc>https://www.funficient.com/workshops</loc>
   <lastmod>2023-12-08T07:17:14+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 
 <url>
@@ -96,6 +101,11 @@
 </url>
 <url>
 <loc>https://www.blog.funficient.com/blog/</loc>
+<lastmod>2023-11-23T07:34:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.blog.funficient.com/blog/2024-01-24-the-essence-of-productivity/</loc>
 <lastmod>2023-11-23T07:34:17+00:00</lastmod>
 <priority>0.80</priority>
 </url>
