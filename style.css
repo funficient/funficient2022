@@ -623,7 +623,7 @@ header.navigation ul li ul li a:hover {
     color: #fff;
   }
   
-  .nav-button {
+  .nav-button, .light-button {
     border: 1px solid #fff;
     padding: 1em 1.5em;
     transition: all 0.5s ease 0s;
@@ -643,10 +643,12 @@ header.navigation ul li ul li a:hover {
     -webkit-font-smoothing: antialiased;
   }
   
-  .nav-button:hover {
+  .nav-button:hover, .light-button:hover {
     background: #fff;
     color: var(--seagreen800);
   }
+
+
 /*  -----------------------   Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
