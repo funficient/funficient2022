@@ -1238,10 +1238,14 @@ border: 2px solid #003034;
   #message-success {
     width: 100vw;
     height: 100vh;
-    background-image: url("assets/letters.jpg");
+    
+    background-image: url("assets/letter-posted.jpg");
+    background-color: hsla(0, 0, 0, 0.3);
     
     background-size: cover;
     background-repeat: no-repeat;
+    
+
     
   }
     
