@@ -428,8 +428,8 @@ header {
   }
   
   header img {
-    max-width: 100px;
-    height: auto;
+    width: auto;
+    max-height: 50px;
     transition: 0.5s;
   }
   
@@ -1602,6 +1602,12 @@ padding: 0 0.5em;
 
       header img {
         max-width: 75px;
+ 
+      }
+
+      header svg {
+        color: #00555b;
+        filter: invert();
       }
 
       .button {
