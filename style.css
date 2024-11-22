@@ -99,9 +99,8 @@ h1, h2, h3, h4, p {
 
 h1 {
 
-    font-family: "Playfair Display", serif;
-    
-  font-size: 3.7em;
+  font-family: "Playfair Display", serif;
+  font-size: 3.7rem;
   line-height: 1.3em;
 }
 
@@ -428,7 +427,6 @@ header {
   }
   
   header svg {
-    width: auto;
     max-height: 50px;
     transition: 0.5s;
     fill: white;
@@ -446,17 +444,16 @@ header {
   
   header .navigation li {
     list-style: none;
-    margin-left: 1.3em;
+    margin-left: 1em;
   }
   
   header .navigation li a {
     display: flex;
     align-items: center;
-    gap: 0.2em;
     text-decoration: none;
     color: white;
     font-weight: 500;
-    padding: 1em;
+    padding: 1rem;
     transition: all 0.3s ease 0s;
   }
 
@@ -464,18 +461,6 @@ ul li {
   display: inline-block;
   position: relative;
 }
-
-
-.dropdown {
-  width: auto;
-  height: fit-content;
-  position: absolute;
-  /* z-index: 999;
-  display: none; */
-  visibility: hidden;
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
-  
-  }
 
   .navigation:hover > ul{
     visibility: visible;
@@ -504,14 +489,11 @@ ul li {
     opacity: 80%;
     padding: 1em 5em;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    max-width: 100vw;
+    max-width: calc(100vw+75px);
   }
   
-  header.sticky svg  {
-    /* max-width: 75px;
-    height: auto; */
+  header.sticky svg path {
     fill: #003034;
-    filter: invert(0.7);
   }
 
 
@@ -561,39 +543,41 @@ ul li {
   }
 
 
-/*  -----------------------   Wave Hero Section --------------------------------------------------------------------------*/
+/*  -----------------------   Wave Hero Section ----------------------------------------------------------*/
 
-.banner {
+.banner-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 70vh; 
-    
+    height: max(50vh, min(70vh, 100%));
+    padding: 4em 0;
+    width: calc(100vw + 75px); 
   }
   
-  .banner-content {
-    width: 70vw;
-    min-height: fit-content;
+  .banner-content-container {
+    width: calc(70vw + 75px) ;
+    max-width: 800px; 
+    height: fit-content;
     background-color: transparent;    
+    text-align: center;
+    padding: 100px 20px;
   }
   
-  
-  .banner p {
-    font-size: 1.3em;
-    margin: 1.5em 0 0.5em 0;
+  .banner-content-container p {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem 0;
   }
   
-  
-  .banner .banner-content h1 span {
+  .banner-container .banner-content-container h1 span {
     color: var(--seagreen700);
     background-color: #fff;
     padding: 0 1rem;
   }
   
+  .banner-container .banner-content-container h1 span::before {
   
-  .banner .banner-content h1 span::before {
     font-family: "Playfair Display", serif;
     content: " clarity. ";
     animation: animate infinite 8s;
@@ -601,7 +585,7 @@ ul li {
   
   @keyframes animate {
     10% {
-      content: " clarity. ";
+      content: " clarity.  ";
     }
   
     30% {
@@ -629,12 +613,11 @@ ul li {
   .waves {
     position: relative;
     width: 100%;
-    max-height: 15vh;
+    height: min(15vh, 150px);
     margin-bottom: -7px; /*Fix for safari gap*/
-    min-height: 100px;
-    /*max-height: 150px;*/
   }
 
+  
   
   .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -1076,11 +1059,12 @@ border: 2px solid #003034;
 
 .email-subscription-container{
     display: flex;
+    align-items: center;
     border: solid 2px white;
     border-radius: 0.5em;
     overflow: hidden;
     margin-top: 1.2em;
-    width: 50%;
+    width: 100%;
     box-shadow: 2px rgba(207, 207, 207, 0.8);
 }
 .email-input{
@@ -1340,13 +1324,24 @@ padding: 0 0.5em;
   
   /* ---------------------------------------- Responsive ------------------------- */
 
-/*         Tablet responsive       */
+/*         4K Large screen responsive       */
+/* @media (min-width: 1980px) {
+  .banner {
+    height: 40vh; 
+  }
+  
+  .banner-content {
+    width: 50vw;
+    min-height: fit-content;
+  }
 
-  @media (max-width: 1200px) {
-        h1 {
-            font-size: 2.7em;
-        }
-        
+
+} */
+
+/*         Tablet screen responsive       */
+
+  @media (max-width: 1380px) {
+
         h2 {
             font-size: 3rem;
             line-height: 4rem;
@@ -1385,7 +1380,7 @@ padding: 0 0.5em;
             background: rgba(255, 255, 255, 0.9);
             box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
             color: #003034;
-            padding: 3em 2em;
+            padding: 2rem 2rem;
             border-top-left-radius: 1em;
         }
 
@@ -1412,6 +1407,8 @@ padding: 0 0.5em;
 
         header .navigation.active a {
             color: var(--seagreen800);
+            font-size: 70%;
+            padding: 0.2em;
         }
 
         header .navigation.active a:hover {
@@ -1445,13 +1442,20 @@ padding: 0 0.5em;
   }
 
  
-  
+
   
   /*      Mobile resposive */
   @media (max-width: 580px) {
     h1 {
-        font-size: 2em;
-      }
+      font-size: 2.5rem;
+      line-height: 1.2em;
+      margin: 0 0 1rem 0;
+
+    }
+
+    .header-content-container p {
+
+    }
       
       h2 {
         font-size: 2.5em;
@@ -1480,33 +1484,10 @@ padding: 0 0.5em;
       }
 
 
-
-      .banner p {
-        font-size: 1.1em;
-      }
-
-      .banner {
-        height: max-content;
-        padding: 8em 1em 2em 1em;
-      }
-
-      .banner-content {
-        width: 90vw;
-        
-      }    
       .wave-container {
         display: none;
       }
 
-      header img {
-        max-width: 75px;
- 
-      }
-
-      header svg {
-        color: #00555b;
-        filter: invert();
-      }
 
       .button {
         width: 100%;

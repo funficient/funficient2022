@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun-fi-cient | Blog</title>
+    <meta name="description" content="Discover funficient resources like the blog and random card generators. Learn how to drive positive change, innovation, and employee engagement towards a more teal paradigm.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">
+    <script defer src="components.js"></script>
+</head>
+
+
+<body>
+
+<!---------------          Header navigation section          ---------------->
+
+<div id="header"></div>
+<script>
+    fetch('__header.html')
+    .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+    <!---------------               Body starts here               ---------------->
+
+    <main>
+
+    <!---------------                 Wave Hero banner section     ----------------->
+
+        <section class="banner-container teal debug">
+
+            <div class="banner-content-container debug">
+                <h1 class="white">Read my mind...</h1>
+                
+                <p class="white">Integrating technology, lean, game thinking, and design to make workplaces more human, productive and fun. </p>
+                
+                
+               
+                    <form id="newsletter" action="https://formsubmit.co/2d7c5a602ea73117b2b2ca2070934980" method="POST" >
+                        <div class="email-subscription-container">
+                            <input type="email" name="email" placeholder='Enter your email address' class="email-input" required />
+                            
+                            <input type="hidden" name="_next" value="https://www.funficient.com/subscribed.html">
+                            <input type="hidden" name="_subject" value="New newsletter subscription!">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="true">
+
+                            <button type="submit" class="submit-button">Subscribe</button>
+                        </div>
+                    </form>
+
+            </div>
+
+            <div class="wave-container teal">
+
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+    
+            </div>
+        
+        </section>
+
+
+<!-------------------------------------- Quote ---------------------------------------->
+        <section class="section-container narrow">
+                
+                    <h2 class="big-quote">We make a living by what we get.  
+                        We make a life by what we give.
+                    </h2>
+        
+                    <p class="subtitle right"> - Winston Churchill</p>
+                                       
+        </section>    
+
+<!-------------------------------------- Resources grid ---------------------------------------->
+
+        <section class="section-container" id="resources">
+
+
+                <div class="resources-container">
+
+                        <div class="resource-5 bg1">   
+                            <h4 class="white">Articles</h4> 
+                            <h2 class="white">Blog</h2> 
+                            <p class="white">A collection of articles on all things to question life, the universe, and everything.</p>
+                            <a href="https://www.blog.funficient.com/" target="_blank" class="button">Read</a>
+                        </div>
+            
+                        <div class="resource-2 bg1">
+                            <h4 class="white">Tools</h4> 
+                            <h2 class="white">Product Cards</h2> 
+                            <p class="white">A creative thinking tool to help you create better products 
+                                by taking lessons from the most successful products.</p>
+                            <a href="https://www.product.funficient.com/" target="_blank" class="button">Get inspired</a>
+                        </div>
+                        
+                        <div class="resource-3 bg1">
+                            <h4 class="white">Tools</h4> 
+                            <h2 class="white">Thinker Toys</h2> 
+                            <p class="white">A random card generator based on the Soap, Soup and Sand creative thinking tool to help you get unstuck and come up with new solutions to old problems.</p>
+                            <a href="thinkertoys.html" target="_blank" class="button">Get Inspired</a>
+                        </div>
+                        
+                        <div class="resource-4 bg1">
+                            <h4 class="white">Cheatsheet</h4> 
+                            <h2 class="white">Clean Language</h2> 
+                            <p class="white">Gain clarity by applying the Clean Language method when eliciting information.</p>
+                            <a href="https://drive.google.com/file/d/1HQ19EsC3Z3wAO2v013jGSeR3xumYHpfK/view?usp=drive_link" target="_blank" class="button">Get clarity</a>
+                        </div>
+        
+            
+                        <div class="resource-6 bg1">
+                            <h4 class="white">Articles</h4> 
+                            <h2 class="white">People Development Magazine</h2> 
+                            <p class="white">The softer side of workspaces and how to get the most out of your most valuable asset. People.</p>
+                            <a href="https://peopledevelopmentmagazine.com/author/karin-dames/" target="_blank" class="button">Read</a>
+                        </div>
+
+                        <div class="resource-1 bg1">   
+                            <h4 class="white">Tools</h4> 
+                            <h2 class="white">Mindset Cards</h2> 
+                            <p class="white">A parallel thinking tool to help you focus better for shorter, more effective meetings.
+                                Use the question prompts to make sure all the perspectives are taken into consideration, 
+                                consciously shifting your mindset.
+                            </p>
+                            <a href="assets/funficient - Mindset Persona Cards.pdf" target="_blank" class="button">Think better</a>
+                        </div>
+                        
+            
+                </div>   
+        </section>
+
+        
+
+    <!------------------------------------------------------------------- Call to action section -------------------------------------------------------------->
+
+
+
+<section class="section-container">
+
+    <h2 class="section-text">Want to put some magic in your workplace?</h2>
+
+<div class="flex-container ">
+   <a href="https://funficient2021.setmore.com/" target="_blank" class="button secondary-button">Let's talk</a>
+   <!-- <a href="collaborate.html" class="button secondary-button">Add a collaborative practice</a> -->
+</div>
+
+
+<div class="spacer"></div>
+
+
+</section>
+
+
+<!-------------------------------------- Footer section -------------------------------------------->
+<div id="footer"></div>
+<script>
+    fetch('__footer.html')
+    .then(response => response.text()) 
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+<!---------------------------------- End of Footer section ---------------------------------------->
+
+</main>
+
+
+
+<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+
+</body>
+
+</html>
