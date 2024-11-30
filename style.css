@@ -542,6 +542,10 @@ ul li {
     color: var(--seagreen800);
   }
 
+  .mobile-only {
+    display: none;
+  }
+
 
 /*  -----------------------   Wave Hero Section ----------------------------------------------------------*/
 
@@ -1615,6 +1619,9 @@ padding: 0 0.5em;
         line-height: 1.3em;
       }
 
+      .mobile-only {
+        display: block;
+      }
       .nav-button {
         display: none;
       }
