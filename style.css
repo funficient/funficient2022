@@ -971,13 +971,14 @@ border: 2px solid #003034;
 }
 
 /* ------------------------------------- Resources page --------------------- */
-.resources-container {
+.resources-container  {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
     transition: all 0.5s ease-in-out;
 }
 
+/* ------------------------------------------------------  Subscribe setion ------------------------------------------------*/
 .resources-container > div {
     height: 400px;
     padding: 3em;
@@ -1053,9 +1054,51 @@ border: 2px solid #003034;
   #resources .button::after {
     content: "";
   }
+
+  .resources-container > div {
+    height: 400px;
+    padding: 3em;
+    
+    position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: pointer;
   
-/* ------------------------------------------------------  Subscribe setion ------------------------------------------------*/
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .resources-container > div {
+    height: 400px;
+    padding: 3em;
+    background: url(assets/00013159.jpg);
+    position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: pointer;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .resources-container > div:hover {
+    background-image: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  
+
 
 .email-subscription-container{
     display: flex;
@@ -1100,6 +1143,111 @@ border: 2px solid #003034;
     color: var(--seagreen900);
 
   }
+
+  /* ------------------------------------------------------  Blog page ------------------------------------------------*/
+  .blog-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.blog-navigation li {
+    position: relative;
+}
+
+.blog-navigation li:not(:last-child)::after {
+    content: "•";
+    margin-left: 1em;
+    color: #003034;
+}
+
+.blog-navigation a {
+    text-decoration: none;
+    color: #003034;
+    padding: 0.5em 0;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.blog-navigation a:hover,
+.blog-navigation a:focus,
+.blog-navigation a:active {
+    color: #33949b; 
+}
+
+.blog-navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #33949b; /* Change this to your desired hover color */
+    transition: height 0.3s;
+}
+
+.blog-navigation a:hover::before,
+.blog-navigation a:focus::before,
+.blog-navigation a:active::before {
+    height: 3px; 
+}
+
+.separatorline {
+  height: 1px; /* Thickness of the line */ 
+  background-color: #d0dcdd; /* Color of the line */ 
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); /* Adding the drop shadow */ margin-top: 0.5em;
+}
+
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+article {
+  width: 70%;
+  max-width: 950px;
+  background: white;
+  padding: 2em;
+ 
+}
+
+.post-title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.post-date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 1.5em;
+}
+
+.post-content p {
+  margin-bottom: 1.5em;
+}
+
+
+
+.post-quote {
+  font-size: 1.8em;
+  font-family: "Playfair Display";
+  line-height: 1.2em;
+  color: #343a40;
+  padding: 2em;
+  margin: 1.5em 0;
+}
+
+.tldr {
+  background-color: rgba(128, 188, 193, 0.1);
+  padding: 2em;
+  margin-bottom:2em;
+}
 
   /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
 
@@ -1453,9 +1601,6 @@ padding: 0 0.5em;
 
     }
 
-    .header-content-container p {
-
-    }
       
       h2 {
         font-size: 2.5em;
@@ -1470,6 +1615,9 @@ padding: 0 0.5em;
         line-height: 1.3em;
       }
 
+      .nav-button {
+        display: none;
+      }
       .section-container {
         margin: 1em;
       }
