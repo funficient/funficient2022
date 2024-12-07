@@ -1,6 +1,6 @@
 function card(name, image) {
     this.name = name;
-       this.image = image;
+    this.image = image;
 }
 
 var deck = [
@@ -784,11 +784,13 @@ var deck = [
 
 ]
 
+/* Random Number Generator */
 function getRandom(number) {
     var randomNumber = Math.floor(Math.random() * number);
     return randomNumber;
 }
 
+/* Draw card and display */
 document.getElementById("draw").onclick = function(){
     var index = getRandom(152);
     var currentCard = deck[index];

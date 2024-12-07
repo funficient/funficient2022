@@ -245,6 +245,12 @@ button {
   align-items: start;
 }
 
+.blog-container {
+  display: grid;
+  width: auto;
+  margin: 0 5rem;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -279,6 +285,8 @@ button {
 #play {
   margin-top: -3em;
 }
+
+
 
 .grid-column {
   display: grid;
@@ -1251,6 +1259,27 @@ article {
   background-color: rgba(128, 188, 193, 0.1);
   padding: 2em;
   margin-bottom:2em;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #eee;
 }
 
   /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
