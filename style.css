@@ -58,11 +58,11 @@ padding: 0;
 
 html, body {
   height: 100%;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  line-height: 1.2;
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
@@ -138,6 +138,7 @@ button {
   }
   
 .teal {
+  /* Teal is for coaching and professional */
     background-image: linear-gradient(90deg, #007982, #6DB9C2 );
   }
 
