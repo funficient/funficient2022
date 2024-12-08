@@ -90,9 +90,7 @@ h2 {
   font-family: "Playfair Display", sans-serif;
   font-size: 3em;
   color: var(--darkGray800);
-  line-height: 1.2em;
   margin-bottom: 0.5em;
-
 }
 
 h3 {
@@ -1000,7 +998,6 @@ border: 2px solid #003034;
   .resources-container > div h2 {
     
     font-size: 1.8em;
-    line-height: 1.2em;
     margin: 0.5em 0 1em 0;
     font-weight: 600;
   }
@@ -1612,7 +1609,6 @@ padding: 0 0.5em;
   @media (max-width: 580px) {
     h1 {
       font-size: 2.5rem;
-      line-height: 1.2em;
       margin: 0 0 1rem 0;
 
     }
