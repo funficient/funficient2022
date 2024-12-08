@@ -267,17 +267,13 @@ button {
   margin-top: -3em;
 }
 
-
-
 .grid-column {
   display: grid;
   align-content: center;
 }
  
-
 .container {
-    display: grid;
-    
+    display: grid;   
 }
 
 .card-container {
@@ -338,9 +334,6 @@ button {
 }
 
 
-
-
-
 /* -----------                Buttons                  -----*/ 
 
 .button {
@@ -399,7 +392,6 @@ button {
 }
 
 /*  Top navigation  */
-/*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
 
 header {
     position: fixed;
@@ -536,7 +528,7 @@ ul li {
   }
 
 
-/*  -----------------------   Wave Hero Section ----------------------------------------------------------*/
+/*  -----------------   Wave Hero Section ------------------------------------------*/
 
 .banner-container {
     display: flex;
@@ -611,7 +603,6 @@ ul li {
   }
 
   
-  
   .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
   }
@@ -679,7 +670,7 @@ ul li {
   }
 
 
-   /* ---------------------------- Value proposition section ----------------- */
+   /* -------------------------- Value proposition section ----------------- */
   
    p span {
     font-weight: 800;
@@ -699,7 +690,7 @@ ul li {
   }
 
 
-  /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
+  /* --------------------  Contact form -----------------------------------*/
     .wide {
         grid-template-columns: 1fr;
     }
@@ -769,7 +760,6 @@ ul li {
   .textInput {
     min-height: 6em;
     width:auto;
-    /* resize: none; */
     margin: 0;
     padding: 0 2.5em 0 0;
   }
@@ -780,16 +770,12 @@ ul li {
     height: 3rem;
     color: #949494;
     padding: 0.5rem 0.75rem;
-    /* background-clip: padding-box; */
     border-style: hidden;
     font-size: 1em;
     border-bottom: 1px solid #333;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   
-  /* .form-input:last-child {
-    margin-left: 1em;
-  } */
   
   .form-input:focus {
     outline: 0;
@@ -825,8 +811,7 @@ ul li {
 }
 
 
-
-/* ------------------------------------------------------  Get direction setion ------------------------------------------------*/
+/*---------------------------  Get direction setion ------------------------------------------------*/
   
     #direction .grid-container, 
     #goals .grid-container,
@@ -871,10 +856,8 @@ ul li {
     }
 
     .five, .six {
-
         background: transparent;
         border: 2px solid #003034;
-
     }
 
  
@@ -910,6 +893,7 @@ ul li {
         margin-top: 1em;
 
     }
+
 
 
     /* ------------------------------------------------------  Coaching and calibrate setion ------------------------------------------------*/
