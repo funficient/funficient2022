@@ -17,93 +17,62 @@
 
 <!---------------          Header navigation section          ---------------->
 
-    <!---------------          Header navigation section          ---------------->
-
-    <div id="header"></div>
+<div id="header"></div>
     <script>
         fetch('__header.html')
         .then(response => response.text()) // Corrected arrow function syntax and Response keyword
         .then(data => {
             document.getElementById('header').innerHTML = data;
         });
-    </script>
+    </script>   
+
+<main>
+
+<!---------------                 Wave Hero banner section     ----------------->
+
+<section class="banner-container teal">
+
+    <div class="banner-content-container">
+        <h1 class="white">Change is an inside job.</h1>
+        <p class="white">Gain awareness of what's holding you back and build confidence. </p>
+        <a href="https://funficient2021.setmore.com/" target="_blank" class="button banner-button">Start the conversation</a>
+    </div>
+
+    <div class="wave-container teal">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
     
-   
+    </div>     
+</section>
 
-    <!---------------               Body starts here               ---------------->
 
-    <main>
-
-    <!---------------                 Wave Hero banner section     ----------------->
-
-        <section class="banner-container teal">
-
-            <div class="banner-content-container">
-                <h1 class="white">Change is an inside job.</h1>
+<!----------------------------- Quote ---------------------------------------->
+<section class="section-container narrow">
                 
-                <p class="white">Gain awareness of what's holding you back and build confidence. </p>
-                <a href="https://funficient2021.setmore.com/" target="_blank" class="button banner-button">Start the conversation</a>
-            </div>
-
-            <div class="wave-container teal">
-
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                </svg>
-    
-            </div>
-        
-        </section>
-
-
-    <!-------------------------------------- Quote ---------------------------------------->
-        <section class="section-container narrow">
-                
-            <h2 class="big-quote">If you always do what you’ve always done, you’ll always get what you’ve always got. 
-            </h2>
-            <p class="subtitle right"> - Henry Ford</p>
+    <h2 class="big-quote">If you always do what you’ve always done, you’ll always get what you’ve always got. 
+    </h2>
+    <p class="subtitle right"> - Henry Ford</p>
                                        
-        </section>    
+</section>    
 
 
-        <!--------------------------------------------- More information ----------------------------------------------->
+<!-------------------- More information ---------------------------------------->
 <section class="section-container" id="calibrate">
 
     <div class="container center">
 
             <h1>Unlock human potential.</h1>
             <p class="title-text center">You can only expect a different outcome when you change what you do.</p>      
-
-    </div>
-    
-    <div class="grid-container">
-        
-        <div class="grid-column">
-            
-            <p class="large-text">
-                
-                Do you yearn to reach your goals or feel you are 
-                not utilizing your strengths fully?
-            </p>
-        </div>
-
-        <div class="column">
-            <!-- <h3>the solution</h3> -->
-            <p >People are a company's most valuable asset.  Yet, few people get the opportunity to 
-                use and develop their skills in the workplace.  
-                
-                Coaching is a tool to help
-                people gain clarity on their goals and take meaningful
-                action to close the gap between where they are and where they want to be. 
+            <p >People are a company's most valuable asset.  Yet, few people get the opportunity to use and develop their skills in the workplace.  Coaching is a tool to help you gain clarity on you goals and take meaningful action to close the gap between where you are and where you want to be. 
             </p>
 
         </div>
@@ -121,6 +90,7 @@
         <p>Book a free, no obligation discovery call to start the conversation.</p>
         <a href="https://funficient2021.setmore.com/" class="button primary-button">Start the conversation</a>
     <div class="spacer"></div>
+
 </section>
 
 <!---------------                Coaching options section     ----------------->
@@ -132,13 +102,10 @@
     </p>
     <div class="spacer"></div>    
         
-    
-    <!---------------                Individual coaching packages     ----------------->
+<!---------------           Individual coaching packages     ----------------->
   
-    
     <h3 class="center accent-text">for individuals </h3>
     <div class="line"></div>
-        
         
     <div class="grid-container center">
     
@@ -150,9 +117,7 @@
             <h2 class="white center">Firestarter Sessions</h2>
             <br>
             <p class="white center">Designed for those new to coaching, 
-                this series of 6 guided sessions takes you on a journey of transformation 
-                to get clarity and create movement towards a more purpose-driven life.  
-                
+                this series of 6 guided sessions takes you on a journey of transformation to get clarity and create movement towards a more purpose-driven life.  
             </p>
 
             <a href="get-started.html" class="button">Get started</a>
@@ -161,7 +126,6 @@
 
         <div class="card two ">  
             <h2 class="white center">Micro Sessions</h2>
-            
             <br>
             <p class="white center">A regular 20min coaching session.  
                 Designed for busy professionals
@@ -170,14 +134,11 @@
             </p>
 
             <a href="https://funficient2021.setmore.com/" target="_blank" class="button">Book now</a>
-
-
         </div>
     
         <div class="card three ">  
             
             <h2 class="white center">Standard Sessions</h2>
-            
             <br>
             <p class="white center">Ad-hoc sessions following the G.R.O.W. 
                 model. Come with a coaching topic in mind and walk away 
@@ -185,8 +146,6 @@
             </p>
 
             <a href="https://funficient2021.setmore.com/" target="_blank" class="button">Book now</a>
-            
-            
             
         </div>
 
@@ -202,11 +161,9 @@
     <div class="grid-container center" id="teams">
     
         <div class="card five ">  
-            <h2 class=" center">navigator sessions</h2>
+            <h2 class=" center">Navigator Sessions</h2>
             <br>
-            <p class=" center">A hands-on team coaching program to improve team dynamics, 
-                collaboration, and alignment. 
-                
+            <p class=" center">A hands-on team coaching program to improve team dynamics, collaboration, and alignment. 
             </p>
 
             <a href="https://funficient2021.setmore.com/" target="_blank" class="button secondary-button">Start the conversation</a>
@@ -214,7 +171,7 @@
         </div>
 
         <div class="card six ">  
-            <h2 class=" center">growth program</h2>
+            <h2 class=" center">Growth Program</h2>
             <br>
             <p class=" center">See how your workforce become more
                 responsible and engaged.
@@ -224,25 +181,17 @@
 
         </div>
     </div>
-    
 
 </section>
 
-<!---------------------------------- Call to action section ---------------------------------->
-
-
-
-<!------------------------------------------------------------------- Contact form section -------------------------------------------------------------->
+<!------------------- Contact form section ------------------------------------>
 <section class="section-container wide">
 
-    <!-- <div class="conversation"> -->
         <div class="container center">
             <h2 class="center">Ready to take the first step?</h2>
             <p class="title-text">Fill out the form to start the conversation or book a free discovery call.</p>
 
         </div>
-
-    <!-- </div>         -->
                
     <div class="form-container">
             
@@ -299,9 +248,8 @@
 
 </section>
 
-
         
- <!-------------------------------------- Footer section -------------------------------------------->
+ <!--------------------- Footer section ------------------------------>
  <div id="footer"></div>
  <script>
      fetch('__footer.html')
@@ -310,10 +258,6 @@
          document.getElementById('footer').innerHTML = data;
      });
  </script>
-
-<!---------------------------------- End of Footer section ---------------------------------------->
-
-
 
 </main>
 
