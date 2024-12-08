@@ -43,62 +43,49 @@
     <div id="header"></div>
     <script>
         fetch('__header.html')
-        .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+        .then(response => response.text()) 
         .then(data => {
             document.getElementById('header').innerHTML = data;
         });
     </script>
     
-    <!---------------               Body starts here               ---------------->
-
     <main>
 
     <!---------------                 Wave Hero banner section     ----------------->
+   
+    <section class="banner-container teal">
+        <div class="banner-content-container">
+            <h1 class="white">You don't need more time.
+                <br>
+                You need <span></span>
+            </h1>
+            <p class="white">Become a time wielder, play your way to productivity. </p>
+            <a href="case-studies.html" class="button banner-button">Read a case study</a>
+        </div>
 
-        <section class="banner-container teal">
-
-            <div class="banner-content-container">
-                <h1 class="white">You don't need more time.
-                    <br>
-                    You need <span></span>
-                </h1>
-                <!-- <h1 class="white">Want to become a time wielder?</h1> -->
-                <p class="white">Become a time wielder and play your way to productivity. </p>
-                <a href="case-studies.html" class="button banner-button">Read a case study</a>
-            </div>
-
-            <div class="wave-container teal">
-
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
+        <div class="wave-container teal">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"> 
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
                     <g class="parallax">
                         <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
                         <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
                         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
                         <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
                     </g>
-                </svg>
-
-            </div>
-
-        </section>
+            </svg>
+        </div>
+    </section>
 
 
-        <!-------------------------------------- Quote ---------------------------------------->
-        <section class="section-container narrow">
-
-            <h2 class="big-quote">There is nothing quite so useless as doing with
+    <!------------------------------ Quote ---------------------------------------->
+    <section class="section-container narrow">
+        <h2 class="big-quote">There is nothing quite so useless as doing with
                 great efficiency something that should not be done at all.
-            </h2>
-
-            <p class="subtitle right"> - Peter Drucker</p>
-
-
-        </section>
+        </h2>
+        <p class="subtitle right"> - Peter Drucker</p>
+    </section>
 
         <!---------------------                About section     ----------------->
         <section class="section-container">
