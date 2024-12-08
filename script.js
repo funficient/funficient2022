@@ -25,3 +25,7 @@ $select.change(function(){
   //go to select's location
   window.location = $select.val();
 });
+
+
+//blog script
+
