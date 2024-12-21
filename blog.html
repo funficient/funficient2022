@@ -76,7 +76,7 @@
         </section>
 
 
-<!------------------------------ Blog top navigation --------------------------------->
+<!--------------------- Blog top navigation --------------------------------->
 
 
         <section class="section-container" >
@@ -85,13 +85,88 @@
             
             <script>
                 fetch('__blog_navigation.html')
-                .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+                .then(response => response.text()) 
                 .then(data => {
                     document.getElementById('blog_summary').innerHTML = data;
                 });
             </script>
 
 <!------------------------------ Blog body  --------------------------------->
+
+
+<section class="section featured debug" id="featured" aria-label="featured post">
+    <div class="blog-container debug">
+        <h2>Get started with the best stories.</h2>
+        <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+                <div class="blog-card">
+                    <figure class="card-banner img-holder" style="--width: 500 ; --height: 600 ">
+                        <img src="./assets/00007599.jpg" width="500" height="600" loading="lazy" alt="Image of delicious truffles" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                        <ul class="card-meta-list">
+                            <li><a href="#" class="card-tag">Leadership</a></li>
+                            <li><a href="#" class="card-tag">Org growth</a></li>
+                            <li><a href="#" class="card-tag">Play</a></li>
+                            <li><a href="#" class="card-tag">Productivity</a></li>
+                            <li><a href="#" class="card-tag">Technology</a></li>
+                            <li><a href="#" class="card-tag">Book review</a></li>
+                        </ul>
+
+                        <h3 class="h4"><a href="#" class="card-title hover:underline">Read my mind.</a></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita doloremque obcaecati id inventore error quaerat numquam odit voluptas, nihil animi, accusamus qui ipsa quis aperiam dicta provident neque deserunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="scrollbar-item">
+                <div class="blog-card">
+                    <figure class="card-banner img-holder" style="--width: 500 ; --height: 600 ">
+                        <img src="./assets/00013159.jpg" width="500" height="600" loading="lazy" alt="Image of delicious truffles" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                        <ul class="card-meta-list">
+                            <li><a href="#" class="card-tag">Leadership</a></li>
+                            <li><a href="#" class="card-tag">Org growth</a></li>
+                            <li><a href="#" class="card-tag">Play</a></li>
+                            <li><a href="#" class="card-tag">Productivity</a></li>
+                            <li><a href="#" class="card-tag">Technology</a></li>
+                            <li><a href="#" class="card-tag">Book review</a></li>
+                        </ul>
+
+                        <h3 class="h4"><a href="#" class="card-title hover:underline">Read my mind.</a></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita doloremque obcaecati id inventore error quaerat numquam odit voluptas, nihil animi, accusamus qui ipsa quis aperiam dicta provident neque deserunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="scrollbar-item">
+                <div class="blog-card">
+                    <figure class="card-banner img-holder" style="--width: 500 ; --height: 600 ">
+                        <img src="./assets/00007599.jpg" width="500" height="600" loading="lazy" alt="Image of delicious truffles" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                        <ul class="card-meta-list">
+                            <li><a href="#" class="card-tag">Leadership</a></li>
+                            <li><a href="#" class="card-tag">Org growth</a></li>
+                            <li><a href="#" class="card-tag">Play</a></li>
+                            <li><a href="#" class="card-tag">Productivity</a></li>
+                            <li><a href="#" class="card-tag">Technology</a></li>
+                            <li><a href="#" class="card-tag">Book review</a></li>
+                        </ul>
+
+                        <h3 class="h4"><a href="#" class="card-title hover:underline">Read my mind.</a></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita doloremque obcaecati id inventore error quaerat numquam odit voluptas, nihil animi, accusamus qui ipsa quis aperiam dicta provident neque deserunt.</p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+
+<article></article>
 
 <section class="blog-container grid-3-container center debug" id="blog">
     

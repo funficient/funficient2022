@@ -8,7 +8,7 @@
     <meta name="description" content="Discover funficient resources like the blog and random card generators. Learn how to drive positive change, innovation, and employee engagement towards a more teal paradigm.">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="components.js"></script>
 </head>
 
@@ -19,14 +19,14 @@
 
 <div id="header"></div>
 <script>
-    fetch('__header.html')
-    .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+    fetch('__header.html ')
+    .then(response => response.text()) 
     .then(data => {
         document.getElementById('header').innerHTML = data;
     });
 </script>
 
-    <!---------------               Body starts here               ---------------->
+
 
     <main>
 

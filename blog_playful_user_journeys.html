@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun-fi-cient | Turning User Journeys Into a Game</title>
+    <meta name="description" content="Discover funficient's innovative game to design user journeys using Story Cubes and the GameThinking framework.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">
+    <script defer src="components.js"></script>
+</head>
+
+
+<body>
+
+<!---------------          Header navigation section          ---------------->
+
+<div id="header"></div>
+<script>
+    fetch('__header.html ')
+    .then(response => response.text()) 
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+
+
+    <main>
+
+    <!---------------                 Wave Hero banner section     ----------------->
+
+        <section class="banner-container teal blog-header">
+
+            <div class="banner-content-container ">
+                <h1 class="white">Turning User Journeys Into a Game</h1>
+                
+                <p class="white">Explore possible user journeys using Story Cubes and the GameThinking framework. </p>
+                
+                
+               
+                    <form id="newsletter " action="https://formsubmit.co/2d7c5a602ea73117b2b2ca2070934980" method="POST" >
+                        <div class="email-subscription-container ">
+                            <input type="email" name="email" placeholder='Enter your email address' class="email-input" required />
+                            
+                            <input type="hidden" name="_next" value="https://www.funficient.com/subscribed.html">
+                            <input type="hidden" name="_subject" value="New newsletter subscription!">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="true">
+
+                            <button type="submit" class="submit-button">Subscribe</button>
+                        </div>
+                    </form>
+
+            </div>
+
+            <div class="wave-container teal">
+
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+    
+            </div>
+        
+        </section>
+
+
+<!------------------------------- Blog navigation --------------------------------->
+
+<!-- 
+        <section class="section-container" >
+            <div id="blog_summary"></div>
+        </section>
+            
+            <script>
+                fetch('__blog_navigation.html')
+                .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+                .then(data => {
+                    document.getElementById('blog_summary').innerHTML = data;
+                });
+            </script> -->
+
+<!---------------------------------- Article ------------------------------------>
+
+
+    <main class="blog-container ">
+        <article>
+            <h2 class="post-title center">How to turn work into play</h2>
+            <p class="post-date center">Published on: 21 December 2024</p>
+            <section class="post-content  ">
+                <div class="tldr">
+                    <h4>TL;DR;</h4>
+                    <br>
+                    <p>User stories were meant to serve as placeholder for a conversation. Yet, few teams do this, even fewer able to break down a big vision into small, coherent stories.</p>
+
+                    <p>If you're a Product Owner looking for innovative ways to  map user stories that is collaborative and fun, this technique is for you.</p>
+
+                    <p>This post dives into why stories are so powerful, the pitfalls of traditional methods, and how to use Story Cubes within a Gamethinking framework to co-create user journeys that is collaborative, innovative, and complete as part of a bigger system.</p>
+                </div>
+
+                <p>A user journey is often described as a collection of user stories. The idea behind user stories is to serve as starting point for a conversation around to discuss the details of work to be done. It's centered around the idea of providing small, incremental value to the customer. In reality, however, few teams engage in conversation around features to be developed, and most struggle to break down a large feature into a small hypotheses to test. To solve these problems, as well as getting lost in the wrong rabbit hole, I took the concept of user story at face value and developed a playful, engaging, and innovative method for designing user journeys and epics which I outline in this post.</p>
+
+                <p>Using the <a href="https://gamethinking.io/how-it-works/" target="_blank"> GameThinking path to mastery</a> as framework (similar to the user story mapping technique), combined with a version of Rory’s Story Cubes, the whole team - including all the stakeholders - follow an <a href="https://www.blog.funficient.com/blog/" target="_blank">ensemble style</a> story telling format in a 1 - 2 hour long workshop. The workshop is an exploratory session to come up with fresh ideas of what a user journey might look like, leveraging on the power of storytelling.</p>
+
+            
+                <h2>The Magic of Storytelling: Why Stories Stick</h2>
+
+                <p>Most people are aware of the power of stories. Stories, unlike a list of facts or bullet points, communicates values and a shared mission. It creates a strong emotional connection between people and the experiences of others. This emotional connection can lead to deeper understanding and compassion, while enhancing memory retention. <a href="https://www.anecdote.com/2015/01/link-between-memory-and-stories/" target="_blank">Research</a> shows that individuals retain information presented as a story at least twice as effectively as when the same content is delivered in the form of a list of facts or bullet points.</p>
+
+                <blockquote class="post-quote">
+                    <p>"Research shows that individuals retain information presented as a story at least twice as effectively as when the same content is delivered in the form of a list of facts or bullet points."</p>
+                </blockquote>
+
+                <h2>The Puzzle of User Stories: Finding the Bigger Picture</h2>
+
+                <p>Another reason why stories are a powerful way to communicate an idea is that it helps simplify complex concepts, making them easier to understand. One of the biggest pitfalls of how user stories are used within most teams using the metaphor of building a puzzle, is that it isolates a single puzzle piece, without having a contextual map of the entire system. While there are benefits to this approach of focusing on one piece only, you risk losing context, which is exactly what happened to our team early in the agile journey.</p>
+
+                <p>I remember working on a team where we went through an entire Scrum cycle, designing, estimating and building a user story, without anyone realizing that the functionality we built should have been in a different application. Everyone was so used to always working on the doctor's application that everyone - including the Product Owner, the development team, and even the business stakeholders missed that the feature was intended for the reception and administrative team, who requires very different permissions and in a completely different application. It was only until the complete feature was handed over to the test team for final validation that we realized the error and had to go back to the drawing board.</p>
+
+                <p>While this sounds like an extreme case, we were a group of talented, highly educated and experienced people who solved extremely complex problems on a daily basis. While all the check boxes were ticked and the procedures followed to a tee, somehow we were so focused on speed that we lost sight of the problem we were trying solved and for whom with this story. Another example of forgetting the big picture (again by very talented people) was years later when I started working with a startup who has been building a complex system for the past year. While they’ve been working long hours in order to add all the features, they missed the login feature, rendering all their hard work useless from the customer’s point of view.</p>
+
+                <h2>Beyond User Story Mapping: Integrating Systems Thinking</h2>
+
+                <p>In subsequent years the use of a user story mapping has become popular as a means to visualize the entire user journey to keep track of what has been done and what not within a bigger context. However, this technique relies greatly on the skill of the product owner to ensure that the journey is well thought through. If the Product Owner didn’t think of onboarding as in the example above where login was omitted by accident, no user story map is going to highlight this.</p>
+
+                <img src="/assets/basecamp-core-user-journey.png" alt="Image of a sample GameThinking Mastery Path">
+                <div class="spacer"></div>
+
+                <p>The GameThinking Path To Mastery solves this problem eloquently by providing a systems thinking framework that ensure all the key phases of a system is included. Unlike a user story map, which simply visualizes a sequential path a user might take, the path to mastery outlines a learning path designed to take a user from discovery to being an expert. It is designed around a core habit loop - the heart of any system that makes users come back day after day. Each major phase of the framework is summarized in a user story (or jobs-to-be-done task) which then can be broken down into a user story map with all the detailed stories. For an example, below is a mastery path for Basecamp, the popular Project Management tool.</p>
+
+                <blockquote class="post-quote">
+                    <p>"Unlike a user story map, which simply visualizes a sequential path a user might take, the path to mastery outlines a learning path designed to take a user from discovery to becoming an expert."</p>
+                </blockquote>
+
+                <p>Using this framework as baseline, the play session to discover a user journey uses the four phases as story outline. Using only this framework, however, still feels like work and doesn’t optimize for creative thinking. That’s where <a href="https://www.storycubes.com/en/comment-jouer/" target="_blank">Rory’s Story Cubes</a> comes into the mix, or if you are playing online, Dave Birrs has an excellent version called <a href="https://davebirss.com/storydice/" target="_blank"> Story Dice</a>. By using the story cubes or dice as random input into the thinking process, work is turned into play.</p>
+
+                <p>So, how does it work? </p>
+
+                <h2>Step-by-Step: How To Play</h2>
+                
+                <p>Here’s a step-by-step guide to turn your work into a playful, innovative, and productive experience.</p>
+                <ol class=" ">
+                    <li><h3>Choose Your Topic:</h3> 
+                        <p>Pick a theme or product to focus on.</p>
+                    </li>
+                    
+                    <li>
+                       <h3>Explain the Rules: </h3> 
+                       <p>Introduce the GameThinking framework and explain how to use the Story Cubes.</p>
+                    </li>
+
+                    <li>
+                        <h3>Roll the Dice: </h3>
+                        <p>Each player rolls their set of dice, and use the images to inspire our collective story.</p>
+                    </li>
+
+                    <li>
+                        <h3>The Story Begins: </h3>
+                        <p>After the rules have been explained and everyone is ready, the first player starts the game with “Once upon a time…” and sets the scene for the Discovery phase of the user journey workshop.</p>
+                    </li>
+
+                    <li>
+                        <h3>Round One - Discovery: </h3>
+                        <p>Once the scene has been set, they say “and then…” to pass the story to the next player. Each player builds on the previous contribution in a “yes, and...” improv style.</p>
+                    </li>
+
+                    <li>
+                        <h3>Round Two - Onboarding: </h3>
+                        <p>After everyone has contributed to the Discovery phase, or when you feel it is a good time to transition to the next phase, re-roll the dice to move on to Onboarding. Repeat the process of building the story one player at a time, focusing on this stage of the user journey.</p>
+                    </li>
+
+                    <li>
+                        <h3>Round Three - Habit Building: </h3>
+                        <p>In the third round, focus on how users would develop a habit around your product. Again, each player re-rolls their dice and adds their twist to the story.</p>
+                    </li>
+
+                    <li>
+                        <h3>Round Four - Mastery & Loyalty: </h3>
+                        <p> In the final round, focus on rewarding loyalty and turning users into ambassadors of your product. Re-roll the dice once more and continue the journey.</p>
+                    </li>
+
+                    <li>
+                        <h3>End the Game: </h3>
+                        <p>When the story feels complete, or when the final phase is over, wrap things up with “And they lived happily ever after. The End.”</p>
+
+                    </li>
+
+                    <li>
+                        <h3>Reflect: </h3>
+                        <p>Finally, do a quick round-robin check-in and ask questions to extract key insights and learning from the session. “What was the most surprising thing you discovered during the session?” or “What becomes possible from this?” are great questions to ask.</p>
+                    </li>
+
+                    <li>
+                        <h3>Translate it into a Mastery Path: </h3>
+                        <p>Finally, it is time to summarize the key learnings into a core user journey as in the Basecamp example above. For each main phase of the journey, compile a user story or jobs-to-be-done task to summarize the motivation for users to progress on the pathway towards mastery.</p>
+                    </li>
+                </ol>
+
+                <h2>Why It Works</h2>
+
+                <p>This playful approach to mapping user journeys does more than just break the monotony of traditional brainstorming. It taps into your creativity, allows for out-of-the-box thinking, and brings a fresh perspective to how you can design your product's lifecycle. By combining the strategic GameThinking framework with the fun and randomness of Story Cubes, you get a productive and engaging way to plan, ideate, and problem-solve.</p>
+
+                <p>So, next time you find yourself stuck in a creative rut or want to make your work more engaging, try to play your way to productivity. You might just find that the most innovative solutions come when you stop thinking too hard and start playing.</p>
+
+                <blockquote class="post-quote">
+                    <p>You might just find that the most innovative solutions come when you stop thinking too hard and start playing.</p>
+                </blockquote>
+
+                <p>After all, play really is the best way to unlock productivity!
+                </p>
+
+                <div class="spacer"></div>
+                <div class="small">
+                    <p>© 2024 Kate Dames | <strong>www.funficient.com</strong> | All rights reserved.</p>
+                </div>
+                <div class="spacer"></div>
+                <h4>You might also like:</h4>
+                <br>
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-06-23-the-anatomy-of-a-good-user-story/" target="_blank">The Anatomy of a Good User Story</a></p>
+    
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-06-25-testing-complex-systems-with-play/" target="_blank">Testing Complex Systems With Play</a></p>
+    
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-06-28-design-better-products-with-game-thinking/" target="_blank">Design Better Products With Game Thinking</a></p>
+    
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-07-04-the-rules-of-play/" target="_blank">The Rules Of Play</a></p>
+    
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-07-12-user-research-through-play/">User Research Through Play</a></p>
+    
+                <p class="darkText"><a href="https://www.blog.funficient.com/blog/2022-08-10-5-ways-to-use-story-cubes/">5 Ways to Use Story Cubes</a></p>
+                <div class="spacer"></div>
+
+                
+                <div class="spacer"></div>
+
+            </section>
+
+            <section class="colored-container center">
+
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h2 class="center">Ready to play?</h2>
+                <p>Book a free, no obligation discovery call to start the conversation.</p>
+                    <a href="https://funficient2021.setmore.com/" class="button primary-button">Start the conversation</a>
+    
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+            </section>
+
+            <div class="spacer"></div>
+           
+            <div class="spacer"></div>
+
+           
+
+            
+ 
+        </article>
+
+        <!---------------                Call to action section     ----------------->
+
+      
+
+    </main>
+
+</body>
+</html>
+
+        
+
+
+
+
+
+
+
+<!-------------------------------------- Footer section -------------------------------------------->
+<div id="footer"></div>
+<script>
+    fetch('__footer.html')
+    .then(response => response.text()) 
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+<!---------------------------------- End of Footer section ---------------------------------------->
+
+</main>
+
+
+
+<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+
+</body>
+
+</html>
