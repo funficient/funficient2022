@@ -510,6 +510,9 @@ ul li {
     margin-left: 1em;
   }
   
+  .nav-button {
+    color: white;
+  }
   .nav-button::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
@@ -761,6 +764,7 @@ ul li {
   p + p {
     margin-top: 1.7em;
   }
+
 
 
    /* -------------------------- Value proposition section ----------------- */
@@ -1214,16 +1218,7 @@ border: 2px solid #003034;
   }
 
   /* ------------------------------------------------------  Blog page ------------------------------------------------*/
-  .blog-navigation ul, .post-content ul {
-    list-style: decimal;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    gap: 1em;
-    /* text-transform: uppercase; */
-    margin-bottom: 2em;
-    
-}
+
 
 .blog-navigation li, .post-content li {
     position: relative;
@@ -1236,36 +1231,6 @@ border: 2px solid #003034;
     color: #003034;
 }
 
-.blog-navigation a {
-    text-decoration: none;
-    color: #003034;
-    padding: 0.5em 0;
-    display: inline-block;
-    transition: color 0.3s;
-}
-
-.blog-navigation a:hover,
-.blog-navigation a:focus,
-.blog-navigation a:active {
-    color: #33949b; 
-}
-
-.blog-navigation a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    background-color: #33949b; /* Change this to your desired hover color */
-    transition: height 0.3s;
-}
-
-.blog-navigation a:hover::before,
-.blog-navigation a:focus::before,
-.blog-navigation a:active::before {
-    height: 3px; 
-}
 
 .separatorline {
   height: 1px; /* Thickness of the line */ 
@@ -1313,19 +1278,19 @@ article {
   margin: auto;
   position: relative;
   width: 100%;
-
-  
 }
-
-
 
 .post-quote {
   font-size: 1.8em;
   font-family: "Playfair Display";
   line-height: 1.2em;
-  color: #343a40;
+  
   padding: 2em;
   margin: 1.5em 0;
+}
+
+.post-quote p {
+  color: #00555b;
 }
 
 .tldr {
@@ -1362,28 +1327,6 @@ ol p {
   color: #5d5c5c;
 }
 
-
-
-
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination a {
-  margin: 0 5px;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.pagination a:hover {
-  background-color: #eee;
-}
 
   /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
 
