@@ -170,15 +170,30 @@ var deck = [
     new card('Flamingo', 'flamingo'),
     
     new card('Watermelon', 'watermelon'),   
-    new card('Campfire', 'campfire')
+    new card('Campfire', 'campfire'),
+    new card('Parking lot', 'parking-lot'), 
+    new card('War', 'war'),
+
+    new card('Sauce', 'sauce'),
+    new card('Bruise', 'bruise'), 
+    new card('Rubber', 'rubber'),
+    new card('Needle', 'needle'), 
+    new card('Valve', 'valve'),  
+    new card('Tube', 'tube'),   
+    new card('Bifocals', 'bifocals'),
+    new card('Thermostat', 'thermostat'),
+    new card('Disco', 'disco'),  
+    new card('Taxes', 'taxes'), 
+    new card('Dictionary', 'dictionary')
 
 
 /*
 
-    new card('Parking lot', 'toast'), new card('War', 'toast'),      new card('Bruise', 'bruise'),        new card('Rubber', 'toast'),    new card('Cancer', 'toast'),
-    new card('Tool', 'toast'),    new card('Needle', 'toast'),    new card('Rag', 'toast'),    new card('Valve', 'toast'),    new card('Thermostat', 'toast'),
-    new card('Tube', 'toast'),    new card('Disco', 'toast'),    new card('Thumbtack', 'toast'),    new card('Tie', 'toast'),    new card('Bifocals', 'toast'),
-     new card('Jell-O', 'toast'),    new card('Pot', 'toast'),    new card('Taxes', 'toast'),    new card('Hoe', 'toast'),    new card('Dictionary', 'toast'),
+    new card('Cancer', 'toast'),
+    new card('Tool', 'toast'),       
+    new card('Rag', 'toast'),     
+        new card('Thumbtack', 'toast'),    new card('Tie', 'toast'),    
+     new card('Jell-O', 'toast'),    new card('Pot', 'toast'),       new card('Hoe', 'toast'),    
     new card('Lobby', 'toast'),    new card('Fulcrum', 'toast'),    new card('Rotating spit', 'toast'),    new card('Groundhog', 'toast'),    new card('Lungs', 'toast'),
     new card('Speech', 'toast'),    new card('Burdock', 'toast'),    new card('Sludge', 'toast'),    new card('Wastebasket', 'toast'),    new card('Tavern', 'toast'),
     new card('Screwdriver', 'toast'),    new card('VCR', 'toast'),    new card('Stereo', 'toast'),    new card('Fox', 'toast'),      new card('Christmas', 'toast'),    
@@ -198,7 +213,7 @@ var deck = [
 
     new card('Satan', 'toast'),
 
-    new card('Sauce', 'toast'),
+    
     new card('Acne', 'toast'),
     new card('Crystal', 'toast'),
     new card('Shrimp', 'toast'),
@@ -792,7 +807,7 @@ function getRandom(number) {
 
 /* Draw card and display */
 document.getElementById("draw").onclick = function(){
-    var index = getRandom(152);
+    var index = getRandom(165);
     var currentCard = deck[index];
 
     document.getElementById("cards-display").innerHTML = '<h3>' + currentCard.name + '</h3><img src="cards/' + currentCard.image + '.jpg" width="360" height="580">';
