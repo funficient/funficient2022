@@ -173,38 +173,34 @@ var deck = [
     new card('Campfire', 'campfire'),
     new card('Parking lot', 'parking-lot'), 
     new card('War', 'war'),
-
     new card('Sauce', 'sauce'),
     new card('Bruise', 'bruise'), 
     new card('Rubber', 'rubber'),
     new card('Needle', 'needle'), 
     new card('Valve', 'valve'),  
-    new card('Tube', 'tube'),   
+    new card('Tube', 'tube'),
+
     new card('Bifocals', 'bifocals'),
     new card('Thermostat', 'thermostat'),
     new card('Disco', 'disco'),  
     new card('Taxes', 'taxes'), 
-    new card('Dictionary', 'dictionary')
+    new card('Dictionary', 'dictionary'),
+
+    new card('Monster', 'monster'),
+    new card('Fox', 'fox'),
+    new card('Queen', 'queen')
 
 
 /*
-
-    new card('Cancer', 'toast'),
-    new card('Tool', 'toast'),       
-    new card('Rag', 'toast'),     
-        new card('Thumbtack', 'toast'),    new card('Tie', 'toast'),    
-     new card('Jell-O', 'toast'),    new card('Pot', 'toast'),       new card('Hoe', 'toast'),    
-    new card('Lobby', 'toast'),    new card('Fulcrum', 'toast'),    new card('Rotating spit', 'toast'),    new card('Groundhog', 'toast'),    new card('Lungs', 'toast'),
-    new card('Speech', 'toast'),    new card('Burdock', 'toast'),    new card('Sludge', 'toast'),    new card('Wastebasket', 'toast'),    new card('Tavern', 'toast'),
-    new card('Screwdriver', 'toast'),    new card('VCR', 'toast'),    new card('Stereo', 'toast'),    new card('Fox', 'toast'),      new card('Christmas', 'toast'),    
-
-    new card('Ditches', 'toast'),
-        new card('Razor', 'toast'),
+    new card('Cancer', 'toast'),    new card('Tool', 'toast'),       
+    new card('Rag', 'toast'),      new card('Thumbtack', 'toast'),    new card('Tie', 'toast'),    new card('Jell-O', 'toast'),    new card('Pot', 'toast'),       new card('Hoe', 'toast'),    
+    new card('Lobby', 'toast'),    new card('Fulcrum', 'toast'),    new card('Rotating spit', 'toast'),    new card('Groundhog', 'toast'),    new card('Lungs', 'toast'),    new card('Speech', 'toast'),    new card('Burdock', 'toast'),    new card('Sludge', 'toast'),    new card('Wastebasket', 'toast'),    new card('Tavern', 'toast'),    new card('Screwdriver', 'toast'),    new card('VCR', 'toast'),    new card('Stereo', 'toast'),         new card('Christmas', 'toast'),    
+    new card('Ditches', 'toast'),        new card('Razor', 'toast'),
 
     new card('Eyedropper', 'toast'),
     new card('Actor', 'toast'),
     new card('Homeless', 'toast'),
-    new card('Queen', 'toast'),
+   
     new card('Artist', 'toast'),
     new card('Storm', 'toast'),
     new card('Indian', 'toast'),
@@ -789,7 +785,7 @@ var deck = [
     new card('Torpedo', 'torpedo'),
     new card('Ladle', 'ladle'),
     new card('Fossil', 'fossil'),
-    new card('Monster', 'monster'),    
+        
     new card('Acid', 'acid'),
     new card('Mattress', 'mattress'),
     new card('Rash', 'rash'),
