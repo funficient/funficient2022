@@ -8,72 +8,52 @@
     <meta name="description" content="Think better and be more productive with this thinkertoy that sparks new ideas for old problems.">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="thinkertoys-style.css">
     <script defer src="components.js"></script>
 </head>
 
+<!--------------------------------------- Body -------------------------------->
 
 <body>
     
 <main>
-    <div class="grid-2-container ">
 
-<!-------------------------------------- Side menu section ------------------------------->
+    <section class="thinkertoys"> 
+        <div class="background-text">ThinkerToys</div>         
+        <div class="flex-container"> 
 
-<div class="side-menu ">
-    <h2 class="">Thinker Toys</h2>
-    
-    <p class="tagline">Gain a fresh perspective with a random input. </p>
-    
-    
-    
+            <div class="cards-container">
+                <div class="card-box">
+                                                            
+                    <div id="cards-display">
+                            <h3>Pick a card </h3>
+                            <img src="cards/background.png" width="360" height="585" alt="image with question mark">
+                    </div>
+                    
+                </div>
+                
+                <button class="shuffle-button" id="draw">Draw a card </button> 
+                
+            </div>
 
-    <div class="instructions">
-        <h3>INSTRUCTIONS</h3>
-        <ul class="instructions">
-            <li>Draw a card.</li>
-            <li>Identify all the main characteristics of the object. 
-                For example, if the object is "Menu", typical characteristics could include things like 
-                list of everything on offer; categorized per type of food or drink; 
-                contains prices for items; visualize frequently asked questions; etc. 
-            </li>
-            <li>Think about your problem and force connections to the object on the card.  
-                For example, how can you list everything on offer?  Or how can you make visual 
-                everything customers always want to know without them having to ask you?
-            </li>
-            <li>Rinse. Repeat. Until you have enough ideas to move forward.</li>
+            <div class="nav-buttons">
+                <a href="#section1" class="nav-button">Instructions</a> 
 
-        </ul>
-    </div>
+            </div>
 
-    <p class="footer-text">This ThinkerToy was originally created as Soap, 
-        Soup and Sand by Michael Michalko, author of the book ThinkerToys.
-        All images courtesy www.unsplash.com</p>
-
-</div>
-
-<div class="cards-container ">
-    <div class="card-box">
-                                                
-        <div id="cards-display">
-                <h3>Pick a card </h3>
-                <img src="cards/background.png" width="360" height="585" alt="image with question mark">
+        <div class="made-by ">
+            <p class="white">ⓒ 2025 Kate Dames | www.funficient.com</p>
+            <p class="light">This tool was originally created as "Soap, Soup and Sand" by Michael Michalko, author of the book ThinkerToys. All images courtesy www.unsplash.com</p>
+            <a href="https://www.funficient.com" target="_blank" class="footer">Made by fun-fi-cient</a>
         </div>
-        
-    </div>
-    
-    <button class="shuffle-button" id="draw">Draw card </button>
-   
-    
-    
-</div>
+
+    </section>
         
 </main>
 
 
 
-<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<!--------------------------------------- Javascript -------------------------------->
     
 <script src="cards.js"></script>
 
