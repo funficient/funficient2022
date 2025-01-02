@@ -807,7 +807,7 @@ function getRandom(number) {
 
 /* Draw card and display */
 document.getElementById("draw").onclick = function(){
-    var index = getRandom(165);
+    var index = getRandom(deck.length);
     var currentCard = deck[index];
 
     document.getElementById("cards-display").innerHTML = '<h3>' + currentCard.name + '</h3><img src="cards/' + currentCard.image + '.jpg" width="360" height="580">';
