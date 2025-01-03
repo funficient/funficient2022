@@ -235,7 +235,7 @@ var deck = [
     new card('Chiorboy', 'toast'),
     new card('Penis', 'toast'),
     new card('Pet', 'toast'),
-        new card('Hair dye', 'toast'),
+    new card('Hair dye', 'toast'),
     new card('Eraser', 'toast'),
     new card('Bikini', 'toast'),
     new card('Canyon', 'toast'),
