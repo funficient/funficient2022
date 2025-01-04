@@ -216,7 +216,7 @@ button {
   font-size: 17vw; 
   font-weight: 800;
   letter-spacing: -8px;
-  color: rgba(255, 255, 255, 0.1); 
+  color: rgba(255, 255, 255, 0.05); 
   white-space: nowrap; 
   z-index: 0;
   pointer-events: none;  
