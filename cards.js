@@ -190,7 +190,7 @@ var deck = [
     new card('Tie', 'tie'),
     new card('Queen', 'queen'),
     new card('Liquor', 'liquor'),
-    
+
     new card('Lipstick', 'lipstick'),
     new card('Bubble', 'bubble'),
     new card('Storm', 'storm'),
@@ -758,10 +758,15 @@ function getRandom(number) {
     return randomNumber;
 }
 
-/* Draw card and display */
-document.getElementById("draw").onclick = function(){
+
+function drawcard() {
     var index = getRandom(deck.length);
     var currentCard = deck[index];
-
     document.getElementById("cards-display").innerHTML = '<h3>' + currentCard.name + '</h3><img src="cards/' + currentCard.image + '.jpg" width="360" height="580">';
-};
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    drawcard();
+    document.getElementById("draw").addEventListener('click', drawcard);
+});
+
