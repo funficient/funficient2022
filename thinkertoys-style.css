@@ -231,8 +231,8 @@ button {
   top: 10%;
   right: 0;
   z-index: 1;
-
 }
+
 .nav-button {
   background-color: #000; 
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -347,6 +347,12 @@ ol li {
     bottom: 10%; 
     left: 50%; 
     transform: translateX(-50%);
+  }
+  .nav-buttons {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: 1;
   }
 }
 
