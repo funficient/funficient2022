@@ -200,26 +200,29 @@ var deck = [
     new card('Bikini', 'bikini'),
     new card('Cards', 'cards'),
     new card('Leaf', 'leaf'), 
-    new card('Lingerie', 'lingerie')
+    new card('Lingerie', 'lingerie'),
+
+    new card('Globe', 'globe'),
+    new card('Table', 'table'),
+    new card('Jar', 'jar'),
+    new card('Shrimp', 'shrimp'),
+    new card('Army', 'army'),
+    new card('Explosives', 'explosives'), 
+    new card('Flame', 'flame'),
+    new card('Fruit', 'fruit'), 
+    new card('Tomato', 'tomato')
+    
 
 
 /*
     new card('Cancer', 'toast'),    new card('Tool', 'toast'),       
-    new card('Rag', 'toast'),      new card('Thumbtack', 'toast'),        new card('Jell-O', 'toast'),    new card('Pot', 'toast'),       new card('Hoe', 'toast'),        new card('Lobby', 'toast'),    new card('Fulcrum', 'toast'),    new card('Rotating spit', 'toast'),    new card('Groundhog', 'toast'),    new card('Lungs', 'toast'),    new card('Speech', 'toast'),    new card('Burdock', 'toast'),    new card('Sludge', 'toast'),    new card('Wastebasket', 'toast'),    new card('Tavern', 'toast'),    new card('Screwdriver', 'toast'),    new card('VCR', 'toast'),    new card('Stereo', 'toast'),            
+    new card('Rag', 'toast'),      new card('Thumbtack', 'toast'),        new card('Jell-O', 'toast'),    new card('Pot', 'toast'),       new card('Hoe', 'toast'),        new card('Lobby', 'toast'),    new card('Fulcrum', 'toast'),    new card('Rotating spit', 'toast'),    new card('Groundhog', 'toast'),    new card('Lungs', 'toast'),    new card('Speech', 'toast'),    new card('Burdock', 'toast'),    new card('Sludge', 'toast'),    new card('Wastebasket', 'toast'),    new card('Tavern', 'toast'),    new card('Screwdriver', 'toast'),    new card('VCR', 'toast'),    new card('Stereo', 'toast'),           
     new card('Ditches', 'toast'),        new card('Razor', 'toast'),
     new card('Eyedropper', 'toast'),    new card('Actor', 'toast'),
-    new card('Homeless', 'toast'),    
-    new card('Indian', 'toast'),
-       new card('Satan', 'toast'),
-    new card('Acne', 'toast'),    new card('Crystal', 'toast'),
-    new card('Shrimp', 'toast'),    new card('Army', 'toast'),
-    new card('Beet', 'toast'),    new card('Brick', 'toast'),
-    new card('Prostitute', 'toast'),    new card('Catsup', 'toast'),
-        new card('Explosives', 'toast'),    new card('Diamond', 'toast'),
-    new card('Camel', 'toast'),       new card('Lunch', 'toast'),     new card('Pilot', 'toast'),       new card('Caviar', 'toast'),
-    new card('Gum', 'toast'),    new card('Cheese', 'toast'),
-    new card('Flame', 'toast'),    new card('Fruit', 'toast'),    new card('Ham', 'toast'),
-    new card('Highway', 'toast'),
+    new card('Homeless', 'toast'),        new card('Indian', 'toast'),
+       new card('Satan', 'toast'),    new card('Acne', 'toast'),    new card('Crystal', 'toast'),      new card('Beet', 'toast'),    new card('Brick', 'toast'),    new card('Prostitute', 'toast'),    new card('Catsup', 'toast'),
+    new card('Diamond', 'toast'),    new card('Camel', 'toast'),       new card('Lunch', 'toast'),     new card('Pilot', 'toast'),       new card('Caviar', 'toast'),    new card('Gum', 'toast'),    new card('Cheese', 'toast'),
+           new card('Ham', 'toast'),    new card('Highway', 'toast'),
     
     new card('Jellybean', 'toast'),
     new card('Chiorboy', 'toast'),
@@ -227,9 +230,7 @@ var deck = [
     new card('Pet', 'toast'),
     new card('Hair dye', 'toast'),
     new card('Eraser', 'toast'),
-    
     new card('Canyon', 'toast'),
-    
     new card('Button', 'toast'),
     new card('Riot', 'toast'),
     new card('Jacket', 'toast'),
@@ -249,7 +250,7 @@ var deck = [
     new card('Heat', 'toast'),
         new card('Limo', 'toast'),
     new card('Fireworks', 'toast'),
-    new card('Tomatoe', 'toast'),
+    
     new card('Tongue', 'toast'),
     new card('Fracture', 'toast'),
     new card('Politian', 'toast'),
@@ -545,7 +546,7 @@ var deck = [
     new card('Hose', 'toast'),
     new card('Golf', 'toast'),
     new card('Fortune cookie', 'toast'),    
-    new card('Globe', 'toast'),
+    
     new card('Change', 'toast'),
     new card('Atlas', 'toast'),
     new card('Phonebook', 'toast'),
@@ -571,8 +572,6 @@ var deck = [
     new card('Mow', 'toast'),
     new card('Chalk', 'toast'),
     new card('Pool', 'toast'),
-    new card('Table', 'toast'),
-    new card('Jar', 'toast'),
     new card('Bracelet', 'toast'),
     new card('Satellite', 'toast'),
     new card('Boot', 'toast'),
