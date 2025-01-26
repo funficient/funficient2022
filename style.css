@@ -300,6 +300,15 @@ button {
     position: relative;
 }
 
+.card-stretch {
+  display: grid;
+  place-content: center;
+  padding: 2em;
+  position: relative;
+  grid-column: 1/-1;
+}
+
+
 .spacer {
     height: 3em;
 }
@@ -960,7 +969,7 @@ ul li {
         background:var(--seagreen700);
     }
 
-    .five, .six {
+    .five, .six, .seven {
         background: transparent;
         border: 2px solid #003034;
     }
