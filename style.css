@@ -268,7 +268,7 @@ button {
 
 
 #map {
-  margin: 0 3em;
+  margin: 0 5em;
 }
 
 #journey {
@@ -1821,4 +1821,50 @@ padding: 0 0.5em;
 
   }
 
+.pie-chart-container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.pie-chart {
+  margin: auto;
+  max-width: 650px;
+  max-height: 650px;
+  width: 100%;    
+  height: auto;   
+  display: block; 
+  
+}
 
+.pie-label-plan {
+  color: white;
+  background-color: #003034;
+  padding: 0.6rem 1.8rem;
+  position:absolute;
+  left:60%; top:10%;
+  /* transform:translate(-50%,-50%); */
+  font-size: 1.5rem;
+  pointer-events:none;
+}
+.pie-label-do {
+  color: white;
+  background-color: #003034;
+  padding: 0.6rem 1.8rem;
+  position:absolute;
+  left:45%; top:80%;
+  /* transform:translate(-50%,-50%); */
+  font-size: 1.5rem;
+  pointer-events:none;
+}
+.pie-label-reflect {
+  color: white;
+  background-color: #003034;
+  padding: 0.6rem 1.8rem;
+  position:absolute;
+  left:38%; top:10%;
+  /* transform:translate(-50%,-50%); */
+  font-size: 1.5rem;
+  pointer-events:none;
+}
