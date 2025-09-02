@@ -321,6 +321,7 @@ button {
     display: flex;
     justify-self: center;
     margin-bottom: 1em;
+    
 
 }
 
@@ -1004,6 +1005,7 @@ ul li {
     .five, .six, .seven {
         background: transparent;
         border: 2px solid #003034;
+        padding-top: 3.5em;
     }
 
  
@@ -1053,7 +1055,7 @@ ul li {
 
 #coaching .line {
     width: 15%;
-    margin: 1em 0 1.5em 0;
+    margin: 0.5em 0 2em 0;
 }
 
 .stretch {
@@ -1075,6 +1077,23 @@ ul li {
 .recommended p {
     font-weight: 600;
     color: #006d75;
+}
+
+.recommended-dark {
+    display: flex;
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    background-color: var(--bs-primary);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 0.75em 2em;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+.recommended-dark p {
+    font-weight: 600;
+    color: #fff;
 }
 
 #teams .secondary-button {
@@ -2269,9 +2288,10 @@ details[open] .arrow {
 
 .signup-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   background-color: #008080;
   color: white;
+  text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
