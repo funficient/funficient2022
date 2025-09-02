@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun-fi-cient | Retreats</title>
+    <meta name="description" content="Step away from your busy-work and mix business with pleasure.">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Martel:wght@200;300;400;600;700;800;900&family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>   
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+
+    <!------------------------------------------------------------------- Header section -------------------------------------------------------------->
+    
+    <div id="header"></div>
+    <script>
+        fetch('__header.html')
+        .then(response => response.text()) // Corrected arrow function syntax and Response keyword
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
+
+    <!----------------------------------------------  Home banner section ---------------------------------------------------------->
+
+
+   <section class="banner-container teal">
+
+        <div class="banner-content-container">
+    
+            <h1 class="white">Play your way to productivity.</h1>
+            
+            <p class="white">Step away from your busy-work to get clarity and focus while mixing business with pleasure in a peaceful and distraction-free environment. </p>
+            <a href="retreats-booking-form.html" class="button banner-button">Book your spot</a>
+        </div>
+    
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    
+    </section>
+
+
+<!----------------------------------  Quote section -------------------------------->
+
+<section class="section-container ">
+                
+    <h2 class="big-quote">A focused fool can accomplish more than a distracted genius.
+    </h2>
+    <p class="subtitle right"> - Alex Hormozi</p>
+                           
+</section>    
+
+
+<section class="container " id="focus" >
+    <div class="container center ">
+            <h2>Need a distraction-free worktation?</h2>
+            <p class="title-text center">Get more done in the quiet of the mountains for focused, deep work.</p>  
+            <div class="spacer"></div>    
+    </div>
+
+    <div class="gridywrap ">
+        <div class="gridy-2 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/antbear-lodge.jpg)">&nbsp;</div>
+            
+            <div class="gridinfo">
+            <h3>Antbear Lodge</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p> -->
+                <!-- <p class="gridwho"><i class="fa fa-user"></i> Bruce Wayne</p> -->
+            </div>
+            <p class="gridexerpt">Welcome to Antbear Lodge!  A unique place where you are surrounded with vast, open views and enjoy farm to fork three-course meals!</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+        <div class="gridy-1 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/antbear-wood-carvings.jpg)">&nbsp;</div>
+            
+            <div class="gridinfo">
+            <h3>Eclectic Wood</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p>
+                <p class="gridwho"><i class="fa fa-user"></i> Harvey Dent</p> -->
+            </div>
+            <p class="gridexerpt">Each unit is filled with unique, handmade wooden fittings and furniture, making it a truly unique experience.</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+        <div class="gridy-1 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/food-starter.jpg)">&nbsp;</div>
+            
+            <div class="gridinfo">
+            <h3>Farm-to-Table</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p>
+                <p class="gridwho"><i class="fa fa-user"></i> Clark Kent</p> -->
+            </div>
+            <p class="gridexerpt">Enjoy a delicious  farm to table three-course dinner each evening and a scrumptious breakfast.</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+        <div class="gridy-2 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/cave-bed.jpg)">&nbsp;</div>
+            
+            <div class="gridinfo">
+            <h3>Accommodation</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p>
+                <p class="gridwho"><i class="fa fa-user"></i> Tony Stark</p> -->
+            </div>
+            <p class="gridexerpt">Each unit is different, carefully designed for your comfort fitted with a fireplace, bar fridge, and everything you might need to make your stay comfortable.</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+        <div class="gridy-2 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/cave-jacuzzi-bath.jpg)">&nbsp;</div>
+            <div class="gridinfo">
+            <h3>Jacuzzi Tubs</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p>
+                <p class="gridwho"><i class="fa fa-user"></i> Steve Rogers</p> -->
+            </div>
+            <p class="gridexerpt">Most units are fitted with a jacuzzi bathtub and shower so you can enjoy a long relaxing glass of wine after a long day of sightseeing.</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+        <div class="gridy-1 gridyhe-1">
+            <div class="gridimg" style="background-image: url(assets/unit-2-exterior.jpg)">&nbsp;</div>
+            
+            <div class="gridinfo">
+            <h3>Spacious and Private</h3>
+            <div class="gridmeta">
+                <!-- <p class="gridwhen"><i class="fa fa-clock-o"></i> 17:22 17th Feb 2015</p>
+                <p class="gridwho"><i class="fa fa-user"></i> Natasha Romanoff</p> -->
+            </div>
+            <p class="gridexerpt">Each unit is private with vast open views on either the mountains or the large garden with orange, apple, and lime trees.</p>
+            <!-- <a href="#" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a> -->
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Activities -->
+
+<section class="section-container" id="activities">
+
+    <div class="container center">
+        <h2>Activities & Experiences</h2>
+        <p class="title-text center">Picture productive workdays in a peaceful environment, mid-day walks to the lake or forest labyrinth, evenings enjoying unobstucted views of the star filled sky, and weekends exploring South Africa’s most majestic landscapes.</p>  
+        <div class="spacer"></div>    
+    </div>
+
+
+  <div class="activities-grid ">
+    <div class="activity-card">
+      <img src="assets/poi-drakensber-rock-art.jpg" alt="Hiking">
+      <h3>Enjoy Scenic Hiking Trails & San Cave Art at Giant's Castle</h3>
+      <p>Giant’s Castle Nature Reserve, a UNESCO world heritage site, is celebrated for its breathtaking landscapes and ancient cultural heritage. <br> <br>
+      Visit the San rock art centre where paintings created by South Africa’s earliest hunter-gatherers depict spiritual rituals, animals, and daily life; hike to dramatic escarpment viewpoints, and spot endangered bearded vultures soaring above the cliffs. </p>
+      
+      <a href="https://en.wikipedia.org/wiki/Giant%27s_Castle" class="read-more">Read More</a>
+    </div>
+    <div class="activity-card">
+      <img src="assets/Weenen-Game-Reserve.png" alt="Game viewing">
+      <h3>Safari Off The Beaten Track at Weenen Game Reserve</h3>
+      <p>Set in the rolling savannah, Weenen Game Reserve is a conservation success story where farmland has been restored to thriving wilderness. <br><br>Embark on game drives or walking safaris to see white and black rhino, giraffe, zebra, antelope, and abundant birdlife in their natural habitat. With its peaceful landscapes and acacia woodlands every turn offers the chance to witness wildlife up close without the crowds of larger reserves.
+      </p>
+      <a href="https://www.tripadvisor.co.za/Hotel_Review-g2044806-d6506214-Reviews-Weenen_Game_Reserve-Weenen_KwaZulu_Natal.html" class="read-more">Read More</a>
+    </div>
+    <div class="activity-card">
+      <img src="assets/poi-midlands-meander.jpg" alt="Farm Experience">
+      <h3>Go Flyfishing in The Midlands Meander</h3>
+      <p>Winding through rolling hills and valleys, the Midlands Meander offers a variety of uniquely South African art, culture, and nature. <br><br> Explore artisan studios, craft breweries and markets where artists, potters, cheesemakers, and weavers share their passion for sustainable, handmade living. Between stops, visit the Nelson Mandela capturing site, go flyfishing, or simply soak up the tranquility of the green landscapes dotted with waterfalls and forests.</p>
+      <a href="https://www.farawayplace.co.za/things-to-do/" class="read-more">Read More</a>
+    </div>
+    <div class="activity-card">
+      <img src="assets/wine-tasting-Abingdon.jpeg" alt="Wine Tasting">
+      <h3>Enjoy Wine Tastings and Craft Beer Experiences</h3>
+      <p>In the heart of the countryside, Abingdon Wine Estate stands out as KwaZulu-Natal’s first family-run boutique wine farm, producing award-winning vintages from vineyards rooted in these rolling hills. Visitors can enjoy guided tastings, cellar tours, and food pairings. <br> <br> Alongside fine wine, it's also a hub for craft beer and artisanal brewing. From small-batch IPAs to farm-style ales, local microbreweries invite you to sample unique flavors in relaxed taprooms surrounded by green pastures and mountain air.
+    </p>
+      <a href="https://www.getaway.co.za/food/wine-food/kwazulu-natal-wine-route/" class="read-more">Read More</a>
+    </div>
+    <div class="activity-card">
+      <img src="assets/sani-pass-vallee-planet-ride.jpg" alt="Sani Pass and Lesotho">
+      <h3>Take A Scenic Drive To Sani Pass & Lesotho</h3>
+      <p>Rising dramatically through the Southern Drakensberg, the Sani Pass is one of the world’s most spectacular mountain routes, climbing from South Africa into the highlands of Lesotho. <br> <br> Travel by 4x4 or on guided hikes along winding tracks with views of towering peaks, waterfalls, and valleys far below. At the summit, step into the Kingdom of Lesotho, a land rich in Basotho culture, traditional villages, and endless mountain panoramas. A stop at the legendary Sani Mountain Lodge—home to Africa’s highest pub—offers the perfect reward with hearty food and warm hospitality.
+    </p>
+      <a href="https://www.planet-ride.com/en/travel-4x4-suv/south-africa/articles/la-plus-belle-route-de-la-week-sani-pass-south-africa-travel-4x4/?srsltid=AfmBOop03BLJ9tiZofG780OGm5a8FQBKTLx0DMNZkRnX7G3acLESYmpL" class="read-more">Read More</a>
+    </div>
+    <div class="activity-card">
+      <img src="assets/midmar-dam-cottage.jpg" alt="Midmar Nature Reserve">
+      <h3>Swim the Midmar Mile at the Midmar Nature Reserve</h3>
+      <p>Just outside Howick in the KwaZulu-Natal Midlands, Midmar Nature Reserve offers a blend of outdoor adventure and tranquil escapes along the shores of Midmar Dam. <br> <br> Enjoy birdwatching, cycling, fishing, sailing, or simply relaxing by the water’s edge while surrounded by rolling hills and open skies. The reserve is best known as the home of the Midmar Mile, the world’s largest open-water swimming event, which attracts athletes and adventurers from across the globe each year.</p>
+      <a href="https://wanderlog.com/place/details/10526902/midmar-nature-reserve" class="read-more">Read More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Details -->
+
+<section class="section-container" id="retreat-details">
+
+    <div class="container center">
+            <h2>What you need to know</h2>
+            <p class="title-text center">All your questions answered, and if you have more questions, feel free to book a free discovery call.</p>  
+            <div class="spacer"></div>    
+    </div>
+
+    <div class="rs-container">
+        <div class="rs-main-wrapper">
+            <div class="rs-content-container">
+                <div class="rs-main-content">
+                    <div class="rs-left-column">
+                        <div class="rs-info-section">
+
+
+                            <section class="rs-accordion-section" aria-label="Retreat Information">
+                                <div class="rs-accordion-list" role="list">
+                                    <div class="rs-accordion-item" role="listitem">
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                        <button
+                                            class="rs-accordion-button"
+                                            aria-expanded="false"
+                                            aria-controls="content-who"
+                                            type="button"
+                                            data-accordion-id="who"
+                                        >
+                                            <div class="rs-accordion-title">
+                                                <span class="rs-accordion-text">
+                                                    Who is this quest for?
+                                                </span>
+                                            </div>
+                                            <div class="rs-accordion-icon" aria-hidden="true"></div>
+                                        </button>
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                    </div>
+
+                                    <div class="rs-accordion-item" role="listitem">
+                                        <button
+                                            class="rs-accordion-button"
+                                            aria-expanded="false"
+                                            aria-controls="content-takeaway"
+                                            type="button"
+                                            data-accordion-id="takeaway"
+                                        >
+                                            <div class="rs-accordion-title">
+                                                <span class="rs-accordion-text">
+                                                    What will I take away from this retreat?
+                                                </span>
+                                            </div>
+                                            <div class="rs-accordion-icon" aria-hidden="true"></div>
+                                        </button>
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                    </div>
+
+                                    <div class="rs-accordion-item" role="listitem">
+                                        <button
+                                            class="rs-accordion-button"
+                                            aria-expanded="false"
+                                            aria-controls="content-dates"
+                                            type="button"
+                                            data-accordion-id="dates"
+                                        >
+                                            <div class="rs-accordion-title">
+                                                <span class="rs-accordion-text">
+                                                    Dates & Times
+                                                </span>
+                                            </div>
+                                            <div class="rs-accordion-icon" aria-hidden="true"></div>
+                                        </button>
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                    </div>
+
+                                    <div class="rs-accordion-item rs-accordion-item-location" role="listitem">
+                                        <button
+                                            class="rs-accordion-button"
+                                            aria-expanded="false"
+                                            aria-controls="content-location"
+                                            type="button"
+                                            data-accordion-id="location"
+                                        >
+                                            <div class="rs-accordion-title">
+                                                <span class="rs-accordion-text">
+                                                    Location
+                                                </span>
+                                            </div>
+                                            <div class="rs-accordion-icon" aria-hidden="true"></div>
+                                        </button>
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                    </div>
+
+                                    <div class="rs-accordion-item rs-accordion-item-cost" role="listitem">
+                                        <button
+                                            class="rs-accordion-button"
+                                            aria-expanded="false"
+                                            aria-controls="content-cost"
+                                            type="button"
+                                            data-accordion-id="cost"
+                                        >
+                                            <div class="rs-accordion-title">
+                                                <span class="rs-accordion-text">
+                                                    Cost
+                                                </span>
+                                            </div>
+                                            <div class="rs-accordion-icon" aria-hidden="true"></div>
+                                        </button>
+                                        <div class="rs-divider" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="rs-signup-section">
+                                <div class="rs-signup-wrapper">
+                                    <button
+                                        class="rs-signup-button"
+                                        type="button"
+                                        aria-label="Sign up for retreat"
+                                    >
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rs-right-column">
+                        <div class="rs-image-grid">
+                            <div class="rs-image-row-top">
+                                <div class="rs-image-grid-content">
+                                    <div class="rs-image-column-large">
+                                        <div class="rs-image-container">
+                                            <div class="rs-image-wrapper">
+                                                <div class="rs-image-frame">
+                                                    <img
+                                                        src="https://api.builder.io/api/v1/image/assets/TEMP/2a3507f0aedb3dc2f38301eacaa1b0bcd2a81526?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
+                                                        class="rs-image-large"
+                                                        alt="Retreat activity scene"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rs-image-column-small">
+                                        <div class="rs-image-container">
+                                            <div class="rs-image-wrapper">
+                                                <div class="rs-image-frame">
+                                                    <img
+                                                        src="https://api.builder.io/api/v1/image/assets/TEMP/0ec1c33e0f83c4bb1b83486fab1bdbf3a7e61ad5?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
+                                                        class="rs-image-medium"
+                                                        alt="Retreat location view"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rs-image-row-bottom">
+                                <div class="rs-image-grid-content">
+                                    <div class="rs-image-column-half">
+                                        <div class="rs-image-container">
+                                            <div class="rs-image-wrapper">
+                                                <div class="rs-image-frame">
+                                                    <img
+                                                        src="https://api.builder.io/api/v1/image/assets/TEMP/18b8eddd14e8150436e87dfc6e5f47efaddda821?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
+                                                        class="rs-image-small"
+                                                        alt="Retreat environment"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rs-image-column-half rs-image-column-half-second">
+                                        <div class="rs-image-container">
+                                            <div class="rs-image-wrapper">
+                                                <div class="rs-image-frame">
+                                                    <img
+                                                        src="https://api.builder.io/api/v1/image/assets/TEMP/253712ead1dd1d3de4161d9a12ef5125985d7993?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
+                                                        class="rs-image-small rs-image-small-second"
+                                                        alt="Retreat facilities"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!------------------------------------------------------------------- Call to action section -------------------------------------------------------------->
+  <!---------------                Call to action section     ----------------->
+
+  <section class="colored-container center">
+    <div class="spacer"></div>
+    <h2 class="center">Want to add some magic to the workplace?</h2>
+    <p>Book a free, no obligation discovery call to start the conversation.</p>
+    <a href="https://funficient2021.setmore.com/" class="button primary-button">Book a free discovery call</a>
+    <!-- <a href="coaching.html" class="button secondary-button">Learn more about coaching</a> -->
+    <div class="spacer"></div>
+</section>
+
+
+<!------------------------------------------------------------------- Contact form section -------------------------------------------------------------->
+<section class="section-container wide ">
+
+    <div class="conversation ">
+        <div>
+            <h2>Start the conversation</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/funficient/" target="_blank" title="Instagram profile"><svg
+                    class="fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg></a>
+            <a href="https://www.linkedin.com/in/kate-dames-509631171/" target="_blank"
+                title="LinkedIn profile"><svg class="fill" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                </svg></a>
+        </div>
+
+    </div>
+
+    <div class="form-container">
+
+        <form class="form" id="form" action="https://formsubmit.co/2d7c5a602ea73117b2b2ca2070934980"
+            method="POST">
+            <div class="input">
+                <input type="text" name="name" id="name" class="form-input" placeholder="name" />
+                <label for="name">name</label>
+
+                <input type="email" name="email" id="email" class="form-input" placeholder="e-mail" required />
+                <label for="email">email</label>
+
+                <input type="hidden" name="_next" value="https://www.funficient.com/thanks.html">
+                <input type="hidden" name="_subject" value="New form submission!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="true">
+
+            </div>
+
+            <div class="textInput">
+
+                <textarea id="message" class="input-textarea" name="message"
+                    placeholder="How can I help?  Enter your message here..." required></textarea>
+                <label for="message">message</label>
+            </div>
+
+            <div class="center">
+                <button type="submit" id="submit" class="button primary-button"
+                    action="https://formsubmit.co/fb6a7b8aa5477c50770549512f505741" method="POST">
+                    Send message
+                </button>
+                <!-- <a href="https://funficient2021.setmore.com/" class="button secondary-button">Book a discovery
+                    call</a> -->
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+
+
+<!-------------------------------------- Footer section -------------------------------------------->
+<div id="footer"></div>
+<script>
+    fetch('__footer.html')
+    .then(response => response.text()) 
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+<!---------------------------------- End of Footer section ---------------------------------------->
+
+
+
+</main>
+
+
+
+<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+
+window.addEventListener("scroll", function(){
+
+const header = document.querySelector("header");
+header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+
+function toggleMenu(){
+const menuToggle = document.querySelector('.menuToggle');
+const navigation = document.querySelector('.navigation');
+menuToggle.classList.toggle('active');
+navigation.classList.toggle('active');
+}
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
