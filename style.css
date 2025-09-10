@@ -135,37 +135,6 @@ button {
 
 
 
-/* --------            Utilities | Colors             */
-.tangerine {
-    /* Tangerine is for creative tools and resources */
-    background-image: linear-gradient(90deg, #f5c325, #ffd208);
-  }
-  
-.teal {
-  /* Teal is for coaching and professional */
-    background-image: linear-gradient(90deg, #007982, #6DB9C2 );
-  }
-
-.black {
-    background-color: #000;
-  }
-
-.white {
-    color: white;
-}
-
-.dark {
-    color: var(--seagreen700);
-    font-weight: 600;
-}
-
-/* not done - excluded style */
-.dark-list {
-    color: #111; 
-    margin-top: 1em;
-    font-weight: 300;
-    text-align: left;
-}
 
 /*  done */
 
@@ -1110,6 +1079,17 @@ border: 2px solid #003034;
 
 #get-started {
     padding: 0 20%;
+}
+.link {
+  margin-top: 2rem;
+  color: var(--seagreen800);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #007982;
 }
 
 /* ------------------------------------- Resources page --------------------- */
@@ -2349,3 +2329,36 @@ details[open] .arrow {
 
 
 
+
+
+/* --------            Utilities | Colors             */
+.tangerine {
+    /* Tangerine is for creative tools and resources */
+    background-image: linear-gradient(90deg, #f5c325, #ffd208);
+  }
+  
+.teal {
+  /* Teal is for coaching and professional */
+    background-image: linear-gradient(90deg, #007982, #6DB9C2 );
+  }
+
+.black {
+    background-color: #000;
+  }
+
+.white {
+    color: white;
+}
+
+.dark {
+    color: var(--seagreen700);
+    font-weight: 600;
+}
+
+/* not done - excluded style */
+.dark-list {
+    color: #111; 
+    margin-top: 1em;
+    font-weight: 300;
+    text-align: left;
+}
