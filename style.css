@@ -2355,10 +2355,19 @@ details[open] .arrow {
     font-weight: 600;
 }
 
-/* not done - excluded style */
+
 .dark-list {
     color: #111; 
     margin-top: 1em;
     font-weight: 300;
     text-align: left;
 }
+
+iframe {
+overflow: hidden;
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+scrollbar-color: #fff transparent; 
+}
+
+iframe::-webkit-scrollbar { display: none; }
