@@ -2371,3 +2371,9 @@ scrollbar-color: #fff transparent;
 }
 
 iframe::-webkit-scrollbar { display: none; }
+
+
+.calendar {
+  width: 70vw;
+  margin: auto;
+}
