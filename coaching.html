@@ -19,7 +19,7 @@
 
 <div id="header"></div>
     <script>
-        fetch('__header.html')
+        fetch('/__header.html')
         .then(response => response.text()) // Corrected arrow function syntax and Response keyword
         .then(data => {
             document.getElementById('header').innerHTML = data;
