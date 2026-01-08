@@ -2526,6 +2526,45 @@ iframe::-webkit-scrollbar { display: none; }
   transition: all 0.3s ease-in-out;
 }
 
+/* Hero card full-width styles */
+.hero-card.full-width {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-size: cover;
+  background-position: center center;
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero-card .hero-card-content {
+  max-width: 1200px;
+  text-align: center;
+  background: var(--bs-primary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.hero-card h2 { color: white; font-size: 2.7rem; margin-bottom: .5rem; }
+.hero-card p { font-size: 1.05rem; margin-bottom: 1rem; }
+.hero-cta { display: flex; 
+  gap: 1rem; 
+  justify-content: center; 
+   }
+
+
+.servicejam {
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .hero-card.full-width { padding: 2rem 1rem; }
+  .hero-card h2 { font-size: 1.6rem; }
+  .hero-card p { font-size: 1rem; }
+  .hero-card .hero-card-content { padding: 1rem; }
+  .hero-cta { flex-direction: column; }
+}
+
 .card-grid:has(.card:nth-child(4)):not(:has(.card:nth-child(5))) {
   grid-template-columns: repeat(3, 1fr);
 }
