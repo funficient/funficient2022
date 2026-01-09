@@ -1124,6 +1124,45 @@ border: 2px solid #003034;
     background-image: none;
     transition: all 0.5s ease-in-out;
   }
+
+  /* Specific styling for the full-width FAQ hero inside resources
+     Default: teal shade. Hover: reveal the background image (inverse behavior). */
+  .resources-container .resource-hero {
+    grid-column: 1 / -1;
+    background-color: var(--seagreen400);
+    background-image: none;
+    min-height: 420px;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background 0.35s ease-in-out, transform 0.25s ease-in-out;
+  }
+
+  .resources-container .resource-hero h2,
+  .resources-container .resource-hero h4,
+  .resources-container .resource-hero p {
+    color: #fff;
+  }
+
+  /* Use child selector specificity to override the generic .resources-container > div:hover rule */
+  .resources-container > .resource-hero:hover {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('assets/teal-faq.jpg');
+    background-size: cover;
+    background-position: center center;
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: 800px) {
+    .resources-container .resource-hero {
+      grid-column: auto;
+      padding: 2em 1em;
+      min-height: 320px;
+      background-attachment: scroll;
+    }
+  }
   
   .resources-container > div h2 {
     
@@ -1546,6 +1585,9 @@ padding: 0 0.5em;
   .footer {
     padding: 3rem;
     text-align: left;
+    /* make footer background span full viewport like hero */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
   
   .footer .container {
@@ -2255,6 +2297,38 @@ flex: 1 1 calc(65% - 10px);}
   margin-top: 0.5rem;
   font-size: 0.95rem;
   color: #444;
+}
+
+/* Fix accordion width so it doesn't resize to content */
+.accordion-column {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  width: 800px; /* fixed width */
+  max-width: 90%; /* responsive cap for smaller screens */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.accordion-item,
+.accordion-item details,
+.accordion-item summary,
+.accordion-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accordion-item summary {
+  display: block;
+  padding: 1rem 0.5rem;
+}
+
+.external-link {
+  text-decoration: underline;
+  color: var(--seagreen800);
+  
 }
 
 .arrow {
