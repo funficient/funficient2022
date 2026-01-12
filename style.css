@@ -2947,4 +2947,8 @@ iframe::-webkit-scrollbar { display: none; }
   margin-top: 0.5rem;
 }
 
+.meta {
+  font-size: 0.8em;
+  color: #f1f1f1;
+}
 
