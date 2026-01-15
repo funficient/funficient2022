@@ -540,7 +540,7 @@ ul li {
     align-items: center;
     position: relative;
     height: max(50vh, min(70vh, 100%));
-    padding: 4em 0;
+    padding: 4em 1em;
     width: calc(100vw + 75px); 
   }
   
@@ -550,7 +550,7 @@ ul li {
     height: fit-content;
     background-color: transparent;    
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
   
   .banner-content-container p {
@@ -561,35 +561,21 @@ ul li {
   .banner-container .banner-content-container h1 span {
     color: var(--seagreen700);
     background-color: #fff;
-    padding: 0 1rem;
+    padding: 0 0.5em;
   }
   
   .banner-container .banner-content-container h1 span::before {
-  
     font-family: "Playfair Display", serif;
     content: " clarity. ";
     animation: animate infinite 8s;
   }
   
   @keyframes animate {
-    10% {
-      content: " clarity.  ";
-    }
-  
-    30% {
-      content: " purpose. ";
-    }
-  
-    50% {
-      content: " focus. ";
-    }
-  
-    75% {
-      content: " alignment. ";
-    }
-    100% {
-      content: " play. ";
-    }
+    10% {content: " clarity.  ";}
+    30% {content: " purpose.  ";}
+    50% {content: " focus. ";}
+    75% {content: " alignment. ";}
+    100% {content: " play. ";}
   }
   
   .wave-container {
@@ -605,7 +591,6 @@ ul li {
     margin-bottom: -7px; /*Fix for safari gap*/
   }
 
-  
   .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
   }
@@ -627,17 +612,34 @@ ul li {
   }
   
   @keyframes move-forever {
-    0% {
-      transform: translate3d(-90px, 0, 0);
-    }
-    100% {
-      transform: translate3d(85px, 0, 0);
-    }
+    0% {transform: translate3d(-90px, 0, 0);}
+    100% {transform: translate3d(85px, 0, 0);}
   }
 
+@media (max-width: 1200px) {
+
+  .banner-container {
+    height: 70vh;
+  }
+
+  .banner-content-container {
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: -6rem;
+    height: max-content;
+  }
+}
+
+@media (max-width: 800px) {
+    .banner-container {
+      height: 50vh;
+   }
+    .wave-container {
+      display: none;
+    }
+}
 
 /* ---------------------------- Blog section ----------------- */
-
 
   .section-subtitle {
     padding-block: 15px;
@@ -1777,12 +1779,7 @@ padding: 0 0.5em;
           grid-template-columns: 1fr 1fr;
         }
 
-.banner-content-container {
-  padding: 1rem;
-  margin-top: 50px;
-  margin-left: -6rem;
 
-}
 
         .blog-container {
           margin: 0;
@@ -1846,9 +1843,7 @@ padding: 0 0.5em;
         grid-template-columns: auto;
       }
 
-      .wave-container {
-        display: none;
-      }
+
 
       .button {
         width: 100%;
