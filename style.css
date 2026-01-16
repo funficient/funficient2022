@@ -2921,6 +2921,10 @@ iframe::-webkit-scrollbar { display: none; }
   margin-top: 0.5rem;
 }
 
+.faq-backlink li {
+  display: block;
+}
+
 .meta {
   font-size: 0.8rem;
   color: #f1f1f1;
