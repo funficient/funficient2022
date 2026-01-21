@@ -1,23 +1,6 @@
-
-<loc>https://www.blog.funficient.com/blog/2023-08-31-whats-your-leadership-style/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-07-16-unpacking-psychological-safety/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-07-22-how-to-stumble-on-happiness/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-	<!-- Main site pages discovered in the repo (blog.funficient.com entries removed) -->
 	<url>
 		<loc>https://www.funficient.com/</loc>
 		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
@@ -133,18 +116,6 @@
 	</url>
 
 	<url>
-		<loc>https://www.funficient.com/subscribed</loc>
-		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
-		<priority>0.40</priority>
-	</url>
-
-	<url>
-		<loc>https://www.funficient.com/thanks</loc>
-		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
-		<priority>0.40</priority>
-	</url>
-
-	<url>
 		<loc>https://www.funficient.com/retreats-booking-form</loc>
 		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
 		<priority>0.20</priority>
@@ -162,12 +133,6 @@
 		<priority>0.20</priority>
 	</url>
 
-	<url>
-		<loc>https://www.funficient.com/404.html</loc>
-		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
-		<priority>0.01</priority>
-	</url>
-
 	<!-- PDFs -->
 	<url>
 		<loc>https://www.funficient.com/assets/funficient%20-%20Mindset%20Persona%20Cards.pdf</loc>
@@ -180,95 +145,5 @@
 		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
 		<priority>0.10</priority>
 	</url>
-
 </urlset>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-12-16-the-tipping-point/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-06-24-questioning-life-the-universe-and-everything/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-06-25-to-ethereum-or-not-to-ethereum/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-03-14-free-things-to-do-in-cape-town/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-03-life%E2%80%99s-too-short-to-rush/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-10-12-reasons-for-digital-nomads-to-visit-observatory-woodstock-cape-town/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-15-collecting-pieces-of-me/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-19-3-reasons-why-remote-work-sucks/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-19-tools-that-make-the-world-a-better-place/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-30-a-teal-manifesto/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-08-30-quest-to-save-the-world-from-bad-code/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-09-01-it%E2%80%99s-the-little-things-that-count/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-09-01-reinventing-organizations/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-09-02-startup-funding/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-09-19-forming-agile-teams/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-09-19-book-review-listen-to-the-dolphins/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.blog.funficient.com/blog/2022-10-18-10-reasons-for-agility-success-at-spotify/</loc>
-<lastmod>2023-11-23T07:34:17+00:00</lastmod>
-<priority>0.64</priority>
-</url>
 
-</urlset>
