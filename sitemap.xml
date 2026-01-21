@@ -8,12 +8,6 @@
 	</url>
 
 	<url>
-		<loc>https://www.funficient.com/index.html</loc>
-		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
-		<priority>1.00</priority>
-	</url>
-
-	<url>
 		<loc>https://www.funficient.com/about</loc>
 		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
 		<priority>0.64</priority>
@@ -79,8 +73,27 @@
 		<priority>0.64</priority>
 	</url>
 
+		<url>
+		<loc>https://www.funficient.com/future-of-work-resources/what-is-psychological-safety.html</loc>
+		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+
 	<url>
-		<loc>https://www.funficient.com/habit-chatbot</loc>
+		<loc>https://www.funficient.com/future-of-work-resources/the-teal-chronicles.html</loc>
+		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+
+	<url>
+		<loc>https://www.funficient.com/future-of-work-resources/the-essence-of-productivity.html</loc>
+		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+
+
+	<url>
+		<loc>https://www.funficient.com/habit-chatbot.html</loc>
 		<lastmod>2026-01-09T00:00:00+00:00</lastmod>
 		<priority>0.64</priority>
 	</url>
