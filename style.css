@@ -744,6 +744,20 @@ ul li {
     opacity: 0.4;
     font-size: 10rem;
   }
+
+  .small-quote {
+    font-family: Playfair Display, serif;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    border-left: solid 3px var(--bs-primary);
+    color: var(--bs-primary);
+    padding: 0.5em 1em ;
+    margin-bottom: 1em;
+    
+  }
+
+
+
    /* ---------------------------- About section ----------------- */
   
    .profile {
@@ -1391,7 +1405,7 @@ article {
   background-color: rgba(128, 188, 193, 0.1);
   padding: 2em;
   margin-bottom:2em;
-  
+  border-radius: 10px;
 }
 
 .tldr h4, p {
@@ -2924,6 +2938,21 @@ iframe::-webkit-scrollbar { display: none; }
 .faq-backlink li {
   display: block;
 }
+
+.tldr {
+  font-size: 0.95rem;
+  background: #00555b;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.tldr h2 {
+  margin-top: 0.5em;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .meta {
   font-size: 0.8rem;
