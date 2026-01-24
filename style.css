@@ -1447,6 +1447,20 @@ ol p {
   color: var(--bs-primary);
 }
 
+.numbered-list {
+  list-style: none;
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.numbered-list::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
 
   /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
 
