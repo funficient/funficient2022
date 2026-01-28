@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Like any profession, you get bad people, average people, and a hand full of really good people. The problem often comes that when you embark on an agile transformation that you don’t know what really good looks like." />
+  <title>How to Implement an Agile Mindset</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">How to Implement an Agile Mindset</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2016-10-19T06:35:29.312Z</p>
+</header>
+<p>The hardest part of undergoing an agile transformation is to
+implement an agile mindset. Cultivating an agile mindset requires a
+seasoned coach who will be able to demonstrate and teach the values of
+the <a href="http://agilemanifesto.org/">agile manifesto</a>, as well as
+the technical skills that form part of the underlying principles and
+methods.</p>
+<p>Unfortunately, a lot of companies select their agile coaches based on
+certifications only, which is placing the emphasis on the technical
+skills, neglecting the importance of the coaching skills and
+mindset.</p>
+<p>Beyond everything else, however, an agile coach is a coach. Sure,
+they need to be a master of the agile methods they are trying to teach,
+yet this alone does not make you a master at <em>teaching</em> agile —
+it makes you a master at <em>doing</em> agile.</p>
+<p>There’s a difference. A big one.</p>
+<p>A master at agile methods alone can show people <em>how</em> to do
+agile, while a master at <em>teaching</em> agile methods on the other
+hand, is a transformational architect, instilling an agile mindset
+throughout the organization. Someone who is able to inspire change,
+someone who empowers the people to grow an agile mindset, someone who
+teaches the teams how to learn how to be agile, rather than telling them
+how to do it.</p>
+<p>Both roles have value, and while you might need either the one or the
+other, best results are always when there is a marriage of two
+complementing, yet opposing forces. In the case of undergoing an agile
+transformation, this is no different.</p>
+<p>The difficulty lies more in knowing what to expect and what to look
+for in an agile coach. Here are the top 10 things to look for when
+choosing an agile coach:</p>
+<h2 id="an-agile-coach-starts-with-a-problem">1. An agile coach starts
+with a problem</h2>
+<p>As any seasoned consultant will tell you, the answer to any question
+is always “it depends”. The same rings true to an agile
+transformation.</p>
+<p>Although it might have some value in implementing a standard Scrum
+practice in your workplace, a really good coach, will rarely start with
+a big bang approach, implementing an entire solution such as Scrum in
+one go.</p>
+<p>Rather, a really good coach will first observe and do a problem
+analysis by speaking to the different stakeholders to get a holistic
+view of the problem, not only management’s perspective of it.</p>
+<blockquote>
+<p>Anything the agile coach suggests to implement, will be as a result
+of solving a problem.</p>
+</blockquote>
+<p>That means that they are a master of Scrum and other agile methods,
+and know it well enough to be able to make a judgement call as to what
+is needed to alleviate a specific problem.</p>
+<h2 id="an-agile-coach-defines-success">2. An agile coach defines
+success</h2>
+<p>A really good agile coach will always embark on a leadership coaching
+journey as part of their service offering, as they understand the
+importance of defining success on an organizational level, as well as
+ensuring alignment to the vision and values of the company.</p>
+<p>All coaching sessions start with defining your goals. It is a way of
+knowing when you’ve reach your goal. Without first taking the take to
+concretely define some measurable goals, an agile transformation might
+risk carrying on forever without making any measurable progress.</p>
+<blockquote>
+<p>A seasoned agile coach will not only help you define what success
+looks like, but make sure that you constantly reach defined milestones
+and can see and quantify progress.</p>
+</blockquote>
+<h2 id="an-agile-coach-takes-one-step-at-a-time">3. An agile coach takes
+one step at a time</h2>
+<p>Like the story of the tortoise and the hare, an agile coach can be
+compared to the tortoise. They slowly, yet surely, progresses towards
+the defined goals and make sure that everyone stays on track.</p>
+<p>In the story, the hare got distracted, and too late realized that the
+tortoise has overtaken him. Similarly, a good agile coach realizes that
+the teams they work with risk being distracted as they speed up, and
+will put measures in place to keep everyone focused on their goal.</p>
+<blockquote>
+<p>They will implement one change at a time and ensure that it has
+become ingrained in the habits and culture before incorporating the next
+ingredient.</p>
+</blockquote>
+<h2 id="an-agile-coach-perseveres">4. An agile coach perseveres</h2>
+<p>The one thing you can be sure of when you embark on an agile
+transformation is that there will be obstacles. A really good agile
+coach will help you overcome these obstacles.</p>
+<blockquote>
+<p>A good agile coach will ensure that the organization meets it’s
+milestones, even when the going gets tough.</p>
+</blockquote>
+<p>It’s easy to keep going when things go according to plan, but it’s
+when things start falling apart that you can see the courage and
+integrity of the leader and the coach.</p>
+<h2 id="an-agile-coach-helps-you-gain-a-different-perspective">5. An
+agile coach helps you gain a different perspective</h2>
+<p>A really good coach asks the right questions to help you see a
+different perspective. They don’t tell you what to do, or how to do it.
+Rather, they demonstrate a possibility, and then ask probing questions
+that will help you come up with your own solution.</p>
+<blockquote>
+<p>The really good agile coach allows you to experiment to find a
+sustainable solution, and point out possible issues by asking questions.
+They empower you to make your own decisions, and your own mistakes.</p>
+</blockquote>
+<h2 id="an-agile-coach-supports-rather-than-suffocates">6. An agile
+coach supports, rather than suffocates</h2>
+<p>They don’t tell you what to do, but they also don’t leave you on your
+own to struggle through the problem. They have found the perfect balance
+between allowing you to grow, while ensuring that you have all the
+support in place that you need in order to reach your goal.</p>
+<blockquote>
+<p>A really good agile coach trusts the people they work with. They
+remain objective and fair, yet caring and interested.</p>
+</blockquote>
+<h2 id="an-agile-coach-keeps-the-big-picture-in-mind">7. An agile coach
+keeps the big picture in mind</h2>
+<p>While a Scrum Master is concerned with the details of the team they
+work with, the agile coach has a helicopter view of the entire
+organization. They see and point out the impact of changes on other
+parts of the organization. They realize that you are as weak as your
+weakest link, and you can only be as agile as your least agile team or
+department.</p>
+<blockquote>
+<p>The Agile Coach ensures continuity and harmony throughout the
+organization.</p>
+</blockquote>
+<h2 id="an-agile-coach-values-people-more-than-process-and-tools">8. An
+agile coach values people more than process and tools</h2>
+<p>Though people, process and tools are equally important in an
+organization, it is hard to keep these in balance, as there is a
+constant dance between what is important at different times within the
+organization.</p>
+<blockquote>
+<p>The agile coach knows that process and tools support people, and
+constantly question whether the processes and tools in the organization
+does.</p>
+</blockquote>
+<h2 id="an-agile-coach-is-compassionate-and-fair">9. An agile coach is
+compassionate and fair</h2>
+<p>An agile coach never follows rules blindly, or make judgements based
+on a pre-defined set of rules. An agile coach judges each situation
+after carefully evaluating it from different perspectives.</p>
+<p>They realize that people are the most important part of any
+organization, and that people, other than robots, have good and bad
+days. They make the workplace a more human place to work, and makes
+judgements that is fair.</p>
+<blockquote>
+<p>They don’t treat everyone the same, because they realize that
+everyone isn’t the same, and that, in itself, is the strength of the
+organization.</p>
+</blockquote>
+<h2 id="an-agile-coach-never-stops-learning">10. An agile coach never
+stops learning</h2>
+<p>Inherently, agility and a culture of learning in an organization, is
+the same thing. You can’t keep improving or, as the manifesto puts it,
+“uncovering better ways” to do things, if you don’t continue to
+learn.</p>
+<blockquote>
+<p>An agile coach can’t possibly teach or instill a culture of learning
+without continuing to learn themselves.</p>
+</blockquote>
+<p>A really good agile coach continues to enroll in courses, workshops
+and events where they can hear what other organizations or people are
+doing. The best agile coaches and Scrum Masters I’ve seen, are the ones
+that didn’t come from a software development background. They were able
+to question things that others took for granted, and they were the ones
+who brought a new perspective to the team.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Like any profession, you get bad people, average people, and a hand
+full of really good people. The problem often comes that when you embark
+on an agile transformation that you don’t know what really good looks
+like.</p>
+<p>This blog lists the top ten things to look for when evaluating the
+skills and abilities of an agile coach. What do you think? What are the
+most important thing you look for in an agile coach?</p>
+<p><em>Originally published on Medium:
+https://everydayagile.com/how-to-implement-an-agile-mindset-5b077763064e</em></p>
+</body>
+</html>

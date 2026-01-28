@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="The first workbook in a series of four books to practically guide teams, based on personal experience, through the four stages of Bruce Tuckman’s group development theory towards high performance. According to the model, a team undergoes four distinct stages before they reach optimal performance, first forming, then storming, followed by norming and finally performing, with a final fifth stage of adjourning. This workbook focuses on the forming stage." />
+  <title>Forming Agile Teams</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Forming Agile Teams</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2017-03-31T07:25:38.914Z</p>
+</header>
+<h2 id="book-review">Book Review</h2>
+<p><em>The first workbook in a series of four books to practically guide
+teams, based on personal experience, through the four stages of Bruce
+Tuckman’s group development theory towards high performance. According
+to the model, a team undergoes four distinct stages before they reach
+optimal performance, first <strong>forming</strong>, then
+<strong>storming</strong>, followed by <strong>norming</strong> and
+finally <strong>performing</strong>, with a final fifth stage of
+<strong>adjourning</strong>. This workbook focuses on the forming
+stage.</em></p>
+<h1 id="who-is-it-for">Who is it for?</h1>
+<p>The book is intended as a guide for agile transformation leaders,
+specifically Scrum Masters and agile coaches, yet, it is a valuable
+resource for the entire team.</p>
+<p>Stakeholders, Product Owners and Team Members’ roles and
+responsibilities are covered in detail through each distinct phase of an
+agile iteration, making it an invaluable resource for anyone who needs
+guidance on task distribution and expectations during each phase of a
+typical software development project. It removes any grey areas by
+clearly defining expectations for standard Scrum roles as defined in the
+<a href="http://www.scrumguides.org/scrum-guide.html">Scrum
+Guide</a>.</p>
+<h1 id="whats-inside">What’s inside?</h1>
+<p><em>For those looking for a <strong>step-by-step guide on starting an
+agile implementation using Scrum</strong>, this is a much waited for
+resource.</em></p>
+<p><img
+src="https://miro.medium.com/max/315/1*9XfA3ZqsA-1umr9ChsArGQ.jpeg" /></p>
+<p>The book is filled with practical tips, techniques and even complete
+checklists and templates to guide a new agile team member towards
+mastery, avoiding common pitfalls during a Scrum implementation.</p>
+<blockquote>
+<p>It’s a book of practical answers equally for those new to agile and
+more experienced teams.</p>
+</blockquote>
+<p><em>What is <strong>different</strong> from all other agile
+implementation books I’ve read is that it emphasizes the values and
+attitudes of the agile leaders, not only focusing on the tools and
+techniques, making it a recommended read for heart-centered leaders and
+teams.</em></p>
+<h2 id="the-writing-style">The writing style</h2>
+<p>The book reads like a practical manual and implementation guide, well
+structured and logically laid out, making it easy to find the resources
+you need when you need it.</p>
+<p>Written in plain English, it is an easy read for those familiar with
+enterprise organizational structures and ways of working.</p>
+<h1 id="i-like-i-wish-i-wonder">I like, I wish, I wonder…</h1>
+<p>The abundance of diagrams and visual aids makes it an easy to
+implement book. It does not only rely on words to explain concepts,
+adding visuals, external resources and references for even more details,
+and templates for a comprehensive guide.</p>
+<p>The tone and writing style reads like a gentle, down-to-earth
+conversation, making it accessible to anyone, from new team member to
+share holder.</p>
+<p>Most of all, I simply <em>love</em> the explicit focus and practical
+examples on the desired attitude when delivering the messages in the
+book.</p>
+<p>On the downside, it’s written for an enterprise size organization,
+making it maybe a bit too heavy for implementing in a small team. It
+also assumes that the team already has a structured and stable delivery
+process, thus not entirely a match for startups or organizations which
+have no defined roles, responsibilities or even processes.</p>
+<h1 id="about-the-author">About the author</h1>
+<p><strong><em><a href="https://www.linkedin.com/in/chuzzete/">Jesus
+Mendez</a></em></strong> is an experienced Scrum Master and agile coach
+based in Canada with his primary goal to help teams to become
+self-organizing.</p>
+<p>He has contributed to more than 20 projects, with his expertise
+ranging from technical software development, to project management,
+facilitation and leadership. He brings a wealth of practical best
+practices to the table, consolidating a collection of tried and tested
+methods into a workbook for agile practitioners.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p><strong><em><a
+href="http://www.jesusmendez.ca/book/forming_agile_teams/">Forming Agile
+Teams</a></em></strong> is a comprehensive guide and welcome addition to
+the agile resource library for anyone looking for the practical how-to’s
+of an agile or Scrum implementation in a medium to large
+organization.</p>
+<blockquote>
+<p><em>An invaluable resource and must read for anyone looking for a
+practical how-to guide to implement Scrum.</em></p>
+</blockquote>
+<p>It fleshes out the basics of the Scrum framework, providing tips,
+checklists and templates and links to further reading. The best part is
+the inclusion of the right attitudes and focus on values such as
+humility and respect throughout the book.</p>
+<p><em>Originally published on Medium:
+https://everydayagile.com/forming-agile-teams-f2b5a35cc94b</em></p>
+</body>
+</html>

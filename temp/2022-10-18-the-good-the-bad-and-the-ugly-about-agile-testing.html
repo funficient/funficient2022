@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Being agile is about responding to customer needs promptly, and the best way to do this, is to know what those customer needs are. Even though the Product Owner’s primary role is knowing their customer, it’s not possible to view the same thing from two different sides. If you want to be really agile, invest in more manual testing." />
+  <title>The good, the bad and the ugly about agile testing</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The good, the bad and the ugly about agile
+testing</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2016-08-12T06:26:04.694Z</p>
+</header>
+<p><em>A story of testing and why it is important</em></p>
+<p>I accidentally stumbled into the world of testing. I had no clue what
+is was at the time, yet my first job title after I dropped out of
+University was <strong>test engineer</strong>.</p>
+<p>I didn’t really care what my job title was or what I did to be
+honest. All I cared about was getting <strong><em>a</em></strong> job in
+order for me to not have to go back to the much-too-small hometown where
+I grew up, where big dreams were not allowed.</p>
+<p>So when my friend said their company was looking for someone, I went
+for an interview and two weeks later started. Perfect! A job that will
+allow me to stay in the city, with the added benefit of having lunch
+with my best friend everyday. Life couldn’t get any better.</p>
+<p><strong><em>Innocent inquiries…</em></strong></p>
+<p>But soon friends started asking me what I did, and I realized I
+couldn’t really answer satisfactorily, so looked at my appointment
+letter to figure out what I’m supposed to answer. I understood the words
+written on the paper, but I didn’t understand what they entailed, so I
+innocently walked to my boss and asked him what it meant to be a test
+engineer. He chuckled, me not understanding why, and continued to
+patiently explain in lay men’s terms what I do every day, leaving him
+very amused and me blissfully satisfied, knowing what I am finally.</p>
+<p>Equipped with this knowledge, I felt more important, more confident,
+and did my best to be the best test engineer ever, even though I really
+still didn’t have a clue what I was doing — only following instructions
+blindly.</p>
+<h2 id="the-good">The good</h2>
+<p>With the same oblivion I continued my early career stumbling on
+different job titles as jobs managed to easily fall into my lap unasked
+for, allowing me to do the things I love while earning a salary.</p>
+<blockquote>
+<p>Each time I got a new job I followed the same approach. I
+contemplated exactly what it meant to be this new job title, and what
+you would need to become the best at it.</p>
+</blockquote>
+<p>In retrospect, quite a useful and sensible approach! At the time
+though I was considered much the opposite of sensible. To this day this
+logic approach seems to be considered weird by most. I find it weird
+that more people don’t figure out what they’re supposed to be doing
+before they start doing it. But hey, each for their own.</p>
+<p>My journey included, among other roles, that of being a test
+engineer, quality assurance consultant — including automation-,
+usability-, manual- and performance testing — , test manager and finally
+quality manager. Each time, treating the role as if it was a blank
+canvas, I invested great effort in researching what each role really
+personified, and the goal of each.</p>
+<blockquote>
+<p>I studied each role from all the possible angles, and each time would
+pride myself in mastering it.</p>
+</blockquote>
+<p>As a test engineer I learned that the only way to verify that
+something is working, was to be very sure that you understand what it is
+supposed to be doing and why.</p>
+<p><strong><em>Sensible standards…</em></strong></p>
+<p>I came to understand the importance and value of standards,
+especially international standards, and how to systematically work my
+way through a standard, evaluating software (in this case gaming
+machines and systems) from all the possible angles — reviewing the
+source code, the artwork, the physical device, and that everything works
+well together.</p>
+<p>Then, one step up as a quality assurance consultant, I learned that
+you don’t need a standard to test something, and learned about different
+requirement gathering techniques.</p>
+<p><strong><em>Very virtuous…</em></strong></p>
+<p>I then discovered the <strong>V-model</strong> and analyzed it’s
+meaning on each side of the “V” in detail, having countless arguments
+about the difference between verification and validation and each level
+of the model and what it means.</p>
+<p>I learned about all the different test techniques and which to apply
+when. I also learned about how and when to use harnesses and data.
+<em>Most interestingly, I learned that depending on your viewpoint,
+everyone in the numerous arguments were in actual fact correct.</em>
+System testing to one means the same as unit testing to someone else.
+Integration testing to the developer means something different to the
+architect or the business owner.</p>
+<p>I also learned about things like code coverage tools and the
+difference between stress testing, performance testing, and how to
+implement a test automation framework.</p>
+<p><strong><em>World without end…</em></strong></p>
+<p>When I was appointed as quality manager, I was surprised to find out
+that what I thought was the totality of the world of testing, was merely
+one drop in the ocean and that there was much more to learn. As testing
+only forms a small part of quality assurance, so quality assurance is
+also only a small part of quality management.</p>
+<p>As I taught all the new employees on the ISO 9000 framework, I
+learned that quality is not about how fast, or how good, or how
+beautiful a system is.</p>
+<blockquote>
+<p>Quality is simply meeting customer expectations, fulfilling a need,
+solving a problem.</p>
+</blockquote>
+<p>It’s not quality if you give someone looking for a fuel efficient,
+small car to use in the city, an expensive Lamborghini. <em>Bigger,
+fancier, more is <strong>never</strong> better.</em></p>
+<p>It’s quality only if you listen to the customer and give them what
+they want. It’s quality if you make decisions in collaboration with the
+customer, not telling — or worse, building — them what you think they
+need, based on advice from your best developer.</p>
+<p>It’s also not necessarily about giving them what they ask for, as
+mostly they are using the wrong terms or examples and is simply trying
+to be understood. Rather, they are looking at you to advise them on what
+they need.</p>
+<p><em>As this knowledge dawned on me, I realized that I’ve been putting
+way too much emphasis on the functionality and technical capabilities,
+and way too little on finding out what the user needs or what their
+problems are.</em></p>
+<p>I changed my approach and I was overwhelmed with how many customers
+thanked me for helping them do their job easier, better!</p>
+<blockquote>
+<p>I tested less, yet the quality went up.</p>
+</blockquote>
+<p>And just as I thought I had all the answers, they went and changed
+all the questions. <em>Agile was born.</em></p>
+<h2 id="the-bad">The bad</h2>
+<p>Suddenly, my safe little island where I was the queen of my world,
+collapsed as we were pushed into a team where the world evolved around
+only the developers and their needs, with the testers the scapegoats
+having to take responsibility for all the errors right at the end of the
+development cycle.</p>
+<p>While the developers had the luxury of “developing” at ease until the
+deadline, the testers had to make magic happen as the developers have
+already used up more than the allowed for time buffer.</p>
+<p>To make this worse, they didn’t really seem to think that testers are
+needed at all and only saw them as an annoyance, hurting their sensitive
+ego’s each time a bug was reported. Something they would <em>much</em>
+rather do without. Understandably.</p>
+<p>As if that wasn’t hard enough, we — the testers — were outnumbered by
+far with ratios as much as 8 developers to 1 tester in a team. With most
+agile coaches and Scrum Masters coming from a developer background, they
+never really understood the art of testing, and focused only on the
+technical skills, making the life of an agile tester less than a happy
+one.</p>
+<p>The developers started learning skills like TDD (test driven
+development) and with the Product Owner giving the acceptance criteria,
+slowly but surely the testers were shifted out of the development life
+cycle, seen as waste by the ever ambitious line managers looking to
+optimize the process.</p>
+<p>Not wanting to be seen as redundant, I worked hard to master what I
+call agile testing.</p>
+<p>I experimented with exploratory test methods, and spent more time
+with the developers. I had handover sessions with them to understand
+what they have included in their unit tests already, thus lessening my
+work load, and understanding the architecture of what they have built,
+to optimize my effort. I also spent more time with the automation team
+who couldn’t keep up with the speed, compiling regression test suits
+that covers all the functions, without having to test everything.</p>
+<p>And it worked!</p>
+<blockquote>
+<p><em>I figured out that agile testing means better team communication,
+better judgement, and happier teams as the effort was split more
+equally.</em></p>
+</blockquote>
+<h2 id="the-ugly">The ugly</h2>
+<p>However, as the test and development team started to deliver higher
+quality work, the next problem became evident, namely the requirements.
+Or rather, the lack of customer-centered requirements. I realized that
+having a user story doesn’t mean the person that wrote it understands
+the user it is intended for.</p>
+<p>The struggle started all over again, this time trying to get buy-in
+and understanding not from the developers as to the value of testing,
+but the Product Owners and business.</p>
+<p>Finally, however, I admitted defeat, realizing that my fight for
+existence in a world that doesn’t want testers is futile. I was tired of
+having to fight for resources, and trying to convince the developers
+that I’m on their side.</p>
+<p>I couldn’t stand another day of having to explain to the Scrum Master
+and the lead developers why they needed to include me in the technical
+sessions, or begged them to fix a critical bug before a customer has to
+suffer the consequence of the failure.</p>
+<p>The final push came after visiting one of my best friend’s dying
+father for a week and seeing how devastated not only he, but also his
+family, was after being diagnosed with only a few months to live. Days
+went past where he didn’t even got up in the morning, and when he did,
+his eyes were empty and his focus somewhere else.</p>
+<p>Two weeks later, having returned home, I followed up to find out how
+they were doing, just to hear that after the agonizing long wait because
+the doctor was on leave, that they made a mistake with the diagnosis. He
+wasn’t dying after all.</p>
+<p>Working in the healthcare industry at the time, I realized that I was
+partly responsible for this trauma and have the power to prevent it. The
+only problem was that in reality I was totally powerless.</p>
+<p>The developers simply didn’t have the empathy, being too removed from
+the patients themselves, and besides, they were only allowed to do what
+the Product Owner told them to do. If there isn’t a requirement, they
+won’t develop it and the requirements given by the Product Owner is not
+to be questioned or changed.</p>
+<p>As a last resort, and with my passion for quality, understanding that
+quality evolves around meeting user requirements (not a Product Owner’s
+interpretation of it), I told this touching story to the responsible
+Product Owner in the hope that she at least will realize the impact of
+her decisions.</p>
+<p>She listened with compassion, agreed that it was a terrible mistake
+to have been made, then turned back to her computer screen, not even
+considering the possibility that she can at change it.</p>
+<p>Not willing to give up on my friend’s father and all the other users
+represented by him, I reached out to another Product Owner, hopeful for
+more empathy. Yet, the answer again was one of powerless shrugging of
+shoulders, being unable to influence the decisions of the Development
+Manager and business with regards to requirements.</p>
+<p>Tired of this constant and ego-centered tug of war between
+disconnected parts of the business, I finally gave up.</p>
+<h2 id="back-to-basics">Back to Basics</h2>
+<p>As I walked away and started working on projects not related to
+software development at all, I gained perspective again, remembering why
+testing became so popular in the first place many years ago.</p>
+<p><em>The biggest benefit of testing has always been it’s risk
+mitigation.</em> By having an objective party look at the software, you
+exponentially decrease your risk of delivering faulty software to the
+end-user, thus exponentially manage to meet, or improve quality of the
+system.</p>
+<blockquote>
+<p>That’s the reason why pair programming works, and that’s the reason
+why you have to get an external auditor to prove compliance. There is a
+conflict of interest when the same person, or type of person, evaluates
+a piece of software as working.</p>
+</blockquote>
+<p>Just like a person misses the huge turtle swimming past while they
+are engrossed in observing a beautiful nudibranch or other macro-sealife
+when diving, so too the developers are so absorbed in the details of the
+code they’ve written, that they easily miss what is obvious to someone
+external using the software.</p>
+<p>Where pair programming gives an extra pair of eyes on the details of
+the code, so the tester gives a different perspective on the whole
+system from an external point of view. No matter how good a programmer
+you are, it is not possible to look at the same thing from two angles at
+the same time.</p>
+<p>The tester, if trained well, has the primary role of seeing what the
+developers missed, and in my experience, even the best of the best still
+end up with errors in their code.</p>
+<p>If you’re considering getting rid of your manual test team, ask
+yourself the following</p>
+<blockquote>
+<p>“Do you rather want to spend a bit more time during development to
+find and fix errors? Or do you rather want to fix the errors once the
+end-user discovers them?”</p>
+</blockquote>
+<p>Because if the errors exist, they will be discovered eventually.
+<em>The question is, at what cost?</em></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Being agile doesn’t mean that you don’t manually have to test
+software.</p>
+<p>Being agile is about responding to customer needs promptly, and the
+best way to do this, is to know what those customer needs are. Even
+though the Product Owner’s primary role is knowing their customer, it’s
+not possible to view the same thing from two different sides.</p>
+<p>When two people sitting opposite each other views a can of coke in
+the middle of the table, each sees something else, yet both are correct.
+Similarly, manual testing is that extra pair of objective eyes that
+helps you to be more agile.</p>
+<p>If you want to be more agile, get a really good tester.</p>
+<!--EndFragment-->
+<p><em>Originally published on Medium:
+https://everydayagile.com/the-good-the-bad-and-the-ugly-about-agile-testing-29b4b847c778</em></p>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="The source of most issues at work and in your personal life comes down to a breakdown in communication. This post aims to highlight how this happens and give some guidelines as to how to get your message acrosss." />
+  <title>Solving the Biggest Waste in Agile</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Solving the Biggest Waste in Agile</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2018-07-08T07:16:35.344Z</p>
+</header>
+<h2 id="how-to-get-teams-talking">How to Get Teams Talking</h2>
+<p>In a previous post I touched on the loss of information between teams
+as one of <a
+href="https://everydayagile.com/the-biggest-waste-in-agile-e8925c3ec512">the
+biggest causes of waste in agile</a>. This post aims to focus on the
+<em>solution</em> to reduce the loss of communication.</p>
+<p>First, let me provide some context.</p>
+<p>You are about to go on a well-deserved and long overdue holiday. You
+feel relaxed and look forward to spending some time with your family.
+All that needs to be done before you can leave is a final handover to
+make sure nothing falls through the cracks while you’re gone. Your team
+is more than competent and your manager knows you’ve spent a lot of time
+making sure your tea knows what needs to be done while you’re gone.</p>
+<p>You go on holiday with a light heart, expecting to come back to a
+productive and happy team with all the work done.</p>
+<p>Soon after you’re gone, however, your manager — a micro-manager and
+control freak — goes to a resource in a different team whom she trusts —
+let’s call him Jim — and with good intention asks him to make sure the
+work gets done.</p>
+<p>Jim, an eager and hands-on resource, however, causes conflict and
+confusion when he takes over the tasks the other team is busy with. He
+feels uncomfortable and out of place, yet is eager to show his manager
+what a valuable resource he is and continues doing the task his way.
+Meanwhile, the team is upset, feeling redundant and incompetent and not
+understanding why they are not being trusted to do the work. A tug of
+war erupts with both sides trying to keep their individual line managers
+happy.</p>
+<p>With two teams now responsible for the same task, things suddenly
+start falling apart with one person starting a task just to find out
+that someone else is also working on it causing errors in the build when
+trying to deploy the work to the production branch of code.</p>
+<p>Both teams feel unhappy and resentment starts growing. After two
+weeks you return to an unhappy, demotivated team with the work not done,
+or at least not as good as you expected it to be done. You don’t
+understand what went wrong…</p>
+<h1 id="the-bad-and-the-ugly-about-communication">The bad and the ugly
+about communication</h1>
+<p>If this scenario seems familiar, your organization — like most
+organizations I’ve encountered — suffers from communication
+breakdown.</p>
+<p>As a result of crossed lines of communication between different teams
+or resources, work supposed to be done within a week by one team now
+takes two or even three weeks or longer with two or more teams involved,
+increasing the cost of production by 300% or more while customer
+satisfaction ratings are going down and the sales and customer support
+team’s workload is being impacted by the lower quality work.</p>
+<p>So here’s some ugly truths about communication that you might or
+might not know.</p>
+<h2 id="truth-1-people-hear-what-they-want-to-hear">Truth #1: People
+hear what they want to hear</h2>
+<p><em>Each person will have or make their own assumptions based on
+their own beliefs and knowledge and experience. The one thing you can be
+sure of is what you said is not what was heard.</em></p>
+<h2 id="truth-2-less-is-more">Truth #2: Less is more</h2>
+<p>Confusion happens when you get conflicting messages from two
+different sides. Realize that every time you increase the number of
+people in a line of communication, the message gets diluted.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*iDK9_kNQWFIaIoB_rkoMIg.png" /></p>
+<h2 id="truth-3-too-many-cooks-spoil-the-broth">Truth #3: Too many cooks
+spoil the broth</h2>
+<p>Amazon’s Jeff Bezos recommends that team meetings should consist of
+no more people than can be fed on two pizzas. Involving more people in a
+meeting or task does not result in better communication or faster
+results. Rather, it introduces more complexity and confusion.</p>
+<h2 id="truth-4-noise-is-everywhere">Truth #4: Noise is everywhere</h2>
+<p>In a psychology experiment two designers are asked to design
+something for a client. He already has something that he came up with,
+and would like to compare it with the designers’ work. The designers,
+priding themselves in the originality of their work, is shocked and
+surprised when they present their concept and it is a near exact match
+to the client’s concept. Here is the full video:</p>
+<p><a
+href="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FZyQjr1YL0zg&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZyQjr1YL0zg&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FZyQjr1YL0zg%2Fhqdefault.jpg&amp;key=a19fcc184b9711e1b4764040d3dc5c07&amp;type=text%2Fhtml&amp;schema=youtube">Derren
+Brown - Subliminal Advertising</a></p>
+<p>How did this happen? The taxi ride to the client was designed
+intentionally to drive past certain artifacts that influenced their
+final design so much that it was a near exact match.</p>
+<h2 id="truth-5-you-dont-know-what-you-dont-know.">Truth #5: You don’t
+know what you don’t know.</h2>
+<p>The one thing you can be sure of when embarking on a new task is that
+you don’t know what is going to happen in the future and you don’t have
+all the answers. If you did, you would have planned for it.</p>
+<h1 id="what-it-takes-to-get-your-message-across">What it takes to get
+your message across</h1>
+<h2 id="rule-1-think-more-say-less.">Rule # 1: Think more, say
+less.</h2>
+<p>Don’t think out loud. Good communication is lean communication. 80%
+of communication is non-verbal. One word or sentence often has more
+impact than an hour long speech. Spend more time figuring out what you
+want to say and why, less time talking.</p>
+<h2 id="rule-2-deal-with-the-interference.">Rule # 2: Deal with the
+interference.</h2>
+<p>Protect your team with clear boundaries and responsibilities. Not to
+be confused with red tape.</p>
+<p>Be sure that your team knows who they can ask for clarity while
+you’re away. Make sure that only one person takes final responsibility.
+Make sure that the task is explicit.</p>
+<h2 id="rule-3-go-direct.">Rule #3: Go direct.</h2>
+<p>Cut out the middleman. Never, ever, EVER rely on a messenger to
+deliver a message. Ever.</p>
+<p>One of the principles of agile software development is that the best
+form of communication is face-to-face communication.</p>
+<p>Have a one-to-one relationship between responsible and accountable.
+Reduce the number of different authority lines. Give direct
+responsibility to each person or team and hold only them accountable for
+the results.</p>
+<h2 id="rule-4-focus-on-the-results.">Rule #4: Focus on the
+results.</h2>
+<p>Each person has a different style and different skills. What is easy
+for you might not be easy for someone else. As opposed to making sure
+that the team knows <strong><em>how</em></strong> to do a task, focus on
+<strong><em>what</em></strong> you want the <strong>end-result</strong>
+to be. What does success look like?</p>
+<p>Be very explicit about what needs to be done, who will be held
+responsible, when it needs to be done, who needs to be informed and what
+to do when there is an issue.</p>
+<h2 id="rule-5-provide-context.">Rule #5: Provide context.</h2>
+<p>One of the best tools I’ve encountered as a business analyst is
+context diagrams. A simple diagram consisting of a bunch of boxes to
+indicate the different subsystems or functions, connected with lines
+labelled with at least a verb and a noun to explicitly define the
+purpose of the relationship between two functions. It works because it
+simplifies complexity and provides context as to how one task or team
+influences the rest of the system.</p>
+<p>Visualize work to provide context with a simple drawing on a white
+board, a Kanban board, a task list or a context diagram.</p>
+<h2 id="rule-6-only-give-one-person-final-responsibility.">Rule #6: Only
+give one person final responsibility.</h2>
+<p>There’s an old story on responsibility by an unknown author which
+best describes this rule. It goes like this:</p>
+<blockquote>
+<p>There was an important job to be done and <strong>Everybody</strong>
+was sure that <strong>Somebody</strong> would do it.
+<strong>Anybody</strong> could have done it, but <strong>Nobody</strong>
+did it.</p>
+<p><strong>Somebody</strong> got angry about that because it was
+<strong>Everybody</strong>’s job. <strong>Everybody</strong> thought
+that <strong>Anybody</strong> could do it, but <strong>Nobody</strong>
+realized that <strong>Everybody</strong> wouldn’t do it.</p>
+<p>It ended up that <strong>Everybody</strong> blamed
+<strong>Somebody</strong> when <strong>Nobody</strong> did what
+<strong>Anybody</strong> could have done.</p>
+</blockquote>
+<p>The moral of the story is that if you want something done, give
+responsibility to <strong><em>one</em></strong> person only and make
+sure that everybody knows who is responsible.</p>
+<h2 id="rule-7-kill-the-grapevine">Rule #7: Kill the Grapevine</h2>
+<p>Probably the biggest cause of issues in organizations are the
+grapevine. People relying on information from peers rather than going
+direct.</p>
+<p>Don’t be too busy or unapproachable for people to ask you when they
+have questions and never make someone feel as if their question is
+stupid. Even if you think it is a stupid question, it takes maybe a few
+seconds to answer and clarify something compared to hours of even days
+of resolving an issues as a result of misinterpretation.</p>
+<p>Make it safe for people to ask when they are uncertain and create a
+culture of open and honest communication.</p>
+<h2 id="rule-8-watch-your-tone">Rule #8: Watch your Tone</h2>
+<p>Thank you. Please. Good work.</p>
+<p>It’s free and it only takes a few seconds, yet is the single most
+powerful tool to increase productivity.</p>
+<p>When you speak in a loud, aggressive voice, the recipient is more
+likely to be defensive, thinking of how to justify themselves rather
+than spending the time listening to what you are saying. If you want
+people to hear your message, soft and kind goes a long way.</p>
+<p><em>If you want help getting your teams communicating, please drop me
+a line at www.funficient.com.</em></p>
+<p><em>Originally published on Medium:
+https://medium.com/teal-times/solving-the-biggest-waste-in-agile-b5d9186364fb</em></p>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="The biggest waste in agile is the loss of valuable information as a result of bad communication within teams. Communication is not the same as talking. You don’t communicate with anyone by speaking. You communicate when there is equal speaking and listening." />
+  <title>The Biggest Waste in Agile</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Biggest Waste in Agile</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2017-03-02T07:34:36.156Z</p>
+</header>
+<h2 id="and-its-not-waiting">And it’s not waiting…</h2>
+<p>Once upon a time, all development was done following a waterfall
+approach, one process sequentially following the previous.</p>
+<h2 id="ducks-in-a-row.">Ducks in a row….</h2>
+<p>It was like a game of pass-the-message where the first person
+whispered a secret message in the next person’s ear. Each subsequent
+person whispered what they heard in the next person’s ear, until the
+last person had to relay the message to the entire group.</p>
+<p>Usually, it results in laughter when the original message gets to the
+other side so distorted, often not even remotely the same as the initial
+intention.</p>
+<p><em>Like little ducks in a row, waterfall development similarly
+contained each dependency in a well-defined box, one following the
+other. Planning was done by the project managers, requirements by the
+business analysts, design by the designers, and so it continued until
+the product was finally ready for the customer.</em></p>
+<p>It never really did work though, and agile was born.</p>
+<h2 id="the-empire-strikes-again">The empire strikes again</h2>
+<p>Agile was not like anything before. It didn’t have a recipe you could
+follow like all the previous methodologies.</p>
+<p>There are no detailed guides. There are only a set of four values,
+written in a it-depends kind of way. Open to the interpretation of each
+unique reader.</p>
+<p><img
+src="https://miro.medium.com/max/640/1*QL5IKakvXtOvxdZyPC8s9Q.jpeg" /></p>
+<p>Image 2009 title “Four Storms and a Twister” by <a
+href="https://www.flickr.com/photos/jdhancock/">JD Hancock</a> available
+on <a
+href="https://www.flickr.com/photos/jdhancock/3842546304/in/album-72157618524893239/">Flickr</a>.
+Some rights reserved, no changes made to the original image.</p>
+<p>No rules, no defined processes, no hard-and-fast
+<em>anything</em>.</p>
+<p>Rather, it is like a game of Twister, where everything is
+inter-connected with different people from distinctly different
+disciplines working together to deliver an increment of the product.</p>
+<p>Letting go of the defined structures we are so used to often looks as
+chaotic from the outside, yet, the value of the method is the break-down
+in silo’s as a result of the interconnectedness. The teams that have the
+bodies entangled on the floor, are the ones to see the fun and purpose
+in the game.</p>
+<p>The single biggest strength of agile is that there are to be no more
+secrets between different teams. No more whispering the message hoping
+that the next team won’t hear it properly so that you can sit back and
+have a laugh at the end of the day.</p>
+<blockquote>
+<p><em>Agile was designed to break down silo’s and enable human-to-human
+communication.</em></p>
+</blockquote>
+<p>Yet, we failed miserably in most cases. We threw away the rules and
+processes and red tape, but we didn’t work on the <em>one</em> thing
+that agile was attempting to resolve. <em>Cross-functional
+communication.</em></p>
+<p>Which brings me to the title of the post — namely the biggest waste
+in agile.</p>
+<blockquote>
+<p><em>The biggest waste in agile, is the loss of information between
+different teams or functions.</em></p>
+</blockquote>
+<p><em><strong>Each time you speak to someone other</strong> than the
+person directly affected, you dilute the message. The more layers
+between the original, face-to-face message and the recipient, the more
+diluted it becomes.</em></p>
+<p><em><strong>Each time you don’t speak</strong> to someone else when
+you disagree because you would rather agree than risk the discomfort of
+disharmony, a piece of the puzzle is hidden, making it hard to build a
+complete picture.</em></p>
+<p><em><strong>Each time you speak so much</strong> that no-one else has
+the energy left to sit for another hour and listen, you inhibit the
+creativity and growth of the entire team and cut off a part of the
+picture that could have made it awesome.</em></p>
+<p><em><strong>Each time you don’t ask</strong> when something clearly
+doesn’t make sense, because it comes from an authority figure or a
+different function, you’re allowing mistakes to creep in keeping the
+picture from becoming awesome. It’s like seeing a puzzle piece being put
+in the wrong place but saying nothing.</em></p>
+<p><strong>Each time you <em>don’t point out a dysfunction</em></strong>
+in the team because you’re afraid that you’ll be fired, or ridiculed, or
+hurt someone else’s feelings, you’re enabling the dysfunction to grow
+bigger. <em>You consent to the dysfunction by refraining to voice your
+opinion.</em></p>
+<p><strong>Each time you do something that you’re not <em>proud</em> of,
+or don’t <em>believe</em> in</strong>, only because you’re tired of
+fighting for the product or the customer, you inhibit the entire team’s
+success. And that includes you.</p>
+<h2 id="trash-talk">Trash Talk</h2>
+<p>So let’s talk about trash…</p>
+<p>People make mistakes. All of us. The smallest, and the biggest. None
+of us are perfect, and if we were, there would be little need for us to
+communicate. But communication and social connection is a big reason why
+you’re working in an organization and not being a solo-preneur, so don’t
+discard communication as a not-so-important issue.</p>
+<p>Don’t refrain from doing it differently only because that’s the way
+you’ve done it before. The power is in your hands and change starts with
+you.</p>
+<p><img
+src="https://miro.medium.com/max/640/1*rXo_2N5zoiY6DS4BG1-SWg.jpeg" /></p>
+<p>Image 2010 title “Trash Talk” by <a
+href="https://www.flickr.com/photos/jdhancock/">JD Hancock</a> available
+on <a
+href="https://www.flickr.com/photos/jdhancock/4335744343/in/album-72157618524893239/">Flickr</a>.
+Some rights reserved, no changes made to the original image.</p>
+<p>So what can you do to reduce this waste?</p>
+<p><strong>1 — Equal speak-time</strong></p>
+<p>The easiest strategy to start with is to bring equality to the
+airtime in any meeting.</p>
+<p>As the agile coach, observe the team and after each meeting, show
+them a breakdown of how much each person spoke during the meeting. No
+judgement. Simple raise the awareness.</p>
+<p><strong>2 — Speak up</strong></p>
+<p>Much harder, it takes courage to speak up and say when you see a
+dysfunction in the team, especially if it comes from the leader.</p>
+<blockquote>
+<p>But speaking up is not the same as criticism.</p>
+</blockquote>
+<p>Criticism is trying to make someone else look bad. Speaking up is
+living in integrity. Being true to yourself, while having the best
+interest of the <em>group</em> in mind.</p>
+<p>If you don’t believe in what you are about to say,
+<strong><em>and</em></strong> if you don’t have the best interest of the
+entire group in mind — not only your own self-interest — it’s criticism.
+Keep quiet.</p>
+<p>Go do your homework, gather the facts, and ask yourself whether what
+you are about to say is to look important, or to add value.</p>
+<p><strong>3 — Support</strong></p>
+<p>Two voices are stronger than one. When someone in the team raises an
+issues that you feel strongly about, strengthen their voice and support
+them. It’s scary to question an authority figure.</p>
+<p>But, it’s much more scary being the authority figure. An authority
+figure is responsible for an entire team’s wellbeing, while most team
+members, take the monthly salary for granted. They are often the most
+vulnerable person in the group, and far outnumbered by the team.</p>
+<p><em>Support. Don’t attack.</em></p>
+<p><strong>4 —Attempt to understand</strong></p>
+<p>You can’t support someone if you don’t even know what their day
+consists of, or what challenges they have to face. Just because it’s not
+your job, doesn’t mean you can’t add value.</p>
+<p>Try to understand what your colleagues need or do. I often see how
+people switch off when the discussion topic is not directly related to
+them. This is harmful and counter-productive.</p>
+<p>The better you understand what the other person in your team does,
+the easier you will make their job, and the easier your job will become
+as a result.</p>
+<p><strong>5 — Question your intent</strong></p>
+<p>Why are you doing or saying what you are doing? Are you trying to
+look good? Or are what you are about to say important and in the best
+interest of the entire group?</p>
+<p>Does the whole team need to hear what you have to say? Or can you
+have a one-to-one after the meeting?</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The biggest waste in agile is the loss of valuable information as a
+result of bad communication within teams.</p>
+<p><em>Communication is not the same as talking. You don’t communicate
+with anyone by speaking. You communicate when there is equal speaking
+and listening.</em></p>
+<p><em>Originally published on Medium:
+https://everydayagile.com/the-biggest-waste-in-agile-e8925c3ec512</em></p>
+</body>
+</html>

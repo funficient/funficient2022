@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Testing is an art. It’s the art of uncovering weaknesses in software. Here’s a bullet proof strategy to make sure you’re finding meaningful errors while testing software." />
+  <title>What is Agile Testing exactly?</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">What is Agile Testing exactly?</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2017-07-12T10:36:55.765Z</p>
+</header>
+<h2 id="exploring-the-agility-of-a-tester">Exploring the agility of a
+tester</h2>
+<p>In a recent <a
+href="http://agiletester.ca/definition-agile-testing">blog on defining
+agile testing</a> by Lisa Crispin and Janet Gregory, some of the most
+respected authorities in software testing, they attempted to define
+agile testing.</p>
+<p>Of course they did a great job to condense the essence into a short
+paragraph, yet I felt that defining “agile testing” shouldn’t be
+necessary, just like you wouldn’t bother defining “blue table”. The
+difference between a table and a blue table is merely its color. So too
+the difference between testing and agile testing is simply how you test
+and the mindset. Defining a term in itself to me feels a bit un-agile
+and left me feeling sad and misunderstood. The same feeling I had when
+writing a post on my personal testing journey in a blog called <a
+href="https://everydayagile.com/the-good-the-bad-and-the-ugly-about-agile-testing-29b4b847c778">The
+Good, The Bad and The Ugly of Agile Testing</a>.</p>
+<h1 id="a-step-by-step-guide-to-the-art-of-agile-testing">A step-by-step
+guide to the art of “agile” testing</h1>
+<p>So I decided to share how I test, or used to test and who knows,
+maybe will continue to in the future. I invite you to try it out for
+yourself and make up your own mind.</p>
+<p>I view testing as the art of evaluating a user experience. I don’t
+separate UX and testing and merge the two into one, viewing testing from
+as many viewpoints as what is necessary to produce a whole, working
+system. Working meaning that it solves a problem, not that there are a
+bunch of features which behaves as expectedly in isolation.</p>
+<p>For simplicity, I’ll use a digital marketing service provider website
+as baseline for explanation. A system is, however, no different than a
+simple website, except that I would possibly include more tools in my
+test planning, like drawing a context diagram, depending on the
+complexity. The process however remains much the same, except that it
+might be phased into smaller parts.</p>
+<h2 id="step-1-understand-what-the-offering-is-about">Step 1: Understand
+what the offering is about</h2>
+<p>I usually start off with asking for only a url and analytics reports,
+if available. When the odd customer sends me a list of test cases, I
+usually ignore it until right at the end.</p>
+<p>It’s counter productive asking me to evaluate something when you are
+going to tell me what to do. It’s kind of like hiring a gardener because
+you know nothing about gardening but then continue to tell him exactly
+which plants to buy and where to plant them, and then be surprised when
+the plants don’t grow. You hire the gardener for their expertise, so for
+the best results, leave it to the gardener to figure out which plants
+will go where, what soil is needed and how much water the plants should
+get.</p>
+<p>I also don’t spend any time with the customer to get a brief as this
+already influences my thinking away from what a customer would think and
+experience the interaction. <em>The reason for investing in testing is
+to get an objective opinion regarding the readiness of the system or
+website for use in production. When the tester tries to please the
+employer, which more often happens than what I’d like to admit, it
+merely provides a false sense of safety.</em> It’s not really valuable
+hearing what you want to hear but no customers are clicking. You need to
+know why customers aren’t clicking so that you can do something about
+it. So the tester needs to wear the customer hat and be as far removed
+from the internal business politics as much as possible in order to stay
+objective and valuable.</p>
+<p>I spend about a day going through the website and making a mindmap of
+all the different functions that’s available by systematically working
+through each and every page to see where they fit into the puzzle and
+what is available. This is kind of like reverse engineering, creating an
+object-oriented design of the system so that I don’t waste time
+retesting the same function unnecessary as the same code is re-used in
+different parts.</p>
+<p>This also serves as my rough test plan to make sure I look at the
+complete picture. It’s a loose set of scribbles on a few pieces of paper
+and it never gets translated into a formal test plan or strategy.</p>
+<p>The focus is to look at what <strong>functions</strong> are available
+and whether all the links navigate to the intended location. In the
+example of the digital marketing website, some functions might be
+signing up, setting up your profile, buying credits, using credits by
+submitting a request for adding a blog post, or SEO, cancelling a
+request and changing my website url. Traditional ways of testing only
+does this in great detail. I spend only enough time to know what the
+scope is and what the product or service offering is. I never write any
+detailed test cases, except when working with an intern or when
+developers need more guidance.</p>
+<p>When I’m unclear on what the offering is about, I spend time
+analysing <strong>why</strong> rather than go to the customer to clarify
+the intention. My thinking is that if it doesn’t make sense to me, it’s
+not going to make sense to the customer. I’m not looking for an
+explanation as to why this was the customer’s thinking, I’m looking at a
+solution as to how it can make more sense to a user.</p>
+<p>I only go to the customer for clarification if there are clear
+discrepancies, for example the terms might specify one set of products
+while the website specifies another set. In this case, I would ask which
+one is correct before I continue to save time.</p>
+<h2 id="step-2-profile-the-customers">Step 2: Profile the customers</h2>
+<p>Most of my test planning time I spend on this step, which is from my
+experience, totally omitted from testing effort in the ‘traditional’
+testing way. I see this step as the most important as ultimately the
+system or website is designed for users, so the users should be at the
+center of the test design too.</p>
+<p>The focus is to identify the different <strong>personas</strong> and
+identify their possible <strong>needs</strong> during each phase of the
+user journey.</p>
+<p>Most websites cater for at least two distinct types of users, with
+the first being the end-user and the second a service persona. The users
+can also vary distinctly. For one website there might a very specific
+niche market of local users, for another it might be more broad and
+international personas.</p>
+<p>It is crucial to understand what the geographic distribution of your
+users are as standards and expectations are different for different
+countries. For example, in Asia, red is associated with something
+auspicious or good luck and is the perfect color for a call-to-action
+button. In Western countries, red is associated with danger and will
+stop potential buyers from clicking the buy button merely because of the
+color. Asians read from right to left, Westerners from left to
+right.</p>
+<p>This is a super fun activity for me as it reminds me of role play
+while in kindergarten, imagining myself as one type of user or another.
+I literally become the person while I go through the website searching
+for what <strong>value</strong> means to this user. Are they looking for
+easy? reliability? information? community?</p>
+<p>The output of this phase is a user persona summary.</p>
+<h2 id="step-3-compile-a-test-plan">Step 3: Compile a test plan</h2>
+<p>The focus of this step is to use the output from step 1 (the
+functions) and the output from step 2 (the questions and personas) to
+compile a sequence of challenges for a user to complete, based on
+actions and expected results. I focus on value and a complete solution,
+never testing one function in isolation, unless I’m trying to isolate a
+bug, but that’s a different topic for discussion.</p>
+<p>I compile a list of questions that each user might ask during the
+different phases of their user journeys. I center the questionnaire from
+a user point of view, but use the list of functions as reference to
+ensure completeness and that each function is covered at least once. For
+example, a few questions a typical user might ask while evaluating a
+product might be:</p>
+<ol type="1">
+<li>Does the service scale with my business growth?</li>
+<li>What are the different options? And what is the best fit for my
+business</li>
+<li>What is included?</li>
+<li>What about privacy and security?</li>
+<li>What are the costs involved?</li>
+</ol>
+<p>The website needs to give answers to these questions in some form or
+another. There is no correct answer, there is just valid questions,
+which is the opposite way of traditional testing, where the requirements
+are the bible that all answers must lead to. For example, security might
+be the use of https or it might be the inclusion of a badge from a
+service provider, or it might just be a link to how privacy is handled
+on the website as a text page. What is important is that the question
+can be answered, not how.</p>
+<p>These questions are used as guide for exploratory testing later on.
+It’s important to compile the questions totally from a user perspective,
+as the main criticism I have for the traditional test approaches are
+that they are focused on <em>what is</em>, totally ignoring that
+<em>what should have</em> or <em>what could have been</em>.</p>
+<p>In traditional testing, the gaps are never identified and the product
+owner is trusted to know what should and could have been there, thus
+there is a fundamental flaw in the traditional testing as it ignores any
+faults of the product owner, and in my experience, more issues are as a
+result of the requirements than the quality of code. Even when a
+requirement is logged as defect, ultimately the product owner is the one
+deciding with their limited view.</p>
+<p>At this point, I send the test plan for review to the customer who
+can then point out any discrepancies or misunderstandings.</p>
+<h2 id="step-4-select-primary-test-device-and-tools">Step 4: Select
+primary test device and tools</h2>
+<p>Once I know what to look for and how I’ll go about it, I spend a few
+hours going through the analytics reports to see which browsers, devices
+and operating systems are most popular to help me decide what my primary
+device for testing will be. Maybe the majority of the users are iPhone
+users, other times, the majority might be using Chrome browsers on a
+Windows desktop. Depending on the audience, I select my primary device,
+again different to the traditional test lab where the test machine is
+static.</p>
+<p>I also look for tools to help me achieve my goal faster. I might
+include a broken link checker to make sure that there are not any broken
+links. Or I might include some kind of emulator depending on what I’m
+testing. Anything that can be done better with a tool, I search for,
+<strong>but never, ever, EVER do I include a test automation tool.
+Ever.</strong></p>
+<p>Automating tests while you’re validating a function is counter
+productive for the simple reason that you are focusing your attention on
+writing test scripts and not evaluating the feasibility of the offering
+anymore, and the human brain can only focus on one thing at a time. That
+is why changing perspectives are often a big challenge for testers and
+it’s a skill that needs to be developed, just like an actor needs to
+develop their acting skills. You can’t be a good actor if you always
+play the same role.</p>
+<p><em>Automating tests are also much more expensive and ultimately
+un-agile. The moment you have scripted a test, which takes much longer
+than manually checking it, any change requires a change in the
+script.</em> I haven’t done the calculations, but it is at least three
+times slower to do automation testing than manual testing and the amount
+of errors caught with automation compared to manual makes it simply not
+worth the effort to automate so early in the process. I’ve also seen
+more test automation tools slowing down the entire development cycle
+than supporting it with everything being automated.</p>
+<p>Automation testing is good for regression testing, which only becomes
+valuable <em>after</em> you’ve tested the system and after the bugs have
+been fixed. It should be a snapshot of the ideal system and it’s far
+from ideal if you haven’t accepted the story yet. If you’re following
+Scrum, that means that you would only automate tests in a regression
+suite after the stories have been accepted by the product owner, which
+means it happens in the following sprint. Once it hasn’t been accepted,
+it simply doesn’t make any sense automating it.</p>
+<p>If the purpose of regression testing is understood and manual testing
+done well, regression testing should only need to cover about 20% of the
+system functionality, which is not adequate at all when you haven’t
+tested a system yet.</p>
+<p>When the developers are available, I usually also spend time with
+them to understand what they have already covered in their unit tests or
+automated tests to ensure that I don’t duplicate the effort and know
+where to focus my test effort. I thus need to understand the technical
+architecture on a basic level in order to focus my efforts most
+efficiently.</p>
+<h2 id="step-5-run-exploratory-tests">Step 5: Run Exploratory Tests</h2>
+<p>Finally you’re ready to start testing. I usually take one persona and
+gradually work my way through the questions before changing to a
+different persona, as the switch in perspective requires focus.</p>
+<p>While I’m running the test I focus mostly on the
+<strong>usability</strong> aspects of the website or system. How fast do
+I get my results once I have clicked the button? How easy is it to find
+the information I’m looking for? Are there any unnecessary steps that
+can be omitted? How much feedback do I get to help me as user feel in
+control at all times? How delightful is the interaction and how much
+detail is tended to in the design? How do the colors complement the
+message and the mood? How do the images and icons help to guide a user
+to the answers they are seeking?</p>
+<p>Functional testing, in my opinion, is mostly already done by the
+developers with their unit tests and TDD. Thus, when I’m testing,
+mostly, I’m expecting that the functions will work and usually they do.
+If not, I spend more time with the developers and give them prepared
+test cases to improve their quality of work, which usually, they’re very
+grateful for. In the end, everyone wants to do the best job they
+possibly can and only need someone to explain the rules of the game to
+them. By giving them test cases, they know what you are looking for and
+they will build it into the system, which makes the life of the tester
+so much easier and shortens development time as less bugs are picked up
+later in the process.</p>
+<p>The issues and value add I bring to the table is giving the feedback
+that the unit tests <strong><em>don’t</em></strong> cover, which usually
+involves the end-to-end running of a scenario rather than a standalone
+function or a missing requirement. <em>I would say that on average 80%
+of failures are as a result of either bad design or bad requirements,
+not bad code.</em> With design, I intend to mean both the aesthetic
+layout and the solution design itself.</p>
+<p>For example, the debiting and crediting of credits might work fine in
+a unit test, but using it in a different workflow might point out a
+failure in the system. The integration points are the weak points in any
+system, thus it’s important to understand where technically the
+integrations are and what is being integrated.</p>
+<p>I spend extra time making sure that the integration points work in
+different cases. Standard functionality, however, only need to be proven
+to work with one or two cases.</p>
+<p>The list of questions is my checklist to make sure that a user can do
+everything that they intend to do and I work my way through it, logging
+bugs as I go along.</p>
+<p>I use one primary test device, then swap to different devices to do
+different tests to make sure that the functionality and layouts behave
+the same on different sized screens and browsers. I get the same results
+with this approach and testing on all devices and all systems, thus opt
+for the time saving option.</p>
+<h2 id="step-6-the-test-report">Step 6: The Test Report</h2>
+<p>This is the most fun part of testing as here is where my creativity
+gets to play. My test report usually covers a one or two pages with the
+functional test results and errors, and then about 20 or 30 pages of a
+usability review and feedback on how to make it a better user
+experience.</p>
+<p>I start with consolidating and allocating a star rating for the
+overall feel, the usefulness and functionality, and the design and
+layout. It is followed with recommendations on how to improve the
+website or system, looking at the latest design trends and simply how to
+make it a more engaging experience for a user. I include a lot of
+screenshots to show examples of how it’s used elsewhere and how it can
+improve your user experience. I add to each item a rating to indicate
+whether it is an enhancement or something necessary to look at in order
+to stay competitive.</p>
+<p>I comment on the use of colors, the readability, the layout of test
+and pages, basically all the little things that never gets tested in a
+traditional test lab. Usually, designs are done upfront and development
+must be according to the visual design, whether it makes sense to the
+end user or not. The design itself is never tested, or at least, not
+anywhere where I’ve worked as a tester.</p>
+<p>Depending on the customer, I either run them through the report, but
+I find it best that they go through it themselves as usually there is a
+lot to process. It is then up to the customer to decide which advice
+they choose to implement, and which they are willing to live with and
+our merry ways part until the next website or system is required for
+testing.</p>
+<p>I also make sure that when I log bugs I do it in such a way that it
+is reproducible and have all the information so that the developers
+don’t need to bug me for more details as I really dislike that. This
+often takes more time trying to isolate an issue, but allows the
+developer to quickly fix it and I find it the most efficient way to
+resolve issues and learn in the process. When the developer don’t have
+the luxury of simply asking the tester, it’s amazing how fast they learn
+and improve the quality of their code.</p>
+<p><em>Originally published on Medium:
+https://medium.com/teal-times/what-is-agile-testing-exactly-1dabb7f09e8</em></p>
+</body>
+</html>

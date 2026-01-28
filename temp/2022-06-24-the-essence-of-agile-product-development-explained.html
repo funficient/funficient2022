@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Software development is often planned as a linear project with a start and an end. Yet, products expand and grow as the users evolve. Seeing it as a spiral rather than a line can be the difference between waterfall and agile. Here’s an in-depth explanation of the essence of agility." />
+  <title>The Essence of Agile Product Development Explained</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Essence of Agile Product Development
+Explained</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2021-01-06T11:29:11.834Z</p>
+</header>
+<h2 id="debunking-the-spiral-of-ever-increasing-value"><strong>Debunking
+the spiral of ever increasing value</strong></h2>
+<p>The word <em>“agile”</em> has become somewhat of a controversial term
+in many groups. While many organizations and teams claim to be “agile”,
+in reality few are. This has caused the essence of agility to be
+diluted, not because it isn’t as valuable as it promises to be, but
+because it is misunderstood so easily.</p>
+<h2 id="the-journey-to-agility-in-just-1-000-steps-and-10-years">The
+journey to agility in just 1, 000 steps and 10 years</h2>
+<p>Becoming agile is a journey. It’s not a switch that you can simply
+turn on. It takes time, and it takes a lot of effort. Mostly, it takes
+opening yourself up to try and learn a lot of new things. And fail
+often.</p>
+<p>When I first came across the world of <a
+href="https://funficient.medium.com/10-ways-to-build-quality-into-software-459726031fd5">quality</a>
+— which is at the heart of the Scrum process design as I’ll explain
+later — it took me the best of 2 years of learning and teaching it to
+others to fully understand the concept of quality and the underlying
+work of Deming (in which I’m still not an expert to this day). Little
+did I know how important this foundation would become later in my
+career. At that stage, the word Agile or Scrum didn’t exist mainstream
+yet.</p>
+<p>The closest concept to an agile coach was Quality Managers —
+responsible to align organizations, customer satisfaction and continuous
+improvement. Now the label is different and the focus usually on fewer
+teams, but the ultimate goal is the same.</p>
+<p>When I came across the Theory of Constraints —a process to identify
+and support those things that <em>stop</em> you from being productive —
+it again took years to master the principles (and I’m far from being a
+master in the field).</p>
+<p>Psychology, human behavior, change and habits are subjects I’ve
+actively been studying for more than 5 years and each day I realize
+exactly how little I know. It is, however, the most fundamental goal of
+agility. The process of becoming more agile in what you are doing is the
+process of changing harmful habits and behaviors into more healthy
+ones.</p>
+<p>Coaching and the art of asking the right questions to guide a person
+towards an answer rather than telling it was one of the hardest skills
+I’ve had to develop. It asks you to unlearn everything management has
+told you a good ‘manager’ should do for the past 100 years. It
+definitely doesn’t take a few days or even a few weeks or even months to
+develop and it takes a lot of actual practice, something I practice
+whenever I get the opportunity.</p>
+<p>Yet, people call themselves agile <em>coaches</em> when most are
+unable to pose any questions when dealing with teams, so used to giving
+instructions.</p>
+<p>Understandable.</p>
+<p>Asking doesn’t come natural to us. Traditionally, the manager or
+specialist was the one who had the most experience and they saw their
+role as telling people how to do something. Asking for help was seen as
+a weakness, while in an agile world it is your single biggest
+strength.</p>
+<p>Becoming agile, similarly to my personal journey, is an ongoing
+learning journey. It doesn’t stop. It evolves. It grows. It expands.</p>
+<p>So.</p>
+<h1 id="lets-talk-about-agile"><strong>Let’s talk about
+agile…</strong></h1>
+<p>The first mistake most people (including me) make — sometimes out of
+laziness (as in in my case) or out of ignorance is using the word to
+describe something vastly bigger than what the word actually means. The
+word <em>“agile”</em> has been changed from the intended adjective to
+describe <em>how</em> software (and specifically software) is developed,
+as originally included in <strong><a
+href="http://agilemanifesto.org/">the manifesto for agile software
+development</a></strong>, into a proper noun <em>“Agile”</em> — to refer
+to teams, organizations and even tools. As a result the meaning of the
+word has gotten lost in translation.</p>
+<blockquote>
+<p><em>The meaning of the word agile has gotten lost in
+translation.</em></p>
+</blockquote>
+<p>Where the intent of the manifesto was to serve as north star or
+compass to help teams develop software in ways that better responds to
+changing requirements and needs, it became an abstract term to describe
+anything you wished to perceive as <em>‘better’</em> than other teams,
+organizations or processes. If you started using Slack after it was
+previously banned in your organization, suddenly this new felt mere
+snippet of freedom was considered a sign of organizational agility. If
+your team had a Scrum board (even if it was only on Jira or Trello) and
+used sticky notes, people deemed themselves as more <em>‘agile’</em>
+than those mere mortals who didn’t.The more sticky notes, the more agile
+you were. If they had a backlog and daily stand-ups, they were
+considered super <em>‘agile’</em> in relation to those doomed to long
+sit-down meetings.</p>
+<p>The second mistake commonly found is that people shorten the original
+manifesto into only the four values which forms the body of a longer
+document, omitting the introductory and ending sentences which are
+essential to understanding the context of these values and how to use
+them.</p>
+<p>It is in fact possibly the most important part of the manifesto.</p>
+<p>The introductory sentence clearly states that the only way to develop
+software in a more agile way is to constantly look for better ways to do
+what you already do. It doesn’t end once you’ve worked through it once.
+Rather, it advocates for the ability to <em>constantly</em> learn and
+improve and adapt. It’s intended to be a <em>starting</em> point of a <a
+href="https://medium.com/teal-times/a-culture-of-kaizen-2cb8d4ebd6ba">lifelong
+learning culture</a>, not a one-pot easy recipe for a single meal.</p>
+<p>After the four values, which essentially is a decision making guide,
+the manifesto ends with a simple sentence that states that the items on
+the right are not wrong as such, the items on the left are just
+<em>more</em> valuable than the items on the right.</p>
+<p>The manifesto is a decision making framework intended to help you
+develop better judgment.</p>
+<p>If presented with a choice, for example, people always trump process
+and tools, but that doesn’t mean there shouldn’t be <em>any</em>
+processes or tools. It merely means that the processes and tools
+shouldn’t dictate the development process or restrict the possibility
+for people to do their jobs, which in most cases are the truth about
+tools and processes in organizations.</p>
+<h1 id="the-essence-of-agile-product-development"><strong>The essence of
+agile product development</strong></h1>
+<p>At the heart of productivity, which I use interchangeably with the
+word agile as used by most people, is Deming’s — the father of quality
+(not only <em>software</em> quality) — <em>Plan-Do-Check-Act</em> cycle
+which is also the essence of the ISO 9001 standard on quality management
+systems; as well as the Scrum framework.</p>
+<p>The underlying concept that dictates quality, according to Deming’s
+work, is that the faster you can get feedback and respond to that
+feedback, the higher the chances that you are developing the right
+product and thus meeting customer expectations. And quality is
+essentially all about meeting expectations.</p>
+<p>Like driving a car, when you fall asleep on a long road the rougher
+chevron lines will wake you up to enable you to correct yourself and get
+back on track. Your focus is on staying as close to the goal as possible
+and in order to do that, you always need to know exactly where you are
+in relation to where you want to be through feedback and probably more
+importantly, by having a clear goal.</p>
+<h2 id="clear-goals"><strong>1. Clear goals</strong></h2>
+<p>We’ve lost the art of setting meaningful goals, lost in a world
+guided by measurable KPI’s and data driven analytics. A good goal is
+<em>rarely</em> a number. A good goal contains the reason
+<strong><em>why</em></strong> you’re doing it in the first place.</p>
+<p>Maybe you’re trying to build trust, maybe you’re trying to connect
+buyers and sellers, maybe you’re hoping to create the future of finance
+to enable more people to enjoy wealth.</p>
+<p>But it’s <strong>not</strong> a 10% increase in user onboarding or to
+complete all the stories you picked from the backlog during planning
+session with no seemingly connecting golden thread to pull them all
+together into a more cohesive goal.</p>
+<p>To set a goal, ask yourself:</p>
+<p>What are you hoping to achieve when you release the software? What is
+the <em>impact</em> of your product or service? What do you hope people
+will be able to <em>do</em>?</p>
+<p>Without a clear reason or problem to solve, you’re most probably
+solving the wrong problem, or solving the problem wrong. You simply
+can’t tell the forest from the trees while you’re in it though, so you
+won’t notice until it is finally released.</p>
+<p>That’s not very agile.</p>
+<h2 id="fast-feedback"><strong>2. Fast feedback</strong></h2>
+<p>While the goal is essential, as essential is the ability to gain
+(<em>and react to</em>) faster feedback from <em>actual</em> users. Not
+the analytics. Not the Product Owner or Director of Marketing who sits
+in their ivory tower and hasn’t visited an actual customer in months, or
+the shareholders who pushes for more profit, but people who use your
+product within <em>their</em> context. If you’re developing medical
+software, it means visiting the hospital. If you’re developing an AirBnB
+or Uber, it means talking to and observing hosts and guest, or drivers
+and passengers.</p>
+<p><em>Everything</em> in agile software development supports this
+single principle of fast feedback — if done correctly.</p>
+<p>Having an on-site customer (or representative) to clarify
+requirements, or making time to spend with actual users in the field, is
+the first opportunity to get feedback faster. Rather than spending
+weeks, months or years gathering requirements and designing the perfect
+system in your office without windows and isolated from reality,
+collaboratively identify and work on only the most important parts with
+the focus ensuring you understood their needs and that what you are
+doing is helping achieve that goal.</p>
+<p>Next is the estimation and backlog grooming sessions where user
+stories (requirements) are adapted based on feedback from the developers
+early in the development process. Rather than hand over a perfect story
+designed in isolation only to find out that technically it isn’t
+feasible to build, get technical input early on and adapt your designs
+from the word go. There’s no such thing as perfect in the agile world,
+so don’t get too attached to your designs or your code. The goal of
+agility is to maintain equilibrium between the different moving parts in
+order to maintain harmony, much like a surfer has to ride the waves of
+the ocean to stay above water.</p>
+<blockquote>
+<p>There’s no such thing as perfect in the agile world, so don’t get too
+attached.</p>
+</blockquote>
+<p>Pair programming and Test Driven Development (TDD) are the next
+opportunities for rapid feedback in the process of development,
+eliminating the need for code reviews as it happens in real-time, while
+failing tests written as a first step keeps programmers from tumbling
+down the wrong rabbit hole. It’s kind of like a check-list to make sure
+nothing is forgotten while getting lost in the code (which is easier
+than what most people would like to believe), much like the chevron
+lines on the road keeps you from getting too far off the road when you
+fall asleep driving.</p>
+<p>Next is the review ceremony where small iterations of the product is
+presented <strong>as working software</strong> in a demo where the
+customer can interact with the software and give feedback immediately
+before it is released. Words are a very unreliable source of judging
+reality. Telling someone and showing someone are two very different
+things.</p>
+<blockquote>
+<p><em>In an agile world, you show - never tell - progress.</em></p>
+</blockquote>
+<h2 id="the-spiral-vs-linear-approach"><strong>3. The spiral vs linear
+approach</strong></h2>
+<p>Possibly the hardest concept for most people to understand when it
+comes to agile software development is that the process is a spiral
+rather than a straight line, repeating over and over again adding a
+little bit more value with each iteration.</p>
+<p>Traditional project management according to PMBOK sees software
+development as a project with a defined start and end. It’s a linear
+road with a known destination. In reality, however, software doesn’t
+have an end and in most cases the destination is rather fuzzy and keeps
+changing.</p>
+<blockquote>
+<p>There are no straight lines in nature. Neither in software
+development.</p>
+</blockquote>
+<p>The software starts, but then it keeps evolving and maintenance is
+not something that can be handed over to a maintenance team to fix bugs
+on existing code. Rather, it requires a constant refactoring and
+changing of features and functions to cater for the changing needs as
+more and more users start using it. <em>It’s rather like molding and
+remolding soft clay rather than making one pot burnt in the fire to
+harden the clay.</em></p>
+<p>The difficulty, however, lies in knowing what the core of each
+iteration should be. In traditional project management — often compared
+with building a house — one thing needs to be completed before adding
+the next layer. Foundations are laid before the main structure of the
+house is added. The roof and windows can’t be added before the main
+structure isn’t complete and the electric wiring and plumbing can only
+be done right at the end.</p>
+<p>Software development doesn’t work that way though.</p>
+<p>In software development the goal is to automate something a user does
+to make their use of time more efficient, and they do a lot of complex
+stuff all at once and in different variations.</p>
+<p>Most systems don’t just do one thing though, they need to do many
+things all at once in order to be valuable. Sometimes even conflicting
+things and you need to prioritize and choose.</p>
+<p>Logging in and onboarding — which can be seen as the foundation of
+many systems — is not the most valuable thing to develop first. You
+would rather have a skeleton version of the key features to validate the
+process as first phase before spending time on onboarding. There’s
+little value in wasting a lot of time in perfecting onboarding when you
+don’t have a value proposition that will ensure customer retention</p>
+<p>The best explanation of this concept I’ve read is from Henrik Kniberg
+in his post called <em><a
+href="http://(Minimum%20Viable%20Product)%20–%20and%20why%20I%20prefer%20Earliest%20Testable/Usable/Lovable">Making
+Sense of MVP (Minimum Viable Product) — and why I prefer Earliest
+Testable/Usable/Lovable</a></em> where the concept is summarized in this
+image:</p>
+<figure>
+<img src="https://miro.medium.com/max/1218/1*cpD75_2-XWyn22MeL4RsCw.png"
+alt="Image from https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp" />
+<figcaption aria-hidden="true">Image from <a
+href="https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp"
+class="uri">https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp</a></figcaption>
+</figure>
+<p>Image from <a
+href="https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp"
+class="uri">https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp</a></p>
+<p>The essence of agile software development is the ability to deliver
+<strong><em>value</em></strong>.</p>
+<p>Value is something that a user can use in its entirety. It is not
+valuable for a user to log on without anything else working. It is not
+valuable for a user to pull a fancy report when the data is incorrect or
+incomplete. It is not valuable for a user to be able to log time without
+seeing the results. It is valuable only if it solves a problem.</p>
+<p>So each iteration — or sprint — set a goal based on a problem that
+needs to be solved.</p>
+<h1 id="the-essential-product-development-process"><strong>The essential
+product development process</strong></h1>
+<p>The graph below attempts to summarise and visualise the essence of
+agile product (software and non-software) development following this
+spiral model, with each iteration or sprint following an evolving
+value-added process going through the same checkpoints on its
+journey.</p>
+<figure>
+<img src="https://miro.medium.com/max/1400/1*RlSmE_yFtbdaB9nQywQ0wQ.png"
+alt="Software development is an ever expanding spiral." />
+<figcaption aria-hidden="true">Software development is an ever expanding
+spiral.</figcaption>
+</figure>
+<p>Image copyright www.funficient.com</p>
+<p>The four main checkpoints, or road signs asking you to stop and
+compare actual with reality, consists of the Deming P-D-C-A quality
+cycle, briefly explained below:</p>
+<h2 id="plan"><strong>1. Plan</strong></h2>
+<p>Planning is all about establishing goals. Translating this part of
+the process to Scrum would typically include backlog grooming,
+estimation and planning meetings.</p>
+<p><em>What are you planning to do and what is the highest priority?
+What’s your MVP for the next iteration and how will you know you’re
+successful?</em></p>
+<p>Translating it to the Lean Startup (for more on the difference
+between Scrum, Lean and the Lean Startup read <a
+href="https://medium.com/teal-times/the-difference-between-lean-startup-lean-and-agile-explained-e8ee94806632">here</a>),
+this is defining a hypothesis to test.</p>
+<p><em>What is the first experiment and how will you measure
+success?</em></p>
+<p>Translating it to design thinking — which essentially is focused on
+the design of the process and mostly includes the aesthetics — it would
+be framing the problem — either in a problem statement or a
+<strong><em>How Might We</em></strong> question format .</p>
+<p>The planning phase is also about assessing the risks associated with
+the solution.</p>
+<p><em>What are your assumptions and what could possibly go wrong? What
+are the riskiest assumptions that needs to be validated first?</em></p>
+<h2 id="do"><strong>2. Do</strong></h2>
+<p>Once you have a goal set - or <em>thought</em> about what needs to be
+done- the next step is to start building it- or the actual
+<em>doing</em> the work.</p>
+<p>This includes all the activities needed to implement the plan,
+including changes to the plan where needed. It also includes testing to
+make sure that all the features work. It does not, however, include
+automated regression tests as it doesn’t make sense investing in
+regression tests when you are not yet sure that the product will be
+accepted by the customer. For more on my perspective on automation
+testing read <a
+href="https://medium.com/teal-times/a-lean-approach-to-automation-testing-ad6fcdcf41e3?source=your_stories_page-------------------------------------">here</a>.</p>
+<p>Translating this to Scrum it includes the daily standups, updating of
+the Kanban (or Scrum) board and everything usually handled within a
+single sprint.</p>
+<h2 id="check"><strong>3. Check</strong></h2>
+<p>Once the team has developed something tangible, valuable and complete
+they show the working software or product to the user to validate. The
+main difference between user validation and internal test is that the
+user will have systems and processes that does not form part of the
+solution as part of their workflow. They will typically use the product
+in combination with other parts of their process — not in isolation —
+for it to be considered valuable.</p>
+<p>The check-phase is intended to be an opportunity for feedback. If the
+customer doesn’t use it themselves, you can’t consider it checked. It is
+only checked once they’ve physically <em>used</em> it.</p>
+<p>Translated to Scrum talk, this is the Review session. Translated to
+Lean Startup it is the testing of the hypothesis and translating it to
+design thinking it is the user testing.</p>
+<h2 id="act"><strong>4. Act</strong></h2>
+<p>Feedback is as valuable as what you do with it. It’s of little use
+knowing you’re behind schedule but you’re not changing the plan. It’s of
+little use when a customer tells you something important in the
+delivered product doesn’t solve their problem and you put it on the
+bottom of the backlog because it wasn’t planned.</p>
+<p>There’s really no point in showing the customer what you’ve done if
+you’re not planning to take their feedback as input into the next
+planning.</p>
+<blockquote>
+<p>Feedback is as valuable as what you do with it.</p>
+</blockquote>
+<p>Acting means that you are <em>responding</em> to changing
+requirements. It’s about spending time to gain <em>insights</em> that
+will make you (as a team) as well as the product (what the team is
+building) better.</p>
+<p><strong>And <em>that</em> is what agility is essentially about. A
+core learning loop with fast feedback.</strong></p>
+<p>It means that you’re building small pieces and giving the customer
+tangible testers to make sure that it’s what they really need and want.
+It means that sometimes the priorities change. Sometimes the entire
+design changes. Sometimes the whole iteration’s effort is thrown away
+(learn more about how to practice this skill with <a
+href="https://medium.com/swlh/creating-grit-with-improvement-kata-988802a12fb7">Improvement
+Kata’s</a>) because it was the wrong thing. But it is exponentially
+better to realize you’re doing the wrong thing after a week or two than
+wait a few months to find out.</p>
+<p>The act phase can be translated to the retrospective and part of the
+review. It is about going back to the drawing board and looking back at
+the past iteration actively looking for ways to do it better next round.
+Maybe you needed better data to test. Maybe you needed to get a test
+account authorised and setup before you could start testing. Maybe you
+needed a component library that you could use rather than build
+everything from scratch.</p>
+<p><em>What can you next time to make it a little bit more efficient and
+smooth?</em></p>
+<p>Translating this to the Lean Startup it would be the pivot or
+persevere question.</p>
+<p><em>Do you keep going? Or do you change direction?</em></p>
+<p>From a design thinking perspective it is iterating the design or
+coming up with new prototypes that better enables the user or solves the
+problem, knowing that with each iteration you understand the problem
+better.</p>
+<h2 id="rinse.-repeat.">Rinse. Repeat.</h2>
+<p>Once you’ve completed a full cycle, rinse and repeat, each time
+adding more value.</p>
+<p><em>And that, my dear reader, is the essence of agility as I see
+it.</em></p>
+<p><strong>If you need help on your journey towards agility, visit <a
+href="http://www.funficient.com">www.funficient.com</a> and book a
+complimentary call to discuss your problem and see how I can
+help.</strong></p>
+<p>Originally written on medium:
+https://medium.com/swlh/the-essence-of-agile-product-development-explained-601a056d8882</p>
+</body>
+</html>

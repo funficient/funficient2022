@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="The Definition of Done (or DoD for short) is one of the most important aspects that differentiates a successful agile implementation from a less successful one. It can also one of the biggest pitfalls keeping teams from delivering." />
+  <title>A definition of done</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A definition of done</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2017-02-15T07:51:28.691Z</p>
+</header>
+<h2 id="a-definition-of-done">A Definition of Done</h2>
+<p>In <a
+href="https://medium.com/@funficient/what-is-agile-anyway-part-5-e788f02c832a#.f0r62ktrf">Part
+5</a> I spoke about the <em>rhythms</em> of agile — the constant dance
+between action and reflection. Doing, followed by thinking.</p>
+<p>One of the cornerstones of agile, and Scrum specifically, is
+delivering increments of “Done” products with the goal of receiving
+feedback earlier to make sure that what they are being worked on is
+<em>usable</em> and <em>useful</em>. Or, as the Scrum Guides puts
+it:</p>
+<blockquote>
+<p>Scrum Teams deliver products iteratively and incrementally,
+maximizing opportunities for feedback. Incremental deliveries of “Done”
+product ensure a potentially useful version of working product is always
+available. — The Scrum Guide</p>
+</blockquote>
+<p>The Definition of Done (or DoD for short) is one of the most
+important aspects that differentiates a successful agile implementation
+from a less successful one. It can also one of the biggest pitfalls
+keeping teams from delivering.</p>
+<h1 id="what-games-can-teach-us-about-done">What games can teach us
+about “Done”</h1>
+<p>Games are laboratories for human motivation and learning, which is
+why I find the field of game design and gamification so fascinating.
+Game design companies have figured out how to get people hooked — based
+on science and continued research.</p>
+<p>Designing a game is everything but child’s play, and only the game
+designers who understand the psychology behind human behavior are
+successful in their game design. The rest merely copy existing games and
+change the graphics. <em>Same-same but different.</em></p>
+<p>When you don’t understand the reasons why games work, copying is a
+good way to learn. However, if you understand why it works, you can
+become an artist, free from the restrictions of following other’s
+rules.</p>
+<p>The same is true about agile. When you don’t understand the reasons
+why it works, copying is a great way to learn and figure out for
+yourself what works and what not. However, when you aim to understand
+<em>why</em> it works, suddenly the playing ground becomes a vast
+possibility of solutions.</p>
+<p>Games start easy. So easy, in fact, that it is impossible to fail the
+first level. The next level is slightly more difficult, but your chances
+of success are pretty much guaranteed. Each level is short enough so you
+don’t loose interest or become bored, and you continue to level up once
+you’ve mastered the previous level.</p>
+<p>It is fun because you always feel a sense of achievement and
+progress. Or, as Daniel Pink would put it, you experience <em>mastery
+—</em> an intrinsic motivator.</p>
+<p>Agile’s Definition of Done similarly marks continuous progress
+towards a specific milestone or goal, so that you don’t loose interest
+or become distracted. It gives you a sense of achievement, motivating
+you to do more. The more you get done, the more motivated you are to do
+even more.</p>
+<p>But many teams don’t get it right. Here are three guidelines to help
+you design a better definition of done.</p>
+<p><strong><em>Rule #1 — Build tiny habits</em></strong></p>
+<p><em>The key is that you want to build momentum and remain focused.
+The more focused you are, the more productive you are.</em></p>
+<p><em>Aim to break down tasks or stories in increments that will allow
+you to move at least one item per day.</em></p>
+<p><a href="http://bjfogg.com/">BJ Fogg</a>, behavioral scientist,
+advises that to change human behavior long-term you need to start small,
+building what he calls <a href="http://tinyhabits.com/">Tiny Habits
+©</a>.</p>
+<p>Or, for the less scientific, there’s an old puzzle that goes
+something like this:</p>
+<p>“How do you eat an elephant?” The answer, simply “One bite at a
+time”.</p>
+<h2 id="rule-2-perfection-is-a-waste">Rule #2 — Perfection is a
+waste</h2>
+<p><em>Nothing, in the history of humanity, has ever been done. It can
+always be better. Just when you think something is really old and
+outworn, it comes back into fashion — rediscovered and
+reinvented.</em></p>
+<p>Striving for perfection or hoping that you’ll never have to see a
+piece of code again is futile. The entire purpose of having a
+sustainable business is to re-use and re-sell what is already there.</p>
+<blockquote>
+<p>Nothing is ever done.</p>
+</blockquote>
+<p><em>Good enough is good enough. Useful, even if it’s incomplete, is
+good enough. Proud of what I’ve done, is good enough. Willing to
+show-case my work is good enough.</em></p>
+<p>So rather than measuring done by tasks completed (such as all unit
+tests passed), try measuring done by <em>value delivered</em>. There’s a
+big difference. If you’re not proud of what you’ve done, chances are
+it’s not valuable.</p>
+<h2 id="rule-3-no-buts">Rule #3 — No buts</h2>
+<p><em>If a story can’t be used <strong>now</strong>, it’s not done.
+Done means done. No buts.</em></p>
+<p>A story is not done when it is developed with open bugs kept
+separately to deal with later because you didn’t, or can’t, estimate for
+that. A story is done when there are no excuses as to why it isn’t
+usable. It should be usable. Full stop.</p>
+<p>It’s a <em>dependency</em> when you need a different team to do the
+database changes or back-end changes, and sure, it will impact you, and
+you should include that dependency in your planning.</p>
+<p>It’s not done when you did your part but the other teams didn’t do
+their part. It’s done when you realized the dependency, took appropriate
+action by including a temporary resource in your team to get it done.
+Also called self-organizing teams.</p>
+<p>The goal is to get feedback fast. The faster people can use it, the
+faster they will tell you whether they like it or not, the faster you
+can change it.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The definition of done is a tool to help you feel a sense of
+progress, which in itself is motivating. The more you get done, the more
+motivated you are to do more. The longer you take to complete one task,
+the easier it is to loose focus or become bored.</p>
+<p>Use the definition of done to build momentum in the team and with
+that, increase the motivation levels in the team. Measure value and
+emotion as well as tasks. If you’re not proud of what you’ve done, it’s
+not done.</p>
+</body>
+</html>

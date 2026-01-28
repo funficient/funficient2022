@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Like the Google Play Store though, there are so many choices that it’s really hard to know which one to pick. So I’m embarking on a little pet-project to curate the available DApps and try to make some sense from all the chaos. How do you choose the best one for you?" />
+  <title>A dummies guide to evaluating DApps</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A dummies guide to evaluating DApps</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2020-05-21T13:12:42.563Z</p>
+</header>
+<h2 id="how-to-find-your-ideal-dapp">How to find your ideal DApp</h2>
+<p>I like fantasy. It’s a reality with unlimited possibilities that
+exist only in my imagination. What’s even <em>better</em> than something
+perfect in my imagination though, is something <em>imperfect</em> in
+<em>reality</em>.</p>
+<p>Blockchain, and specifically the Ethereum blockchain, is the unicorn
+I’ve been looking for. That elusive world of possibilities that breaks
+the mold of our current societal beliefs. It makes the impossible
+possible. <em>That’s</em> my kind of unicorn!</p>
+<p>The Ethereum blockchain is kind of like the Google Play Store, except
+that it’s no longer for playing only. You can
+<strong><em>do</em></strong> <em>a lot</em> with the apps (called
+DApps). You can play, but you can also buy and sell on marketplaces,
+find a job, exchange tokens, save, borrow and so much more. In fact, the
+biggest benefit of the Ethereum blockchain and ecosystem is that it has
+the potential to totally replace the banking system as we know it.</p>
+<p>Like the Google Play Store though, there are so many choices that
+it’s really hard to know which one to pick. So I’m embarking on a little
+pet-project to curate the available DApps and try to make some sense
+from all the chaos. How do you choose the best one for you?</p>
+<h2 id="custodial-or-non-custodial">1. Custodial or non-custodial</h2>
+<p>Possibly the biggest flaw of our society today is that we trust
+blindly. Our bosses, leaders and other authority figures tell us this is
+what we should do because it’s for our best interest. But more often
+than not it turns out to be in <em>their</em> best interest rather than
+ours.</p>
+<p>Time to take back your power and make choices based on <em>your</em>
+best interest over what someone else believes is best for you. After
+all, only <em>you</em> know what you really need and want.</p>
+<p>So first and foremost I’ll look at who owns the assets.</p>
+<p><strong>Custodial</strong> means it’s similar to a bank where you
+freely hand over your assets hoping they will take good care of you. But
+ultimately, if you don’t own your assets, you’re not in control of it
+and that means it’s not really yours to begin with.</p>
+<p><strong>Non-custodial</strong> means <em>you</em> take full
+responsibility for your assets. No-one to blame when something goes
+wrong. But also no-one to exploit you and lead you down the wrong rabbit
+hole. <em>No buts.</em> No small print.</p>
+<p><em>To read more about what custodial means, read more <a
+href="https://www.investopedia.com/terms/c/custodialaccount.asp">here</a>.</em></p>
+<h2 id="accessibility">2. Accessibility</h2>
+<p>Big word that means different things to different people.</p>
+<p><em>Ac-cess-i-bi-li-ty.</em></p>
+<p>I like to keep things simple though and for me this means <em>your
+ability to access the intended functions when you need and want it</em>.
+Regardless of where you are, your education level, or whether you have
+any disabilities that prevent you from interacting with technology in
+the same way as the average Joe on the street.</p>
+<p>If you can’t find it or use something when you need it, there’s no
+point in having it in the first place. I can do nothing with a MetaMask
+account if I can’t deposit funds in it. I can’t earn money on my assets
+if I don’t know how to invest it intelligently.</p>
+<blockquote>
+<p><em>Access-ability. Your ability to access something.</em></p>
+</blockquote>
+<p>For me that means everything that relates to your ability to access
+the DApp. It includes support of different geographic locations and
+currencies, because there’s no point in downloading the fanciest app but
+you can’t be KYC’ed in the country you live.</p>
+<p>It also includes whether it’s available as a web app or a mobile app
+or both <em>(in my opinion, everything should be progressive web
+apps!)</em>. One of the most annoying features (in my opinion) of native
+over progressive apps is that you can’t do what you can on the web app
+version and vice versa, which impedes the accessibility of the
+functions.</p>
+<p>Ask yourself <em>“Can I find it?”</em> and <em>“Can I use it when I
+need it?”</em></p>
+<h2 id="trust">3. Trust</h2>
+<p>This is a hard one, as trust is much more complex than a simple yes
+or a no. <em>It depends.</em></p>
+<p>Each person might need different things to trust an app, but this is
+how I decide whether something can be trusted or not:</p>
+<ol type="1">
+<li><strong>A whitepaper</strong> and <strong>security audit</strong>
+available on the website, with proof that the audit issues are being
+looked at or resolved.</li>
+<li>Is it <strong>open source</strong> that can be audited by any member
+of the public and its users?</li>
+<li>At least three <strong>independent</strong> sources I trust gives a
+positive <strong>review</strong> on the product.</li>
+<li><strong><em>Say what you do. Do what you say.</em></strong> No shiny
+promises or buts or hidden small print. If you say you can do something
+you must be able to do that something.</li>
+</ol>
+<p>In essence, the main question to ask is <em>“Does it live up to its
+promise?”</em> and on the shadow side <em>“Are there any hidden
+agendas?”</em>.</p>
+<h2 id="usability">4. Usability</h2>
+<p><em>If it is not easy, it doesn’t work.</em></p>
+<p>This is probably the biggest differentiation between the winners and
+the losers in the overcrowded tech space.</p>
+<p>Usability means a lot. More than what can be described in one
+paragraph, but simply put, it relates to <em>how easy it is to do what
+you want to do</em> with this tool.</p>
+<p>It always boils down to purpose and goals and your ability, and the
+efficiency, in being able to achieve a goal with the least amount of
+friction and cognitive overload.</p>
+<p>Usability very much relates to how we think and decide and a subject
+I’m super passionate about. The primary questions to ask are <em>“Is it
+easy?”</em> and <em>“Does it solve a real problem for me?”</em></p>
+<h2 id="available-features">5. Available features</h2>
+<p>The terminology used in the Ethereum space can be extremely
+confusing. A wallet to one person means something different than to
+someone else. There isn’t a standard shared library of words that
+clearly define what something is. Yet.</p>
+<p>To make it easier, and to clarify the confusion, I’ll list the main
+features as jobs-to-be-done relatable to an average person.
+<strong><em>Argent</em></strong>, for example, has a wallet, but they
+also offer a bunch of other banking features. You can deposit money, you
+can exchange coins, you can save, borrow etc.
+<strong><em>Luno</em></strong>, on the other hand, also a wallet, offers
+a fraction of the options and can hardly be compered. They had (until
+about a week ago) two supported currencies vs close to a hundred (I
+stopped counting at 40…) on Argent. They offer a simple buy and sell,
+whereas Argent offers integration to a few of the existing protocols
+allowing you to trade, save and borrow.</p>
+<p>Questions to ask are <em>“What can it do?”</em> and <em>“How complete
+is the service offering?”</em>.</p>
+<h2 id="cross-chain-support-and-integration">6. Cross-chain support and
+integration</h2>
+<p>Monopolies are bad. Usually, they are there in the first place
+because of a selfish intention. <em>Sharing</em> is caring.</p>
+<p>It is extremely important that blockchain technology remains
+community owned (or decentralized) and that there are always
+alternatives available. By default most of the DApps are open-source and
+most have API’s available to build on each other like lego blocks. This
+helps the growth as well as the usability to a large degree. Integration
+is thus a big deciding factor as to whether one DApp is better than
+another.</p>
+<p>On top of this, cross-chain support is a big deciding factor for good
+long-term investment decisions. When there’s bridges between different
+blockchains, the security risk doubles.</p>
+<p>I don’t ever want to feel locked into something without the ability
+to get out, as what I did until recently with the banking system.</p>
+<p><em>There should always be a choice.</em> And there should always be
+a fair competitor to keep things in the best interest of everyone. The
+ability to transact across chains within an app is thus a big decider
+for me.</p>
+<h2 id="support">7. Support</h2>
+<p>The DApp world is pretty new and that means that it’s far from
+perfect. Usability should definitely be the first priority in terms of
+design, however support is equally important to make one DApp better
+than another.</p>
+<p>The level of support available and the quality of support is a
+crucial decider for me. It’s simply not good enough to wait a week to
+get a response for a financial transaction.</p>
+<h2 id="fees">8. Fees</h2>
+<p>Pricing is often the difference between a product being a success or
+a failure. Make it too cheap and you don’t have a sustainable business.
+Make it too expensive and no-one uses it or expects too much from
+it.</p>
+<p>If I’m going to make use of your DApp, I want to at least have some
+surety that it will still be there in a year from now.</p>
+<p>The fee structure is also an indication of the trustworthiness of an
+application or business in my opinion. You can see a business’ intention
+in their pricing just as you can clearly see the culture and level of
+agility by interacting with a product (or I can at least because I know
+what to look for) or the people who work there.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Ownership, trust, accessibility, usability and functions.</p>
+<p>These are the things most important to me in deciding whether one
+DApp is better than another one.</p>
+<p><em>Originally published on medium
+https://funficient.medium.com/a-dummies-guide-to-evaluating-ethereum-dapps-2e402a701065</em></p>
+</body>
+</html>
