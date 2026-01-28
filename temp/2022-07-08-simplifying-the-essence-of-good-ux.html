@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="The process of user experience design can get complicated and involved and somewhat confusing. However, the essence of a good user experience is quite simple. Here’s how." />
+  <title>Simplifying the essence of good UX</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Simplifying the essence of good UX</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2022-07-08T12:48:58.959Z</p>
+</header>
+<h2 id="how-to-design-products-and-services-that-delights">How to design
+products and services that delights</h2>
+<p>The process of user experience design can get complicated and
+involved and somewhat confusing. However, the essence of a good user
+experience is quite simple. This post outlines the three most important
+elements of a good user experience.</p>
+<p>There are of course other foundational elements to user experience
+design that remains valid, like knowing who your target user is, problem
+framing etc. However, this post focuses on the <em>user journey -</em>
+or process flow and key UI elements - assuming you know your user and
+their specific goals when interacting with your product.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*iRRfvo15CkZTe7WwisSd4A.jpeg" /></p>
+<h2 id="provide-context">1. Provide context</h2>
+<p>Imagine, just for a moment, being blindfolded and dropped in the
+middle of a busy city you’ve never been to before. What do you feel when
+you open your eyes after the blindfold has been removed?</p>
+<p>Most people will be anxious and overwhelmed, not knowing where they
+are or which direction to take next. That is how new users also often
+feel when they land on a website or app they’re not familiar with. It
+can feel so overwhelming that many visitors will simply close the app
+and go back to one they are familiar with.</p>
+<p>One of the most important elements of a good user experience is
+providing context. It is rather like having access to a map with markers
+showing you where you are and clear directions of how to get to where
+you want to be.</p>
+<p>Some examples of this include the mini-map in the bottom left corner
+of <a href="https://conceptboard.com/">Conceptboard</a> which allows you
+to zoom into one section on the board, while still being able to see
+where you are in relation to the rest of the contents.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*CL8GUMszLPuGLAGMZWLn1A.png" /></p>
+<p>Above you can see a thumbnail of the entire board in the left bottom
+corner, with the section currently displayed in my view port outlined
+with a blue border on this thumbnail image.</p>
+<p>Thus, if I want to go to the start of the content, I roughly know how
+much I should move and in which direction.</p>
+<p>YouTube, which most people will be familiar with, does it
+differently, yet, the concept remains the same. All the important
+information that will tell you where you are in relation to your YouTube
+subscription are displayed on the first page.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*9ovyX4o4zIDHb4wpn1fe0g.png" /></p>
+<p>As you can see above, I can immediately see who is logged in, any
+notifications, and then whether or not there’s new content or live
+broadcasts for any of my favorite channels. Having this information
+available at a glance can save me from scrolling searching for new
+content from the home page.</p>
+<p>Another, more common, example of context is the use of dashboards.
+Dashboards contain only a summary of the most important statistics to
+give you an overview of the status of any product, process, or
+organization. It contextualizes the most important elements that will
+allow you to focus on the most productive area.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*IYe5CDHetM6WSq45tJ6hxw.jpeg" /></p>
+<p>For example, if the dashboard shows that the current traffic is busy,
+you might decide to take a bicycle, or wait a while before getting into
+your car.</p>
+<p>By providing a birds-eye-view of a larger, more complex product or
+system, you can easily navigate and make better decisions, which makes
+you feel more in control. And ultimately, the best user experience is
+one where you always feel that you’re in control.</p>
+<h2 id="make-it-as-efficient-as-possible">2. Make it as efficient as
+possible</h2>
+<p>Apple mastered efficiency with its focus on simplicity. It’s easy to
+add just one more feature or button or step in a process. It’s hard to
+remove clutter and reduce a workflow to the absolute minimum amount of
+steps.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*NCNHxNMzvErJ3emqCqltvQ.jpeg" /></p>
+<p>Apple managed to reduce the number of buttons on its devices so that
+it’s close to impossible to press the wrong button or wonder which one
+to select to get the desired outcome. They also reduced the number of
+available apps which makes it so much easier to find one you are looking
+for rather than spend hours filtering through all the available apps on
+the Google Play Store for example, never quite knowing what you are
+getting.</p>
+<p>Reducing the number of steps, interactions, and options to choose
+from reduces cognitive load and overwhelm. It makes it easier to get to
+your desired destination, and it makes it harder to accidentally do
+anything wrong in the process.</p>
+<p>Another good example of efficiency is the famous Amazon one-click
+checkout where they aim to reduce the human interaction to complete an
+online purchase to a single click.</p>
+<p>A good user experience spends a lot of time on streamlining the
+processes and steps within a process to be as efficient as possible.
+It’s about simplicity and clarity. Looking at the map metaphor in the
+previous point, efficiency is rather like having Google Maps direct you
+to your destination. It calculates the shortest route based on your
+preferred mode of transport and clearly guides you throughout your
+journey.</p>
+<p>An efficient user experience is like drawing a map to direct an alien
+to the nearest coffee shop. You can’t assume anything and can’t
+communicate using words, as an alien might not understand our language.
+Rather, communication is visual, highlighting only the most important
+landmarks on the way and clear directions towards your destination.</p>
+<p>Efficiency is about simplicity and speed. How fast and how easily can
+you get from where you are to where you want to be?</p>
+<h2 id="be-proactive-not-reactive">3. Be proactive, not reactive</h2>
+<p>The third and final element of a good user experience is pre-empting
+a user’s next step and making it as easy and obvious as possible. It’s
+rather like the emergency exit pointers in an airplane that lights up
+when there’s an emergency. You might not see the destination, but you
+have no doubt as to what the next step is.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*7P2QFLvl33wiYfj-Zp9JsA.jpeg" /></p>
+<p>A good user experience is one where you don’t have to stop and ask
+for help while already on your journey. Rather, your questions are
+pre-empted as they arise and answered <em>before</em> you have to ask
+for help.</p>
+<p>Many user experiences expect that you should learn all the
+information required for your entire journey before you start.
+Onboarding requires you to complete a tutorial of features you might
+never use or need before you have even decided whether this is the app
+for you. Once completed, your one chance of accessing this information
+is over and you’re on your own having to figure out how and where things
+are when you need them.</p>
+<p>A good user experience, on the other hand, is one where you get
+just-in-time information throughout your journey in small increments. It
+doesn’t tell you everything you might need, it tells you the most
+important things you have to know in order to successfully complete the
+next step of your journey.</p>
+<p>An excellent example of this concept can be seen from a local air
+carrier called <a href="https://www.flysafair.co.za/">FlySAFair</a>. A
+day before your flight you receive an email with a checklist of
+everything you need to do before your flight.</p>
+<p><img
+src="https://miro.medium.com/max/1298/1*7SnXfXaAsFaF7WgtC-H9LQ.png" /></p>
+<p>They send this information just in time for you to have the highest
+probability of having an easy, smooth flight. If they sent the
+information too early you might forget. Rather, they send it just you
+need to check-in.</p>
+<p>This is probably the best example of pre-empting the next step in the
+user experience so I’ll leave it at that. The essence of this element is
+to think one step ahead of the user and give them all the information
+they might need in order to just complete that one step.</p>
+<h1 id="putting-it-all-together">Putting it all together</h1>
+<p>When I think of a really good user experience, I think of the IKEA
+experience.</p>
+<p>From the moment you enter an IKEA store you are guided in a one-way
+direction throughout the store, with shortcuts and openings at strategic
+places to cater for people looking for something specific. You always
+know exactly where you are and there’s no chance of getting lost or
+going in the wrong direction. This frees your active memory to allow you
+to focus on enjoying the shopping experience, rather than figuring out
+where you are or where you want to go.</p>
+<p>Each section adds context with inspiration corners showing you how to
+put different elements within the store together. There isn’t just
+sofa’s, there are sofa’s with scatter cushions, throws, candle’s, side
+tables, mugs, plants and more. The bedroom area doesn’t just display
+beds, there are also soft finishes like curtains, bedding and lamps.
+They show you how to use different products by displaying it throughout
+the store.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*J0UJe0lEc8ukLVNmsjN7Xg.jpeg" /></p>
+<p>What I love most about the IKEA concept is that it doesn’t expect you
+to make up your mind before you’ve gone through the entire store. There
+are notepads and pencils at strategic points for you to make notes as
+you stroll through each section. Only at the end of the store are you
+asked to make a final decision by selecting the items you saw in the
+display area from the warehouse. This means there is time for ideas to
+develop in your mind, and it also means you don’t have to walk through
+the entire store with bulky or difficult to carry items.</p>
+<p>There is adequate context with a comprehensive store where you know
+you can literally get everything you need and want to furnish an entire
+home — all in one place. All you have to do is follow the path laid out
+in front of you.</p>
+<p>The journey is efficient, wasting no effort in walking up and down
+different aisles searching for something as everything is
+one-directional, but with shortcuts for the seasoned IKEA’er.</p>
+<p>Information is given just-in-time as you need it with strategically
+placed display corners and information booths. There is also a cafeteria
+area just when you start to get tired, as if they knew this is where
+people need to stop for a coffee and local Swedish delicatessens.
+Everything is designed to give information just one step ahead of where
+you currently are, making it pro-active.</p>
+<p>Putting all these elements together, plus of course the quality and
+innovative design of the products, make shopping at IKEA a pleasurable
+experience.</p>
+<p><em>If you need an objective assessment of your product’s user
+experience, or guidance in how to create a great user experience, book
+an introductory no-obligation call at <a
+href="https://www.funficient.com/"
+class="uri">https://www.funficient.com/</a> or sign-up for a
+month-to-month package.</em></p>
+<p><em>Originally published on Medium:
+https://funficient.medium.com/the-essence-of-good-ux-explained-6959b8a5a04e</em></p>
+</body>
+</html>

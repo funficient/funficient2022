@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="There is a difference between dysfunctional and broken. Broken means something doesn’t work at all. Dysfunctional means it works, but not for the good of all the parties involved and definitely not in a sustainable manner." />
+  <title>A Hacker’s Guide To Changing (Dysfunctional) Systems</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A Hacker’s Guide To Changing (Dysfunctional)
+Systems</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2018-08-26T08:21:49.040Z</p>
+</header>
+<h2 id="hacking-for-organizational-growth">Hacking for organizational
+growth</h2>
+<p>There is a difference between dysfunctional and broken.</p>
+<p>Broken means something doesn’t work at all. Dysfunctional means it
+works, but not for the good of all the parties involved and definitely
+not in a sustainable manner.</p>
+<p>In dysfunctional systems a pyramid typically forms until the base
+gets too weak to support the top and the entire pyramid collapses. The
+majority of the organizations in existence today falls into this
+category, where the focus is on maximizing profit for a handful while
+the majority of the workforce is being disadvantaged and even exploited
+to such a degree that they burn-out or walk away.</p>
+<p>Some call this capitalism.</p>
+<h2 id="capitalism-or-captivity">Capitalism or Captivity?</h2>
+<p><strong>Capitalism</strong>, or rather true capitalism, however,
+cannot exist for long in such a dysfunctional system just as a farmer
+can not sustainably keep harvesting without also investing in the
+quality of the soil and keeping some of the best seeds for the next
+season. When all the seeds are sold, it’s like slaughtering the goose
+that lays the golden eggs. In the business world, the people is your
+golden goose.</p>
+<p>If you’re a business owner and capitalist, it is thus in your best
+interest to ensure that the system that runs your business remains
+functional and in harmony with the environment.</p>
+<h2 id="baby-boomers-vs-millennials">Baby Boomers vs Millennials</h2>
+<p>The Baby Boomers enjoyed being managed. Being managed meant quality.
+Quality meant profit. Profit meant security.</p>
+<p>Millennials, on the other hand, dislike being managed. Being managed
+means being controlled. Being controlled means unable to have fun and be
+creative and a quality of life. Being unable to innovate and enjoy what
+you do means losses and failure. It means financial losses for the
+company and losing yourself as a human being, trying to be what those
+before you were.</p>
+<p><em>The currency for success in the age of the Millennial is employee
+happiness and innovation. The business systems focused on management and
+control therefore does more harm than good for both the business owner
+as well as the employee.</em> Business systems who are able to let go of
+control a little, have a lot to gain.</p>
+<blockquote>
+<p>It’s time for change.</p>
+</blockquote>
+<p>Not because the systems are bad or wrong. Just because. Well. They
+don’t fit anymore. Just like a 5 year old needs a new, bigger outfit
+each year. One that fits.</p>
+<h1 id="hacking-for-growth">Hacking for Growth</h1>
+<p>My road crossed a few criminals and hackers and I noticed how
+effortlessly they seem to get what they want breaking the rules while
+here I was being punished for being a good citizen.</p>
+<p>Curiously, I started exploring what goes on in the mind of a hacker
+and how it can be used for the good. This is what I’ve learned:</p>
+<h2 id="rule-1.-start-with-the-end-in-mind">Rule #1. Start with the end
+in mind</h2>
+<p>A hacker or criminal starts with a goal in mind. They <em>know</em>
+what they want. They might not know exactly what it looks like or when
+it will present itself, but they know they want a fix and will do
+whatever it takes to get it.</p>
+<p>Whether you’re one person looking for change or an entire
+organization embarking on a change initiative, the first step is
+deciding where you want to go and why. What’s your end goal? What does
+success look like?</p>
+<p>If your answer is to make money, ask yourself what you would do with
+the money. What makes you happy? How do you want to feel? What do you
+want more of? What do you want less of?</p>
+<p>Read more about this in my post entitled <strong><a
+href="https://medium.com/@funficient/why-the-goal-should-never-be-to-make-money-79a6fe9e513f">Why
+The Goal Should Never Be To Make Money</a></strong>.</p>
+<h2 id="rule-2.-define-your-ransom">Rule #2. Define your ransom</h2>
+<p>A criminal demands their ransom and is unwilling to yield or
+negotiate. They know that yielding will show doubt and doubt shows
+weakness.</p>
+<p>Whenever you hit a fork in the road of organizational or personal
+change, know your ransom. What are you willing to give up and what not
+with your personal values being your guide. If your most important value
+is trust, make sure that you make choices that will keep and build trust
+within and outside of the organization.</p>
+<blockquote>
+<p>Be very clear on your personal values and what you are willing to
+sacrifice and at what price.</p>
+<p>What is your ransom?</p>
+</blockquote>
+<h2 id="rule-3.-be-patient">Rule #3. Be patient</h2>
+<p>A hacker or criminal doesn’t simply jump in and hack a person’s
+account at the first opportunity they get. They usually first spend time
+searching for potential victims and try to identify behavior patterns.
+Only once they have a high degree of certainty that the risk of being
+caught has been minimized do they act. Sometimes it takes hours, other
+times months or even years.</p>
+<p>In organizational and personal change, first spend time to
+objectively observe. Get to know your players. Study the history of the
+company and the people. Find the patterns, the pains and the gains.
+Attempt to see how it could have been beneficial in the past and how
+this can be used as leverage or influence.</p>
+<blockquote>
+<p><em>Don’t fight the system, rather, find it’s vulnerability and how
+to exploit it.</em></p>
+</blockquote>
+<h2 id="rule-4.-make-friends">Rule #4. Make friends</h2>
+<p>Criminal activity is usually an inside job (in South Africa in any
+case).</p>
+<p>I once lived next door to the nicest man I’ve met. He also happened
+to be the head of the body corporate handling the finances for the
+sectional title property I lived in and owned. He was
+<strong><em>always</em></strong> friendly,
+<strong><em>always</em></strong> going out of his way to help his
+neighbours, never got angry. Nice. <strong><em>Too</em></strong> nice.
+“Normal” people get annoyed and angry and have bad days. He didn’t seem
+to have any bad days. Ever.</p>
+<p>It turned out he was part of a syndicate stealing from me and my
+neighbours. He did this so obviously, yet, no-one bothered to notice as
+he was just too nice for anyone to question him.</p>
+<p>Criminals invest a lot of time in getting you to like and trust them
+enough for you to show your vulnerability.</p>
+<blockquote>
+<p>An organization or team consists first and foremost of people.
+Without first investing in building strong relationships with these
+people, chances are the organizational boat will be shipwrecked when the
+first storm hits.</p>
+</blockquote>
+<p>Spend time building relationships before you start breaking down the
+building. When the going gets tough (which it’s bound to), these strong
+relationships will be your lifeline.</p>
+<h2 id="rule-5.-play-by-the-rules">Rule #5. Play by the rules</h2>
+<p>I’ve rarely met a ‘normal’ person who knows all the laws by heart or
+the banking policies and procedures of the bank they use. Usually, they
+don’t even know the different fees for different transactions. They rely
+on the goodness of the general population, knowing that when they are
+charged for something it is correct.</p>
+<p>Criminals, on the other hand, know the rules by heart. They know when
+to break which laws and how to respond when they do. They study the laws
+continuously, looking for the weaknesses and how to see opportunity when
+it arises.</p>
+<p>Even though many companies say they want change, when it happens they
+don’t like it much and will punish the change-makers. If you want
+organizational change, first and foremost follow the rules. To the T.
+Make changes where there are no rules or the rules are weak or
+confusing. While you follow the rules, no-one is able to touch you.</p>
+<h2 id="rule-6.-dont-confuse-being-meek-with-being-weak">Rule #6. Don’t
+confuse being meek with being weak</h2>
+<p>Being weak is not the same as being meek, yet many people confuse
+these. Being weak is lacking strength while being meek requires great
+strength.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*91saqMWWEGUR0dAO3cCr0w.png" /></p>
+<p>To change a dysfunctional system don’t attempt to swim upstream.
+Allow yourself to flow downstream and protect yourself as best you can
+against the bruises and bumps as you hit obstacles in the road rather
+than attempting to avoid it.</p>
+<p>Say yes to everything and be submissive to authorities. Sustainable
+change happens inside-out, bottom-up. Remain meek, be humble and always
+present yourself as the least important person in the room (which is
+also a Buddhist teaching on how to achieve happiness).</p>
+<p>By remaining meek, you gain the trust of authorities who will
+eventually, given enough patience, hand you what you want on a golden
+platter.</p>
+<blockquote>
+<p>Influence is built by trust.</p>
+</blockquote>
+<p>First build trust before you start changing the system.</p>
+<h2 id="rule-7.-dont-cry-wolf">Rule #7. Don’t cry wolf</h2>
+<p>When you have a faulty alarm that keeps going off, a thief will
+capitalize on this and use it as an opportunity to break in. Even when
+the alarm does go off, chances are no-one will react as they assume it
+to be yet another false alarm.</p>
+<p>When you constantly complain or have an opinion about everything,
+people tend to ignore you. When, however, you keep to yourself, the
+times you do voice your opinion, they will respect you and hear what you
+have to say.</p>
+<blockquote>
+<p><em>Timing is everything. It’s not what you say, but when you say
+it.</em></p>
+</blockquote>
+<p>Only raise a controversial issue once you’ve built enough trust and
+respect to know that people will hear you when you have something to
+say. Saying the same thing prematurely will result in resistance.
+Waiting for the perfect time results in change.</p>
+<h2 id="rule-8.-allow-yourself-to-be-imperfect">Rule #8. Allow yourself
+to be imperfect</h2>
+<p>No-one likes to hear how wrong or mean or imperfect they are. From a
+young age we’re taught that successful people don’t make mistakes. A
+good manager is (<em>was</em>) one who knows all the answers, the one
+who never makes a mistake, the one who always remains calm, even under
+pressure.</p>
+<p>A successful leader on the other hand is someone who is willing to
+make mistakes, knowing that mistakes is a better teacher than always
+being right.</p>
+<blockquote>
+<p>It’s better to apologize than to be right.</p>
+</blockquote>
+<p>In my experience, apologizing after being unreasonable or wrong has
+opened up more opportunities and gained me more respect than being proud
+or arrogant and refusing to admit my part in a mistake.</p>
+<p>Everyone makes mistakes. That’s what makes you human. It’s what you
+do <em>after</em> you’ve made a mistake that is an indication of your
+character and how much people will respect you.</p>
+<p>For cultural change to happen, sometimes it’s necessary to model
+mistakes and failures and how to deal with it rather than trying to show
+them how to be perfect.</p>
+<h2 id="rule-9.-never-look-back">Rule #9. Never look back</h2>
+<p>The opportunity for theft presents itself unannounced to the criminal
+who is always on the lookout. They seize the moment and act fast. Once
+the crime was committed, they get themselves out of the way and never
+look back. They know that looking back will only make them vulnerable to
+being arrested.</p>
+<blockquote>
+<p>Act fast. Move fast.</p>
+</blockquote>
+<p>Real-time change beats planned change initiatives by far. When an
+opportunity for change presents itself to you, don’t wait. Act. Don’t
+overthink it, don’t over analyze. Just do it. Without any remorse.
+What’s done is done and can not be undone. Hold your head up high and
+stick to your guns, however hard it might be. And refer back to rule
+#8.</p>
+<p>You’ll teach integrity when you do and people will follow suit and
+that’s how change happens. One change-opportunity at a time.</p>
+<h2 id="rule-10.-celebrate-success">Rule #10. Celebrate success</h2>
+<p>In most of the organizational change programs I’ve been involved in,
+the project starts off with a lot of celebration and focus and as the
+project starts running, less and less focus is put. It fizzles out until
+the change initiative is only a memory with people returning to their
+old habits and ways of working.</p>
+<p>For change to stick, it’s important to celebrate when something goes
+right as a result of the change. Keep the fire of change burning by
+constantly breathing new energy in the form of celebration. Help people
+see how the change is to their benefit.</p>
+<p><em>Disclaimer. I’m not a hacker and have no criminal record. What
+I’ve learned about hacking and how the criminal mind works came from
+spending time with drug addicts and ex-convicts while working with a
+non-profit organization.</em></p>
+<p><em>Originally published on Medium:
+https://medium.com/teal-times/a-hackers-guide-to-changing-dysfunctional-systems-aeff9d2cf001</em></p>
+</body>
+</html>

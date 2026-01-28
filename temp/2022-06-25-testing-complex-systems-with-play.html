@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="If your system under test is too complex or complicated to adequately cover with test cases, or if there are simply too many variables to test within limited timeframes, consider adding playful test to your test strategy. This post looks at a structured approach to playtest complex systems." />
+  <title>Testing complex systems with play</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Testing complex systems with play</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2020-07-10T18:21:24.409Z</p>
+</header>
+<h2 id="accelerated-results-with-playful-design">Accelerated results
+with playful design</h2>
+<p>I’ve been testing software for a long time. In fact, my first job was
+as a tester. In an industry which evolves faster than what is possible
+to keep up with, I wouldn’t consider myself — or anyone as a matter of
+fact — as a master in software testing, but I have completed the 10, 000
+hours of mastery required to qualify me as, at least, competent in the
+art of software testing.</p>
+<p>Over the years I’ve seen testing being more integrated into the
+developer role with Test Driven Development (and Behavior Driven
+Development) and I remember the great relief and freedom that
+exploratory testing brought to the industry. Then there was the
+introduction of crowd sourced testing which solved the problem of
+configuration related issues, even though it comes at a high cost and
+doesn’t guarantee higher quality as testing is not done by qualified
+testers.</p>
+<p>Other than that, the field of software testing has changed very
+little over the past decade or two, while the complexity of what we’re
+testing has increased exponentially.</p>
+<h2 id="a-short-history-of-everything">A short history of
+everything…</h2>
+<p>Testing was easy back when the methods were created. A detailed
+requirements specification was the baseline from which you drew up a
+detailed test plan. You then executed each step of the plan meticulously
+in sequence until completion.</p>
+<p>O, the good old days when things were simple…</p>
+<p>Systems had clear boundaries as integration wasn’t common. Each
+product was its own safe little black box where you had full control and
+a methodical test plan was a very good idea.</p>
+<p>There were little to no competition with mostly niche markets paying
+a premium for automating a part of their value chain specific to their
+needs. The users’ primary roles were to input data into the system.
+Catering for multiple use cases for a single function was not common.
+Rather, the software developers told the users how to use the system.
+Comprehensive training courses on how to use overly complicated systems
+were standard.</p>
+<p>But then the internet became more commercially available, with the
+Google app store and high quality MOOCs (massive open online courses)
+allowing anyone to build anything and make it accessible to the entire
+world. On top of that open-source software became popular and choices
+became abundant. You no longer had to pay expensive premiums to use
+software as there were an abundance of free or lower costed options
+available. Slowly but surely the focus started shifting from niche and
+technology driven to personalized and user driven solutions.</p>
+<p>And then, of course, the shadow side of software started emerging
+with the growing competition to own data - Google and Facebook at the
+fore-front of the race. Their solution to owning the data was simple —
+control the log-in point. API’s (application programming interface -
+essentially a public access point to a closed system) to handle user
+log-in was introduced which made it easier for the user and integrations
+via API’s became a user expectation. If you wanted to compete you had to
+integrate to the big players and today API’s has become an essential
+part of software development. Which is great for the users and the data
+gathers on the other side, but terrible for the software developers who
+no longer had full control over what they were building and when it
+changes.</p>
+<p>Testers were suddenly overwhelmed with all the possible permutations
+to test and quality declined despite the longer hours and more fancy
+tools to automate parts of the process.</p>
+<h2 id="complicating-complexity">Complicating complexity</h2>
+<p>Suddenly, test planning and design had to take into consideration
+different devices and configurations far beyond anyone’s control.
+Integrations and personalization further added to the already complex
+systems making it impossible to use the existing software testing
+methods to ensure coverage.</p>
+<p>Where a decision table to plot the possible test cases were a great
+tool to ensure coverage, now a decision table is inadequate for even a
+small step such as user onboarding. The vast number of permutations and
+variables are simply too many. You have to test self sign-up as persona
+type one, two and three; self sign-up via invite from persona one, two
+and three; self sign-up with an existing invite active; sign-up with
+multiple invites pending from different invitees; sign-up using
+facebook, google, twitter, email, phone, different types of phones,
+different browsers, different locations….</p>
+<p>You catch my drift.</p>
+<p>And that’s <em>just</em> signing up. A mere <em>prerequisite</em> to
+actually using the system.</p>
+<p>Even with an unlimited budget and able to afford adding more testers
+or automation tools, by the time they finished the planned tests the
+market place have already shifted so much that your solution would no
+longer be a fit for what it was designed for.</p>
+<p><em>So what do you do?</em></p>
+<p>You could scream and pull out your hair while throwing around your
+weight as test manager demanding more from your already overworked
+testers. And it might even work for a short while.</p>
+<p>But you don’t use a hammer to fasten a screw and you don’t use a
+muffin tray to bake a bread. So what if there was a better, easier way
+to test complex systems?</p>
+<h1 id="playtest-or-playful-test">Playtest or Playful test?</h1>
+<blockquote>
+<p>“The creation of something new is not accomplished by the intellect
+but by the play instinct.” — Carl Jung</p>
+</blockquote>
+<p>In gaming the equivalent of validation or acceptance testing is
+called <em>“playtesting”</em>. When I first heard the word, I was
+immediately intrigued. <em>Playtest?</em></p>
+<p>Very interested in play mechanics and using play as a tool to engage
+and motivate teams, I explored a bit more. What I discovered through
+observation is that playtesting is nothing other than acceptance testing
+with the difference being the attitude of the player and the involvement
+of the developer in the process of testing. It’s effectively blending
+functional testing and usability testing into a single iteration of
+paired testing.</p>
+<p>Makes sense. We’ve been pairing in software development, why not also
+do it with testing?</p>
+<p>However, it lacked the element of play I was so interested in, except
+for the fact that you were testing a game rather than more serious work.
+So I invented my own playful test method by adding an element of play
+onto all the most effective test methods available — namely exploratory
+testing, mob testing and of course, usability testing — or play —
+testing.</p>
+<p><em>After all, if it’s not a good user experience, nothing else
+really matters.</em></p>
+<h1 id="lets-play">Let’s play!</h1>
+<p>Playful test can be used for anything, but is ideal for overly
+complex or complicated system design. When you have different devices,
+different personas each with their own dashboards, with a lot of
+variables and many to many relationships between different users or
+elements within the system, playful test outshines other methods.</p>
+<p>For example, a rental agent management app has different
+functionality and information displayed on interfaces designed for
+tenants, agents or home owners. Each interface is in effect a separate
+system, with the user experiencing it as one integrated system. The
+platform allows each persona to have an optional and many-to-many
+relationship with a property. A tenant might, for example, be invited to
+join the system by a rental agent and a landlord at the same time. Or a
+tenant might sign up themselves and be an active tenant as well as a
+landlord. A property can be listed by multiple agents and the owner.
+Once signed up, there is a number of possible actions that can be
+performed in no specific order. In fact, all most of the rules can be
+broken in some way. A property can be occupied and available for
+potential tenants to view at the same time. A rental agreement can be
+terminated early, even though contractually there is a specified
+termination date. An agent can manage another agent’s property (or not).
+The list goes on.</p>
+<blockquote>
+<p>When the requirements are fuzzy and the variables too many to list on
+a decision table, it’s time to play.</p>
+</blockquote>
+<figure>
+<img src="/assets/blog/averly-play-test-outcomes.jpg"
+alt="Image of an in-person play session." />
+<figcaption aria-hidden="true">Image of an in-person play
+session.</figcaption>
+</figure>
+<h2 id="how-to-set-up-the-play-test">How to set-up the play-test</h2>
+<p>Playful test follows the basic rules of testing. Determine a
+strategy, spend some time planning what and how to test, execute and
+finally report the test results. The main difference in test planning is
+that there are no set sequence as in traditional planning with one test
+case following the next. Rather, it can be seen as playing with lego
+where each piece can be used to build many different things.</p>
+<p>The first step is to create the different building blocks, starting
+with the personas and the scenarios.</p>
+<h3 id="step-1-pick-a-personality">Step 1 — Pick a personality</h3>
+<p>On small index cards, write the different persona types adding an
+adjective to describe the personality. For example the <em>angry</em>
+tenant, the <em>snobbish</em> agent, the <em>busy</em> landlord.</p>
+<p>Adding an adjective gives more context to a user. It describes
+<em>how</em> they will interact with the system and what their unique
+needs are. An <em>angry</em> tenant might be impatient valuing
+<strong>speedy</strong> response times. A <em>snobbish</em> agent might
+be more pedantic in finding issues when doing an inspection, valuing
+<strong>details</strong> and <strong>accuracy</strong>. And a
+<em>busy</em> landlord might want to bypass parts of the workflow or do
+an action in a more efficient way than an agent, ultimately valuing
+<strong>efficiency</strong>.</p>
+<p>This adjective is also the <em>invitation</em> to play. A mask the
+tester can choose to put on and step into the magic circle to become an
+imaginary person for a while.</p>
+<p>But that’s all it is. An <em>invitation</em>.</p>
+<blockquote>
+<p>There’s no such thing as forced fun.</p>
+</blockquote>
+<p>It’s up to the participants to accept or reject this invitation
+freely and without any repercussion. A more playful tester might, for
+example, immerse himself totally into the chosen role, actively
+role-playing as a different persona to his usual personality. Another
+tester might not feel comfortable role-playing and simply act his normal
+self without any playfulness.</p>
+<p>It’s important to note that most teams are not ready to be playful if
+they’re used to a management and control type of environment. To be
+ready for play there needs to be a strong foundation of trust. To learn
+more about the prerequisites for play read <strong><a
+href="https://www.blog.funficient.com/blog/2022-07-04-the-rules-of-play/">The
+Rules of Play</a></strong>.</p>
+<p>Create at least two cards more than all the planned participants to
+allow each person a <strong>choice</strong> (a crucial ingredient of
+play) and will ensure coverage.</p>
+<h3 id="step-2-define-test-scenarios-and-objectives">Step 2 — Define
+test scenario’s and objectives</h3>
+<p>Next, based on the functions within the system, write down the test
+objectives — one per index card — for each scenario as you would in a
+usability test setting. Be sure to keep the objective cards separate
+from the persona cards (for example, using different colors or sizes for
+the cards).</p>
+<p>For example, a tenant might want to search for a new home, or report
+an issue, or give notice. An agent wants to renew a lease, terminate a
+lease or do a credit check on a prospective new tenant. A landlord might
+want to list a new property, sign up a new tenant, or resolve a
+maintenance request.</p>
+<p>For a more complete user experience evaluation, consider using the<a
+href="https://gamethinking.io/">Game Thinking</a>framework to help
+define all scenarios.</p>
+<figure>
+<img
+src="https://miro.medium.com/max/1400/1*HXlOQhRthKpq4rH33hgnuQ.jpeg"
+title="Sample persona and goal (objective) cards used in play-testing"
+alt="An example of the persona and test objective cards." />
+<figcaption aria-hidden="true">An example of the persona and test
+objective cards.</figcaption>
+</figure>
+<p>Low-tech is always more agile. Don’t spend too much time trying to
+make it perfect, a simple handwritten piece of paper is much more
+flexible than a beautiful printed and laminated card.</p>
+<p>Order and group these into small related groups and place them face
+down. For example, keep all sign-up and login related cases in one pile,
+all agent cases to list a property in another, cases to sign a lease in
+yet another, etc.</p>
+<p>These cards will be your main play cards (action cards) during the
+play phase with players randomly picking a test objective or goal to
+perform.</p>
+<p>Another basic ingredient of play together with choice is the concept
+of <strong>randomness</strong>. To create a more playful, and more
+realistic, test plan add random events (obstacle or challenge cards) on
+index cards and shuffle them into the main test object cards. Include an
+element of fun by adding, for example, a geyser burst, you got a job
+offer abroad and need to terminate your lease agreement early, or you —
+as agent — might resign and have to hand over your properties to someone
+else.</p>
+<h3 id="step-3-team-setup">Step 3 — Team setup</h3>
+<p>Once you’ve prepared all the different index cards, <strong><em>it’s
+time to play!</em></strong></p>
+<p>Get the team together, consisting of at least the developers,
+business analysts (or product owners), designers and testers. Ideally,
+include a customer proxy and some third party users who has no
+relationship with the system. Aim for a representative, cross-functional
+team.</p>
+<p>Break the group into 3–5 players per group and let each player pick a
+random role, ensuring each persona is represented per group. For
+example, each group has to have at least one tenant, while another might
+have 3 tenants and no landlord, or a landlord and agent etc.</p>
+<p>Allocate different devices to different players to increase coverage
+and request each participant to use a different web browser. For
+example, one player might use a Windows laptop using Chrome, another an
+iPad, yet another a mobile phone with Opera as browser.</p>
+<p>Make sure each device has screen capturing and recording software
+pre-installed and everyone knows how to use it to record and capture
+bugs easily.</p>
+<h3 id="step-4-play-time">Step 4 — Play time</h3>
+<p>Once all the logistics are sorted and everyone knows what to do, it’s
+finally time to play.</p>
+<p>Allow each participant to pick a persona personality card and explain
+how to play. For larger groups consider splitting the group into players
+and observers, with the observers responsibility for observing the
+players as they play and making notes and log bugs as they occur.</p>
+<p>With all the scenario (action and challenge) cards face down, let
+each player pick a card from the top of the pile and complete the test
+objective, while the scribe (and game master) walks around making notes
+while observing. Each player attempts to complete their test objective
+taking annotated screendumps or screen recordings where issues are
+discovered.</p>
+<p>Don’t spend too much time on bug reporting, rather, get just enough
+information or record the entire session to allow for an uninterrupted
+play session.</p>
+<h3 id="step-5-retrospective-and-closure">Step 5 — Retrospective and
+closure</h3>
+<p>Once all the cards are finished, or when there has been sufficient
+bugs logged, wrap up the test session. In a round-robin fashion, ask for
+feedback and insights gained during play.</p>
+<p>Consider adding a target consisting of 3 circles on a whiteboard for
+players to plot their perspective of system readiness (bullseye is ready
+to go, middle circle is close but not yet, and outer circle meaning
+there’s still a lot of work to do). Ask for input as to where attention
+is most needed or what the next steps should be, translating this into
+backlog items.</p>
+<h1 id="the-rules-of-the-game">The rules of the game</h1>
+<p>If your system under test is too complex or complicated to adequately
+cover with test cases, or if there are simply too many variables to test
+within limited time frames, consider adding playful test to your test
+strategy. The key to a playful experience is to provide enough structure
+to create an immersive experience while leaving adequate room for
+exploration and play.</p>
+<p><em>Visit <a href="http://www.funficient.com">www.funficient.com</a>
+to start the conversation to add play to your work, or read more about
+play here:</em></p>
+<p><em><a
+href="https://www.blog.funficient.com/blog/2022-07-04-the-rules-of-play/">The
+rules of play</a></em></p>
+<p><em><a
+href="https://www.blog.funficient.com/blog/2022-06-28-design-better-products-with-game-thinking/">Design
+better products with Game Thinking</a></em></p>
+<p><em><a
+href="https://www.blog.funficient.com/blog/2022-10-18-top-10-ingredients-of-fun/">The
+top 10 ingredients of fun</a></em></p>
+<p>Originally written at
+https://medium.com/teal-times/testing-complex-systems-with-play-122760e03d00</p>
+</body>
+</html>

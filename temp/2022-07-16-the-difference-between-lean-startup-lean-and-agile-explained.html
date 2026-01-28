@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Choosing the right tool at the right time can be the difference between success and failure. But which one should I choose? This post explains the difference between the lean startup, lean, and agile methodologies." />
+  <title>The difference between Lean Startup, Lean and Agile explained</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The difference between Lean Startup, Lean and Agile
+explained</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2018-12-24T12:12:57.076Z</p>
+</header>
+<h2 id="a-dummies-guide">A dummies guide</h2>
+<p>So many methodologies, so little time.</p>
+<p><em>Scrum. Agile. Lean. Lean Startup.</em></p>
+<p>Which one is best for you? What is the difference? What are the
+similarities?</p>
+<p>These are some of the questions I see flying around the internet,
+trying to make sense of the nuances between all these different
+methodologies, or rather systems.</p>
+<p>Confusing. To say the least.</p>
+<p>This post is an attempt to put all the pieces of the puzzles together
+in a summarized version of <em>my</em> interpretation of the different
+methodologies to help you decide which one is most suited to you.</p>
+<p>So let’s jump right in. Hope you like gardening! As this is the best
+metaphor I could think of to explain how I see it.</p>
+<p>Below is an image of the evolution of a tree from seed to flourishing
+tree to demonstrate when each methodology might be most useful, followed
+by a bit more details on the specific similarities and differences.</p>
+<h2 id="from-seed-to-seedling-the-lean-startup">From seed to seedling —
+the Lean Startup</h2>
+<p>All trees starts off as little seeds hidden under the ground where
+no-one can see them.</p>
+<p>An idea.</p>
+<p>There is the <em>potential</em> to become something big and
+beautiful, but it’s just a little seed. Google was once a big dream of
+making information accessible to everyone. Apple was the dream of
+ground-breaking technology innovation. AirBnB was the dream of
+capitalizing on wasted space.</p>
+<p>That’s when the <strong>Lean Startup</strong> is the most useful to
+look at. It’s designed for entrepreneurs (may it be a founder of a new
+business or merely a department within a bigger organization responsible
+for R&amp;D) with the focus of nurturing an idea so that it becomes a
+<em>thing</em>. A thing someone wants and is willing to pay for, also
+called a Minimal Viable Product. Something that might attract investors
+to become something bigger.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*sMCSLe8ux1VlPUqb2GOaPA.png" /></p>
+<h2 id="from-seedling-to-tree-scrum">From seedling to tree — Scrum</h2>
+<p>Although technically Scrum can be applied while you’re still busy
+trying to create the right product fit for the market, or when the tree
+is fully grown, for the sake of simplification, Scrum is most useful to
+put some structure to an organization that will nurture it enough to
+grow into a tree, after it has been proven viable.</p>
+<p>It’s a framework designed to allow organizations to deliver value
+faster, following a set recipe with some room for movement. The focus is
+on incremental delivery, or breaking down the elephant into bite-sized
+bits.</p>
+<p>In essence, <em>it’s a management framework applying some of the lean
+principles</em> for a specific application in software delivery.</p>
+<h2 id="growing-the-tree-agile">Growing the tree — Agile</h2>
+<p>Agile (more correctly called agile <em>software development</em> but
+to keep it shorter I’ll break the rules a bit and also call it
+<em>agile</em>) came after Scrum and can be seen as an evolution of
+Scrum. It focuses on the <em>mindset</em> and <em>decision making</em>
+rather than the technical framework and tools of Scrum.</p>
+<p>It <strong><em>adds</em></strong> onto, or is an extension of, Scrum
+rather than to be seen as something different or competing. For more on
+my perspective on how Scrum and Agile differs, read <a
+href="https://medium.com/@funficient/scrum-is-only-the-beginning-of-going-agile-2e984ac7f348">Why
+Scrum is only the beginning of going Agile</a> and <a
+href="https://medium.com/@funficient/why-scrum-doesnt-make-you-agile-33f89498c02a">Why
+Scrum Doesn’t Make you Agile</a>.</p>
+<p>Most agile implementations (I know of) starts with Scrum (because
+it’s so easy), with Agile adding and changing the ingredients of the
+recipe to personalize it to the individual needs of the organization.
+For example, the Scrum board changes into a Kanban board, which is a
+Lean tool. Or you start using methods to improve how the development is
+done, borrowed probably from XP. Scrum is the process or framework, XP
+and other agile practices the pieces filling in the framework.</p>
+<p>Agile is not a methodology at all. Rather, it is a guideline that
+will help the organization become more adaptable to changing
+requirements, or more <em>agile</em>.</p>
+<p>In my picture, I see it as the stage where the tree is growing
+sustainably. A one-size-fits-all solution is no longer suitable and a
+more custom approach is required.</p>
+<h2 id="creating-an-eco-system-lean-production-tps">Creating an
+eco-system — Lean Production (TPS)</h2>
+<p>Finally, Lean, or rather TPS (Toyota Production System), is the
+oldest and most mature system. Everything in Scrum is designed around
+Lean. Everything in agile follows Lean methods too. Yet, Lean is much
+more than all these methodologies combined.</p>
+<p><em>Where Lean Startup, Scrum and Agile are focusing on the
+<strong>how</strong>, Lean Production starts with <strong>why</strong>.
+Lean Production is a leadership system rather than a production system
+(whether producing information artifacts, software, business services or
+tangible products like cars).</em></p>
+<p>The way I understand it (and I could be wrong) is that it is about
+creating a sustainable eco-system rather than just growing the tree.
+It’s saving the rain-forests compared to producing more and more trees
+for short term profit. It’s about constantly finding equilibrium — both
+inside the organization by leveling workload and problem solving, and
+outside, striving constantly for flow by including partners and
+suppliers in their methodologies to enable them to deliver more
+sustainably.</p>
+<p>Lean is often used to describe the processes used to produce goods,
+however it works not because of these processes, but because of the
+foundation of purpose and the development of people and partners.</p>
+<p>Where Lean Startup, Scrum and Agile are concerned with the tree in
+isolation, Lean Production (TPS) is concerned with the tree <em>in
+relationship</em> with the environment surrounding it. It aims to
+maintain the entire eco-system sustainably, often making short-term gain
+sacrifices in support of it’s long-term view.</p>
+<p>In a nutshell, that’s the difference between these different
+methodologies. However, this is looking at the tip of the iceberg. The
+ice-cap only. So let’s drill down a little deeper by looking at the main
+differences and similarities between Agile (which can be seen as both
+Scrum and Agile for the purposes of this post) and Lean.</p>
+<h1 id="a-short-history-of-everything">A short history of
+everything</h1>
+<h2 id="lean">Lean</h2>
+<p>Also known as Lean Production or Lean Manufacturing and more
+correctly known as the Toyota Production System (TPS), lean is a
+philosophy rather than a methodology. It’s a set of tools, values and
+methods with the sole purpose of optimizing the value chain. Quoting
+Taiichi Ohno, the founder of TPS:</p>
+<blockquote>
+<p>“All we are doing is looking at the time line from the moment the
+customer gives us an order to the point when we collect the cash. And we
+are reducing that time line by removing the non-value-added wastes.”
+(Ohno, 1988)</p>
+</blockquote>
+<p>Lean, in it’s essence, is about doing more with less. Constantly.
+Small innovations as a habit. Being as
+<strong><em>efficient</em></strong> as possible with the resources
+available, and doing as much as possible with as little resources
+possible. Aptly named <em>lean</em>. <strong>Never</strong> at the cost
+of short-term gains though. <strong>Always</strong> with sustainability
+in mind.</p>
+<p><strong><em>Lean thinking</em></strong>, however, is a leadership
+style rather than a methodology. It’s not so much about the efficiency
+of the system than about developing people who has a lean mindset and
+can create and maintain a lean system. <em>It’s about creating problem
+solvers</em> rather than solving problems using a set of tools and
+techniques.</p>
+<p>Lean originated in car manufacturing where the goal is to produce the
+same, tangible objects as predictably and reliably as possible, which is
+different from Agile which originated in software development, where the
+goal is to produce mostly <em>intangible and</em> unique products
+reliably and consistently.</p>
+<h2
+id="leadership-and-efficiency-vs-change-management-the-differences">Leadership
+and Efficiency vs Change Management — The differences</h2>
+<p>The main difference between Lean and Agile is that Lean originated in
+response to a need to deliver exactly <em>the same things
+consistently</em>, whereas Agile originated in response to the need to
+<em>deliver something different every time</em> an order is placed and
+the ability to manage changes in the requirements. Secondary, Lean
+manufacturing has a cast-in-stone set of requirements when an order is
+placed, whereas Agile is a co-creation that is ever-evolving.</p>
+<p><strong><em>Same-same, but different</em></strong></p>
+<p>Where lean manufacturing dealt with minimal changes to the production
+line, thus giving them time to perfect the process to produce the same
+tangible thing, agile is at its heart is a change management philosophy
+that enables a team to deliver an ever-changing product on an ever
+changing production line.</p>
+<p>Agile is about delivering something new and unique every time,
+something that has <em>never</em> been done before. Lean is about
+delivering the same thing every time, <em>exactly</em> as it has been
+done before.</p>
+<p><em>However, that being said, it should be noted that Lean was
+invented as a result of a need to deliver different cars on the same
+production line, so it’s not entirely true that Lean doesn’t handle
+constant changes and chemical engineering has as many variances as can
+be seen in software, but in software development, the changes are so
+much more and so much more complex, making it a worthy difference
+between the two for the sake of understanding.</em></p>
+<p><strong><em>Lead as if you had no power</em></strong></p>
+<p>At the heart of Lean thinking, or TPS, however, is not production,
+but leadership. It’s not so much <em>what</em> is being done as
+<em>how</em> it is done. Where in agile development the Scrum Master or
+agile coach is often chosen as the most senior developer who is able to
+give all the answers, Lean has a coaching rather than management style
+to problem solving, where the leader never tells the employee exactly
+how to fix a problem.</p>
+<blockquote>
+<p>In Agile, the coach is often the hero, in Lean, the leader is always
+a guide, <strong>never</strong> the hero.</p>
+</blockquote>
+<p>The Lean leader humbly leads as if they had no power. Their role is
+not to make decisions, but to make sure that the employees make the
+right decisions. It is based on a follower and transformational
+leadership style routed in respect.</p>
+<p>The entire Lean philosophy is built around highly motivated people at
+the center of the organization. The goal is to empower people
+<em>and</em> suppliers. The entire value chain matters, not just your
+team or your department.</p>
+<blockquote>
+<p>The biggest waste is wasting the time and effort of the people doing
+the work.</p>
+</blockquote>
+<p>Agile, although fast changing, is mainly seen as a software
+development methodology, which is merely one part in the overall supply
+chain. No to very little focus is put on leadership values as such,
+whereas Lean is built entirely on a foundation of strong leadership
+based on respect and organizational purpose.</p>
+<p><strong><em>Local vs Distributed</em></strong></p>
+<p>Another major difference between Agile and Lean is that Lean was
+developed with the workforce mainly co-located in one place, where-as
+Agile mostly assumes a workforce distributed across the globe and in
+different time zones.</p>
+<p>Where Lean empowers the workforce to stop the production line when
+they see an error, in a software development environment using
+Continuous Integration with teams distributed across the globe, it’s not
+as simple, and it’s not as easy to do a Gemba walk virtually as
+physically either. Or maybe, we just haven’t had enough time to figure
+out how to do it yet.</p>
+<p>Agile, thus, requires a way to <strong><em>handle</em></strong>
+errors — as it is inevitable — where Lean mostly attempts to
+<strong><em>avoid</em></strong> errors by building in quality.</p>
+<h2 id="delivering-value-faster-the-similarities">Delivering value
+faster — The similarities</h2>
+<p>Both, however, is about delivering value faster. Lean Manufacturing
+does this with a number of tools and techniques to systematically reduce
+waste; Agile does this with shorter feedback loops to enable correction
+between the vision and the actual product faster.</p>
+<p><strong><em>Culture is king</em></strong></p>
+<p>Both Lean and Agile are cultures rather than a set of methods.
+Actually, all the methods were created as a result of the culture of
+learning and improvement both have.</p>
+<p>Lean, above everything else I dare say, is based on a culture of
+respect and humility. Teamwork and people development are also ingrained
+in the philosophy, while pragmatic learning by doing and seeing for
+yourself are compulsory tools for problem solving. There is no ivory
+tower where the manager asks for a report on a problem, they walk down
+to the floor and fully understand first-hand what the problem is.</p>
+<p>Agile, similarly, suggests that face-to-face communication is the
+best form of communication and people are more important than process.
+It is also a learning culture above everything else, with team work and
+humility also necessary ingredients for success. Transparency is yet
+another value similar in both cultures.</p>
+<p><strong><em>Reduce waste</em></strong></p>
+<p>Both reduce waste constantly. In Lean Manufacturing waste is often
+easier to spot as there are tangible artifacts lying around whereas in
+Agile, waste is often harder to spot. However, there are more
+similarities than differences, it’s just that we haven’t classified the
+wastes in Agile as in Lean.</p>
+<p>Redundant code or badly written code is one example of waste within
+Agile. A growing backlog of bugs (excess inventory) another, with the
+necessity to resolve a bug in the first place yet another. Bad tools
+often are the biggest cause of waste, as information is at the center of
+software development.</p>
+<p>The only difference is <em>how</em> the waste is dealt with. In Lean
+Manufacturing, cleaning up and ordering parts is one way. In Agile, TDD
+is a tool to reduce the need to rewrite code. However, both can be
+applied in either methodology, just as Bonjour in French is exactly the
+same as Good day in English. It might be said in different languages,
+but the <em>meaning</em> remains the same.</p>
+<p><strong><em>Visual management</em></strong></p>
+<p>What you can see, you an fix. Both Lean and Agile use visual
+management, visualizing work and workflow. The one with a Kanban Board,
+the other with a Scrum board and sticky notes.</p>
+<p>Both identify issues or different states visually as a way to provide
+feedback to co-workers and managers.</p>
+<p><strong><em>Autonomous teams</em></strong></p>
+<p>Lean empowers its employees by giving them responsibility and
+ownership to make decisions, including the ability to stop an entire
+production line when they see a fault. The manager can never tell an
+employee what the answer to a problem is or what to do, their role is to
+help the employee discover the answer themselves.</p>
+<p>Agile teams also have autonomous teams who report to each other,
+rather than to a team lead. The team is given ownership of how to
+perform the tasks at hand exactly the same as Lean does.</p>
+<p><strong><em>Continuous improvement</em></strong></p>
+<p>Both Lean and Agile follow the Deming P-D-C-A cycle. In Lean
+Manufacturing a hypothesis is made (<strong>P</strong>lan), it is
+<strong>D</strong>one and <strong>C</strong>hecked and finally work or
+tools standardized or the plan changed (<strong>A</strong>ct) before
+starting a new work cycle.</p>
+<p>In Agile a sprint is <strong>P</strong>lanned, a timeboxed sprint run
+(<strong>D</strong>o), a review presented where the work is either
+accepted or rejected by the business (<strong>C</strong>heck), and a
+retrospective held (<strong>A</strong>ct) to re-evaluate what worked and
+what not to enable the team to be faster and better the next sprint.</p>
+<p>The Lean Startup, a different methodology all-together, is also built
+around this feedback cycle.</p>
+<h2 id="lean-startup">Lean Startup</h2>
+<p>The Lean Startup has received a lot of attention in the media and I
+often see people confuse Lean Startup with Lean Manufacturing. I’m no
+specialist on the Lean Startup but I do know it solves different
+problems than Agile and Lean and is mostly intended for a different
+audience and a different phase of the product life cycle.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*Y5iXybaQhcMYkfNMPGwvEw.png" /></p>
+<p>Product Life Cycle</p>
+<p>Lean Startup is a methodology aiming to help entrepreneurs make
+better decisions while building a new business. It’s a tool set designed
+to use validated learning in <strong><em>extreme</em></strong> unknown
+environments. An entrepreneur is trying to figure out what customers
+want, they are still <strong><em>defining</em></strong> the value chain.
+Only once there is a product that has been sold at least a few times
+does it make sense to <strong><em>optimize</em></strong> the process of
+delivery using Lean and Agile principles. It’s thus most useful during
+the discovery and introductory phase of a new product or service into
+the market, when a value chain has not yet been formalized as a
+repeatable process.</p>
+<p>Scrum, as mentioned before, is a useful starting point towards agile
+and ultimately Lean. It can be implemented at any phase actually,
+however, it is (in my opinion) most useful when embarking on an agile
+transformation. Every agile transformation I’ve witness, has outgrown
+Scrum at some stage and moved more towards Lean, with Agile the bridge
+between Scrum and Lean.</p>
+<p>Lean Manufacturing and Agile are very comparable, both focused on
+delivering value faster while the product is growing, and actually,
+focused on maintaining growth. Toyota, for example, has been around
+since the early 1900’s, with the parent company (and central player)
+started in 1926 and is still a successful company nearly a century
+later.</p>
+<h1 id="in-a-nutshell">In a nutshell</h1>
+<p>Agile and Lean have more similarities than differences, and in my
+opinion, Agile is moving more and more towards becoming an industry
+specific implementation of Lean. Agile adds some useful concepts to the
+traditional Lean Manufacturing toolset, of which the introduction of a
+more gamified environment is one huge benefit that I haven’t seen in
+Lean. Another major benefit is the accessibility to implementation that
+Agile brings with the inherent software based solutions it produces.</p>
+<p>The software development community at its heart is a sharing
+community, maybe due to the nature of the work, maybe due to the nature
+of the people, but more than ever (maybe I just didn’t look hard
+enough?) do I find resources and methods openly being shared that
+enables more and more people to implement Lean and Agile principles in
+their environment.</p>
+<p>My prediction is that in the next 5 years Agile and Lean will be used
+intermittently as the same thing, as integration between different
+departments, industries and technologies become more standard.</p>
+<!--EndFragment-->
+<p><em>Originally published on Medium:
+https://medium.com/teal-times/the-difference-between-lean-startup-lean-and-agile-explained-e8ee94806632</em></p>
+</body>
+</html>

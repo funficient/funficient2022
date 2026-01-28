@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Bodystorming is a fun, collaborative method to identify possible gaps and opportunities in a process, giving you fast feedback without spending time, effort and money to build the wrong thing. Go on, give it a try." />
+  <title>Rapid feedback with Bodystorming</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rapid feedback with Bodystorming</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2019-07-13T13:50:23.965Z</p>
+</header>
+<p>Watching a series on Netflix is entertaining. It transforms you to a
+different world just for a little while, allowing you to forget all your
+worries. I know people who can binge-watch an entire series in a single
+weekend. No joke.</p>
+<p>I’m not one of those people though. I can’t sit still for long
+enough. I need to move. I get distracted easily by anything in my
+surroundings. I want to get up to make coffee, I start thinking about
+other things, or engage in conversation while I’m watching. It just
+doesn’t engage me enough.</p>
+<p>Watching a live performance, however, is something that captures my
+undivided attention for the duration of the show or play, leaving me
+yearning for more after it’s finished.</p>
+<p>Theoretically, it’s the same thing. It’s both watching a performance
+— the being one digital, the other in person. Yet, my reaction and
+ability to concentrate is vastly different from the one to the other.
+<em>Why?</em></p>
+<h2 id="creating-engagement-through-flow">Creating engagement through
+flow</h2>
+<p>Taking this back to the workplace and why this is important, your
+capacity to concentrate directly equates to how enjoyable an experience
+is as Mihaly Csikszentmihalyi explains in his book <em>Flow</em>.</p>
+<p>And what workplace doesn’t want motivated and engaged employees?</p>
+<p>Flow is what creates engagement and motivation, ultimately resulting
+in higher productivity. The more you are able to concentrate on what you
+are doing, the more enjoyable it is, the higher your productivity.</p>
+<p><em>So why can I concentrate better when the show is live? What are
+the conditions that make a live performance more engaging than a digital
+one?</em></p>
+<p>I’m not entirely sure to be honest. What I <em>do</em> know is that a
+live performance evokes much more emotion in me than any TV show. I’m
+<em>actively</em> engaged in what I’m watching, feeling included in the
+experienced rather than being an objective observer, excluded.</p>
+<p>Seeing the bodies move, the facial expressions, hearing the rustling
+of clothes or props being moved around and the more extensive visual
+stimulation grabs my attention so much that I forget about my
+surroundings. The surprise when an actor comes from the back that I
+didn’t expect, the lights and sounds and smells surrounding me is more
+engaging than watching anything digitally.</p>
+<p>It’s more <em>real</em>.</p>
+<p>Real, being translated to <em>sensual</em>. More senses are
+stimulated and the entire space around me is part of the experience.
+It’s not limited in space and senses as it it on TV. And this is
+ultimately what makes any experience more engaging. It is also key to
+coming up with better solutions to your problems in fact.</p>
+<h2 id="perception-and-processing-to-problem-solve-better">Perception
+and Processing to Problem Solve Better</h2>
+<p>Thinking can be broken down into two distinct phases. The first, and
+more important from the perspective of problem solving, is perception,
+or taking in all the different stimuli in our surroundings. The second
+is making sense of this stimuli and ordering these ‘things’ into
+information, processing the stimuli and storing it for later use.</p>
+<p>The more senses thus involved in an experience, the greater our
+ability to receive stimuli, increasing our perception. The more we
+perceive, the more information we can derive from these external stimuli
+and the better we are able to understand a problem or define a
+solution.</p>
+<h2 id="stop-thinking-start-doing">Stop thinking, start doing</h2>
+<p>Yet, we often rely only on our verbal communication skills and
+<em>thinking</em> about a solution to identify or validate
+opportunities. We sit for hours in a boardroom talking about a possible
+solution. We brainstorm by coming up with as many ideas we have on a
+topic, without leaving the room or interacting with anyone else.</p>
+<p>It’s a one-way flow of thoughts from our minds onto the white-board
+with little feedback.</p>
+<p><em>And then there was <a
+href="https://gamestorming.com/bodystorming/">bodystorming</a>….</em></p>
+<p>Not technically an agile game, but rather an improv theatre method
+applied in the business world, it is also called <strong><em>use-case
+theatre</em></strong> or a <strong><em>participatory
+design</em></strong> technique. It’s designed to include human responses
+and emotions to situations and interactions to gain immediate feedback,
+mostly used by user experience designers.</p>
+<blockquote>
+<p>Where brainstorming is designed to identify solutions, bodystorming
+is designed to identify gaps or opportunities in the problem itself,
+allowing as a result for a better solution.</p>
+</blockquote>
+<p>Bodystorming has the added benefit of including the physical body in
+a role-playing activity to uncover insights on a far greater scale than
+is possibly with traditional brainstorming alone, also called tacit
+knowledge, or knowing more than what we can explain or describe. It adds
+the dimension of relationships between objects and forces not as easily
+achieved by merely thinking about it, making it easier to understand
+cause-and-effect.</p>
+<h1 id="benefits-of-bodystorming">Benefits of bodystorming</h1>
+<p>We, as a human species, tend to be over-confident in our abilities.
+Or at least, I know I am guilty. We think we are much better at doing or
+knowing things than what we really are. We tend to under-estimate the
+effort it takes to complete a task and we tend to think we know more
+than what we really do about any given subject.</p>
+<p>That’s probably the biggest reason why people tend to discard
+seemingly simple techniques like bodystorming as not necessary or
+valuable. They <em>mentally</em> think there is little benefit in the
+added effort of setting up and running through a play-like scenario than
+just running through it in your mind and talking about it. They
+inaccurately think that cutting out the physical interactions are
+faster.</p>
+<p>But thinking about a problem or situation is not the same as
+physically acting it out. By acting it out you gain immediate feedback
+in a much richer environment than what can be done by thinking about it.
+The acting out of use-cases allows for more use-cases to be evaluated.
+It also includes kinesthetic stimulation and body-language, resulting in
+faster and better communication.</p>
+<p>There are many more benefits to using bodystorming, with the most
+important ones:</p>
+<h2 id="better-able-to-understand-the-problem">1. Better able to
+understand the problem</h2>
+<p>By acting out a situation, we put more attention on understanding the
+problem than by identifying a solution. The average person tends to jump
+to solution mode before we fully understand the problem we’re trying to
+solve.</p>
+<p>It takes some effort to train yourself to first focus on the problem.
+When we completed our Business Analysis training, we, as most people
+before us, all fell into the trap of coming up with ideas before
+spending adequate time uncovering the problem. We all glanced over the
+problem and argued that we understand the problem already.</p>
+<p>Yet, time after time when posed a question by the patient teacher, we
+were proven wrong. We <em>didn’t</em> in fact understand the problem as
+well as we thought we did. In our haste to solve it, we missed some
+obvious things. It was only when we were forced to slow down and truly
+look at the problem that we realized how much we overlooked.</p>
+<p>We practiced this skill of spending more time on the problem and came
+to value the sentiments of one of the biggest genius of our time:</p>
+<blockquote>
+<p>“If I had an hour to solve a problem I’d spend 55 minutes thinking
+about the problem and five minutes thinking about solutions.” — Albert
+Einstein</p>
+</blockquote>
+<p><em>Who are we to argue with genius?</em> Einstein argued that if you
+hope to find a solution to a problem, you first need to <em>really</em>
+understand the problem you intend to solve.</p>
+<p><em>Bodystorming</em> provides an opportunity for us to delve deeper
+into understanding the problem. It includes context, it shows the
+relationships between different forces far better than what can be seen
+by thinking about something alone.</p>
+<h2 id="rapid-feedback">2. Rapid feedback</h2>
+<p>This more contextual and interactive method means feedback is
+immediate and we can more rapidly adapt our approach or plan, supporting
+the <strong>agile manifesto</strong> of:</p>
+<p><em>Responding to change over following a plan.</em></p>
+<p>By having a team of individuals, each with a unique set of experience
+and skill interact on the same problem, each with a different
+understanding of the problem, we are able to get a much more complete
+picture of any given situation.</p>
+<p>By acting out experiences, we tap into the collective intelligence of
+the group rather than one person’s good idea. We find an intersection
+between <em>a lot of</em> good ideas. We broaden our coverage by
+including different and diverse perspectives on a given situation and we
+can immediately see the effect of our thinking by the response we
+receive.</p>
+<h2 id="lower-costs">3. Lower costs</h2>
+<p>The secondary benefit, maybe much more important to business, is that
+faster feedback means lower expenses.</p>
+<p>The sooner we are able to discover a gap in our thinking or a problem
+with our intended solution, the cheaper it is to fix. Contrary, the
+longer we invest in a solution the more likely we are to hold on to it,
+even if it’s not such a good idea. We’ve seen this so many times in the
+business world where legacy software is used simply because the
+investment was so high. Or, we continue with a specific service
+provider, even though their service and product is far from the best,
+because we try to avoid the pain of moving.</p>
+<p>When we bodystorm a solution or a problem, we only spend a few man
+hours. There is no technology or physical prototypes included, bar some
+very simple props, making it easy to discard or adapt an idea, and much
+more cost-effective.</p>
+<p>Did we take this same idea, brainstorm, prototype, develop and
+present it to users to validate only to find out an issue, we spent
+thousands of man hours and the cost of technology.</p>
+<h2 id="increased-collaboration">4. Increased collaboration</h2>
+<p>Probably the biggest problem in most large organizations is the lack
+of collaboration among team members. We tend to compete rather than
+collaborate. Rather than a <em>yes, <strong>and</strong></em> we see a
+solution as a <em>yes, <strong>but</strong></em>.</p>
+<blockquote>
+<p><em>It’s either your idea or mine. May the best man win.</em></p>
+</blockquote>
+<p>This is contra-productive and breaks down relationships rather than
+improve them. When people competes to have <em>the</em> best idea, the
+underlying message is that <em>I</em> am more important than
+<em>we</em>.</p>
+<p>Bodystorming solves this problem beautifully because each person in
+the team has a specific role attempting to solve a mutual goal. Even
+though each team member might have different ideas about the solution,
+they combine these different ideas to find a more comprehensive solution
+to the problem.</p>
+<h2 id="its-more-fun">5. It’s more fun</h2>
+<p>When you’re really honest with yourself, few people enjoy meetings
+and talking about ideas or solutions. It’s much more fun when you can be
+<em>part</em> of the discussion and even more fun when you can
+participate by acting it out, as most people struggle to express all
+their thoughts and ideas concisely.</p>
+<p>We are geared to move. We enjoy sports, dance and most outdoor
+hobbies because we are free to move. The movement allows our muscles to
+work and that requires more oxygen to move through out bodies.</p>
+<p><em>Moving makes us happy.</em> Read more about how to create <a
+href="https://peopledevelopmentmagazine.com/2016/07/18/happiness-at-work/">happy
+workplaces with movement here</a>.</p>
+<p>Bodystorming adds much more movement to the act of problem solving
+than any form of brainstorming or meeting, making it a more fun
+activity. The more fun we have, the more likely we are to be engaged and
+participate.</p>
+<p>Scientifically, this movement increases our ability to access our
+memory, which is stored in our bodies, not just in our heads. That’s why
+you get that idea only <em>after</em> the meeting. The more you move the
+more you are able to access your existing knowledge.</p>
+<p>Bodystorming is also fun because of the social interaction between
+team members. One of our most primary needs is a need for social
+connection.</p>
+<p><em>Socializing and collaboration make us happy.</em> Read more about
+how social connection creates <a
+href="https://peopledevelopmentmagazine.com/2016/07/24/happy-workplaces/">happy
+workplaces here</a>.</p>
+<h1 id="how-to-play">How to play</h1>
+<p>Bodystorming can be used for many reasons, making it an extremely
+versatile game to have in your toolset. It is great for problem solving,
+it is also great for ideation or coming up with new solutions, it is as
+good for validating or testing concepts or ideas. It can even be used to
+identify team dysfunctions or improve dynamics within a a team.</p>
+<p>It can be used in different ways, with a more generic version of the
+<a href="https://www.funficient.club/bodystorming.html">game
+instructions available here</a> with a video showing an example of
+play.</p>
+<p>A scenario is presented to a group of 5–8 people (it can be used for
+larger groups too). For example, designing a hospital patient
+information management system.</p>
+<p>A narrator is selected, who facilitates the entire game, and each
+person is assigned a role, either as a person in the process, or a prop,
+like a table or a bed. Props have emotions and can speak as people.</p>
+<p>The workflow is acted out by the different actors while the narrator
+controls the “show”, introducing new use-cases or variations, rewinding
+or pausing play to discuss an insight.</p>
+<p>After the scenario’s have been acted out, the team discusses the
+insights received during play.</p>
+<p>The game can also be combined with other gamestorming games or
+game-techniques too. <a
+href="https://medium.com/@funficient/how-to-do-market-research-using-gamestorming-aa7ce2e74eb1">Read
+this post</a> to find out how bodystorming was used doing market
+research for an internet cafe here.</p>
+<h1 id="play-more-for-better-insights">Play more for better
+insights</h1>
+<p>Play is often discarded as a waste of time and something that doesn’t
+belong in the workplace. Yet, if you’re willing to give it a chance,
+you’ll notice that you gain much more and better insights much faster
+using these more playful techniques, while saving both cost and
+time.</p>
+<p>Bodystorming is a fun, collaborative method to identify possible gaps
+and opportunities in a process. Go on, give it a try and let me know how
+well it worked for you.</p>
+<p><em>Kate coaches teams towards agility and facilitate productive game
+workshops using playful design to create more engagement and make
+learning fun.</em></p>
+<p><em><a href="mailto:kate@funficient.com">Contact her</a> for a custom
+design sprint or workshop and sign up for the newsletter for insights
+and practical tools to bring out the most out of your team.</em></p>
+<p><em>Originally published in UX Collective on Medium:
+https://uxdesign.cc/rapid-feedback-with-bodystorming-e784e635ceec</em></p>
+</body>
+</html>

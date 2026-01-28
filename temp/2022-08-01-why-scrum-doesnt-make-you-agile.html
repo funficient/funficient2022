@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Scrum is good. It might even be the golden bullet you’ve been looking for. But just like no one medicine is the anti-dote to all illness, so too no one methodology or framework is the solution to every organization’s problems." />
+  <title>Why Scrum doesn’t make you agile</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Why Scrum doesn’t make you agile</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2022-08-01T09:30:33.050Z</p>
+</header>
+<h2 id="how-to-make-the-most-of-scrum-on-your-agile-journey">How to make
+the most of Scrum on your agile journey</h2>
+<p>Just like reading a book doesn’t guarantee you are able to use the
+knowledge contained within it, so too following the rules of Scrum
+doesn’t guarantee that you are able to live the <a
+href="http://agilemanifesto.org/">manifesto for agile software
+development</a>.</p>
+<p>Scrum might indeed be the golden bullet you have been looking for,
+but it’s of little use without the gun and knowing how to use the gun.
+This post is intended to help you find the gun to load the golden
+bullet. It contains a few reasons why Scrum is not enough to make you
+agile, followed by how to get the most out of it and how to use it in
+order for it to be the golden bullet you hoped it would be when you
+embarked on your agile transformation.</p>
+<p><em>Disclaimer. This is not intended to be a criticism of Scrum (for
+my opinion on why Scrum works, <a
+href="https://everydayagile.com/why-scrum-works-f74638b13ea5">read
+this</a>), but rather a call for people to realize that there might be
+life after Scrum and to invite them to look at alternatives outside of
+the Scrum framework.</em></p>
+<h2 id="reason-1-its-a-static-recipe.">Reason # 1 — It’s a static
+recipe.</h2>
+<p>Scrum is a pre-defined process containing a set of fixed rituals and
+roles that remain unchanged throughout its implementation. Inherently,
+this is un-agile, with the first line of the agile manifesto being</p>
+<blockquote>
+<p>“We are uncovering better ways of developing software…”</p>
+</blockquote>
+<p>…implying that there is constant change underlying an agile
+organization.</p>
+<p>Agile in its essence is about cultivating a learning mindset that is
+able to perceive changes in the environment that might influence the
+business and adapting to these changes faster than your competitors.
+<em>By sticking to Scrum as it is without adapting the process, teams,
+sprints and even the rituals as the founders suggest, it is subliminally
+teaching you not to find better ways to do the work. It’s teaching you
+to be obedient and follow the rules and not question what authorities
+think is the best for you.</em></p>
+<h2 id="solution-1-keep-curious.-keep-moving.">Solution #1 —Keep
+curious. Keep moving.</h2>
+<p>View it for what it is — a framework — not a methodology. An empty
+shell that needs to be filled in with the details by each organization
+or team.</p>
+<p>The Scrum rituals can be a great starting point for your agile
+journey, but it is only the first step of going agile as I explained in
+more detail in a <a
+href="https://medium.com/@funficient/scrum-is-only-the-beginning-of-going-agile-2e984ac7f348">previous
+post</a>.</p>
+<p>All teams I have worked with naturally adapted their standard Scrum
+board to a more Kanban like board to depict the actual workflow rather
+than simply using it as a task board.</p>
+<p><em>A Scrum board is an excellent starting point for an agile
+transition but it will soon not be adequate to reflect the bottlenecks
+stopping the team from achieving their goals and it should be
+adapted.</em></p>
+<p>Other than Kanban boards, there are many agile techniques out there
+that is not covered in Scrum at all. XP contains a bunch of useful and
+more practical techniques, including pair programming and TDD (test
+driven development). Then there is a selection of ideas and methods
+contained within the Lean Startup Methodology which can be applied, Lean
+Manufacturing is another rich source of methods and my favorite is
+gamestorming — a selection of tried and tested low-tech techniques to
+improve collaboration and creativity within a group.</p>
+<p>Don’t stop with Scrum. It’s just a framework. Keep looking for more
+useful ways to do things and fill in the blanks. Keep reading blogs of
+fellow agile enthusiasts to gain insights and ideas to take your agile
+transformation to the next level.</p>
+<h2
+id="reason-2-it-values-following-a-plan-over-responding-to-change.">Reason
+# 2 — It values following a plan over responding to change.</h2>
+<p>The goal of agility is to do more with less resources, faster.
+Productivity and agility goes hand in hand and the only way to achieve
+this is by adapting to change in order to meet the goal.</p>
+<p>The <a href="https://www.scrumguides.org/scrum-guide.html">Scrum
+guide</a> suggests that the sprint, for example, is time-boxed and
+should have consistent durations throughout development, valuing the
+plan over responding to change.</p>
+<p><em>Although the intention of this approach has merit, in real life,
+shit happens.</em> Sometimes you really need just one more day.
+Sometimes you finish earlier and it doesn’t make sense picking the next
+story. Sometimes there’s an earthquake. Or Easter holidays. Or simply
+just too many non-sprint required tasks that keeps you from being
+productive.</p>
+<p>Following Scrum blindly teaches you to follow the plan over
+responding to change. Being agile is about trying out different options,
+failing fast, and adapting quickly in an aim to deliver working
+software. Above everything, it is the <em>results</em> that matter, not
+the process.</p>
+<h2 id="solution-2-start-with-the-end-in-mind.">Solution #2 —Start with
+the end in mind.</h2>
+<p>Too much change is as bad as no change at all, which is why it is
+good to standardize things that do work. For the founders of Scrum, a
+set sprint duration worked. That doesn’t mean that it is going to work
+for you, especially when you are still finding your rhythm, though and
+it is valuable advice to attempt to level out the effort in a repeatable
+rhythm.</p>
+<p>Use the Scrum Guide as a tried-and-tested recipe, but focus on the
+end-goal rather than the process, and take it with a pinch of salt.
+Don’t be a blind follower of Scrum, try it, change it, see what works
+and what doesn’t and find your own recipe.</p>
+<p>Constantly re-evaluate whether what used to work before is still the
+best way to do things, with the understanding that you know more each
+sprint and each sprint has different goals, requiring different
+strategies.</p>
+<blockquote>
+<p><em>Do it because it makes sense and it works. Not because the Scrum
+Guide says so.</em></p>
+</blockquote>
+<h2 id="reason-3-velocity-is-just-a-number.">Reason #3 — Velocity is
+just a number.</h2>
+<blockquote>
+<p>There’s a saying in Quality Management that “What gets measured gets
+done”.</p>
+</blockquote>
+<p>This is in fact the key to getting results that you want as any good
+Quality Manager would know. By focusing on the measure you want to see
+you, you inevitably reach those targets. The one thing to understand
+however is that once you’ve reached these targets, they should be
+reviewed and changed as the problem invariably has shifted for it to
+remain valuable.</p>
+<p>Quality is about remaining in equilibrium throughout the
+organization. There is little use in developing fast but not able to
+release. So too there is little value in being able to deliver fast but
+not getting good quality code to release. It’s a false sense of
+improvement.</p>
+<p>The point I’m trying to make is that a measure is only as good as
+long as it’s valuable and it only remains valuable for as long as it
+reflects the bottleneck or weakest link in the system.</p>
+<p>Viewing velocity as a reflection of relative productivity of the team
+is setting you up for failure. When each sprint the velocity goes up,
+most probably all it reflects is that the team is getting more cunning
+at hacking the system. Most probably estimations will get higher,
+stories will get smaller and bugs moved to another sprint rather than
+more work being done.</p>
+<h2 id="solution-3-measure-what-makes-sense.">Solution #3 — Measure what
+makes sense.</h2>
+<p>In reality, a team has an optimal productivity rate and it is
+unrealistic to expect them each sprint to get faster and faster. Agility
+is not about being <em>faster</em>, it is about responding to
+<em>change</em> faster and focusing on the <em>right</em> work, not
+<em>busy</em> work. When you rush to get work done, you often end up
+realizing after it has been done that it was the wrong work and that
+something else was more important.</p>
+<p>Measure what makes sense and what is important. Now. And then change
+it. Spend more time to think what the problem is and what success would
+look like.</p>
+<p><em>When too many impediments are the biggest problem, measure that.
+When that problem is more under control, start uncovering the next
+problem and measure that.</em></p>
+<h2 id="reason-4-scrum-is-not-a-competition.">Reason #4 —Scrum is not a
+competition.</h2>
+<p>Scrum was born in the development environment, encouraging friendly
+competition between different teams to be the best (although, in all
+fairness, not intentionally driven by Scrum but part of human nature).
+It excluded other parts of the organization and still does to a large
+extent.</p>
+<p>Even the use of the word “Scrum” implies a head-on-head collision
+between two competing teams with the desire for one to win and the other
+to loose.</p>
+<p>While this can be beneficial in some cases, it also fragments the
+organization into distinct pieces that tries to be better than the
+other. The mostly unintended result of this is that teams subtly
+sabotage other teams by refraining to share knowledge or help other
+teams reach their goals in a fear that they will not be the ‘winning
+team’ if they do.</p>
+<p>I once worked in a large company with different development teams
+with one team having a really bad reputation for not completing work and
+when they do, it is usually filled with errors. Although inside the
+organization everyone viewed this team as the cause of all the issues,
+in reality, the entire organization’s reputation suffered as a result.
+The customers didn’t care that one team was responsible for the back-end
+and another for the front-end. They care about working software, and
+when one part doesn’t work, the entire system is perceived as not
+working.</p>
+<h2 id="solution-4-focus-on-flow.">Solution #4 —Focus on Flow.</h2>
+<p>You are as weak as your weakest link. The entire company suffers when
+one team doesn’t perform at their potential productivity. There are no
+winners and losers in the big picture as shown in this fictitious
+scenario depicting the time spent on taking a customer need from
+inception to delivered.</p>
+<p><img
+src="https://miro.medium.com/max/1400/1*vZ2kgImkxwU0uyP6UHq0TQ.png" /></p>
+<p>Focus on the entire flow of the system as a whole and on improving
+the <em>flow</em>, not one team’s velocity.</p>
+<p>Reduce lead time and waiting time rather than trying to develop
+faster. In most organizations, it’s not the developers causing the lead
+time to be long, it’s often the key stakeholders unable to make
+decisions, or requirements not being adequate, or even infrastructure
+not able to handle continuous integration. The list goes on.</p>
+<p>Measure the lead time from idea to live in production per story and
+aim to reduce this measure rather than optimizing the already working
+parts.</p>
+<h2 id="reason-5-customer-collaboration-and-the-role-of-the-po">Reason
+#5 — Customer Collaboration and the role of the PO</h2>
+<p>A criticism I have for both the XP and Scrum evangelists are the
+importance that is often placed on the PO having to be available to
+answer any questions the developers might have during the sprint.</p>
+<p>Again, this is not mandated by Scrum explicitly, yet more often than
+not seen in the agile transformations as there is a lot of emphasis in
+the Scrum Guide placed on the actual artifacts and measures, not the
+relationships and the collaborations.</p>
+<p>The Scrum Guide doesn’t contain any section dedicated on customer
+collaboration or relationships. Understandably, as mostly this is
+implied and hard to articulate in words as it depends on so much, but
+invariably this causes the focus of many Scrum implementations only to
+be on the process, roles and artifacts and not the relationships.</p>
+<p>Remember, every moment the PO spends with the developers is a moment
+that they are not collaborating with the customer. The less they
+collaborate with the customer, the less likely the PO will be in solving
+the right problem.</p>
+<h2 id="solution-5-relationships-first.">Solution #5 — Relationships
+first.</h2>
+<blockquote>
+<p>Success relies 100% on relationships.</p>
+</blockquote>
+<p>It’s close to impossible to build a great product when the designer
+and the developer doesn’t want to speak to each other or the Product
+Owner is too scared to question the customer and challenge their
+requests.</p>
+<p>More than anything, the soft skills like communication, conflict
+resolution and negotiation are the indicators of how fast a team can
+produce something without having to redo it. Spending time to build
+relationships might not feel productive, but the cost of not having good
+relations within a team and between the team and the customer is the
+number one reason for customers looking for alternatives or the wrong
+software being developed.</p>
+<p>Focus on the items in the Scrum Guideline, but don’t exclude the
+importance of relationships.</p>
+<p>And the PO is not a dedicated resource that should be available at
+all times to the developers. They should spend equal or more time with
+the customers than what they do with the developers.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Scrum is good. It might even be the golden bullet you’ve been looking
+for. But just like no one medicine is the anti-dote to all illness, so
+too no one methodology or framework is the solution to every
+organization’s problems.</p>
+<p><strong>Please <em>don’t</em> just Scrum on.</strong> Question
+whether it works for you and try new things. Fail fast. Learn from your
+mistakes, cultivating a culture of Kaizen. And most importantly, focus
+on the relationships. Healthy relationships are a far bigger success
+factor than most others.</p>
+<p><em>Originally published on Medium:
+https://medium.com/teal-times/why-scrum-doesnt-make-you-agile-33f89498c02a</em></p>
+</body>
+</html>

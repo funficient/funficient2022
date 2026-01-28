@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="“Can Quality be built into software?” Ultimately, the level of quality in the software is a reflection of the level of responsibility within the organization. Own it. Don’t wait for someone else. Quality is everyone’s responsibility." />
+  <title>10 Ways to Build Quality Into Software</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">10 Ways to Build Quality Into Software</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2019-02-19T10:28:45.912Z</p>
+</header>
+<h2 id="exploring-the-possibilities-of-high-quality-software">Exploring
+the possibilities of high-quality software</h2>
+<p><em>“Can Quality be built into software?”</em></p>
+<p><em>“Obviously yes!”</em> Was my answer to this question when posed
+at a Lean Coffee recently. In all honesty, I was surprised that this was
+even questioned. I thought the discussion would have been around
+<em>how</em> to build in quality, rather than questioning the
+<em>possibility</em> of whether it can be done or not.</p>
+<p>Maybe it’s because I don’t think <em>anything</em> is impossible.
+Maybe it’s because my eyes start shining when I am presented with an
+obstacle <em>(I simply looovvvee solving problems)</em>.</p>
+<p><img
+src="https://miro.medium.com/max/800/1*YsdBDzWzsP8OjyrD_98bLA.gif" /></p>
+<p>Or maybe, it’s because I have a strong background in Quality
+Management — not to be confused with QA or Testing — and might assume a
+lot of things that might not be so obvious.</p>
+<p>Many people think of software testing when they think of Quality, but
+testing is but one of many ways of <em>assuring</em> quality, with
+quality assurance one of the four main components of <a
+href="https://en.wikipedia.org/wiki/Quality_management">Quality
+Management</a>. Quality is much bigger than testing only.</p>
+<blockquote>
+<p>Quality is essentially about meeting user expectations. Consistently.
+Reliably. Confidently.</p>
+</blockquote>
+<p>It’s not better. It’s not bigger. It’s not more. <strong>It’s
+considered quality if you get what you asked for.</strong> No buts or
+small print or nasty surprises once you’re hooked in. No fancy features
+and bells and whistles you didn’t ask for or need.</p>
+<blockquote>
+<p><strong><em>Quality is when it’s just enough.</em></strong> It’s good
+enough if it does what you asked for explicitly. It’s
+<em>delightful</em> if it does what you asked for <strong>and</strong>
+fulfill your unspoken needs. It becomes annoying when it does more or
+less than what you need to meet your goal. <strong>Quality is the mother
+of Productivity.</strong></p>
+</blockquote>
+<p>Essentially, Quality Management is a customer-centered approach to
+process improvement. The Quality Manager is the custodian of the
+organization’s <em>processes</em>. All of them. Development, Testing,
+Project Management, HR, Finance. Everything.</p>
+<p>The heart of Quality Management is the well-known P-D-C-A cycle of
+Plan, Do, Check, Act, also inherently part of the Scrum process with
+it’s Sprint Planning <em>(Plan)</em>, typical 2–week Sprints
+<em>(Do)</em>, Review <em>(Check)</em> and Retrospective
+<em>(Act)</em>.</p>
+<h1 id="building-quality-in">Building Quality In</h1>
+<p>When looking at quality from a testing perspective, I would agree
+that it is not possible to build software quality in. To build quality
+in you need to look at the bigger picture.</p>
+<p>There are many ways to <em>improve</em> quality. It all depends on
+the problem. Maybe, you can automate something that previously had to be
+done by a human being. Maybe, you need training to better use the tools
+you have. Maybe you need to find a better tool to do the job. Or maybe,
+you need a checklist to remind you of what you need to look at. The
+possibilities are endless.</p>
+<p>That’s not what I’m talking about when I talk about building quality
+in. Building in quality requires a more general, big-picture approach.
+Here are a few guidelines I consistently use to consistently build
+quality into software:</p>
+<h2 id="slow-down-to-speed-up">1. Slow down to speed up</h2>
+<p>When you drive at 60km per hour in the Kruger Park — one of the
+worlds biggest and best game reserves and close to my home town while
+growing up — you’ll probably miss the majestic elephant grazing behind a
+tree, or the lion gazing in the sun, or the leopard observing its prey
+from the tree tops.</p>
+<p>It feels impossible to miss such majestic animals that’s only a few
+feet away. Yet, we nearly drove into an elephant once because we
+literally didn’t see it until I was a meter or two away.</p>
+<p>I didn’t see this massive animal for the same reason errors in
+software remains undiscovered until a user finds it. One — we weren’t
+expecting it. Two — we were going too fast (45km per hour), on our way
+to the resting camp after a long morning of searching for game.</p>
+<blockquote>
+<p>You either do it fast, or thoroughly.</p>
+</blockquote>
+<p>Do it fast and fix it later. Or do it slow and you don’t have to fix
+it at all. What’s more important? Short-term gains or long-term
+profits?</p>
+<p>Rule number one when it comes to building in quality is to go slow.
+Give <strong><em>all</em></strong> your attention to what you are doing
+and do it slowly, and thoroughly. It might feel counter-productive in
+the short term, but it ends up being much faster doing it slowly once,
+compared to two or more times redoing the same thing fast.</p>
+<h2 id="keep-the-user-in-mind-at-all-times">2. Keep the user in mind at
+all times</h2>
+<p>This sounds obvious, yet, the biggest cause of bad quality software
+(in my opinion) is that we often forget who we’re building the software
+for.</p>
+<p>I’ve witnessed first hand how requirements, designs and code were all
+completely done (and working well) just to discover it’s in the wrong
+application and for the wrong user, thus rendering it null and void.</p>
+<p>The requirements were good quality, with designs and code to match,
+but everyone was so entrenched in the intricacies of the function that
+they forgot who it was intended for. No-one noticed it was developed in
+the wrong application until right at the end.</p>
+<blockquote>
+<p>The story isn’t done until the <em>right</em> user can use it.</p>
+</blockquote>
+<p>A more frequent example of the user being forgotten during the
+development process is missing requirements. The things that weren’t
+built, but should have been.</p>
+<p>The solution? <em>Involve the user.</em></p>
+<p>In game design an iterative design process is followed. A prototype
+is built and then undergoes play-testing. Real users are asked to play
+the game and based on their feedback, the design is adapted, until
+there’s a design that delights.</p>
+<p>In many software development environments, we’re not there yet. The
+requirements or user stories are compiled by a Product Owner who spends
+more time explaining stories to the team than what they spend with the
+customer validating their ideas or discovering needs.</p>
+<p><em>Thank goodness for <strong>The Lean Startup</strong> being thrown
+into the mix!</em></p>
+<p>We arrogantly believe we solved the right problem with the user first
+seeing it <em>after</em> it’s built and tested. We also stubbornly
+believe that running tests on the back-end produces the same results as
+using it from the front-end.</p>
+<p>Ultimately, quality is about user expectations and fulfilling
+<em>their</em> needs. If you don’t involve the user from the word go,
+chances are you’re not going to get it right. Involve the actual users
+more, earlier. Validate your ideas and spend as much (or more) time with
+the customers than what you do with the team.</p>
+<h2 id="focus-on-the-integration-points">3. Focus on the integration
+points</h2>
+<p>Developers usually work on an isolated piece of software or a
+specific function. A part of a bigger machine. They make sure that the
+new or changed function works as intended, assuming that the unchanged
+parts remain working.</p>
+<p>Yet, more often than not, it doesn’t. Just like a a pipe in the
+plumbing will tend to break where it connects to other parts, so too
+software tends to break where it connects to other parts of the same
+system, or other systems.</p>
+<p><em>Integration is probably the biggest cause for coding errors,
+understandably.</em></p>
+<p>To solve integration issues, define end-to-end acceptance criteria
+upfront, based on actual user workflows. A user never does just one,
+isolated, thing. They follow a sequence of events. They log in, then add
+a new user, then view the new report. They never <em>only</em> view the
+report.</p>
+<p><strong>Unit tests are not enough.</strong> It will prove that the
+software is working, but not that it is working correctly with all the
+other parts, or that it was the right software to build in the first
+place.</p>
+<h2 id="make-it-visible">4. Make it visible</h2>
+<p>Ever come across a defect that was rejected or closed (or worse, not
+even logged) because it couldn’t be reproduced?</p>
+<p>The solution to this problem? Make it visible.</p>
+<p>What you can see, you can fix. And the biggest benefit of software is
+that whatever you want to know, you can.</p>
+<p>If you’re a lazy developer (and hopefully you are, otherwise you
+might be in the wrong industry), spend time adding valuable logging
+(balancing it with the performance cost as a result of the logging) and
+breakpoints at strategic points to slow down the execution process. Or,
+add (temporary) user feedback to indicate the state of a program to
+isolate an issue. It will cost you a few hours and save you weeks of
+debugging.</p>
+<p>And if you’re really clever (aka really lazy), you’ll build in a
+switch to switch logging on and off on demand.</p>
+<h2 id="error-handling-for-humans">5. Error handling for humans</h2>
+<p>Ever run software and ran into a run-time error or something that
+looks like error code X87378xxx088788? Ever knew what it meant? Probably
+not. But don’t feel bad, the person who wrote it probably also doesn’t
+know.</p>
+<p><img
+src="https://miro.medium.com/max/1040/1*5OfXrqbI1oKGgEdl9KezDQ.jpeg" /></p>
+<p><em>Source: <a href="http://magnt.com/404/">Magnt</a> as obtained
+from <a
+href="https://thenextweb.com/dd/2015/04/21/the-art-of-error-12-clever-404-pages/">The
+Next Web</a>.</em></p>
+<p>If you’re human, you can be sure that you didn’t think of everything.
+There will be errors. That’s ok. But how do you handle it?</p>
+<p>The fastest, and most productive, way to solve errors is to translate
+it into something useful that will enable someone to fix it (or at least
+reproduce it).</p>
+<p>It might be a generic message like this 404 page, or something a bit
+more descriptive, but it does tell you what’s wrong and what to do
+next.</p>
+<p>When you code, think one step ahead. <em>What would the next person
+need to understand this without having to bug me?</em></p>
+<h2 id="stop-and-fix-errors-when-theyre-found">6. Stop and fix errors
+when they’re found</h2>
+<p>If you’re familiar with the words
+<strong><em>‘Done-done’</em></strong>, you’re guilty of not following
+this guideline.</p>
+<p>The intention of the Definition of Done is to give an explicit
+guideline as to what criteria needs to be met for a story to be
+considered ready to be used by a <em>real</em> customer in the
+<em>real</em> world. If you are creating a list of bugs planning to fix
+it later, possibly even in a different sprint, you’re exponentially
+increasing the cost of the errors and reducing the quality of the
+software.</p>
+<p>When an error is discovered, either by the developer or someone else,
+regardless of their role, report and fix it <strong><em>as soon as
+possible</em></strong>. Now is good. Now-now is acceptable. Tomorrow
+doesn’t cut it. You only need to log it if you need to remember it. The
+longer you wait the harder and more expensive it gets to fix, and no-one
+likes to redo the same work over and over again.</p>
+<blockquote>
+<p><em>Done means done. End of story.</em></p>
+</blockquote>
+<p>Don’t accept commonly accepted levels of errors.</p>
+<h2 id="prevent-it-from-occurring-again">7. Prevent it from occurring
+again</h2>
+<p>When, in the world of Quality, a non-conformance (anything that is
+not as expected) is discovered, two things <em>always</em> need to
+happen. The first is to fix the immediate problem as discussed in the
+previous point, also called the <em>corrective action</em>. The second
+it to prevent a similar issue from happening again, called
+<em>preventative action</em>.</p>
+<p>Fixing a bug is part of the solution, however, it’s a short-term and
+unsustainable solution. What are you doing to prevent it from happening
+again?</p>
+<p>Do a fault root analysis to uncover what caused the problem from
+happening in the first place and put a measure in place to prevent it
+from happening again.</p>
+<p>There are a million ways to prevent issues, just as there are a
+million ways to improve quality, with one of the more common solutions
+to include test automation. However, take into consider the price of
+automation. You can’t, and shouldn’t, automate everything. <strong>The
+more you automate the more you need to maintain, the slower it gets.
+<em>Is it worth the investment?</em></strong></p>
+<p><em>For a strategy and step-by-step approach following the 20/80
+Pareto principle in test automation, read <a
+href="https://medium.com/teal-times/a-lean-approach-to-automation-testing-ad6fcdcf41e3">A
+Lean Approach To Automation Testing</a>.</em></p>
+<h2 id="reduce-the-noise">8. Reduce the noise</h2>
+<p>If there is one company that got this guideline right, it’s Apple.
+Microsoft and Android and Google and most companies out there focus on
+<strong><em>more</em></strong>. More features. More options. More users.
+Apple, in contrast, focuses on how <em>little</em> they can do. What can
+they take away without negatively impacting the user experience?</p>
+<p>The result? People love Apple. So much so that they wrote a love song
+to Apple years ago.</p>
+<p><a
+href="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FeVmvBnNS7Tw%3Ffeature%3Doembed&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DeVmvBnNS7Tw&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FeVmvBnNS7Tw%2Fhqdefault.jpg&amp;key=a19fcc184b9711e1b4764040d3dc5c07&amp;type=text%2Fhtml&amp;schema=youtube">FAttY
+SPiNS - Apple Store Love Song</a></p>
+<blockquote>
+<p>Good design is simple. Good design is also good quality.</p>
+</blockquote>
+<p>Focus on what you can remove to make the core function stand out
+better. It’s only useful if you can find it.</p>
+<h2 id="reduce.-re-use.-recycle.">9. Reduce. Re-use. Recycle.</h2>
+<p>On a similar note, but from the developer, rather than user
+perspective, focus on maintainability. There is no use having all those
+genius resources hidden away in a code repository that no-one can find
+when they’re looking for it (and that’s also the reason why a public
+Github repository is not unsafe).</p>
+<p><em>Pre-written code only becomes an asset when you can re-use it.
+You can only re-use it if you can find it and understand what it is
+intended to do.</em></p>
+<p>A code base is organic. Factor in time for rewriting code and
+cleaning up code, just like you would spring clean your house regularly
+or clean up your desk. Don’t wait for it to become a problem,
+pro-actively clean it up.</p>
+<p>Use standard naming conventions that your grandmother can understand
+and include comments for dummies. You already know what the code intends
+to do. Explain it to convince someone else to use it (or not break it
+when they think they’re fixing it).</p>
+<h2 id="dont-rely-on-someone-else-to-discover-errors">10. Don’t rely on
+someone else to discover errors</h2>
+<blockquote>
+<p>Re-spon-si-bi-li-ty — The ability to respond when you see something
+out of place or something that needs attention.</p>
+</blockquote>
+<p>Just because it’s not your job, doesn’t mean you shouldn’t be
+responsible. If you see something wrong, do something about it. If you
+can fix it, do it. Immediately. If you can’t, tell someone who can.</p>
+<p>The sooner you discover an error, the sooner you can fix it, the
+cheaper and faster it is.</p>
+<h1 id="what-are-you-waiting-for">What are you waiting for?</h1>
+<p>Ultimately, the level of quality in the software is a reflection of
+the level of responsibility within the organization. Own it. Don’t wait
+for someone else.</p>
+<p>Respond. React. Change. Now.</p>
+<p><em>Originally published on Medium:
+https://funficient.medium.com/10-ways-to-build-quality-into-software-459726031fd5</em></p>
+</body>
+</html>

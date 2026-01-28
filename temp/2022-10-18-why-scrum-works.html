@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kate Dames" />
+  <meta name="description" content="Scrum works. If it’s not working for you, evaluate whether your implementation is meeting the rules of the game, as outlined in this post. The framework itself is a perfect model for agility. Understanding why Scrum works, makes it possible to fill in the blanks tailor made and suitable to your unique organization." />
+  <title>Why Scrum Works</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Why Scrum Works</h1>
+<p class="author">Kate Dames</p>
+<p class="date">2016-10-27T06:31:22.108Z</p>
+</header>
+<p><em>10 Rules to agility success</em></p>
+<p>Whenever you think of agile, the first word that comes up for most
+people is Scrum. Born in the late 80’s and formalized in 1995, <a
+href="http://www.scrumguides.org/history.html">Scrum</a> was the
+fore-runner of the <a href="http://agilemanifesto.org/">Agile
+Manifesto</a>, which was also co-created with the founders of Scrum.</p>
+<p>It’s thus natural that when you talk about agile, Scrum comes up.
+Yet, more often than not, I wonder whether people realize the perfection
+of this framework and why it works so well. I keep hearing the same
+complaints and the same questions when new organizations decide to
+embark on an agile transformation.</p>
+<p>The most common of these complaints are asking for a manual or book,
+as the lightweight 17 page <a
+href="http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf">Scrum
+Guide</a> simply doesn’t contain enough information to succeed. With so
+many books on the subject to choose from, for a newbie, this is a huge
+challenge.</p>
+<p>And that is exactly the beauty of agile and Scrum, and each time I
+hear this complaint I think to myself that it’s exactly the point! As
+the whole methodology is one of learning rather than doing. It’s about
+creating a learning organization, one who is able to make good judgement
+calls. Having a manual would be way too restrictive, and it would
+contradict the essence of the methodology.</p>
+<blockquote>
+<p>“Simplicity is the ultimate sophistication.” — Clare Boothe Luce</p>
+</blockquote>
+<p>What makes Scrum most enticing to me, is it’s simplicity. It’s a
+lightweight 17 pages consolidating everything you need for a successful
+agile implementation. The <a
+href="http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf">Scrum
+Guide</a> starts off with in the this in the definition of Scrum,</p>
+<blockquote>
+<p>“…it’s simple to understand, it’s difficult to master…”</p>
+</blockquote>
+<p>Yet, few organizations seem to get it right. Indeed difficult to
+master if so many people struggle with the same issue.</p>
+<h2 id="but-why-are-they-struggling">But <em>why</em> are they
+struggling?</h2>
+<p>The most common complaint for new implementations that I’ve seen to
+date is the lack of reference guides on how to implement Scrum. The
+Scrum guide itself doesn’t contain enough flesh to be used as a manual
+for implementation without a coach, yet, if you do invest in an agile
+coach to help you with the transition, you can either get lucky by
+getting one of the many brilliant coaches out there, or not, as the
+industry is littered with certifications focused only on the technical
+skills.</p>
+<p>Selecting your agile coach isn’t as easy and straightforward as
+choosing for example a team lead or a project manager. What you are
+looking for is not technical skills (although those are important too),
+but an agile <em>mindset</em>.</p>
+<p>Once you understand <em>why</em> Scrum works so well, transitioning
+becomes much easier, giving more options and room for play with the
+implementation. Thus, improving your chances to succeed
+substantially.</p>
+<h1 id="a-scrum-mindset-cheat-sheet">A Scrum Mindset Cheat Sheet</h1>
+<p>At the heart of agile is creating a culture of learning, thus I
+embarked on a year-long education-focused gap-year to experiment with
+what makes learning effective, easy, and fun.</p>
+<p>I realized that Scrum already incorporate all these things, which is
+why it works so well, with the only exception that it doesn’t provide
+options to keep it interesting. It only contains one sample of each of
+the required methods, and people follow these blindly until they start
+getting bored with it.</p>
+<p>Which brings me to crucial element number one.</p>
+<h2 id="rule-1-keep-it-interesting">Rule # 1 Keep it interesting</h2>
+<p>Scrum and it’s practices works so well, because it’s like a breath of
+fresh air in the organization if you’re used to waterfall. You’re doing
+exactly the same things as before, but you’re doing it slightly, or
+sometimes very, different.</p>
+<p>You’re still writing requirements, but they’re more fun and have more
+context because they’re done in a different manner. Standup meetings
+suddenly is a relief from the boring round table sessions, sticky-notes
+are colorful and grabs attention.</p>
+<p>Trying to engage a bunch of rowdy 8 year’s taught me probably the
+most important rule of education.</p>
+<blockquote>
+<p><em>If you don’t have their attention, and if they’re not relaxed,
+you’re wasting your time.</em></p>
+</blockquote>
+<p>Which also nicely leads to the second crucial element of a successful
+business, let alone agile transition.</p>
+<h2 id="rule-2-provide-a-safe-environment">Rule #2 Provide a safe
+environment</h2>
+<p>One of the main goals of scrum is to have autonomous teams, teams who
+report to <em>each other</em>, not to a Scrum Master or a manager.</p>
+<p>There are many reasons why this is extremely important, but mostly,
+if you’re not relaxed and confident to speak up in a team setting,
+you’re likely to make mistakes.</p>
+<p>In an autonomous team, there is no pressure to impress your boss to
+get the promotion or raise that you want, and there is much less risk of
+being told that your idea is unwelcome or crazy. If everyone is on the
+same hierarchical level, it immediately creates a safe environment where
+each individual’s input is as important and valued as it’s peer.</p>
+<p>In a safe environment you are relaxed, and when you’re relaxed you
+can focus on the task at hand, not on strategies how to avoid punishment
+or look better than your team mate.</p>
+<h2 id="rule-3-stimulate-different-learning-styles">Rule # 3 Stimulate
+different learning styles</h2>
+<p><em>People are sensual beings, and they learn better the more senses
+are stimulated.</em> Our traditional classroom-style teaching puts
+emphasis on only auditory learners (learning by listening) with some
+visual stimulation (learning by seeing) when using the white-board or
+slides in the training.</p>
+<p><em>The most important part of learning, however (according to me
+that is), namely kinesthetic learning (learning by moving or doing), is
+mostly neglected. Scrum includes this part of learning with it’s
+standup’s and requiring people to stand up and move and touch sticky
+notes on a board in standups, planning sessions and
+retrospectives.</em></p>
+<p>Most learning methodologies believe that you are primarily dominant
+in one of these, and although I agree with that, I believe that optimal
+learning can only be achieved when all three are stimulated.</p>
+<p>Making the learning even more efficient would also include the
+olfactory (sense of smell) and gustatory (sense of taste) senses to
+anchor what has been learned.</p>
+<p>The ritual adapted by some Scrum teams to bring snacks to the
+Retrospective addresses this and helps to anchor behaviors in the team.
+The question is whether these are healthy or dysfunctional behaviors
+being anchored.</p>
+<h2 id="rule-4-visualize-information">Rule #4 Visualize information</h2>
+<p>Software development is mostly intangible. It’s the art of
+translating abstract thought into functional systems, using a
+computer.</p>
+<p>When you can’t see something, however, it becomes very difficult to
+manage it, as you can’t see the obstacles, unless the person
+experiencing the obstacle says something about it. Visualizing
+information is key to firstly awareness, and secondly process
+improvement.</p>
+<p>The <strong>Scrum Board</strong> is one way that information can be
+visualized. Kanban and Lean uses different methods of visualization, yet
+they all have one thing in common — everything important, is stuck
+somewhere on a wall.</p>
+<h2 id="rule-5-provides-focus">Rule #5 Provides Focus</h2>
+<p>The entire Scrum method is built to allow teams to focus on a
+specific goal.</p>
+<blockquote>
+<p>“the people who multitask the most just can’t focus.”<br />
+― Jeff Sutherland</p>
+</blockquote>
+<p>The <strong>planning session</strong> is designed to allow all the
+role players to be in the same room while you plan the sprint ahead,
+without any distractions. The <strong>sprint</strong> itself is a
+container helping the team to focus on a specific sprint goal, and the
+<strong>retrospective</strong> clearly dedicates time to focus on
+learning, and how this learning can be integrated to improve the next
+round of development.</p>
+<p>The <strong>backlog</strong> is another example of creating focus in
+the team as well as the organization, and each <strong>daily
+standup</strong> is intended to focus the team members’ efforts on their
+daily tasks to ensure they will stay on track towards the sprint goal,
+and ultimately the product road map and vision.</p>
+<h2 id="rule-6-no-end-point">Rule #6 No end point</h2>
+<p>Traditional project management clearly plans for each project to have
+a definitive start and end, and maintenance teams or operations are
+mostly separate division, removed from the development team.</p>
+<p>That implies that you only have one chance to get it right, but it
+also separates the learning from the development. Where each reported
+customer issue is an opportunity to better understand the needs and
+react, separating development from maintenance broadens the gap between
+the product and the customer, and it splits the ownership of the
+code.</p>
+<p>Scrum, on the other hand, is designed to continuously grow and
+evolve, much like a tree. The product keeps on growing, with each sprint
+an opportunity to align with the customer’s changed requirements. Each
+sprint the team knows the customers and the customer’s needs more, and
+is better able to fulfill these needs.</p>
+<p>The goal is a vision that keeps changing, and each sprint only
+focuses on taking one step to get closer to the goal. When the goal
+changes, there is no big impact, as you only need to adjust one step,
+not an entire journey.</p>
+<h2 id="rule-7-makes-fair-judgement-calls">Rule #7 Makes fair judgement
+calls</h2>
+<p>The entire agile manifesto, Scrum to a lesser degree, is designed
+around the concept of judgment and decision making. Each time you do
+something in Scrum, whether it is estimating the effort, selecting or
+creating user stories, or choosing a task, you are expected to make a
+judgement call.</p>
+<blockquote>
+<p>It is a constant weighing of factors in order to make the best
+decision with the information and resources that you have at hand now,
+knowing that tomorrow you will know more.</p>
+</blockquote>
+<p>There are no hard and fast rules, processes and procedures. Rather,
+there are objectives that need to be met and guidelines and best
+practices. Each time you deliver , you need to way up these factors to
+decide how best to meet your objectives.</p>
+<blockquote>
+<p>Individuals and interactions <strong><em>over</em></strong> processes
+and tools<br />
+Working software <strong><em>over</em></strong> comprehensive
+documentation<br />
+Customer collaboration <strong><em>over</em></strong> contract
+negotiation<br />
+Responding to change <strong><em>over</em></strong> following a plan</p>
+<p>It’s all about decision making, and how you make decisions.</p>
+</blockquote>
+<p>One sprint it might be more important to document the release notes
+carefully to limit support calls from customers on how to use a new
+feature. The next sprint an emergency fix might need to be rolled out,
+requiring the team to spend all the effort in managing the risk, rather
+than write documentation, and they will rather phone the customers than
+write a release note. Yet another sprint, the team might focus on
+refactoring, updating the architecture and deciding to document the
+model (or not).</p>
+<p>Depending on the situation, the decision will be different, and each
+sprint, you will know more than the previous one, thus each sprint you
+need to ask whether what you did the previous sprint is still the best
+way to do it.</p>
+<h2 id="rule-8-provide-context">Rule #8 Provide context</h2>
+<p>What was missing in most of the waterfall methodologies, was that
+each requirement and each function were so granular and specialized,
+that the overall context were often forgotten. Often times a really good
+feature was rolled out, only to realize that it is for the wrong
+customer, or doesn’t address the customers most urgent needs.</p>
+<blockquote>
+<p>Scrum is designed to provide more context, which makes it easier to
+deliver the right product, every time.</p>
+</blockquote>
+<p>The team structure is intended to be
+<strong>cross-funtional</strong>, <strong>self organizing
+teams</strong>, implying that everything that needs to be done to
+deliver are included in the story. No longer does the developer work in
+isolation with a tester criticizing their work at the end of the
+development lifecyle. Now the developer and tester work hand-in-hand to
+take more viewpoints into consideration earlier in the development
+process.</p>
+<p><strong>User stories</strong> in Scrum is another example of
+providing more context , where each requirement now explicitly includes
+the end user it is intended for, and the value or benefit of this
+requirement. This allows a developer more autonomy in designing a
+technical solution, while being closer to the end-user, reminding them
+constantly who the requirement is for.</p>
+<h2 id="rule-9-enables-effective-learning">Rule #9 Enables effective
+learning</h2>
+<p>For learning to be effective, there needs to be three elements
+present:</p>
+<ol type="1">
+<li>A clear purpose.</li>
+<li>Room for exploration and experimenting with options.</li>
+<li>Reviewing what has been learned, integrating the skill.</li>
+</ol>
+<p>Scrum includes all these elements in each sprint, starting at the
+planning session, ending with the retrospective.</p>
+<p>The <strong>sprint goal</strong> set at the planning session serves
+as the purpose, with the <strong>user story</strong> and it’s acceptance
+criteria purpose on a more granular level; the team selecting their
+tasks (rather than being allocated a task), and the inclusion of
+<strong>spikes</strong> and building <strong>prototypes</strong> allows
+the team to experiment with different options; while the
+<strong>review</strong> and <strong>retrospectives</strong> both allows
+the team to review whether the goal was indeed met, and what could be
+done better next time.</p>
+<p><strong>Rule #10 Improved communication</strong></p>
+<p>The biggest benefit of Scrum, more than anything else in my opinion,
+is the design to improve communication throughout the team, as well as
+throughout the organization.</p>
+<p>The smaller, autonomous teams reporting to each other daily, the
+inclusion of the Product Owner, and the focused rituals where team
+members give input into the planning, while being given the opportunity
+to discuss failures in a safe environment, all are designed to create an
+environment for improved and effective communication.</p>
+<blockquote>
+<p><em>Scrum provides an infrastructure that supports communication,
+knowing that face-to-face communication is the most effective means of
+communication.</em></p>
+</blockquote>
+<p>More than 80% of communication is non-verbal, and <em>relying</em> on
+tools and electronic communication such as Skype, Trello or Slack
+instead of face-to-face communication, means that the message being
+conveyed are possibly misunderstood or incomplete, which in turn means
+lower quality development with more errors introduced, requiring more
+time to develop the same requirements.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Scrum works. If it’s not working for you, evaluate whether your
+implementation is meeting the rules of the game, as outlined in this
+post.</p>
+<p>The framework itself is a perfect model for agility. Understanding
+<em>why</em> Scrum works, makes it possible to fill in the blanks tailor
+made and suitable to your unique organization.</p>
+<p><em>Originally published on Medium:
+https://everydayagile.com/why-scrum-works-f74638b13ea5</em></p>
+</body>
+</html>
