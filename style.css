@@ -2521,7 +2521,7 @@ iframe::-webkit-scrollbar { display: none; }
   }
 
   .section-container.wide.calendar iframe {
-    height: 480px; /* reduce height on small screens */
+    height: 800px; 
   }
 }
 
