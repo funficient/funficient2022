@@ -1122,6 +1122,7 @@ border: 2px solid #003034;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
     transition: all 0.5s ease-in-out;
+    
 }
 
 /* ------------------------------------------------------  Subscribe setion ------------------------------------------------*/
