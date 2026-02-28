@@ -2341,14 +2341,13 @@ flex: 1 1 calc(65% - 10px);}
   color: #444;
 }
 
-/* Fix accordion width so it doesn't resize to content */
 .accordion-column {
   display: flex;
   justify-content: center;
 }
 
 .accordion {
-  width: 800px; /* fixed width */
+  width: 900px; /* fixed width */
   max-width: 90%; /* responsive cap for smaller screens */
   box-sizing: border-box;
   margin: 0 auto;
@@ -2363,7 +2362,9 @@ flex: 1 1 calc(65% - 10px);}
 }
 
 .accordion-item summary {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 0.5rem;
 }
 
@@ -2528,7 +2529,7 @@ iframe::-webkit-scrollbar { display: none; }
 /* Header / email subscription responsive tweaks */
 .email-subscription-container {
   align-items: center;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
 }
 
 @media (max-width: 900px) {
