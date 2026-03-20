@@ -270,7 +270,7 @@ button {
 .card {
     display: grid;
     place-content: center;
-    padding: 2em;
+    padding: 1em;
     position: relative;
     width: 100%;
 }
@@ -2751,7 +2751,7 @@ iframe::-webkit-scrollbar { display: none; }
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  min-height: 360px;
+  min-height: auto;
   max-height: 600px;
   display: flex;
   flex-direction: column;
