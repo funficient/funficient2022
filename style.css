@@ -238,7 +238,27 @@ button {
   margin-bottom: 2em;
 }
 
+.width-sixty {
+  width: 60%;
+  margin: auto;
+  margin-top: 1em;
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
 
+.accent {
+  color: var(--seagreen800);
+  font-family: Playfair Display, serif;
+  font-style: italic;
+  font-size: 1.4em;
+  width: 50%;
+}
+
+.normal-text {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: var(--darkGray800);
+}
 
 #map {
   margin: 0 5em;
