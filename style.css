@@ -260,6 +260,24 @@ button {
   color: var(--darkGray800);
 }
 
+@media (max-width: 800px) {
+.width-sixty {
+  width: 100%;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+.accent {
+  font-size: 1.4em;
+  width: 100%;
+}
+
+.normal-text {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+}
+
 #map {
   margin: 0 5em;
 }
