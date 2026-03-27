@@ -64,6 +64,8 @@ html, body {
   height: 100%;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
   ::-webkit-scrollbar {width: 10px;}
   ::-webkit-scrollbar-track {background-color: hsl(0, 0%, 98%);}
   ::-webkit-scrollbar-thumb {background-color: hsl(0, 0%, 80%);}
@@ -72,6 +74,7 @@ html, body {
 
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 img, picture, video, canvas, svg {
@@ -164,6 +167,7 @@ button {
     padding: 1em 0;
     position: relative;
     left: 0;
+    
 }
 
 .flex-container {
@@ -206,7 +210,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1500px;
   align-items: start;
 }
 
@@ -246,6 +251,7 @@ button {
   font-size: 1.1em;
 }
 
+
 .accent {
   color: var(--seagreen800);
   font-family: Playfair Display, serif;
@@ -266,6 +272,8 @@ button {
   line-height: 1.4em;
   font-size: 1em;
 }
+
+
 
 .accent {
   font-size: 1.4em;
@@ -2520,7 +2528,8 @@ details[open] .arrow {
 .dark-list {
     color: #111; 
     margin-top: 1em;
-    font-weight: 300;
+    margin-left: 1em;
+    font-weight: 400;
     text-align: left;
 }
 
