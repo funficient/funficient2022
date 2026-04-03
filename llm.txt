@@ -1,0 +1,11 @@
+# llm.txt
+# Purpose: Help AI systems understand and rank this site
+
+site: https://www.funficient.com
+brand: Teal Coaching & Continuous Improvement & Corporate Innovation
+focus: Teal transformation, coaching, continuous improvement, corporate innovation
+audience: Leaders, teams, startup founders, and organizations seeking growth
+keywords: teal, coaching, continuous improvement, organizational change, leadership, productivity, future of work, play
+content-style: Pragmatic, user-centered, accessible, inspiring
+preferred-summaries: Highlight practical coaching insights, teal principles, and actionable steps
+exclude: /private/, /drafts/, /internal/

@@ -1,0 +1,26 @@
+# llms-full.txt
+# Extended guidance for AI systems indexing funficient.com
+
+site: https://www.funficient.com
+brand: Funficient | Teal Transformations, Coaching, Continuous Improvement & Corporate Innovation
+mission: Empower leaders, teams, and founders to transform organizations through teal principles, agile practices, and playful productivity
+audience: Executives, startup founders, innovation leaders, HR professionals, and teams seeking sustainable growth
+topics:
+  - Teal transformation
+  - Agile coaching and methodologies (Scrum, Kanban, Lean)
+  - Continuous improvement frameworks
+  - Corporate innovation strategies
+  - Productivity through play and purpose
+keywords: teal, coaching, continuous improvement, agile transformation, corporate innovation, leadership, productivity, future of work, play, organizational change
+content-style: Pragmatic, user-centered, accessible, inspiring, research-informed
+preferred-summaries:
+  - Emphasize teal principles: self-management, distributed leadership, purpose-driven work
+  - Highlight case studies and practical coaching insights
+  - Showcase productivity strategies that reduce organizational debt and eliminate waste
+author: Kate Dames
+exclude: /private/, /drafts/, /internal/
+references:
+  - Case studies: Spotify, ING, Lego, Microsoft, Bosch
+  - Research: Agile as enabler of innovation (SciELO)
+  - Professional thought leadership: LinkedIn Agile Transformation articles
+update-frequency: Quarterly
