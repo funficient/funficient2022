@@ -266,7 +266,7 @@ button {
   color: var(--darkGray800);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
 .width-sixty {
   width: 100%;
   line-height: 1.4em;
@@ -684,7 +684,7 @@ ul li {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .banner-container {
       height: 50vh;
    }
@@ -924,7 +924,7 @@ ul li {
     visibility: visible;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
 
     h2 {
       text-align: center;
@@ -1225,7 +1225,7 @@ border: 2px solid #003034;
     transform: translateY(-4px);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     .resources-container .resource-hero {
       grid-column: auto;
       padding: 2em 1em;
@@ -1797,6 +1797,7 @@ padding: 0 0.5em;
 
         header, header.sticky {
             padding: 1em 2em;
+            position: relative;
             }
 
         header .navigation {
@@ -1804,11 +1805,11 @@ padding: 0 0.5em;
             }
 
         header .navigation.active {
-            width: max-content;
-            height: calc(100% - 100px);
-            position: fixed;
-            top: 100px;
-            right: 0;
+            width: 100%;
+            height: calc(100vh - 100px);
+            position: absolute;
+            top: 100%;
+            left: 0;
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
@@ -1821,8 +1822,8 @@ padding: 0 0.5em;
         }
 
         header.sticky .navigation.active {
-            height: calc(100% - 75px);
-            top: 75px;
+            height: calc(100vh - 75px);
+            top: 100%;
             color: #003034;
         }
 
@@ -1901,7 +1902,7 @@ padding: 0 0.5em;
 
   
   /*      Mobile resposive */
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     h1 {
       font-size: 2.5rem;
       margin: 0 0 1rem 0;
@@ -2061,7 +2062,7 @@ padding: 0 0.5em;
   padding: 1rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .gridywrap {
         margin: 0;
     }
@@ -2147,7 +2148,7 @@ flex: 1 1 calc(65% - 10px);}
   position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .gridywrap .gridinfo h3 {
         font-size: 18px;
     }
@@ -2187,7 +2188,7 @@ flex: 1 1 calc(65% - 10px);}
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .gridywrap .gridinfo p.gridexerpt {
       width: 80%;
       line-height: 18px;
@@ -2333,7 +2334,7 @@ flex: 1 1 calc(65% - 10px);}
   align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .retreat-details-container {
     grid-template-columns: 3fr;
     gap: 1rem;
@@ -2562,7 +2563,7 @@ iframe::-webkit-scrollbar { display: none; }
   display: block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .section-container.wide.calendar {
     margin: 1em 1em;
     padding: 0.5em 0;
@@ -2579,7 +2580,7 @@ iframe::-webkit-scrollbar { display: none; }
   /* gap: 0.5rem; */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .email-subscription-container {
     flex-direction: column;
     align-items: stretch;
@@ -2694,7 +2695,7 @@ iframe::-webkit-scrollbar { display: none; }
 }
 
 /* Responsive tweaks */
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .section-title { font-size: 1.6rem; }
   .card { min-height: 300px; }
   .card-grid { gap: 1rem; }
@@ -2774,7 +2775,7 @@ iframe::-webkit-scrollbar { display: none; }
   grid-column: span 2;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 950px) {
   .card-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
