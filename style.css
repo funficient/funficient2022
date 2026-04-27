@@ -678,7 +678,7 @@ ul li {
 
   .banner-content-container {
     padding: 1em;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: -6rem;
     height: max-content;
   }
@@ -686,7 +686,7 @@ ul li {
 
 @media (max-width: 950px) {
     .banner-container {
-      height: 50vh;
+      height: 60vh;
    }
     .wave-container {
       display: none;
