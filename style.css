@@ -1680,18 +1680,24 @@ padding: 0 0.5em;
 a.card-link {
     display: block;
     text-decoration: none;
-    
+    color: inherit;
+    width: 100%;
+    touch-action: manipulation;
+}
+
+a.card-link:focus-visible {
+    outline: 3px solid var(--seagreen400);
+    outline-offset: 4px;
 }
 
 a.card-link .card {
     cursor: pointer;
-    
+    min-height: 100%;
 }
 
-a.card-link .card:hover {
-    cursor: pointer;
+a.card-link:hover .card,
+ a.card-link:focus-within .card {
     background-color: var(--lightseagreen200);
-    
 }
 
   /* ---------------------------------------  Footer setion ---------------------------------------*/
@@ -1990,7 +1996,43 @@ a.card-link .card:hover {
       .grid-4-container, .grid-container-journey-map, .grid-3-container-journey-map {
         grid-template-columns: 1fr;
       }
-    
+
+      #workshops {
+        margin: 1rem 0.75rem;
+      }
+
+      .grid-3-container {
+        gap: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .card {
+        padding: 1.2rem;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+      }
+
+      .card img {
+        max-width: 4rem;
+        margin: 0 auto 1rem;
+      }
+
+      .card a,
+      .card button {
+        width: 100%;
+      }
+
+      .card-link:hover .card,
+      .card-link:focus-within .card {
+        transform: translateY(0);
+      }
+
       .profile {
         margin-bottom: 4rem;
       }
