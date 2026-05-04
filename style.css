@@ -1677,6 +1677,23 @@ padding: 0 0.5em;
 }
 
 
+a.card-link {
+    display: block;
+    text-decoration: none;
+    
+}
+
+a.card-link .card {
+    cursor: pointer;
+    
+}
+
+a.card-link .card:hover {
+    cursor: pointer;
+    background-color: var(--lightseagreen200);
+    
+}
+
   /* ---------------------------------------  Footer setion ---------------------------------------*/
   
   .footer {
