@@ -92,13 +92,13 @@ h1, h2, h3, h4, p {
 
 h1 {
 
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.7rem;
   line-height: 1.3em;
 }
 
 h2 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3em;
   color: var(--darkGray800);
   margin-bottom: 0.5em;
@@ -254,7 +254,7 @@ button {
 
 .accent {
   color: var(--seagreen800);
-  font-family: Playfair Display, serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 1.4em;
   width: 50%;
@@ -619,7 +619,7 @@ ul li {
   }
   
   .banner-container .banner-content-container h1 span::before {
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", sans-serif;
     content: " clarity. ";
     animation: animate infinite 8s;
   }
@@ -796,7 +796,7 @@ ul li {
   }
 
   .small-quote {
-    font-family: Playfair Display, serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.4em;
     line-height: 1.7em;
     border-left: solid 3px var(--bs-primary);
@@ -1441,7 +1441,7 @@ article {
 
 .post-quote {
   font-size: 1.8em;
-  font-family: "Playfair Display";
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2em;
   
   padding: 2em;
@@ -1472,7 +1472,7 @@ ol {
   margin: 50px;
   padding: 0;
   font-size: 20px;
-  font-family: Playfair Display, serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 ol h3 {
