@@ -3224,3 +3224,235 @@ span.author-name {
   text-decoration: underline;
 }
 
+/* services cards on home page */
+
+  .funficient-services {
+    background-color: #ffff; /* Dark teal background to match Funficient palette */
+    padding: 20px;
+    color: #000;
+  }
+
+  .funficient-services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Grid Layout */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  /* Card Styles */
+  .service-card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(66, 66, 66, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .service-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(4, 80, 88, 0.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Category Subtitle Tags */
+  .category-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #51c8d5; /* Bright Cyan accent */
+    margin-bottom: 12px;
+  }
+
+  /* Title & Text */
+  .service-card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #646262;
+    align-items: left;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a0aec0;
+    margin-bottom: 32px;
+    flex-grow: 1;
+  }
+
+  /* Call To Action Buttons */
+  .card-cta {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #51c8d5;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .card-cta .arrow {
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+  }
+
+  .card-cta:hover {
+    color: #245f66;
+  }
+
+  .card-cta:hover .arrow {
+    transform: translateX(6px);
+  }
+
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .funficient-services {
+      padding: 50px 16px;
+    }
+
+    .service-card {
+      padding: 30px 20px;
+    }
+  }
+  
+/* Card Positioning & Clipping */
+.service-card.card-has-bg {
+  position: relative;
+  overflow: hidden; /* Keeps the background icon inside the rounded corners */
+}
+
+/* Bring readable text above the background icon */
+.service-card .card-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Watermark Background Icon Styling */
+.card-bg-icon {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.35; /* Low opacity for subtle watermark look */
+  color: #51c8d5; /* Uses your teal/cyan theme color */
+  transform: rotate(-6deg) scale(1.08); /* Default tilt */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-bg-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Subtle Scale Effect on Hover */
+.service-card:hover .card-bg-icon {
+  opacity: 0.15;
+  transform: scale(1.08) rotate(0deg);
+}
+
+/* Card Base Positioning */
+.service-card.card-has-number {
+  position: relative;
+  overflow: hidden; /* Keeps the giant numbers inside the rounded edges */
+}
+
+/* Ensure text & buttons sit neatly on top of the watermark */
+.service-card .card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Watermark Background Number Styling (Default State: Rotated) */
+.card-bg-number {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  font-size: 9.5rem;
+  font-weight: 900;
+  line-height: 1;
+  font-family: inherit;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.25; /* Subtle watermark look */
+  color: #51c8d5; /* Accent teal */
+  transform: rotate(-8deg) scale(1.08); /* Default tilt */
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover State: Straightens & Brightens */
+.service-card:hover .card-bg-number {
+  opacity: 0.45;
+  transform: rotate(0deg) scale(1); /* Snaps straight */
+  color: #245f66;
+}
+
+/* Tablet & Smaller Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .card-bg-number {
+    font-size: 7.5rem;
+    right: -5px;
+    bottom: -15px;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Grid transforms to a single, full-width column */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Padding reduced to fit mobile screen widths comfortably */
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  /* Scale down the number so it doesn't obstruct readable text */
+  .card-bg-number {
+    font-size: 6rem;
+    right: -5px;
+    bottom: -10px;
+    opacity: 0.20; /* Slightly lower opacity on smaller screens for readability */
+  }
+
+  .service-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .card-bg-number {
+    font-size: 5rem;
+    right: -2px;
+    bottom: -5px;
+  }
+}
