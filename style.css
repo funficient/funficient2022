@@ -600,7 +600,7 @@ ul li {
   
   .banner-content-container {
     width: calc(70vw + 75px) ;
-    max-width: 800px; 
+    max-width: 900px; 
     height: fit-content;
     background-color: transparent;    
     text-align: center;
