@@ -1041,8 +1041,11 @@ ul li {
     .four {
         background:var(--seagreen700);
     }
+ .five {
+        background:var(--seagreen800);
+    }
 
-    .five, .six, .seven {
+   .six, .seven {
         background: transparent;
         border: 2px solid #003034;
         padding-top: 3.5em;
@@ -3456,4 +3459,10 @@ span.author-name {
     right: -2px;
     bottom: -5px;
   }
+}
+
+.small-text {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #555;
 }
