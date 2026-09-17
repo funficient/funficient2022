@@ -225,6 +225,7 @@ button {
 .flex {
   display: flex;
   flex-direction: row;
+  gap: 1em;
 }
 
 .flex-card {
