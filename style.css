@@ -1822,6 +1822,10 @@ a.card-link:hover .card,
       width: 100%;
     }
 
+    .funficient-services {
+      margin: 3em clamp(1rem, 3vw, 2.5rem);
+    }
+
     .post-content {
       margin-left: 0;
       width: 100%;
