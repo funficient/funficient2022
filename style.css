@@ -3581,16 +3581,30 @@ span.author-name {
 }
 
 @media (max-width: 950px) {
-  .workations-page .button,
-  .workations-page .signup-button {
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  [class*="button"],
+  a[class*="btn"],
+  a[class*="cta"],
+  a[class*="read-more"],
+  a[class*="learn-more"],
+  #submit,
+  [role="button"] {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     max-width: none;
-    margin-inline: 0;
+    margin: 0.75rem 0;
   }
 
-  .workations-page .colored-container {
+  .colored-container {
     padding-inline: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
   }
 
   .workations-page #location .map-embed {

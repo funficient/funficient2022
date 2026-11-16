@@ -965,6 +965,28 @@ p+p {
   .mobile-only {
     display: block;
   }
+
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  [class*="button"]:not(.nav-button),
+  a[class*="btn"],
+  a[class*="cta"],
+  a[class*="read-more"],
+  a[class*="learn-more"],
+  #submit,
+  [role="button"] {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0.75rem 0;
+  }
+
+  .colored-container {
+    padding-inline: 1rem;
+  }
 }
 
 /* Small Mobile */

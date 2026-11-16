@@ -343,16 +343,32 @@ ol li {
   .shuffle-button { 
     padding: 1em 2em; 
     font-size: 0.9em; 
-    position: absolute; 
-    bottom: 10%; 
-    left: 50%; 
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
   }
   .nav-buttons {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    z-index: 1;
+    left: 1rem;
+    right: 1rem;
+  }
+  .nav-button {
+    display: block;
+    text-align: center;
+  }
+
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  [class*="button"],
+  a[class*="btn"],
+  a[class*="cta"],
+  #submit,
+  [role="button"] {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0.75rem 0;
   }
 }
 
