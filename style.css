@@ -3565,3 +3565,66 @@ span.author-name {
   font-size: 0.85rem;
   color: #555;
 }
+
+.workations-page #location .map-embed {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.workations-page #location .map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 950px) {
+  .workations-page .button,
+  .workations-page .signup-button {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .workations-page .colored-container {
+    padding-inline: 1rem;
+  }
+
+  .workations-page #location .map-embed {
+    height: clamp(320px, 55vh, 480px);
+  }
+
+  .workations-page #retreat-details {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .workations-page #retreat-details .retreat-details-container,
+  .workations-page #retreat-details .accordion-column,
+  .workations-page #retreat-details .accordion,
+  .workations-page #retreat-details .accordion-item {
+    width: 100%;
+    max-width: none;
+  }
+
+  .workations-page #retreat-details .accordion-item summary {
+    gap: 0.75rem;
+    text-align: left;
+  }
+
+  .workations-page #retreat-details .accordion-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .workations-page #retreat-details .accordion-content {
+    padding-inline: 0.5rem;
+    text-align: left;
+  }
+}
