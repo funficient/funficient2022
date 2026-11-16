@@ -1874,7 +1874,7 @@ a.card-link:hover .card,
             justify-content: flex-start;
             align-items: stretch;
             flex-direction: column;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.98);
             box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
             color: #003034;
             padding: 2rem 2rem;
@@ -1897,11 +1897,11 @@ a.card-link:hover .card,
         }
 
         header.sticky .menuToggle.active {
-          filter: invert(1);
+            filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(2548%) hue-rotate(146deg) brightness(91%) contrast(101%);
         }
 
         header.sticky .menuToggle {
-            filter: invert(1);
+            filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(2548%) hue-rotate(146deg) brightness(91%) contrast(101%);
         }
 
         header .navigation.active a {
@@ -1911,8 +1911,13 @@ a.card-link:hover .card,
           white-space: normal;
         }
 
+        header .navigation.active .nav-button {
+            margin-left: 0;
+        }
+
         header .navigation.active a:hover {
             color: var(--lightseagreen);
+            font-style: bold;
             background: none;
         }
         .menuToggle {
