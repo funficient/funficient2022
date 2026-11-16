@@ -3607,6 +3607,33 @@ span.author-name {
     flex-direction: column;
   }
 
+  .servicejam {
+    width: 100%;
+  }
+
+  #servicejam .email-subscription-container {
+    width: 100%;
+  }
+
+  #servicejam .email-input,
+  #servicejam .submit-button {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #servicejam .email-input {
+    text-align: center;
+  }
+
+  #servicejam .submit-button {
+    margin: 0;
+    background-color: var(--seagreen400);
+  }
+
+  #servicejam .submit-button:hover {
+    background-color: var(--seagreen700);
+  }
+
   .workations-page #location .map-embed {
     height: clamp(320px, 55vh, 480px);
   }
