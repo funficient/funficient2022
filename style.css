@@ -3668,4 +3668,21 @@ span.author-name {
     padding-inline: 0.5rem;
     text-align: left;
   }
+
+  .resources-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .resources-container > div:nth-last-of-type(n) {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 320px;
+    padding: 2rem 1rem;
+    background-attachment: scroll;
+  }
 }
