@@ -1864,17 +1864,17 @@ a.card-link:hover .card,
             }
 
         header .navigation.active {
-          width: min(24rem, calc(100vw - 2rem));
-          max-width: calc(100vw - 2rem);
+          width: min(24rem, 100%);
+          max-width: 100%;
           height: calc(100vh - 100px);
             position: fixed;
             top: 100px;
-          right: 1rem;
+            right: 0;
             display: flex;
             justify-content: flex-start;
             align-items: stretch;
             flex-direction: column;
-            background: rgba(255, 255, 255, 0.98);
+            background: rgba(255, 255, 255, 0.95);
             box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
             color: #003034;
             padding: 2rem 2rem;
