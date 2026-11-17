@@ -2111,7 +2111,12 @@ a.card-link:hover .card,
       }
 
       #workshops {
-        margin: 1rem 0.75rem;
+        width: 100%;
+        min-width: 0;
+        margin: 1rem 0;
+        padding: 0 clamp(0.75rem, 4vw, 1.25rem);
+        grid-template-columns: minmax(0, 1fr);
+        align-items: stretch;
       }
 
       .grid-3-container {
@@ -2119,7 +2124,14 @@ a.card-link:hover .card,
         padding: 0 0.5rem;
       }
 
-      .card {
+      #workshops > .card,
+      #workshops > .card-link,
+      #workshops > .card-link > .card {
+        width: 100%;
+        min-width: 0;
+      }
+
+      #workshops .card {
         padding: 1.2rem;
       }
 
@@ -2500,7 +2512,8 @@ flex: 1 1 calc(65% - 10px);}
 }
 
 #coaching-faq,
-#home-faq {
+#home-faq,
+#workshops-faq {
   width: 100%;
   max-width: 1100px;
   margin: 3em auto;
@@ -2508,19 +2521,22 @@ flex: 1 1 calc(65% - 10px);}
   grid-template-columns: minmax(0, 1fr);
 }
 
-#home-faq .accordion-column {
+#home-faq .accordion-column,
+#workshops-faq .accordion-column {
   max-width: 900px;
   margin: 0 auto;
 }
 
 #coaching-faq .accordion-item summary,
-#home-faq .accordion-item summary {
+#home-faq .accordion-item summary,
+#workshops-faq .accordion-item summary {
   gap: 0.75rem;
   text-align: left;
 }
 
 #coaching-faq .accordion-title,
-#home-faq .accordion-title {
+#home-faq .accordion-title,
+#workshops-faq .accordion-title {
   flex: 1;
   min-width: 0;
   margin: 0;
@@ -2528,7 +2544,8 @@ flex: 1 1 calc(65% - 10px);}
 }
 
 #coaching-faq .accordion-content,
-#home-faq .accordion-content {
+#home-faq .accordion-content,
+#workshops-faq .accordion-content {
   padding-inline: 0.5rem;
   text-align: left;
 }
@@ -2643,7 +2660,7 @@ flex: 1 1 calc(65% - 10px);}
 }
 
 details[open] .arrow {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .signup-button {
