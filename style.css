@@ -3604,6 +3604,16 @@ span.author-name {
     flex-direction: column;
   }
 
+  #newsletter .email-subscription-container {
+    gap: 0;
+  }
+
+  #newsletter .submit-button {
+    align-self: stretch;
+    height: auto;
+    margin: 0;
+  }
+
   .servicejam {
     width: 100%;
   }
