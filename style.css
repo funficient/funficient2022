@@ -1189,11 +1189,7 @@ border: 2px solid #003034;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
-    background-image: url(assets/00013159.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #fff;
     transition: all 0.5s ease-in-out;
     
 }
@@ -1202,6 +1198,12 @@ border: 2px solid #003034;
 .resources-container > div {
     height: 400px;
     padding: 3em;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background-image: url(assets/00013159.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     cursor: pointer;
   
     display: flex;
@@ -1213,11 +1215,14 @@ border: 2px solid #003034;
     transition: all 0.5s ease-in-out;
   }
 
-  /* Keep the shared background visible until a resource card is hovered. */
+  .resources-container > div:hover {
+    background-image: none;
+  }
+
+  /* Cards reveal their teal hover color over the fixed background image. */
   .resources-container .resource-hero {
     grid-column: 1 / -1;
     background-color: transparent;
-    background-image: none;
     min-height: 420px;
     padding: 4em 2em;
     display: flex;
@@ -1235,6 +1240,7 @@ border: 2px solid #003034;
   }
 
   .resources-container > .resource-hero:hover {
+    background-image: none;
     background-color: var(--seagreen400);
     transform: translateY(-4px);
   }
@@ -1317,9 +1323,17 @@ border: 2px solid #003034;
     content: "";
   }
 
+  .resources-container .button {
+    display: block;
+    width: 100%;
+    max-width: none;
+    white-space: nowrap;
+  }
+
   .resources-container > div {
     height: 400px;
     padding: 3em;
+    border: 1px solid rgba(255, 255, 255, 0.75);
     
     cursor: pointer;
   
@@ -3653,19 +3667,20 @@ span.author-name {
   }
 
   .resources-container {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
     width: 100%;
     min-width: 0;
+    background-color: #fff;
   }
 
-  .resources-container > div:nth-last-of-type(n) {
-    grid-column: 1 / -1;
+  .resources-container > div {
     width: 100%;
     min-width: 0;
     height: auto;
     min-height: 320px;
     padding: 2rem 1rem;
-    background-attachment: scroll;
   }
 }
