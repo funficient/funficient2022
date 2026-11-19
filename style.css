@@ -466,7 +466,7 @@ header {
     align-items: center;
     transition: 0.5s;
     overflow: visible;
-    background: var(--seagreen);
+    background: var(--teal-gradient);
   }
   
   header svg {
@@ -1932,6 +1932,7 @@ a.card-link:hover .card,
 
         header .navigation.active .nav-button {
             margin-left: 0;
+            border: none;
         }
 
         header .navigation.active a:hover {
