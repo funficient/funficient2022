@@ -1,0 +1,31 @@
+# Funficient
+
+> Funficient helps organizations improve how they work through teal transformation, coaching, leadership development, innovation, and continuous improvement.
+
+Funficient is led by Kate Dames and works with leaders, teams, founders, and organizations. The site shares information about Funficient's services, case studies, and practical resources on the future of work.
+
+## About and services
+
+- [Home](https://www.funficient.com/): Overview of Funficient and its approach to productivity.
+- [About Kate Dames](https://www.funficient.com/about): Background and organizational coaching approach.
+- [Coaching](https://www.funficient.com/coaching): Coaching services.
+- [Workshops](https://www.funficient.com/workshops): Workshops for teams and organizations.
+- [Workations](https://www.funficient.com/workations): Facilitated team workations.
+- [Case studies](https://www.funficient.com/case-studies): Examples of client work.
+
+## Future of Work resources
+
+- [Future of Work resources](https://www.funficient.com/future-of-work-resources): Articles and practical guides on teal organizations, productivity, collaboration, and workplace practices.
+- [Teal Operations FAQ](https://www.funficient.com/future-of-work-resources/teal-ops-faq.html): Answers about teal organizations and self-management.
+- [The Essence of Productivity](https://www.funficient.com/future-of-work-resources/the-essence-of-productivity.html): Perspectives on productivity and organizational work.
+- [What Is Psychological Safety?](https://www.funficient.com/future-of-work-resources/what-is-psychological-safety.html): A guide to trust and psychological safety at work.
+- [How to Get Started with Mobbing](https://www.funficient.com/future-of-work-resources/how-to-get-started-with-mobbing-or-ensemble-programming.html): A guide to ensemble programming and collaborative work.
+- [Where Does Design Fit into the Development Life Cycle?](https://www.funficient.com/future-of-work-resources/where-does-design-fit-into-the-development-life-cycle.html): Kate Dames's article on integrating design into software development.
+- [The Teal Chronicles](https://www.funficient.com/future-of-work-resources/the-teal-chronicles.html): Writing about teal organizations and the future of work.
+- [Blog](https://www.funficient.com/blog): Funficient articles and updates.
+
+## Additional resources
+
+- [Thinker Toys](https://www.funficient.com/thinkertoys): A creative-thinking tool.
+- [Sitemap](https://www.funficient.com/sitemap.xml): URLs for search engines and other crawlers.
+- [Robots.txt](https://www.funficient.com/robots.txt): Crawler access rules.
