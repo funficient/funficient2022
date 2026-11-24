@@ -504,8 +504,16 @@ ul li {
   display: inline-block;
   position: relative;
 }
-ul li+li {
+ul {
   margin-bottom: 1em;
+}
+ul li:last-child {
+  margin-bottom: 1em;
+}
+
+header .navigation,
+.footer .social {
+  margin-bottom: 0;
 }
 
   .navigation:hover > ul{
