@@ -504,6 +504,9 @@ ul li {
   display: inline-block;
   position: relative;
 }
+ul li+li {
+  margin-bottom: 1em;
+}
 
   .navigation:hover > ul{
     visibility: visible;
@@ -1773,7 +1776,7 @@ a.card-link:hover .card,
     color: #fff;
   }
 
-  .darkText p, a {
+  .darkText p, a, li {
     color: #333;
   }
 
